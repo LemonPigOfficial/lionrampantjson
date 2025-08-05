@@ -658,7 +658,7 @@
                         "points": 2
                     }
                 ],
-                "decreaseModelCount": -9
+                "decreaseModelCount": -4
             },
             {
                 "name": "Tactical Squad",
@@ -1053,7 +1053,7 @@
             },
             {
                 "name": "Deep Strike",
-                "definition": "At deployment, this unit is held in reserve. At the start of the second round, place this model anywhere on the table, but no closer than 6” from any enemy models."
+                "definition": "At deployment, this unit is held in reserve. At the start of the first round, place this unit anywhere on the table, but no closer than 6” from any enemy models."
             },
             {
                 "name": "Fly",
