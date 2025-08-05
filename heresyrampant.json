@@ -647,7 +647,7 @@
                         "points": 2
                     },
                     {
-                        "name": "HQ",
+                        "name": "Optae",
                         "points": 2
                     }
                 ],
@@ -689,7 +689,45 @@
                         "points": 2
                     },
                     {
-                        "name": "HQ",
+                        "name": "Optae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Breacher Squad",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 3,
+                "attack": 7,
+                "move": 3,
+                "shoot": 6,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 4,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [],
+                "options": [
+                    {
+                        "name": "Engineers",
+                        "points": 2
+                    },
+                    {
+                        "name": "Heavy Weapon",
+                        "points": 2
+                    },
+                    {
+                        "name": "Optae",
                         "points": 2
                     }
                 ],
@@ -705,14 +743,14 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 10,
-                "points": 5,
+                "points": 4,
                 "attack": 7,
                 "move": 5,
                 "shoot": 7,
                 "courage": 4,
                 "armor": 2,
                 "attackvalue": 4,
-                "defencevalue": 3,
+                "defencevalue": 4,
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 6,
@@ -730,7 +768,7 @@
                         "points": 2
                     },
                     {
-                        "name": "HQ",
+                        "name": "Optae",
                         "points": 2
                     }
                 ],
@@ -775,7 +813,7 @@
                         "points": 3
                     },
                     {
-                        "name": "HQ",
+                        "name": "Optae",
                         "points": 2
                     }
                 ],
@@ -820,7 +858,7 @@
                         "points": 3
                     },
                     {
-                        "name": "HQ",
+                        "name": "Optae",
                         "points": 2
                     }
                 ],
@@ -865,8 +903,8 @@
                 "definition": "A Veteran unit can inflict a whole load of additional pain on an enemy – if it rolls well. Any Attack dice or Shooting dice (but not Defence dice) that roll a 6 cause 2 hits rather than the usual 1 hit"
             },
             {
-                "name": "HQ",
-                "definition": "Units led by HQ are more disciplined. Once per game, may automatically pass a Move, Attack or Shoot activation."
+                "name": "Optae",
+                "definition": "Units led by Optae are more disciplined. Once per game, may automatically pass a Move, Attack or Shoot activation."
             },
             {
                 "name": "Javelins",
