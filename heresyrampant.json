@@ -1,0 +1,959 @@
+{
+    "config": {
+        "trackHighestDivision": true
+    },
+    "appVersion": 2,
+    "disallowMultipleFactions": true,
+    "colors": {
+        "light": {
+            "primary": "#841912",
+            "background": "#a58650",
+            "pageBackground": "#fffffe",
+            "buttonBackground": "#e2ded3",
+            "primaryBorder": "#841912",
+            "primaryBackgroundColor": "#fffffe"
+        },
+        "dark": {
+            "primary": "#fffffe",
+            "background": "#814143",
+            "pageBackground": "#3b1d1e",
+            "buttonBackground": "#a58650",
+            "primaryBorder": "#841912",
+            "primaryBackgroundColor": "#841912"
+        }
+    },
+    "credit": [],
+    "game": "Heresy Rampant",
+    "stats": [
+        {
+            "name": "strengthpoints",
+            "abbreviation": "SP"
+        },
+        {
+            "name": "Attack",
+            "abbreviation": "Ao",
+            "trail": "+"
+        },
+        {
+            "name": "Move",
+            "abbreviation": "Mo",
+            "trail": "+"
+        },
+        {
+            "name": "Shoot",
+            "abbreviation": "So",
+            "trail": "+"
+        },
+        {
+            "name": "Courage",
+            "abbreviation": "C",
+            "trail": "+"
+        },
+        {
+            "name": "armor",
+            "abbreviation": "Ar"
+        },
+        {
+            "name": "AttackValue",
+            "abbreviation": "Av",
+            "trail": "+"
+        },
+        {
+            "name": "DefenceValue",
+            "abbreviation": "Dv",
+            "trail": "+"
+        },
+        {
+            "name": "ShootValue",
+            "abbreviation": "Sv",
+            "trail": "+"
+        },
+        {
+            "name": "maximummovement",
+            "abbreviation": "Md",
+            "trail": "\""
+        },
+        {
+            "name": "Range",
+            "abbreviation": "R",
+            "trail": "\""
+        }
+    ],
+    "dataTableKeys": [
+        "units"
+    ],
+    "limits": [],
+    "counts": [],
+    "calculations": [],
+    "validations": [],
+    "leaderConfig": {
+        "elementPropertyName": "units",
+        "usesProperty": "unitType"
+    },
+    "additionalPrint": [],
+    "additionalDb": [],
+    "elements": [
+        {
+            "propertyName": "factions",
+            "label": "Faction",
+            "type": "faction",
+            "dataSource": "factions",
+            "children": [
+                {
+                    "propertyName": "additionalRules",
+                    "label": "Additional Rules: ",
+                    "type": "static",
+                    "bullet": true
+                },
+                {
+                    "propertyName": "units",
+                    "dataSource": "units",
+                    "label": "Unit",
+                    "type": "main",
+                    "children": [
+                        {
+                            "propertyName": "specialRules",
+                            "label": "Special Rules",
+                            "type": "static",
+                            "dataSource": "keywords"
+                        },
+                        {
+                            "singleKey": "leaderUpgrade",
+                            "dataSource": "leaderUpgrades",
+                            "propertyName": "leaderUpgrades",
+                            "label": "Leader Upgrade",
+                            "type": "list",
+                            "universalOnly": true,
+                            "universalOptions": [
+                                {
+                                    "name": "Aggressive",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Blessed",
+                                    "points": 2,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Veteran",
+                                    "points": 3,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Duelist",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Brutal",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Commanding",
+                                    "points": 2,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Courageous",
+                                    "points": 2,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Drunkard or Eccentric",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Fearless",
+                                    "points": 2,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Fearsome",
+                                    "points": 2,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Impulsive",
+                                    "points": 1,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Insipid",
+                                    "points": -2,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Inspired",
+                                    "points": 3,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Knock-kneed",
+                                    "points": -1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Indomitable",
+                                    "points": 2,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Patient",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Rash",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Gun Master",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Mighty",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Warmaster",
+                                    "points": 3,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Old Wound",
+                                    "points": -1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Vulnerable",
+                                    "points": -1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Weakling",
+                                    "points": -2,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Wise",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                }
+                            ]
+                        },
+                        {
+                            "propertyName": "options",
+                            "type": "checkbox",
+                            "dataSource": "upgrades"
+                        }
+                    ],
+                    "tierProperty": "unitType",
+                    "tierData": "unitTypes",
+                    "tiers": [
+                        {
+                            "name": "Vehicle",
+                            "rank": 1
+                        },
+                        {
+                            "name": "Infantry",
+                            "rank": 1,
+                            "maximumChildren": {
+                                "leaderUpgrades": 2
+                            }
+                        },
+                        {
+                            "name": "Artillery",
+                            "rank": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "data": {
+        "leaderUpgrades": [
+            {
+                "name": "Aggressive",
+                "definition": "Each turn, one unit within 12” of your Leader’s unit may automatically pass an Attack activation without needing to roll dice (may be used on the Leader’s own unit).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Blessed",
+                "definition": "You may reroll any one set of dice in the game in its entirety, rolled by any player.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Veteran",
+                "definition": "Same as the Veteran rule listed under Cuirassers. Applies only to the Leader's unit and cannot be purchased if the unit already has this rule.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Duelist",
+                "definition": "In Challenges, the Leader is only hit on a 6.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Brutal",
+                "definition": "Any unit within 12\" of your Leader's unit may automatically pass a failed Rally test by removing 1 model (the very real threat of enforced sacrifice really does make a warrior much bolder).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Commanding",
+                "definition": "Each turn, you may reroll 1 additional failed Move, Attack, or Shoot activation test (no other tests) within 12\" of your Leader's unit (meaning you have 2 rerolls each turn).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Courageous",
+                "definition": "The Leader's unit may reroll each of its Courage tests once.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Drunkard or Eccentric",
+                "definition": "When this Leader is good, they're very good, and when they're bad... After deployment but before the first turn, roll to find out how much they've drunk: 1: Insipid; 2: Vulnerable; 3: Old Wound; 4: Duelist; 5: Mighty; 6: Indomitable.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Fearless",
+                "definition": "Leader's unit is not affected by Fearsome or Panic enemy units.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Fearsome",
+                "definition": "Same as the Fearsome rule listed under Cuirassers. Applies only to the Leader's unit and cannot be purchased if the unit already has this rule.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Impulsive",
+                "definition": "Each turn, one unit within 12\" of your Leader's unit may automatically pass a Move activation without needing to roll dice (may be used on the Leader's own unit).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Insipid",
+                "definition": "The Leader does not grant units within 12\" the usual +1 Courage bonus (including the Leader's own unit).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Inspired",
+                "definition": "Each turn, you may reroll 2 additional failed Move, Attack, or Shoot activations tests (no other tests) within 12\" of your Leader's unit (meaning you have 3 rerolls each turn.)",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Knock-kneed",
+                "definition": "When required to Retreat, the Leader's unit must retreat the full distance rather than a half move.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Indomitable",
+                "definition": "During Attacks, the Leader's unit may reroll up to 2 failed hit dice.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Patient",
+                "definition": "Each turn, one unit within 12\" of your Leader's unit may choose to ignore a Wild Charge activation (may be used on the Leader's own unit).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Rash",
+                "definition": "Leader's unit gains the Wild Charge rule. Cannot be purchased if the Leader's unit already has Wild Charge.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Gun Master",
+                "definition": "Each turn, one unit within 12\" of your Leader's unit may automatically pass a Shoot activation without needing to roll dice (may be used on the Leader's own unit).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Mighty",
+                "definition": "During Attacks, the Leader's unit may reroll one failed hit dice.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Warmaster",
+                "definition": "Leader's unit automatically passes all Move, Attack and Shoot activation tests. Wild Charges, Counter-charges, and Evade are tested as normal.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Old Wound",
+                "definition": "Reduce the Leader's unit's maximum movement distance by 2\".",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Vulnerable",
+                "definition": "Killed by Lucky Blows on a result of 2 or 3.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Weakling",
+                "definition": "Leader's unit rolls 1 less dice when Attacking or Shooting (therefore rolling either 11 or 5 dice).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Wise",
+                "definition": "May Lead may add or subtract 1 from your total (your choice) when rolling to decide attacker/ defender as described in Chapter 5 (here).",
+                "factions": [],
+                "decreaseModelCount": 1
+            }
+        ],
+        "factions": [
+            {
+                "name": "Build Your Company",
+                "additionalRules": [
+                    "Made by Liver"
+                ],
+                "armyBonuses": [],
+                "specialRules": []
+            }
+        ],
+        "unitTypes": [
+            {
+                "name": "Vehicle"
+            },
+            {
+                "name": "Infantry"
+            },
+            {
+                "name": "Artillery"
+            }
+        ],
+        "units": [
+            {
+                "name": "Tank",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Vehicle"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 12,
+                "points": 8,
+                "attack": 5,
+                "move": 7,
+                "shoot": 7,
+                "courage": 3,
+                "armor": 4,
+                "attackvalue": 5,
+                "defencevalue": 4,
+                "shootvalue": 3,
+                "range": 24,
+                "maximummovement": 12,
+                "specialRules": [
+                    "Explosive",
+                    "Panic"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 3
+                    }
+                ]
+            },
+            {
+                "name": "Great Dreadnought",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Vehicle"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 12,
+                "points": 8,
+                "attack": 5,
+                "move": 7,
+                "shoot": 5,
+                "courage": 3,
+                "armor": 4,
+                "attackvalue": 3,
+                "defencevalue": 2,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Wild Charge",
+					"Fast",
+                    "Explosive",
+                    "Panic"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 3
+                    }
+                ]
+            },
+            {
+                "name": "Combat Vehicle",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Vehicle"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 6,
+                "points": 6,
+                "attack": 7,
+                "move": 5,
+                "shoot": 6,
+                "courage": 5,
+                "armor": 3,
+                "attackvalue": 5,
+                "defencevalue": 6,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 10,
+                "specialRules": [
+                    "Skirmish",
+                    "Fast"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 3
+                    }
+                ]
+            },
+            {
+                "name": "Dreadnought",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Vehicle"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 5,
+                "move": 6,
+                "shoot": 5,
+                "courage": 3,
+                "armor": 4,
+                "attackvalue": 4,
+                "defencevalue": 3,
+                "shootvalue": 4,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Wild Charge",
+					"Fast"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 3
+                    }
+                ]
+            },
+            {
+                "name": "Terminators",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 6,
+                "move": 4,
+                "shoot": 6,
+                "courage": 5,
+                "armor": 4,
+                "attackvalue": 3,
+                "defencevalue": 2,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 8,
+                "specialRules": [
+                    "Deep Strike"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 3
+                    },
+                    {
+                        "name": "Bayonet",
+                        "points": 2
+                    },
+                    {
+                        "name": "HQ",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Tactical Squad",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 4,
+                "attack": 7,
+                "move": 5,
+                "shoot": 6,
+                "courage": 4,
+                "armor": 2,
+                "attackvalue": 4,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [],
+                "options": [
+                    {
+                        "name": "Engineers",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bayonet",
+                        "points": 2
+                    },
+                    {
+                        "name": "Heavy Weapon",
+                        "points": 2
+                    },
+                    {
+                        "name": "HQ",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Recon Squad",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 5,
+                "attack": 7,
+                "move": 5,
+                "shoot": 7,
+                "courage": 4,
+                "armor": 2,
+                "attackvalue": 4,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [
+				"Skirmish",
+				"Hard to target"
+				],
+                "options": [
+                    {
+                        "name": "Engineers",
+                        "points": 2
+                    },
+                    {
+                        "name": "Heavy Weapon",
+                        "points": 2
+                    },
+                    {
+                        "name": "HQ",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Despoiler Squad",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 4,
+                "attack": 5,
+                "move": 5,
+                "shoot": 9,
+                "courage": 4,
+                "armor": 2,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 6,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+					"Wild Charge",
+					"Counter-charge vs Infantry"
+				],
+                "options": [
+                    {
+                        "name": "Engineers",
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 3
+                    },
+                    {
+                        "name": "HQ",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Assault Squad",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 6,
+                "attack": 5,
+                "move": 5,
+                "shoot": 9,
+                "courage": 4,
+                "armor": 2,
+                "attackvalue": 5,
+                "defencevalue": 5,
+                "shootvalue": 6,
+                "range": 12,
+                "maximummovement": 8,
+                "specialRules": [
+					"Wild Charge",
+					"Fly"
+				],
+                "options": [
+                    {
+                        "name": "Engineers",
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 3
+                    },
+                    {
+                        "name": "HQ",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Artillery Piece",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Artillery"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 6,
+                "points": 6,
+                "attack": 9,
+                "move": 8,
+                "shoot": 6,
+                "courage": 6,
+                "armor": 1,
+                "attackvalue": 5,
+                "defencevalue": 5,
+                "shootvalue": 4,
+                "range": 24,
+                "maximummovement": 3,
+                "specialRules": [
+                    "Explosive",
+                    "Panic"
+                ],
+                "options": [],
+                "decreaseModelCount": -1
+            }
+        ],
+        "upgrades": [
+            {
+                "name": "Fearsome",
+                "definition": " Some people are just that much scarier than others, especially if tripping and mutated! A Fearsome unit creates panic in its opponents through reputation, deed, or other psychological means. Courage tests caused as a result of this unit Attacking or Shooting suffer an additional -1 to the total. Should two Fearsome units encounter one another, the effect of this rule is cancelled between those units"
+            },
+            {
+                "name": "Veteran",
+                "definition": "A Veteran unit can inflict a whole load of additional pain on an enemy – if it rolls well. Any Attack dice or Shooting dice (but not Defence dice) that roll a 6 cause 2 hits rather than the usual 1 hit"
+            },
+            {
+                "name": "HQ",
+                "definition": "Units led by HQ are more disciplined. Once per game, may automatically pass a Move, Attack or Shoot activation."
+            },
+            {
+                "name": "Javelins",
+                "definition": "Shoot 6+/Range 6” hitting on 5+"
+            },
+            {
+                "name": "Javelins Only",
+                "definition": "Most units are armed with bows, but these are instead armed with javelins, with range reduced to 6”."
+            },
+            {
+                "name": "Mixed Weapons",
+                "definition": "Add Shoot 6+, Range 12” hitting on 5+. Remove Defensive Formation and cannot be combined with javelins"
+            },
+            {
+                "name": "Stakes",
+                "definition": "Defense 3+/Movement 3”"
+            },
+            {
+                "name": "Mighty Weapons",
+                "definition": "+1 to Attack Value. Remove Defensive Formation"
+            },
+            {
+                "name": "Bayonet",
+                "definition": "+1 to Attack Value."
+            },
+            {
+                "name": "Engineers",
+                "definition": "Engineers of great renown often join command squads. If this unit ends its Move within 2” of a Tank or Combat Vehicle, roll 2d6. For each 4+, the vehicle restores 1 Strength Point. For each 1, the vehicle loses 1 Strength Point."
+            },
+            {
+                "name": "Heavy Weapon",
+                "definition": "The unit gains Explosive."
+            }
+        ],
+        "keywords": [
+            {
+                "name": "Wild Charge",
+                "definition": "If an enemy unit is within this unit’s Attack range during the ‘Activate Wild Charges’ phase, you must test to activate an Attack against it. If the test is unsuccessful, the unit remains stationary but may test for an ordered Move activation later in your turn (no other actions are allowed). Wild Charge may not be used if the unit is Battered."
+            },
+            {
+                "name": "Counter-charge",
+                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test for a Counter-charge. Test for an Attack at 7+. If it succeeds, the two units meet a proportionate movement distance between their start positions, and both count as Attacking. If it fails, it stands in place for the enemy’s charge. Counter-charge may not be used if the unit is Battered."
+            },
+            {
+                "name": "Counter-charge vs Infantry",
+                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test for a Counter-charge. Test for an Attack at 7+. If it succeeds, the two units meet a proportionate movement distance between their start positions, and both count as Attacking. If it fails, it stands in place for the enemy’s charge. Counter-charge may not be used if the unit is Battered."
+            },
+            {
+                "name": "Deep Strike",
+                "definition": "At deployment, this unit is held in reserve. At the start of the second round, place this model anywhere on the table, but no closer than 6” from any enemy models."
+            },
+            {
+                "name": "Fly",
+                "definition": "This unit ignores all benefits and downsides of all terrain, but may not end in terrain that is impassable."
+            },
+            {
+                "name": "Go Back to your Farms",
+                "definition": "You may select no more than 3 Levied Infantry units in a 24-point Company (scale up or down proportionately for Companys of different points values)."
+            },
+            {
+                "name": "Fast",
+                "definition": "This unit does not halve its movement in rough terrain."
+            },
+            {
+                "name": "Smelly",
+                "definition": "All units (friendly and enemy) that end their move within 3” of this unit must make a Courage test. The only exception is other Smelly units."
+            },
+            {
+                "name": "Evade",
+                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test to Evade at 7+. If it succeeds, it immediately carries out a Skirmish action targeting the Attacking unit, may not move closer to the Attacking unit, and must avoid other units by 3” as usual. Any casualties inflicted by the Skirmish action cause a Courage test or Lucky Blow only at the end of the Attack. The charging unit then moves its full charge distance following the Evading unit. If it makes contact it Attacks with the Evading unit reducing its armor to 1, and if it cannot contact it must move as close as possible (moving no closer than 3” to the Evading unit). If the Evade test fails, the unit stands in place and awaits attack without Shooting or Moving and its armor becomes 1 during the Attack. An Evading unit will always fight when contacted, and a unit may Evade as many times as it wishes in a turn. Evade cannot be used if the unit is Battered"
+            },
+            {
+                "name": "Skirmish",
+                "definition": "As an ordered activation, successful on a 7+, the unit may make a half Move and Shoot (in either order). All models in the unit Shoot with -1 to their dice scores."
+            },
+            {
+                "name": "Hard to target",
+                "definition": "This unit counts as having +1 armor versus Shooting and may only be targeted within 12”."
+            },
+            {
+                "name": "Explosive",
+                "definition": "All units count as armor 1 against Shooting by this unit (armor 2 if in cover). However, if this unit rolls two 1s for its Shooting order, it blows up and is removed from play."
+            },
+            {
+                "name": "Panic",
+                "definition": "When this unit Shoots, the target unit must take a Courage test regardless of the number of hits inflicted."
+            }
+        ]
+    }
+}
