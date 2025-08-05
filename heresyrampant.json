@@ -133,7 +133,7 @@
                                 },
                                 {
                                     "name": "Psyker or Chaplain",
-                                    "points": 2,
+                                    "points": 3,
                                     "requiresLeader": true,
                                     "unique": true
                                 },
@@ -308,7 +308,7 @@
             },
             {
                 "name": "Psyker or Chaplain",
-                "definition": "You may reroll any one set of dice in the game in its entirety, rolled by any player.",
+                "definition": "Once per round, you may reroll any one set of dice in the game in its entirety, rolled by any player.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -713,7 +713,7 @@
                     },
                     {
                         "name": "Bayonet",
-                        "points": 2
+                        "points": 1
                     },
                     {
                         "name": "Heavy Weapon",
