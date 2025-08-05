@@ -629,7 +629,7 @@
                 "defencevalue": 2,
                 "shootvalue": 3,
                 "range": 18,
-                "maximummovement": 8,
+                "maximummovement": 4,
                 "specialRules": [
                     "Deep Strike"
                 ],
@@ -715,7 +715,7 @@
                 "defencevalue": 3,
                 "shootvalue": 3,
                 "range": 18,
-                "maximummovement": 6,
+                "maximummovement": 4,
                 "specialRules": [],
                 "options": [
                     {
