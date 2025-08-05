@@ -280,6 +280,10 @@
                         },
                         {
                             "name": "Infantry",
+                            "rank": 1
+                        },
+                        {
+                            "name": "HQ",
                             "rank": 1,
                             "maximumChildren": {
                                 "leaderUpgrades": 2
@@ -643,7 +647,7 @@
                         "points": 3
                     },
                     {
-                        "name": "Bayonet",
+                        "name": "Heavy Weapon",
                         "points": 2
                     },
                     {
@@ -716,7 +720,9 @@
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 4,
-                "specialRules": [],
+                "specialRules": [
+				"Skirmish"
+				],
                 "options": [
                     {
                         "name": "Engineers",
@@ -865,6 +871,40 @@
                 "decreaseModelCount": -9
             },
             {
+                "name": "Command Squad",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 5,
+                "move": 3,
+                "shoot": 5,
+                "courage": 4,
+                "armor": 2,
+                "attackvalue": 3,
+                "defencevalue": 2,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [],
+                "options": [
+                    {
+                        "name": "Jump Packs",
+                        "points": 2
+                    },
+                    {
+                        "name": "Terminator Armor",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
                 "name": "Artillery Piece",
                 "factions": [
                     {
@@ -925,6 +965,14 @@
             {
                 "name": "Mighty Weapons",
                 "definition": "+1 to Attack Value. Remove Defensive Formation"
+            },
+            {
+                "name": "Jump Packs",
+                "definition": "Fly and +2 Movement Distance. Cannot be combined with Terminator Armor."
+            },
+            {
+                "name": "Terminator Armor",
+                "definition": "Deep Strike and +1 Armor. Cannot be combined with Jump Packs."
             },
             {
                 "name": "Bayonet",
