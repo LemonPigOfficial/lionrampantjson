@@ -875,7 +875,7 @@
                 "factions": [
                     {
                         "name": "Build Your Company",
-                        "unitType": "Infantry"
+                        "unitType": "HQ"
                     }
                 ],
                 "unlimited": true,
