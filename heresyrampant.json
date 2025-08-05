@@ -434,7 +434,7 @@
             },
             {
                 "name": "Siegebreaker",
-                "definition": "At the start of the game, declare 1 units. This unit gets Anti-Tank, unless they already have Anti-Tank or Anti-Infantry.",
+                "definition": "At the start of the game, declare 1 unit. This unit gets Anti-Tank, unless it already has Anti-Tank or Anti-Infantry.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -679,10 +679,6 @@
                     },
                     {
                         "name": "Anti-Infantry",
-                        "points": 2
-                    },
-                    {
-                        "name": "Elite",
                         "points": 2
                     }
                 ],
