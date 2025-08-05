@@ -447,7 +447,7 @@
         ],
         "factions": [
             {
-                "name": "Build Your Company",
+                "name": "Legiones Astartes",
                 "additionalRules": [
                     "Made by Liver"
                 ],
@@ -474,7 +474,7 @@
                 "name": "Tank",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "Vehicle"
                     }
                 ],
@@ -510,7 +510,7 @@
                 "name": "Great Dreadnought",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "Vehicle"
                     }
                 ],
@@ -548,7 +548,7 @@
                 "name": "Combat Vehicle",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "Vehicle"
                     }
                 ],
@@ -592,7 +592,7 @@
                 "name": "Dreadnought",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "Vehicle"
                     }
                 ],
@@ -636,7 +636,7 @@
                 "name": "Terminators",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -672,10 +672,6 @@
                     {
                         "name": "Anti-Infantry",
                         "points": 2
-                    },
-                    {
-                        "name": "Optae",
-                        "points": 2
                     }
                 ],
                 "decreaseModelCount": -4
@@ -684,7 +680,7 @@
                 "name": "Tactical Squad",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -720,7 +716,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Optae",
+                        "name": "Elite",
                         "points": 2
                     }
                 ],
@@ -730,15 +726,15 @@
                 "name": "Breacher Squad",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "Infantry"
                     }
                 ],
                 "unlimited": true,
                 "strengthpoints": 10,
-                "points": 6,
-                "attack": 7,
-                "move": 3,
+                "points": 4,
+                "attack": 8,
+                "move": 4,
                 "shoot": 6,
                 "courage": 4,
                 "armor": 3,
@@ -764,7 +760,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Optae",
+                        "name": "Elite",
                         "points": 2
                     }
                 ],
@@ -774,7 +770,7 @@
                 "name": "Recon Squad",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -813,7 +809,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Optae",
+                        "name": "Elite",
                         "points": 2
                     }
                 ],
@@ -823,7 +819,7 @@
                 "name": "Despoiler Squad",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -858,7 +854,7 @@
                         "points": 3
                     },
                     {
-                        "name": "Optae",
+                        "name": "Elite",
                         "points": 2
                     }
                 ],
@@ -868,7 +864,7 @@
                 "name": "Assault Squad",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -903,7 +899,7 @@
                         "points": 3
                     },
                     {
-                        "name": "Optae",
+                        "name": "Elite",
                         "points": 2
                     }
                 ],
@@ -913,7 +909,7 @@
                 "name": "Praetor",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "HQ"
                     }
                 ],
@@ -962,7 +958,7 @@
                 "name": "Consul",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "HQ"
                     }
                 ],
@@ -1011,7 +1007,7 @@
                 "name": "Artillery Piece",
                 "factions": [
                     {
-                        "name": "Build Your Company",
+                        "name": "Legiones Astartes",
                         "unitType": "Artillery"
                     }
                 ],
@@ -1033,7 +1029,7 @@
                     "Panic"
                 ],
                 "options": [],
-                "decreaseModelCount": -1
+                "decreaseModelCount": -2
             }
         ],
         "upgrades": [
@@ -1046,8 +1042,9 @@
                 "definition": "A Veteran unit can inflict a whole load of additional pain on an enemy – if it rolls well. Any Attack dice or Shooting dice (but not Defence dice) that roll a 6 cause 2 hits rather than the usual 1 hit"
             },
             {
-                "name": "Optae",
-                "definition": "Units led by Optae are more disciplined. Once per game, may automatically pass a Move, Attack or Shoot activation."
+                "name": "Elite",
+                "definition": "Elite units are legion-specific variations of units. These units have 5 Strength Points but get +1 to all orders, as well as to their Armor, Attack Value, Defense Value and Shooting Value.",
+                "decreaseModelCount": 5
             },
             {
                 "name": "Javelins",
