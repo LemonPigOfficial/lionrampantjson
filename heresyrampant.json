@@ -711,8 +711,8 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 5,
-                "points": 3,
+                "strengthpoints": 10,
+                "points": 6,
                 "attack": 7,
                 "move": 3,
                 "shoot": 6,
@@ -874,21 +874,21 @@
                 "decreaseModelCount": -9
             },
             {
-                "name": "Command Squad",
+                "name": "Praetor",
                 "factions": [
                     {
                         "name": "Build Your Company",
                         "unitType": "HQ"
                     }
                 ],
-                "unlimited": true,
+                "unlimited": false,
                 "strengthpoints": 5,
                 "points": 6,
                 "attack": 5,
                 "move": 3,
                 "shoot": 5,
                 "courage": 4,
-                "armor": 2,
+                "armor": 3,
                 "attackvalue": 3,
                 "defencevalue": 2,
                 "shootvalue": 3,
@@ -903,9 +903,57 @@
                     {
                         "name": "Terminator Armor",
                         "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 3
+                    },
+                ]
+            },
+            {
+                "name": "Consul",
+                "factions": [
+                    {
+                        "name": "Build Your Company",
+                        "unitType": "HQ"
                     }
                 ],
-                "decreaseModelCount": -4
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 4,
+                "attack": 5,
+                "move": 4,
+                "shoot": 5,
+                "courage": 4,
+                "armor": 2,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [],
+                "options": [
+                    {
+                        "name": "Jump Packs",
+                        "points": 2
+                    },
+                    {
+                        "name": "Terminator Armor",
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 3
+                    },
+                ]
             },
             {
                 "name": "Artillery Piece",
