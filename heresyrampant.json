@@ -529,7 +529,7 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-                    "Fast",
+                    "Panic",
                     "Anti-Tank",
                     "Panic"
                 ],
@@ -611,7 +611,7 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-                    "Fast"
+                    "Panic"
                 ],
                 "options": [
                     {
@@ -649,7 +649,7 @@
                 "courage": 5,
                 "armor": 4,
                 "attackvalue": 3,
-                "defencevalue": 2,
+                "defencevalue": 3,
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 4,
@@ -657,6 +657,10 @@
                     "Deep Strike"
                 ],
                 "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "points": 4
+                    },
                     {
                         "name": "Fearsome",
                         "points": 2
@@ -670,7 +674,15 @@
                         "points": 2
                     },
                     {
+                        "name": "Elite",
+                        "points": 4
+                    },
+                    {
                         "name": "Anti-Infantry",
+                        "points": 2
+                    },
+                    {
+                        "name": "Elite",
                         "points": 2
                     }
                 ],
@@ -685,7 +697,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 10,
+                "strengthpoints": 5,
                 "points": 4,
                 "attack": 7,
                 "move": 5,
@@ -700,7 +712,7 @@
                 "specialRules": [],
                 "options": [
                     {
-                        "name": "Engineers",
+                        "name": "Increased Squad Size",
                         "points": 2
                     },
                     {
@@ -720,7 +732,7 @@
                         "points": 2
                     }
                 ],
-                "decreaseModelCount": -9
+                "decreaseModelCount": -4
             },
             {
                 "name": "Breacher Squad",
@@ -731,7 +743,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 10,
+                "strengthpoints": 5,
                 "points": 4,
                 "attack": 8,
                 "move": 4,
@@ -748,7 +760,7 @@
                 ],
                 "options": [
                     {
-                        "name": "Engineers",
+                        "name": "Increased Squad Size",
                         "points": 2
                     },
                     {
@@ -764,7 +776,7 @@
                         "points": 2
                     }
                 ],
-                "decreaseModelCount": -9
+                "decreaseModelCount": -4
             },
             {
                 "name": "Recon Squad",
@@ -775,7 +787,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 10,
+                "strengthpoints": 5,
                 "points": 4,
                 "attack": 7,
                 "move": 5,
@@ -793,7 +805,7 @@
                 ],
                 "options": [
                     {
-                        "name": "Engineers",
+                        "name": "Increased Squad Size",
                         "points": 2
                     },
                     {
@@ -813,7 +825,7 @@
                         "points": 2
                     }
                 ],
-                "decreaseModelCount": -9
+                "decreaseModelCount": -4
             },
             {
                 "name": "Despoiler Squad",
@@ -824,7 +836,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 10,
+                "strengthpoints": 5,
                 "points": 4,
                 "attack": 5,
                 "move": 5,
@@ -842,7 +854,7 @@
                 ],
                 "options": [
                     {
-                        "name": "Engineers",
+                        "name": "Increased Squad Size",
                         "points": 2
                     },
                     {
@@ -858,7 +870,7 @@
                         "points": 2
                     }
                 ],
-                "decreaseModelCount": -9
+                "decreaseModelCount": -4
             },
             {
                 "name": "Assault Squad",
@@ -869,7 +881,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 10,
+                "strengthpoints": 5,
                 "points": 6,
                 "attack": 5,
                 "move": 5,
@@ -887,7 +899,7 @@
                 ],
                 "options": [
                     {
-                        "name": "Engineers",
+                        "name": "Increased Squad Size",
                         "points": 2
                     },
                     {
@@ -903,7 +915,7 @@
                         "points": 2
                     }
                 ],
-                "decreaseModelCount": -9
+                "decreaseModelCount": -4
             },
             {
                 "name": "Praetor",
@@ -934,14 +946,6 @@
                     },
                     {
                         "name": "Terminator Armor",
-                        "points": 2
-                    },
-                    {
-                        "name": "Heavy Weapon",
-                        "points": 2
-                    },
-                    {
-                        "name": "Anti-Infantry",
                         "points": 2
                     },
                     {
@@ -1043,7 +1047,7 @@
             },
             {
                 "name": "Elite",
-                "definition": "Elite units are legion-specific variations of units. These units have 5 Strength Points but get +1 to all orders, as well as to their Armor, Attack Value, Defense Value and Shooting Value.",
+                "definition": "Elite units are legion-specific variations of units. These units get +1 to all orders, as well as to their Armor, Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
                 "decreaseModelCount": 5
             },
             {
@@ -1072,15 +1076,15 @@
             },
             {
                 "name": "Terminator Armor",
-                "definition": "Deep Strike and +1 Armor. Cannot be combined with Jump Packs."
+                "definition": "Deep Strike and +2 Armor, but -2 Movement Distance. Cannot be combined with Jump Packs."
             },
             {
                 "name": "Bayonet",
-                "definition": "+1 to Attack Value."
+                "definition": "+1 to Defence Value."
             },
             {
-                "name": "Engineers",
-                "definition": "Engineers of great renown often join command squads. If this unit ends its Move within 2” of a Tank or Combat Vehicle, roll 2d6. For each 4+, the vehicle restores 1 Strength Point. For each 1, the vehicle loses 1 Strength Point."
+                "name": "Increased Squad Size",
+                "definition": "+5 to Strength Points. Cannot be mixed with Elite."
             },
             {
                 "name": "Heavy Weapon",
