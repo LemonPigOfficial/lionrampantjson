@@ -253,7 +253,7 @@
                                 },
                                 {
                                     "name": "Siegebreaker",
-                                    "points": 3
+                                    "points": 3,
                                     "requiresLeader": true,
                                     "unique": true
                                 },
@@ -368,7 +368,7 @@
             },
             {
                 "name": "Mortifactor",
-                "definition": "The Leader does not grant units within 12\" the usual +1 Courage bonus (including the Leader's own unit).",
+                "definition": "Vehicles within 12\" of the Leader's unit always count as being in cover.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -380,7 +380,7 @@
             },
             {
                 "name": "Unflinching",
-                "definition": "When required to Retreat, the Leader's unit retreats only 1".",
+                "definition": "When required to Retreat, the Leader's unit retreats only 1\".",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -529,7 +529,7 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-					"Fast",
+                    "Fast",
                     "Anti-Tank",
                     "Panic"
                 ],
@@ -611,7 +611,7 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-					"Fast"
+                    "Fast"
                 ],
                 "options": [
                     {
@@ -748,8 +748,8 @@
                 "range": 18,
                 "maximummovement": 4,
                 "specialRules": [
-				"Skirmish"
-				],
+                    "Skirmish"
+                ],
                 "options": [
                     {
                         "name": "Engineers",
@@ -792,9 +792,9 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-				"Skirmish",
-				"Hard to target"
-				],
+                    "Skirmish",
+                    "Hard to target"
+                ],
                 "options": [
                     {
                         "name": "Engineers",
@@ -841,9 +841,9 @@
                 "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
-					"Wild Charge",
-					"Counter-charge vs Infantry"
-				],
+                    "Wild Charge",
+                    "Counter-charge vs Infantry"
+                ],
                 "options": [
                     {
                         "name": "Engineers",
@@ -886,9 +886,9 @@
                 "range": 12,
                 "maximummovement": 8,
                 "specialRules": [
-					"Wild Charge",
-					"Fly"
-				],
+                    "Wild Charge",
+                    "Fly"
+                ],
                 "options": [
                     {
                         "name": "Engineers",
