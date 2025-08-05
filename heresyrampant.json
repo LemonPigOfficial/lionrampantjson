@@ -472,7 +472,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 12,
+                "strengthpoints": 10,
                 "points": 8,
                 "attack": 5,
                 "move": 7,
@@ -508,7 +508,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 12,
+                "strengthpoints": 10,
                 "points": 8,
                 "attack": 5,
                 "move": 7,
@@ -546,7 +546,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 6,
+                "strengthpoints": 5,
                 "points": 6,
                 "attack": 7,
                 "move": 5,
