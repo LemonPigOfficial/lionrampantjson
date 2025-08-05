@@ -247,7 +247,7 @@
                                 },
                                 {
                                     "name": "Armistus",
-                                    "points": 1,
+                                    "points": 3,
                                     "requiresLeader": true,
                                     "unique": true
                                 },
@@ -428,13 +428,13 @@
             },
             {
                 "name": "Armistus",
-                "definition": "Killed by Lucky Blows on a result of 2 or 3.",
+                "definition": "At the start of the game, select one Upgrade from an enemy unit, which doesn't apply for this game.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Siegebreaker",
-                "definition": "At the start of the game, declare 2 units. These units get Anti-Tank, unless they already have Anti-Tank or Anti-Infantry.",
+                "definition": "At the start of the game, declare 1 units. This unit gets Anti-Tank, unless they already have Anti-Tank or Anti-Infantry.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -554,7 +554,7 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 5,
-                "points": 6,
+                "points": 4,
                 "attack": 7,
                 "move": 5,
                 "shoot": 6,
@@ -598,7 +598,7 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 5,
-                "points": 6,
+                "points": 4,
                 "attack": 5,
                 "move": 6,
                 "shoot": 5,
