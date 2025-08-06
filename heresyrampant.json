@@ -326,7 +326,7 @@
             },
             {
                 "name": "Brutal",
-                "definition": "Any unit within 12\" of your Leader's unit may automatically pass a failed Rally test by removing 1 model (the very real threat of enforced sacrifice really does make a warrior much bolder).",
+                "definition": "Any unit within 12\" of your Leader's unit may automatically pass a failed Rally test by removing 1 Strength Point (the very real threat of enforced sacrifice really does make a warrior much bolder).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -943,7 +943,7 @@
                 "specialRules": [],
                 "options": [
                     {
-                        "name": "Jump Packs",
+                        "name": "Jump Pack",
                         "points": 2
                     },
                     {
@@ -1103,7 +1103,8 @@
                 "definition": "+1 to Attack Value. Remove Defensive Formation"
             },
             {
-                "name": "Jump Packs",
+                "name": "Jump Pack",
+				"chooseOneKey": "armr",
                 "definition": "Fly and +2 Movement Distance. Cannot be combined with Terminator Armor.",
 				"modifiesStats": [
 					{
@@ -1114,7 +1115,8 @@
             },
             {
                 "name": "Terminator Armor",
-                "definition": "Deep Strike and +2 Armor, but -2 Movement Distance. Cannot be combined with Jump Packs.",
+				"chooseOneKey": "armr",
+                "definition": "Deep Strike and +2 Armor, but -2 Movement Distance. Cannot be combined with Jump Pack.",
 				"modifiesStats": [
 					{
 						"stat": "maximummovement",
@@ -1138,21 +1140,25 @@
             },
             {
                 "name": "Increased Squad Size",
+				"addsModels": 5,
                 "definition": "+5 to Strength Points. Cannot be mixed with Elite.",
+				"chooseOneKey": "squad",
 				"modifiesStats": [
 					{
-						"stat": "decreaseModelCount",
-						"modifier": -5
+						"stat": "strengthpoints",
+						"modifier": 5
 					}
 				]
             },
             {
                 "name": "Heavy Weapon",
-                "definition": "The unit gains Anti-Tank. If the unit also has Anti-Infantry, neither has effect."
+				"chooseOneKey": "wepn",
+                "definition": "The unit gains Anti-Tank. Cannot be taken alongside Anti-Infantry."
             },
             {
                 "name": "Anti-Infantry",
-                "definition": "HQ and Infantry units count as armor 1 against Shooting by this unit (armor 2 if in cover). If the unit also has Anti-Tank, neither has effect."
+				"chooseOneKey": "wepn",
+                "definition": "HQ and Infantry units count as armor 1 against Shooting by this unit (armor 2 if in cover). Cannot be taken alongside Heavy Weapon or Anti-Tank."
             }
         ],
         "keywords": [
