@@ -422,7 +422,7 @@
             },
             {
                 "name": "Warmaster",
-                "definition": "Leader's unit automatically passes all Move, Attack and Shoot activation tests. Wild Charges, Counter-charges, and Evade are tested as normal.",
+                "definition": "Leader's unit automatically passes all Move, Attack and Shoot activation tests. Wild Charges, Counter-charges, and Brace are tested as normal.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -467,9 +467,17 @@
                 "specialRules": []
             },
             {
+                "name": "Adeptus Titanicus",
+                "additionalRules": [
+                    "An Adeptus Titanicus army may nominate a Vehicle as a Leader, but it cannot have Leader Traits. To compensate, you may take 6 additional points of units. This is because usually, opponents will play with 4 extra points of Leader Trait, which are very powerful for their cost."
+                ],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
                 "name": "Solar Auxilia",
                 "additionalRules": [
-                    "May have 1 or more Superheavy tanks at 48 pts or more. May upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option unavailable to other armies. May upgrade Infantry to Massive Squads for 4 points, an upgrade unavailable to other factions. Medicae for Infantry cost 1 point instead of 2 or more unlike other factions."
+                    "May have 1 or more Superheavy tanks at 48 pts or more. May upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry. May upgrade Infantry to Massive Squads for 4 points, an upgrade unavailable to other factions. Medicae for Infantry cost 1 point instead of 2 or more unlike other factions."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -528,9 +536,13 @@
                         ]
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 0
+                    },
+                    {
+                        "name": "Transport",
+                        "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
@@ -573,7 +585,7 @@
                         ]
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -607,7 +619,6 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-                    "Panic",
                     "Panic"
                 ],
                 "options": [
@@ -620,7 +631,7 @@
                         "points": 3
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -662,7 +673,7 @@
                 ],
                 "options": [
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 2
                     },
@@ -708,7 +719,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 2
                     },
@@ -757,7 +768,157 @@
                         ]
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    }
+                ]
+            },
+            {
+                "name": "Armiger",
+                "factions": [
+                    {
+                        "name": "Solar Auxilia",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Adeptus Titanicus",
+                        "unitType": "Vehicle"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 6,
+                "attack": 5,
+                "move": 7,
+                "shoot": 5,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 3,
+                "defencevalue": 2,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Panic",
+                    "Selfsufficent",
+                    "Fast"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 4,
+                        "availableIn": [
+                            "Solar Auxilia"
+                        ]
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 3
+                    },
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    }
+                ]
+            },
+            {
+                "name": "Knight Paladin",
+                "factions": [
+                    {
+                        "name": "Adeptus Titanicus",
+                        "unitType": "Vehicle"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 20,
+                "points": 12,
+                "attack": 5,
+                "move": 7,
+                "shoot": 5,
+                "courage": 4,
+                "armor": 4,
+                "attackvalue": 3,
+                "defencevalue": 2,
+                "shootvalue": 3,
+                "range": 24,
+                "maximummovement": 8,
+                "specialRules": [
+                    "Panic",
+                    "Selfsufficent"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 3
+                    },
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    }
+                ]
+            },
+            {
+                "name": "Knight Lancer",
+                "factions": [
+                    {
+                        "name": "Adeptus Titanicus",
+                        "unitType": "Vehicle"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 20,
+                "points": 12,
+                "attack": 4,
+                "move": 7,
+                "shoot": 0,
+                "courage": 4,
+                "armor": 4,
+                "attackvalue": 2,
+                "defencevalue": 2,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 8,
+                "specialRules": [
+                    "Hard to target",
+                    "Selfsufficent"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 3
+                    },
+                    {
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -809,7 +970,7 @@
                         "points": 3
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "b",
                         "points": 2
                     },
@@ -871,7 +1032,7 @@
                         "points": 3
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "b",
                         "points": 2
                     },
@@ -928,7 +1089,7 @@
                         "points": 1
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 2
                     },
@@ -970,7 +1131,9 @@
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 4,
-                "specialRules": [],
+                "specialRules": [,
+                    "Brace"
+				],
                 "options": [
                     {
                         "name": "Increased Squad Size",
@@ -979,7 +1142,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 2
                     },
@@ -1033,7 +1196,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 2
                     },
@@ -1088,12 +1251,10 @@
                     },
                     {
                         "name": "Fearsome",
-                        "chooseOneKey": "b",
                         "points": 2
                     },
                     {
                         "name": "Bloodthirsty",
-                        "chooseOneKey": "b",
                         "points": 3
                     },
                     {
@@ -1188,7 +1349,7 @@
                         "points": 1
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 2
                     },
@@ -1239,7 +1400,7 @@
                 "specialRules": [],
                 "options": [
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -1292,7 +1453,7 @@
                 ],
                 "options": [
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 2
                     },
@@ -1467,7 +1628,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Heavy Weapon",
+                        "name": "Anti-Tank",
                         "chooseOneKey": "c",
                         "points": 2
                     },
@@ -1561,10 +1722,20 @@
                 "range": 24,
                 "maximummovement": 3,
                 "specialRules": [
-                    "Anti-Tank",
                     "Panic"
                 ],
-                "options": [],
+                "options": [
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    }
+				],
                 "decreaseModelCount": -2
             }
         ],
@@ -1628,6 +1799,10 @@
             {
                 "name": "Javelins",
                 "definition": "Shoot 6+/Range 6” hitting on 5+"
+            },
+            {
+                "name": "Transport",
+                "definition": "At the start of the game, nominate one friendly Infantry unit that isn't Cumbersome to be embarked in each transport you have. Do not deploy embarked units normally. At the end of the first round, deploy Embarked units within 6” of their specific Transport."
             },
             {
                 "name": "Javelins Only",
@@ -1720,12 +1895,12 @@
                 ]
             },
             {
-                "name": "Heavy Weapon",
-                "definition": "The unit gains Anti-Tank. Cannot be taken alongside Anti-Infantry."
+                "name": "Anti-Tank",
+                "definition": "Vehicle and Artillery units count as armor 1 against Shooting by this unit (armor 2 if in cover). Cannot be taken alongside Anti-Infantry."
             },
             {
                 "name": "Anti-Infantry",
-                "definition": "HQ and Infantry units count as armor 1 against Shooting by this unit (armor 2 if in cover). Cannot be taken alongside Heavy Weapon or Anti-Tank."
+                "definition": "HQ and Infantry units count as armor 1 against Shooting by this unit (armor 2 if in cover). Cannot be taken alongside Anti-Tank or Anti-Tank."
             }
         ],
         "keywords": [
@@ -1758,12 +1933,12 @@
                 "definition": "This unit does not halve its movement in rough terrain."
             },
             {
-                "name": "Smelly",
-                "definition": "All units (friendly and enemy) that end their move within 3” of this unit must make a Courage test. The only exception is other Smelly units."
+                "name": "Cumbersome",
+                "definition": "Isn't affected by Anti-Infantry, but is affected by Anti-Tank."
             },
             {
-                "name": "Evade",
-                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test to Evade at 7+. If it succeeds, it immediately carries out a Skirmish action targeting the Attacking unit, may not move closer to the Attacking unit, and must avoid other units by 3” as usual. Any casualties inflicted by the Skirmish action cause a Courage test or Lucky Blow only at the end of the Attack. The charging unit then moves its full charge distance following the Evading unit. If it makes contact it Attacks with the Evading unit reducing its armor to 1, and if it cannot contact it must move as close as possible (moving no closer than 3” to the Evading unit). If the Evade test fails, the unit stands in place and awaits attack without Shooting or Moving and its armor becomes 1 during the Attack. An Evading unit will always fight when contacted, and a unit may Evade as many times as it wishes in a turn. Evade cannot be used if the unit is Battered"
+                "name": "Brace",
+                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test to Brace at 7+. If it succeeds, it immediately carries out a Skirmish action targeting the Attacking unit, may not move closer to the Attacking unit, and must avoid other units by 3” as usual. Any casualties inflicted by the Skirmish action cause a Courage test only at the end of the Attack. The charging unit then moves its full charge distance following the Bracing unit. If it makes contact it Attacks with the Bracing unit reducing its armor by 1, and if it cannot contact it must move as close as possible (moving no closer than 3” to the Bracing unit). If the Brace test fails, the unit stands in place and awaits attack without Shooting or Moving. A Bracing unit will always fight when contacted, and a unit may Brace as many times as it wishes in a turn. Brace cannot be used if the unit is Battered"
             },
             {
                 "name": "Skirmish",
@@ -1774,8 +1949,8 @@
                 "definition": "This unit counts as having +1 armor versus Shooting and may only be targeted within 12”."
             },
             {
-                "name": "Anti-Tank",
-                "definition": "Vehicle and Artillery units count as armor 1 against Shooting by this unit (armor 2 if in cover)."
+                "name": "Selfsufficent",
+                "definition": "This unit may receive orders even if you failed an order this turn."
             },
             {
                 "name": "Panic",
