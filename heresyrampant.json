@@ -582,10 +582,12 @@
                     },
                     {
                         "name": "Heavy Weapon",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
@@ -626,10 +628,12 @@
                     },
                     {
                         "name": "Heavy Weapon",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
@@ -665,6 +669,7 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
+						"chooseOneKey": "a",
                         "points": 4
                     },
                     {
@@ -677,14 +682,17 @@
                     },
                     {
                         "name": "Heavy Weapon",
+						"chooseOneKey": "b",
                         "points": 2
                     },
                     {
                         "name": "Elite",
+						"chooseOneKey": "a",
                         "points": 4
                     },
                     {
                         "name": "Anti-Infantry",
+						"chooseOneKey": "b",
                         "points": 2
                     }
                 ],
@@ -715,6 +723,7 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
+						"chooseOneKey": "b",
                         "points": 2
                     },
                     {
@@ -723,14 +732,17 @@
                     },
                     {
                         "name": "Heavy Weapon",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Elite",
+						"chooseOneKey": "b",
                         "points": 2
                     }
                 ],
@@ -763,18 +775,22 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
+						"chooseOneKey": "b",
                         "points": 2
                     },
                     {
                         "name": "Heavy Weapon",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Elite",
+						"chooseOneKey": "b",
                         "points": 2
                     }
                 ],
@@ -808,22 +824,22 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
+						"chooseOneKey": "b",
                         "points": 2
                     },
                     {
                         "name": "Heavy Weapon",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
-                        "points": 2
-                    },
-                    {
-                        "name": "Heavy Weapon",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Elite",
+						"chooseOneKey": "b",
                         "points": 2
                     }
                 ],
@@ -857,6 +873,7 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
@@ -869,6 +886,7 @@
                     },
                     {
                         "name": "Elite",
+						"chooseOneKey": "a",
                         "points": 2
                     }
                 ],
@@ -902,6 +920,7 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
@@ -914,6 +933,7 @@
                     },
                     {
                         "name": "Elite",
+						"chooseOneKey": "a",
                         "points": 2
                     }
                 ],
@@ -944,10 +964,12 @@
                 "options": [
                     {
                         "name": "Jump Pack",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Terminator Armor",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
@@ -984,11 +1006,13 @@
                 "specialRules": [],
                 "options": [
                     {
-                        "name": "Jump Packs",
+                        "name": "Jump Pack",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Terminator Armor",
+						"chooseOneKey": "a",
                         "points": 2
                     },
                     {
@@ -997,10 +1021,12 @@
                     },
                     {
                         "name": "Heavy Weapon",
+						"chooseOneKey": "b",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
+						"chooseOneKey": "b",
                         "points": 2
                     },
                     {
@@ -1104,7 +1130,6 @@
             },
             {
                 "name": "Jump Pack",
-				"chooseOneKey": "armr",
                 "definition": "Fly and +2 Movement Distance. Cannot be combined with Terminator Armor.",
 				"modifiesStats": [
 					{
@@ -1115,7 +1140,6 @@
             },
             {
                 "name": "Terminator Armor",
-				"chooseOneKey": "armr",
                 "definition": "Deep Strike and +2 Armor, but -2 Movement Distance. Cannot be combined with Jump Pack.",
 				"modifiesStats": [
 					{
@@ -1142,7 +1166,6 @@
                 "name": "Increased Squad Size",
 				"addsModels": 5,
                 "definition": "+5 to Strength Points. Cannot be mixed with Elite.",
-				"chooseOneKey": "squad",
 				"modifiesStats": [
 					{
 						"stat": "strengthpoints",
@@ -1152,12 +1175,10 @@
             },
             {
                 "name": "Heavy Weapon",
-				"chooseOneKey": "wepn",
                 "definition": "The unit gains Anti-Tank. Cannot be taken alongside Anti-Infantry."
             },
             {
                 "name": "Anti-Infantry",
-				"chooseOneKey": "wepn",
                 "definition": "HQ and Infantry units count as armor 1 against Shooting by this unit (armor 2 if in cover). Cannot be taken alongside Heavy Weapon or Anti-Tank."
             }
         ],
