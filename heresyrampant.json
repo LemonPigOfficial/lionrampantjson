@@ -670,6 +670,7 @@
                     {
                         "name": "Increased Squad Size",
 						"chooseOneKey": "a",
+						"addsModels": 5,
                         "points": 4
                     },
                     {
@@ -724,6 +725,7 @@
                     {
                         "name": "Increased Squad Size",
 						"chooseOneKey": "b",
+						"addsModels": 5,
                         "points": 2
                     },
                     {
@@ -776,6 +778,7 @@
                     {
                         "name": "Increased Squad Size",
 						"chooseOneKey": "b",
+						"addsModels": 5,
                         "points": 2
                     },
                     {
@@ -825,6 +828,7 @@
                     {
                         "name": "Increased Squad Size",
 						"chooseOneKey": "b",
+						"addsModels": 5,
                         "points": 2
                     },
                     {
@@ -874,6 +878,7 @@
                     {
                         "name": "Increased Squad Size",
 						"chooseOneKey": "a",
+						"addsModels": 5,
                         "points": 2
                     },
                     {
@@ -921,6 +926,7 @@
                     {
                         "name": "Increased Squad Size",
 						"chooseOneKey": "a",
+						"addsModels": 5,
                         "points": 2
                     },
                     {
@@ -1164,7 +1170,6 @@
             },
             {
                 "name": "Increased Squad Size",
-				"addsModels": 5,
                 "definition": "+5 to Strength Points. Cannot be mixed with Elite.",
 				"modifiesStats": [
 					{
