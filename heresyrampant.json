@@ -145,7 +145,7 @@
                                 },
                                 {
                                     "name": "Bloodthirsty",
-                                    "points": 3,
+                                    "points": 1,
                                     "requiresLeader": true,
                                     "unique": true
                                 },
@@ -186,7 +186,7 @@
                                 },
                                 {
                                     "name": "Fearsome",
-                                    "points": 2,
+                                    "points": 1,
                                     "requiresLeader": true
                                 },
                                 {
@@ -624,11 +624,11 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 1
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "points": 1
                     },
                     {
                         "name": "Anti-Tank",
@@ -716,7 +716,7 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 1
                     },
                     {
                         "name": "Anti-Tank",
@@ -730,7 +730,7 @@
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "points": 1
                     }
                 ]
             },
@@ -812,7 +812,7 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 1
                     },
                     {
                         "name": "Veteran",
@@ -823,7 +823,7 @@
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "points": 1
                     },
                     {
                         "name": "Anti-Tank",
@@ -869,7 +869,7 @@
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "points": 2
                     },
                     {
                         "name": "Anti-Tank",
@@ -915,7 +915,7 @@
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "points": 2
                     },
                     {
                         "name": "Anti-Tank",
@@ -963,11 +963,11 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 1
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "points": 1
                     },
                     {
                         "name": "Anti-Tank",
@@ -1025,11 +1025,11 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 1
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "points": 1
                     },
                     {
                         "name": "Anti-Tank",
@@ -1251,11 +1251,11 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 1
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "points": 1
                     },
                     {
                         "name": "Veteran",
@@ -1303,11 +1303,11 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 1
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "points": 1
                     },
                     {
                         "name": "Veteran",
@@ -1625,7 +1625,7 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 1
                     },
                     {
                         "name": "Anti-Tank",
@@ -1639,7 +1639,7 @@
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "points": 1
                     },
                     {
                         "name": "Loyalist",
@@ -1687,11 +1687,11 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 1
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "points": 1
                     }
                 ],
                 "decreaseModelCount": -4
