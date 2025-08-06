@@ -138,7 +138,7 @@
                                     "unique": true
                                 },
                                 {
-                                    "name": "Veteran",
+                                    "name": "Bloodthirsty",
                                     "points": 3,
                                     "requiresLeader": true,
                                     "unique": true
@@ -313,8 +313,8 @@
                 "decreaseModelCount": 1
             },
             {
-                "name": "Veteran",
-                "definition": "Same as the Veteran rule. Applies only to the Leader's unit and cannot be purchased if the unit already has this rule.",
+                "name": "Bloodthirsty",
+                "definition": "Same as the Bloodthirsty rule. Applies only to the Leader's unit and cannot be purchased if the unit already has this rule.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -455,10 +455,20 @@
             {
                 "name": "Legiones Astartes",
                 "additionalRules": [
-                    "Made by Liver"
+                   "Legiones Astartes companies may only have 1 Praetor."
                 ],
                 "armyBonuses": [],
-                "specialRules": []
+                "specialRules": [
+				]
+            },
+            {
+                "name": "Solar Auxilia",
+                "additionalRules": [
+                   "No additional rules."
+                ],
+                "armyBonuses": [],
+                "specialRules": [
+				]
             }
         ],
         "unitTypes": [
@@ -481,6 +491,10 @@
                 "factions": [
                     {
                         "name": "Legiones Astartes",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Solar Auxilia",
                         "unitType": "Vehicle"
                     }
                 ],
@@ -507,7 +521,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Veteran",
+                        "name": "Bloodthirsty",
                         "points": 3
                     }
                 ]
@@ -545,7 +559,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Veteran",
+                        "name": "Bloodthirsty",
                         "points": 3
                     }
                 ]
@@ -555,6 +569,10 @@
                 "factions": [
                     {
                         "name": "Legiones Astartes",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Solar Auxilia",
                         "unitType": "Vehicle"
                     }
                 ],
@@ -591,7 +609,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Veteran",
+                        "name": "Bloodthirsty",
                         "points": 3
                     }
                 ]
@@ -637,7 +655,52 @@
                         "points": 2
                     },
                     {
-                        "name": "Veteran",
+                        "name": "Bloodthirsty",
+                        "points": 3
+                    }
+                ]
+            },
+            {
+                "name": "Sentinel",
+                "factions": [
+                    {
+                        "name": "Solar Auxilia",
+                        "unitType": "Vehicle"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 3,
+                "attack": 6,
+                "move": 6,
+                "shoot": 5,
+                "courage": 3,
+                "armor": 3,
+                "attackvalue": 6,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Panic"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Heavy Weapon",
+						"chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Infantry",
+						"chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
                         "points": 3
                     }
                 ]
@@ -678,7 +741,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Veteran",
+                        "name": "Bloodthirsty",
                         "points": 3
                     },
                     {
@@ -687,7 +750,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Elite",
+                        "name": "Veteran",
 						"chooseOneKey": "a",
                         "points": 4
                     },
@@ -720,7 +783,9 @@
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 6,
-                "specialRules": [],
+                "specialRules": [
+                    "Skirmish"
+				],
                 "options": [
                     {
                         "name": "Increased Squad Size",
@@ -743,7 +808,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Elite",
+                        "name": "Veteran",
 						"chooseOneKey": "b",
                         "points": 2
                     }
@@ -772,7 +837,6 @@
                 "range": 18,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Skirmish"
                 ],
                 "options": [
                     {
@@ -792,7 +856,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Elite",
+                        "name": "Veteran",
 						"chooseOneKey": "b",
                         "points": 2
                     }
@@ -842,7 +906,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Elite",
+                        "name": "Veteran",
 						"chooseOneKey": "b",
                         "points": 2
                     }
@@ -886,11 +950,11 @@
                         "points": 2
                     },
                     {
-                        "name": "Veteran",
+                        "name": "Bloodthirsty",
                         "points": 3
                     },
                     {
-                        "name": "Elite",
+                        "name": "Veteran",
 						"chooseOneKey": "a",
                         "points": 2
                     }
@@ -934,16 +998,146 @@
                         "points": 2
                     },
                     {
-                        "name": "Veteran",
+                        "name": "Bloodthirsty",
                         "points": 3
                     },
                     {
-                        "name": "Elite",
+                        "name": "Veteran",
 						"chooseOneKey": "a",
                         "points": 2
                     }
                 ],
                 "decreaseModelCount": -4
+            },
+            {
+                "name": "Lasrifle Section",
+                "factions": [
+                    {
+                        "name": "Solar Auxilia",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 3,
+                "attack": 8,
+                "move": 6,
+                "shoot": 6,
+                "courage": 6,
+                "armor": 2,
+                "attackvalue": 6,
+                "defencevalue": 5,
+                "shootvalue": 4,
+                "range": 24,
+                "maximummovement": 6,
+                "specialRules": [],
+                "options": [
+                    {
+                        "name": "Bayonet",
+                        "points": 1
+                    },
+                    {
+                        "name": "Heavy Weapon",
+						"chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Infantry",
+						"chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Storm Section",
+                "factions": [
+                    {
+                        "name": "Solar Auxilia",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 4,
+                "attack": 8,
+                "move": 6,
+                "shoot": 5,
+                "courage": 6,
+                "armor": 2,
+                "attackvalue": 6,
+                "defencevalue": 5,
+                "shootvalue": 4,
+                "range": 24,
+                "maximummovement": 6,
+                "specialRules": [
+					"Deep Strike"
+				],
+                "options": [
+                    {
+                        "name": "Heavy Weapon",
+						"chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Infantry",
+						"chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Assault Storm Section",
+                "factions": [
+                    {
+                        "name": "Solar Auxilia",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 4,
+                "attack": 5,
+                "move": 6,
+                "shoot": 8,
+                "courage": 6,
+                "armor": 2,
+                "attackvalue": 4,
+                "defencevalue": 5,
+                "shootvalue": 6,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+					"Deep Strike"
+				],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
             },
             {
                 "name": "Praetor",
@@ -983,7 +1177,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Veteran",
+                        "name": "Bloodthirsty",
                         "points": 3
                     }
                 ]
@@ -1036,16 +1230,59 @@
                         "points": 2
                     },
                     {
-                        "name": "Veteran",
+                        "name": "Bloodthirsty",
                         "points": 3
                     }
                 ]
+            },
+            {
+                "name": "Command Section",
+                "factions": [
+                    {
+                        "name": "Solar Auxilia",
+                        "unitType": "HQ"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 2,
+                "attack": 5,
+                "move": 6,
+                "shoot": 8,
+                "courage": 6,
+                "armor": 2,
+                "attackvalue": 4,
+                "defencevalue": 4,
+                "shootvalue": 4,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+				],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 3
+                    }
+                ],
+                "decreaseModelCount": -4
             },
             {
                 "name": "Artillery Piece",
                 "factions": [
                     {
                         "name": "Legiones Astartes",
+                        "unitType": "Artillery"
+                    },
+                    {
+                        "name": "Solar Auxilia",
                         "unitType": "Artillery"
                     }
                 ],
@@ -1076,12 +1313,12 @@
                 "definition": " Some people are just that much scarier than others, especially if tripping and mutated! A Fearsome unit creates panic in its opponents through reputation, deed, or other psychological means. Courage tests caused as a result of this unit Attacking or Shooting suffer an additional -1 to the total. Should two Fearsome units encounter one another, the effect of this rule is cancelled between those units"
             },
             {
-                "name": "Veteran",
-                "definition": "A Veteran unit can inflict a whole load of additional pain on an enemy – if it rolls well. Any Attack dice or Shooting dice (but not Defence dice) that roll a 6 cause 2 hits rather than the usual 1 hit"
+                "name": "Bloodthirsty",
+                "definition": "A Bloodthirsty unit can inflict a whole load of additional pain on an enemy – if it rolls well. Any Attack dice or Shooting dice (but not Defence dice) that roll a 6 cause 2 hits rather than the usual 1 hit"
             },
             {
-                "name": "Elite",
-                "definition": "Elite units are legion-specific variations of units. These units get +1 to all order rolls, as well as to their Armor, Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
+                "name": "Veteran",
+                "definition": "Veteran units are tougher variations of units. These units get +1 to all order rolls, as well as to their Armor, Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
 				"modifiesStats": [
 					{
 						"stat": "attack",
@@ -1159,6 +1396,16 @@
 				]
             },
             {
+                "name": "Medicae",
+                "definition": "+1 Armor.",
+				"modifiesStats": [
+					{
+						"stat": "armor",
+						"modifier": 1
+					}
+				]
+            },
+            {
                 "name": "Bayonet",
                 "definition": "+1 to Defence Value.",
 				"modifiesStats": [
@@ -1170,7 +1417,7 @@
             },
             {
                 "name": "Increased Squad Size",
-                "definition": "+5 to Strength Points. Cannot be mixed with Elite.",
+                "definition": "+5 to Strength Points. Cannot be mixed with Veteran.",
 				"modifiesStats": [
 					{
 						"stat": "strengthpoints",
