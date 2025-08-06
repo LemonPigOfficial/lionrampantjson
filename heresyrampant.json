@@ -308,7 +308,7 @@
             },
             {
                 "name": "Psyker or Chaplain",
-                "definition": "Once per round, you may reroll any one set of dice in the game in its entirety, rolled by any player.",
+                "definition": "Once per round, you may reroll any one set of dice in its entirety, rolled by any player.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -424,7 +424,13 @@
                 "name": "Quick",
                 "definition": "Increase the Leader's unit's maximum movement distance by 2\".",
                 "factions": [],
-                "decreaseModelCount": 1
+                "decreaseModelCount": 1,
+				"modifiesStats": [
+					{
+						"stat": "maximummovement",
+						"modifier": 2
+					}
+				]
             },
             {
                 "name": "Armistus",
@@ -1043,8 +1049,38 @@
             },
             {
                 "name": "Elite",
-                "definition": "Elite units are legion-specific variations of units. These units get +1 to all orders, as well as to their Armor, Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
-                "decreaseModelCount": 5
+                "definition": "Elite units are legion-specific variations of units. These units get +1 to all order rolls, as well as to their Armor, Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
+				"modifiesStats": [
+					{
+						"stat": "attack",
+						"modifier": -1
+					},
+					{
+						"stat": "move",
+						"modifier": -1
+					},
+					{
+						"stat": "shoot",
+						"modifier": -1
+					},
+					{
+						"stat": "armor",
+						"modifier": 1
+					},
+					{
+						"stat": "attackvalue",
+						"modifier": 1
+					},
+					{
+						"stat": "defencevalue",
+						"modifier": 1
+					},
+					{
+						"stat": "shootvalue",
+						"modifier": 1
+					}
+				]
+                
             },
             {
                 "name": "Javelins",
@@ -1068,19 +1104,47 @@
             },
             {
                 "name": "Jump Packs",
-                "definition": "Fly and +2 Movement Distance. Cannot be combined with Terminator Armor."
+                "definition": "Fly and +2 Movement Distance. Cannot be combined with Terminator Armor.",
+				"modifiesStats": [
+					{
+						"stat": "maximummovement",
+						"modifier": 2
+					}
+				]
             },
             {
                 "name": "Terminator Armor",
-                "definition": "Deep Strike and +2 Armor, but -2 Movement Distance. Cannot be combined with Jump Packs."
+                "definition": "Deep Strike and +2 Armor, but -2 Movement Distance. Cannot be combined with Jump Packs.",
+				"modifiesStats": [
+					{
+						"stat": "maximummovement",
+						"modifier": -2
+					},
+					{
+						"stat": "armor",
+						"modifier": 2
+					}
+				]
             },
             {
                 "name": "Bayonet",
-                "definition": "+1 to Defence Value."
+                "definition": "+1 to Defence Value.",
+				"modifiesStats": [
+					{
+						"stat": "defencevalue",
+						"modifier": -1
+					}
+				]
             },
             {
                 "name": "Increased Squad Size",
-                "definition": "+5 to Strength Points. Cannot be mixed with Elite."
+                "definition": "+5 to Strength Points. Cannot be mixed with Elite.",
+				"modifiesStats": [
+					{
+						"stat": "decreaseModelCount",
+						"modifier": -5
+					}
+				]
             },
             {
                 "name": "Heavy Weapon",
