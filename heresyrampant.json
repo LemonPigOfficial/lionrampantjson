@@ -952,7 +952,7 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Deep Strike",
-					"Cumbersome"
+                    "Cumbersome"
                 ],
                 "options": [
                     {
@@ -1014,7 +1014,7 @@
                 "maximummovement": 12,
                 "specialRules": [
                     "Fast",
-					"Cumbersome"
+                    "Cumbersome"
                 ],
                 "options": [
                     {
@@ -1131,9 +1131,9 @@
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 4,
-                "specialRules": [,
+                "specialRules": [
                     "Brace"
-				],
+                ],
                 "options": [
                     {
                         "name": "Increased Squad Size",
@@ -1678,7 +1678,7 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Fast"
-				],
+                ],
                 "options": [
                     {
                         "name": "Increased Squad Size",
@@ -1735,7 +1735,7 @@
                         "chooseOneKey": "a",
                         "points": 2
                     }
-				],
+                ],
                 "decreaseModelCount": -2
             }
         ],
