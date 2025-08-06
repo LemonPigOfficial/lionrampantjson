@@ -90,13 +90,23 @@
         "elementPropertyName": "units",
         "usesProperty": "unitType"
     },
-	"additionalPrint": [
-		{
-			"propertyName": "specialRules",
-			"label": "Special Rules",
-			"dataSource": "keywords"
-		}
-	],
+    "additionalPrint": [
+        {
+            "propertyName": "specialRules",
+            "label": "Special Rules",
+            "dataSource": "keywords"
+        },
+        {
+            "propertyName": "leaderUpgrade",
+            "label": "Leader Upgrades",
+            "dataSource": "leaderUpgrades"
+        },
+        {
+            "propertyName": "options",
+            "label": "Upgrades",
+            "dataSource": "upgrades"
+        }
+    ],
     "additionalDb": [],
     "elements": [
         {
@@ -431,12 +441,12 @@
                 "definition": "Increase the Leader's unit's maximum movement distance by 2\".",
                 "factions": [],
                 "decreaseModelCount": 1,
-				"modifiesStats": [
-					{
-						"stat": "maximummovement",
-						"modifier": 2
-					}
-				]
+                "modifiesStats": [
+                    {
+                        "stat": "maximummovement",
+                        "modifier": 2
+                    }
+                ]
             },
             {
                 "name": "Armistus",
@@ -461,20 +471,18 @@
             {
                 "name": "Legiones Astartes",
                 "additionalRules": [
-                   "Legiones Astartes companies may only have 1 Praetor. Additionally their leader may take a free Allegiance upgrade."
+                    "Legiones Astartes companies may only have 1 Praetor. Additionally their leader may take a free Allegiance upgrade."
                 ],
                 "armyBonuses": [],
-                "specialRules": [
-				]
+                "specialRules": []
             },
             {
                 "name": "Solar Auxilia",
                 "additionalRules": [
-                   "May upgrade Vehicles to Veteran for 4 pts each."
+                    "May upgrade Vehicles to Veteran for 4 pts each."
                 ],
                 "armyBonuses": [],
-                "specialRules": [
-				]
+                "specialRules": []
             }
         ],
         "unitTypes": [
@@ -525,18 +533,18 @@
                     {
                         "name": "Veteran",
                         "points": 4,
-						"availableIn": [
-							"Solar Auxilia"
-						]
+                        "availableIn": [
+                            "Solar Auxilia"
+                        ]
                     },
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 0
                     }
                 ]
@@ -578,12 +586,12 @@
                     },
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 0
                     }
                 ]
@@ -619,22 +627,14 @@
                 ],
                 "options": [
                     {
-                        "name": "Fearsome",
-                        "points": 2
-                    },
-                    {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
-                    },
-                    {
-                        "name": "Bloodthirsty",
-                        "points": 3
                     }
                 ]
             },
@@ -670,12 +670,12 @@
                     },
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
@@ -712,27 +712,19 @@
                     {
                         "name": "Veteran",
                         "points": 4,
-						"availableIn": [
-							"Solar Auxilia"
-						]
-                    },
-                    {
-                        "name": "Fearsome",
-                        "points": 2
+                        "availableIn": [
+                            "Solar Auxilia"
+                        ]
                     },
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
-                    },
-                    {
-                        "name": "Bloodthirsty",
-                        "points": 3
                     }
                 ]
             },
@@ -763,8 +755,8 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
-						"chooseOneKey": "a",
-						"addsModels": 5,
+                        "chooseOneKey": "a",
+                        "addsModels": 5,
                         "points": 4
                     },
                     {
@@ -777,17 +769,17 @@
                     },
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "b",
+                        "chooseOneKey": "b",
                         "points": 2
                     },
                     {
                         "name": "Veteran",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 4
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "b",
+                        "chooseOneKey": "b",
                         "points": 2
                     }
                 ],
@@ -816,12 +808,12 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Skirmish"
-				],
+                ],
                 "options": [
                     {
                         "name": "Increased Squad Size",
-						"chooseOneKey": "b",
-						"addsModels": 5,
+                        "chooseOneKey": "b",
+                        "addsModels": 5,
                         "points": 2
                     },
                     {
@@ -830,17 +822,17 @@
                     },
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Veteran",
-						"chooseOneKey": "b",
+                        "chooseOneKey": "b",
                         "points": 2
                     }
                 ],
@@ -867,28 +859,27 @@
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 4,
-                "specialRules": [
-                ],
+                "specialRules": [],
                 "options": [
                     {
                         "name": "Increased Squad Size",
-						"chooseOneKey": "b",
-						"addsModels": 5,
+                        "chooseOneKey": "b",
+                        "addsModels": 5,
                         "points": 2
                     },
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Veteran",
-						"chooseOneKey": "b",
+                        "chooseOneKey": "b",
                         "points": 2
                     }
                 ],
@@ -922,23 +913,23 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
-						"chooseOneKey": "b",
-						"addsModels": 5,
+                        "chooseOneKey": "b",
+                        "addsModels": 5,
                         "points": 2
                     },
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Veteran",
-						"chooseOneKey": "b",
+                        "chooseOneKey": "b",
                         "points": 2
                     }
                 ],
@@ -972,23 +963,23 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
-						"chooseOneKey": "a",
-						"addsModels": 5,
+                        "chooseOneKey": "a",
+                        "addsModels": 5,
                         "points": 2
                     },
                     {
                         "name": "Fearsome",
-						"chooseOneKey": "b",
+                        "chooseOneKey": "b",
                         "points": 2
                     },
                     {
                         "name": "Bloodthirsty",
-						"chooseOneKey": "b",
+                        "chooseOneKey": "b",
                         "points": 3
                     },
                     {
                         "name": "Veteran",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     }
                 ],
@@ -1022,8 +1013,8 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
-						"chooseOneKey": "a",
-						"addsModels": 5,
+                        "chooseOneKey": "a",
+                        "addsModels": 5,
                         "points": 2
                     },
                     {
@@ -1036,7 +1027,7 @@
                     },
                     {
                         "name": "Veteran",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     }
                 ],
@@ -1071,12 +1062,12 @@
                     },
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
@@ -1112,17 +1103,17 @@
                 "range": 24,
                 "maximummovement": 6,
                 "specialRules": [
-					"Deep Strike"
-				],
+                    "Deep Strike"
+                ],
                 "options": [
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
@@ -1158,8 +1149,8 @@
                 "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
-					"Deep Strike"
-				],
+                    "Deep Strike"
+                ],
                 "options": [
                     {
                         "name": "Veteran",
@@ -1197,23 +1188,23 @@
                 "options": [
                     {
                         "name": "Jump Pack",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Terminator Armor",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Loyalist",
-						"chooseOneKey": "b",
+                        "chooseOneKey": "b",
                         "requiresLeader": true,
                         "points": 0
                     },
                     {
                         "name": "Heretic",
-						"chooseOneKey": "b",
+                        "chooseOneKey": "b",
                         "requiresLeader": true,
                         "points": 0
                     },
@@ -1252,12 +1243,12 @@
                 "options": [
                     {
                         "name": "Jump Pack",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
                         "name": "Terminator Armor",
-						"chooseOneKey": "a",
+                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
@@ -1266,12 +1257,12 @@
                     },
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "c",
+                        "chooseOneKey": "c",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "c",
+                        "chooseOneKey": "c",
                         "points": 2
                     },
                     {
@@ -1280,13 +1271,13 @@
                     },
                     {
                         "name": "Loyalist",
-						"chooseOneKey": "b",
+                        "chooseOneKey": "b",
                         "requiresLeader": true,
                         "points": 0
                     },
                     {
                         "name": "Heretic",
-						"chooseOneKey": "b",
+                        "chooseOneKey": "b",
                         "requiresLeader": true,
                         "points": 0
                     }
@@ -1313,12 +1304,11 @@
                 "shootvalue": 4,
                 "range": 12,
                 "maximummovement": 6,
-                "specialRules": [
-				],
+                "specialRules": [],
                 "options": [
                     {
                         "name": "Increased Squad Size",
-						"addsModels": 5,
+                        "addsModels": 5,
                         "points": 2
                     },
                     {
@@ -1377,12 +1367,12 @@
             {
                 "name": "Loyalist",
                 "definition": "Friendly units within 9” of an HQ model automatically succeed Order rolls. Additionally, your Leader has +1 to Armor.",
-				"modifiesStats": [
-					{
-						"stat": "armor",
-						"modifier": 1
-					}
-				]
+                "modifiesStats": [
+                    {
+                        "stat": "armor",
+                        "modifier": 1
+                    }
+                ]
             },
             {
                 "name": "Bloodthirsty",
@@ -1391,37 +1381,36 @@
             {
                 "name": "Veteran",
                 "definition": "Veteran units are tougher variations of units. These units get +1 to all order rolls, as well as to their Armor, Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
-				"modifiesStats": [
-					{
-						"stat": "attack",
-						"modifier": -1
-					},
-					{
-						"stat": "move",
-						"modifier": -1
-					},
-					{
-						"stat": "shoot",
-						"modifier": -1
-					},
-					{
-						"stat": "armor",
-						"modifier": 1
-					},
-					{
-						"stat": "attackvalue",
-						"modifier": -1
-					},
-					{
-						"stat": "defencevalue",
-						"modifier": -1
-					},
-					{
-						"stat": "shootvalue",
-						"modifier": -1
-					}
-				]
-                
+                "modifiesStats": [
+                    {
+                        "stat": "attack",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "move",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "shoot",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "armor",
+                        "modifier": 1
+                    },
+                    {
+                        "stat": "attackvalue",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "defencevalue",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "shootvalue",
+                        "modifier": -1
+                    }
+                ]
             },
             {
                 "name": "Javelins",
@@ -1446,56 +1435,56 @@
             {
                 "name": "Jump Pack",
                 "definition": "Fly and +2 Movement Distance. Cannot be combined with Terminator Armor.",
-				"modifiesStats": [
-					{
-						"stat": "maximummovement",
-						"modifier": 2
-					}
-				]
+                "modifiesStats": [
+                    {
+                        "stat": "maximummovement",
+                        "modifier": 2
+                    }
+                ]
             },
             {
                 "name": "Terminator Armor",
                 "definition": "Deep Strike and +2 Armor, but -2 Movement Distance. Cannot be combined with Jump Pack.",
-				"modifiesStats": [
-					{
-						"stat": "maximummovement",
-						"modifier": -2
-					},
-					{
-						"stat": "armor",
-						"modifier": 2
-					}
-				]
+                "modifiesStats": [
+                    {
+                        "stat": "maximummovement",
+                        "modifier": -2
+                    },
+                    {
+                        "stat": "armor",
+                        "modifier": 2
+                    }
+                ]
             },
             {
                 "name": "Medicae",
                 "definition": "+1 Armor.",
-				"modifiesStats": [
-					{
-						"stat": "armor",
-						"modifier": 1
-					}
-				]
+                "modifiesStats": [
+                    {
+                        "stat": "armor",
+                        "modifier": 1
+                    }
+                ]
             },
             {
                 "name": "Bayonet",
                 "definition": "+1 to Defence Value.",
-				"modifiesStats": [
-					{
-						"stat": "defencevalue",
-						"modifier": -1
-					}
-				]
+                "modifiesStats": [
+                    {
+                        "stat": "defencevalue",
+                        "modifier": -1
+                    }
+                ]
             },
             {
                 "name": "Increased Squad Size",
                 "definition": "+5 to Strength Points. Cannot be mixed with Veteran.",
-				"modifiesStats": [
-					{
-						"stat": "strengthpoints",
-						"modifier": 5
-					}
-				]
+                "modifiesStats": [
+                    {
+                        "stat": "strengthpoints",
+                        "modifier": 5
+                    }
+                ]
             },
             {
                 "name": "Heavy Weapon",
