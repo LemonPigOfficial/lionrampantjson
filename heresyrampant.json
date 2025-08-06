@@ -163,14 +163,15 @@
                                 },
                                 {
                                     "name": "Commanding",
-                                    "points": 2,
+                                    "points": 1,
                                     "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
-                                    "name": "Courageous",
+                                    "name": "Vexilla",
                                     "points": 2,
-                                    "requiresLeader": true
+                                    "requiresLeader": true,
+                                    "unique": true
                                 },
                                 {
                                     "name": "Drunkard or Eccentric",
@@ -180,29 +181,33 @@
                                 },
                                 {
                                     "name": "Fearless",
-                                    "points": 2,
+                                    "points": 1,
                                     "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Fearsome",
                                     "points": 1,
-                                    "requiresLeader": true
+                                    "requiresLeader": true,
+                                    "unique": true
                                 },
                                 {
                                     "name": "Impulsive",
                                     "points": 1,
-                                    "requiresLeader": true
+                                    "requiresLeader": true,
+                                    "unique": true
                                 },
                                 {
                                     "name": "Mortifactor",
                                     "points": 2,
-                                    "requiresLeader": true
+                                    "requiresLeader": true,
+                                    "unique": true
                                 },
                                 {
                                     "name": "Inspired",
-                                    "points": 3,
-                                    "requiresLeader": true
+                                    "points": 2,
+                                    "requiresLeader": true,
+                                    "unique": true
                                 },
                                 {
                                     "name": "Unflinching",
@@ -223,13 +228,13 @@
                                 },
                                 {
                                     "name": "Rash",
-                                    "points": 1,
+                                    "points": 0,
                                     "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Gun Master",
-                                    "points": 1,
+                                    "points": 2,
                                     "requiresLeader": true,
                                     "unique": true
                                 },
@@ -253,7 +258,7 @@
                                 },
                                 {
                                     "name": "Armistus",
-                                    "points": 3,
+                                    "points": 2,
                                     "requiresLeader": true,
                                     "unique": true
                                 },
@@ -296,7 +301,7 @@
                             }
                         },
                         {
-                            "name": "Artillery",
+                            "name": "Fortification",
                             "rank": 1
                         }
                     ]
@@ -308,7 +313,7 @@
         "leaderUpgrades": [
             {
                 "name": "Aggressive",
-                "definition": "Each turn, one unit within 12” of your Leader’s unit may automatically pass an Attack activation without needing to roll dice (may be used on the Leader’s own unit).",
+                "definition": "Each turn, one unit within 12” of your Leader’s unit may automatically pass an Attack or Move activation without needing to roll dice (may be used on the Leader’s own unit).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -332,7 +337,7 @@
             },
             {
                 "name": "Brutal",
-                "definition": "Any unit within 12\" of your Leader's unit may automatically pass a failed Rally test by removing 1 Strength Point (the very real threat of enforced sacrifice really does make a warrior much bolder).",
+                "definition": "Any unit within 12\" of your Leader's unit may automatically pass a failed Rally or Courage test by removing 1 Strength Point (the very real threat of enforced sacrifice really does make a warrior much bolder).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -343,14 +348,14 @@
                 "decreaseModelCount": 1
             },
             {
-                "name": "Courageous",
-                "definition": "The Leader's unit may reroll each of its Courage tests once.",
+                "name": "Vexilla",
+                "definition": "The Leader's unit and units within 12\" may reroll each of its Courage tests once.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Drunkard or Eccentric",
-                "definition": "When this Leader is good, they're very good, and when they're bad... After deployment but before the first turn, roll to see how much they've drunk. On a 1-3, the Leader drank too much and cannot be ordered on the first turn. On a 4-6, the Leader gains Warmaster.",
+                "definition": "When this Leader is good, they're very good, and when they're bad... After deployment but before the first turn, roll to see how much they've drunk. On a 1-2, the Leader drank too much and cannot be ordered on the first turn. On a 3-6, the Leader adds 3 to their Armor.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -368,7 +373,7 @@
             },
             {
                 "name": "Impulsive",
-                "definition": "Each turn, one unit within 12\" of your Leader's unit may automatically pass a Move activation without needing to roll dice (may be used on the Leader's own unit).",
+                "definition": "Each turn, one unit within 12\" of your Leader's unit may automatically pass a Move or Shoot activation without needing to roll dice (may be used on the Leader's own unit).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -392,7 +397,7 @@
             },
             {
                 "name": "Indomitable",
-                "definition": "During Attacks, the Leader's unit may reroll up to 2 failed hit dice.",
+                "definition": "During Attacks, the Leader's unit may reroll up to 3 failed hit dice.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -410,13 +415,13 @@
             },
             {
                 "name": "Gun Master",
-                "definition": "Each turn, one unit within 12\" of your Leader's unit may automatically pass a Shoot activation without needing to roll dice (may be used on the Leader's own unit).",
+                "definition": "Units within 12\" of your Leader's unit may automatically pass a Shoot activation without needing to roll dice (may be used on the Leader's own unit).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Mighty",
-                "definition": "During Attacks, the Leader's unit may reroll one failed hit dice.",
+                "definition": "During Attacks, the Leader's unit may reroll 2 failed hit dice.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -452,7 +457,7 @@
             },
             {
                 "name": "Delegatus",
-                "definition": "May Lead may add or subtract 1 from your total (your choice) when rolling to decide attacker/ defender as described in Chapter 5 (here).",
+                "definition": "May Lead may add or subtract 1-2 from your total (your choice) when rolling to decide attacker/ defender as described in Chapter 5 (here).",
                 "factions": [],
                 "decreaseModelCount": 1
             }
@@ -467,9 +472,17 @@
                 "specialRules": []
             },
             {
-                "name": "Adeptus Titanicus",
+                "name": "Questoris Knights",
                 "additionalRules": [
-                    "An Adeptus Titanicus army may nominate a Vehicle as a Leader, but it cannot have Leader Traits. To compensate, you may take 6 additional points of units. This is because usually, opponents will play with 4 extra points of Leader Trait, which are very powerful for their cost."
+                    "A Questoris Knights army may nominate a Vehicle as a Leader, but it cannot have Leader Traits. To compensate for this and the low unit count, you may upgrade your units with Double Time for free."
+                ],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Cult Mechanicum",
+                "additionalRules": [
+                    "Cult Mechanicum armies may have 1 Archmagos Prime, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Devotion upgrade."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -477,7 +490,7 @@
             {
                 "name": "Solar Auxilia",
                 "additionalRules": [
-                    "May have 1 or more Superheavy tanks at 48 pts or more. May upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry. May upgrade Infantry to Massive Squads for 4 points, an upgrade unavailable to other factions. Medicae for Infantry cost 1 point instead of 2 or more unlike other factions."
+                    "All HQ units have the leader's Leader Traits. Additionally, you may upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -494,7 +507,7 @@
                 "name": "HQ"
             },
             {
-                "name": "Artillery"
+                "name": "Fortification"
             }
         ],
         "units": [
@@ -503,6 +516,10 @@
                 "factions": [
                     {
                         "name": "Legiones Astartes",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Cult Mechanicum",
                         "unitType": "Vehicle"
                     },
                     {
@@ -548,12 +565,20 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 0
+                    },
+                    {
+                        "name": "Double Time",
+                        "points": 4
                     }
                 ]
             },
             {
                 "name": "Superheavy Tank",
                 "factions": [
+                    {
+                        "name": "Cult Mechanicum",
+                        "unitType": "Vehicle"
+                    },
                     {
                         "name": "Solar Auxilia",
                         "unitType": "Vehicle"
@@ -593,6 +618,10 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 0
+                    },
+                    {
+                        "name": "Double Time",
+                        "points": 8
                     }
                 ]
             },
@@ -639,12 +668,69 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 0
+                    },
+                    {
+                        "name": "Double Time",
+                        "points": 4
+                    }
+                ]
+            },
+            {
+                "name": "Thanatar Siege Automata",
+                "factions": [
+                    {
+                        "name": "Cult Mechanicum",
+                        "unitType": "Vehicle"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 8,
+                "attack": 3,
+                "move": 3,
+                "shoot": 3,
+                "courage": 3,
+                "armor": 3,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 4,
+                "specialRules": [
+                    "Panic"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Double Time",
+                        "points": 4
                     }
                 ]
             },
             {
                 "name": "Combat Vehicle",
                 "factions": [
+                    {
+                        "name": "Cult Mechanicum",
+                        "unitType": "Vehicle"
+                    },
                     {
                         "name": "Legiones Astartes",
                         "unitType": "Vehicle"
@@ -787,7 +873,11 @@
                         "unitType": "Vehicle"
                     },
                     {
-                        "name": "Adeptus Titanicus",
+                        "name": "Cult Mechanicum",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Questoris Knights",
                         "unitType": "Vehicle"
                     }
                 ],
@@ -800,7 +890,7 @@
                 "courage": 4,
                 "armor": 3,
                 "attackvalue": 3,
-                "defencevalue": 2,
+                "defencevalue": 3,
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 6,
@@ -819,6 +909,13 @@
                         "points": 4,
                         "availableIn": [
                             "Solar Auxilia"
+                        ]
+                    },
+                    {
+                        "name": "Double Time",
+                        "points": 0,
+                        "availableIn": [
+                            "Questoris Knights"
                         ]
                     },
                     {
@@ -841,7 +938,11 @@
                 "name": "Knight Paladin",
                 "factions": [
                     {
-                        "name": "Adeptus Titanicus",
+                        "name": "Questoris Knights",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Cult Mechanicum",
                         "unitType": "Vehicle"
                     }
                 ],
@@ -872,6 +973,13 @@
                         "points": 2
                     },
                     {
+                        "name": "Double Time",
+                        "points": 0,
+                        "availableIn": [
+                            "Questoris Knights"
+                        ]
+                    },
+                    {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 0
@@ -887,7 +995,11 @@
                 "name": "Knight Lancer",
                 "factions": [
                     {
-                        "name": "Adeptus Titanicus",
+                        "name": "Questoris Knights",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Cult Mechanicum",
                         "unitType": "Vehicle"
                     }
                 ],
@@ -916,6 +1028,13 @@
                     {
                         "name": "Bloodthirsty",
                         "points": 2
+                    },
+                    {
+                        "name": "Double Time",
+                        "points": 0,
+                        "availableIn": [
+                            "Questoris Knights"
+                        ]
                     },
                     {
                         "name": "Anti-Tank",
@@ -1132,7 +1251,8 @@
                 "range": 18,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Brace"
+                    "Brace",
+                    "Hard to target"
                 ],
                 "options": [
                     {
@@ -1524,6 +1644,216 @@
                 "decreaseModelCount": -9
             },
             {
+                "name": "Thallax Cohort",
+                "factions": [
+                    {
+                        "name": "Cult Mechanicum",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 8,
+                "attack": 3,
+                "move": 3,
+                "shoot": 3,
+                "courage": 5,
+                "armor": 4,
+                "attackvalue": 5,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 4,
+                "specialRules": [
+                    "Brace",
+                    "Cumbersome"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "addsModels": 5,
+                        "points": 4
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Ursarax Cohort",
+                "factions": [
+                    {
+                        "name": "Cult Mechanicum",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 3,
+                "move": 3,
+                "shoot": 0,
+                "courage": 5,
+                "armor": 4,
+                "attackvalue": 4,
+                "defencevalue": 5,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Fly",
+                    "Deep Strike",
+                    "Cumbersome"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "addsModels": 5,
+                        "points": 4
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Tech Thralls",
+                "factions": [
+                    {
+                        "name": "Cult Mechanicum",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 4,
+                "attack": 3,
+                "move": 3,
+                "shoot": 3,
+                "courage": 6,
+                "armor": 2,
+                "attackvalue": 6,
+                "defencevalue": 5,
+                "shootvalue": 5,
+                "range": 18,
+                "maximummovement": 4,
+                "specialRules": [],
+                "options": [
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Massive Squads",
+                        "addsModels": 10,
+                        "points": 4
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Secutarii Peltasts",
+                "factions": [
+                    {
+                        "name": "Cult Mechanicum",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 6,
+                "attack": 6,
+                "move": 6,
+                "shoot": 6,
+                "courage": 6,
+                "armor": 2,
+                "attackvalue": 5,
+                "defencevalue": 4,
+                "shootvalue": 4,
+                "range": 24,
+                "maximummovement": 6,
+                "specialRules": [],
+                "options": [
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Massive Squads",
+                        "addsModels": 10,
+                        "points": 4
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Secutarii Hoplites",
+                "factions": [
+                    {
+                        "name": "Cult Mechanicum",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 6,
+                "attack": 5,
+                "move": 6,
+                "shoot": 0,
+                "courage": 6,
+                "armor": 2,
+                "attackvalue": 4,
+                "defencevalue": 2,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 4,
+                "specialRules": [
+                    "Hard to target"
+					],
+                "options": [
+                    {
+                        "name": "Massive Squads",
+                        "addsModels": 10,
+                        "points": 4
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
                 "name": "Praetor",
                 "factions": [
                     {
@@ -1697,15 +2027,119 @@
                 "decreaseModelCount": -4
             },
             {
+                "name": "Archmagos Prime",
+                "factions": [
+                    {
+                        "name": "Cult Mechanicum",
+                        "unitType": "HQ"
+                    }
+                ],
+                "unlimited": false,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 6,
+                "move": 3,
+                "shoot": 3,
+                "courage": 4,
+                "armor": 4,
+                "attackvalue": 6,
+                "defencevalue": 5,
+                "shootvalue": 2,
+                "range": 24,
+                "maximummovement": 4,
+                "specialRules": [],
+                "options": [
+                    {
+                        "name": "Imperial",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Independent",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Heretek",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "c",
+                        "points": 0
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "c",
+                        "points": 0
+                    }
+                ]
+            },
+            {
+                "name": "Techpriest",
+                "factions": [
+                    {
+                        "name": "Cult Mechanicum",
+                        "unitType": "HQ"
+                    }
+                ],
+                "unlimited": false,
+                "strengthpoints": 5,
+                "points": 2,
+                "attack": 6,
+                "move": 4,
+                "shoot": 6,
+                "courage": 4,
+                "armor": 2,
+                "attackvalue": 6,
+                "defencevalue": 5,
+                "shootvalue": 4,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [],
+                "options": [
+                    {
+                        "name": "Imperial",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Independent",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Heretek",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    }
+                ]
+            },
+            {
                 "name": "Artillery Piece",
                 "factions": [
                     {
                         "name": "Legiones Astartes",
-                        "unitType": "Artillery"
+                        "unitType": "Fortification"
                     },
                     {
                         "name": "Solar Auxilia",
-                        "unitType": "Artillery"
+                        "unitType": "Fortification"
                     }
                 ],
                 "unlimited": true,
@@ -1747,6 +2181,24 @@
             {
                 "name": "Heretic",
                 "definition": "Enemy units have -1 to all Courage tests. Additionally, your Leader has Panic."
+            },
+            {
+                "name": "Heretek",
+                "definition": "Enemy Vehicles and Cumbersome units have -1 to their Armor."
+            },
+            {
+                "name": "Independent",
+                "definition": "Friendly units within 12” ignore Anti-Tank and Anti-Infantry."
+            },
+            {
+                "name": "Imperial",
+                "definition": "Friendly vehicles within 24” of an HQ model automatically succeed Order rolls. Additionally, your Leader has +1 to Armor.",
+                "modifiesStats": [
+                    {
+                        "stat": "armor",
+                        "modifier": 1
+                    }
+                ]
             },
             {
                 "name": "Loyalist",
@@ -1799,6 +2251,10 @@
             {
                 "name": "Javelins",
                 "definition": "Shoot 6+/Range 6” hitting on 5+"
+            },
+            {
+                "name": "Double Time",
+                "definition": "Once per game, this unit may receive two orders, instead of the usual one. You declare one order first and the other afterwards when doing this."
             },
             {
                 "name": "Transport",
@@ -1896,7 +2352,7 @@
             },
             {
                 "name": "Anti-Tank",
-                "definition": "Vehicle and Artillery units count as armor 1 against Shooting by this unit (armor 2 if in cover). Cannot be taken alongside Anti-Infantry."
+                "definition": "Vehicle and Fortification units count as armor 1 against Shooting by this unit (armor 2 if in cover). Cannot be taken alongside Anti-Infantry."
             },
             {
                 "name": "Anti-Infantry",
