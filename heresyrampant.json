@@ -1261,6 +1261,7 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
+						"addsModels": 5,
                         "points": 2
                     },
                     {
