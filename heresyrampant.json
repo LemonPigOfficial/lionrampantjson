@@ -95,16 +95,6 @@
             "propertyName": "specialRules",
             "label": "Special Rules",
             "dataSource": "keywords"
-        },
-        {
-            "propertyName": "leaderUpgrade",
-            "label": "Leader Upgrades",
-            "dataSource": "leaderUpgrades"
-        },
-        {
-            "propertyName": "options",
-            "label": "Upgrades",
-            "dataSource": "upgrades"
         }
     ],
     "additionalDb": [],
@@ -471,7 +461,7 @@
             {
                 "name": "Legiones Astartes",
                 "additionalRules": [
-                    "Legiones Astartes companies may only have 1 Praetor. Additionally their leader may take a free Allegiance upgrade."
+                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Allegiance upgrade."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -479,7 +469,7 @@
             {
                 "name": "Solar Auxilia",
                 "additionalRules": [
-                    "May upgrade Vehicles to Veteran for 4 pts each."
+                    "May have 1 or more Superheavy tanks at 48 pts or more. May upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option unavailable to other armies. May upgrade Infantry to Massive Squads for 4 points, an upgrade unavailable to other factions. Medicae for Infantry cost 1 point instead of 2 or more unlike other factions."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -515,9 +505,9 @@
                 "unlimited": true,
                 "strengthpoints": 10,
                 "points": 8,
-                "attack": 5,
+                "attack": 7,
                 "move": 7,
-                "shoot": 7,
+                "shoot": 5,
                 "courage": 3,
                 "armor": 4,
                 "attackvalue": 5,
@@ -533,6 +523,51 @@
                     {
                         "name": "Veteran",
                         "points": 4,
+                        "availableIn": [
+                            "Solar Auxilia"
+                        ]
+                    },
+                    {
+                        "name": "Heavy Weapon",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    }
+                ]
+            },
+            {
+                "name": "Superheavy Tank",
+                "factions": [
+                    {
+                        "name": "Solar Auxilia",
+                        "unitType": "Vehicle"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 20,
+                "points": 12,
+                "attack": 7,
+                "move": 7,
+                "shoot": 5,
+                "courage": 3,
+                "armor": 5,
+                "attackvalue": 5,
+                "defencevalue": 4,
+                "shootvalue": 3,
+                "range": 24,
+                "maximummovement": 12,
+                "specialRules": [
+                    "Fast",
+                    "Panic"
+                ],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 8,
                         "availableIn": [
                             "Solar Auxilia"
                         ]
@@ -635,6 +670,10 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 2
+                    },
+                    {
+                        "name": "Transport",
+                        "points": 2
                     }
                 ]
             },
@@ -694,7 +733,7 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 5,
-                "points": 3,
+                "points": 4,
                 "attack": 6,
                 "move": 6,
                 "shoot": 5,
@@ -706,7 +745,8 @@
                 "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Panic"
+                    "Panic",
+                    "Fast"
                 ],
                 "options": [
                     {
@@ -719,12 +759,12 @@
                     {
                         "name": "Heavy Weapon",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     }
                 ]
             },
@@ -750,7 +790,8 @@
                 "range": 18,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Deep Strike"
+                    "Deep Strike",
+					"Cumbersome"
                 ],
                 "options": [
                     {
@@ -781,6 +822,72 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "b",
                         "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 4
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Bikers",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 8,
+                "move": 4,
+                "shoot": 6,
+                "courage": 5,
+                "armor": 3,
+                "attackvalue": 4,
+                "defencevalue": 4,
+                "shootvalue": 3,
+                "range": 24,
+                "maximummovement": 12,
+                "specialRules": [
+                    "Fast",
+					"Cumbersome"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "a",
+                        "addsModels": 5,
+                        "points": 4
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 3
+                    },
+                    {
+                        "name": "Heavy Weapon",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 4
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 4
                     }
                 ],
                 "decreaseModelCount": -4
@@ -834,6 +941,10 @@
                         "name": "Veteran",
                         "chooseOneKey": "b",
                         "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
                     }
                 ],
                 "decreaseModelCount": -4
@@ -880,6 +991,10 @@
                     {
                         "name": "Veteran",
                         "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
                         "points": 2
                     }
                 ],
@@ -931,6 +1046,10 @@
                         "name": "Veteran",
                         "chooseOneKey": "b",
                         "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
                     }
                 ],
                 "decreaseModelCount": -4
@@ -981,6 +1100,10 @@
                         "name": "Veteran",
                         "chooseOneKey": "a",
                         "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
                     }
                 ],
                 "decreaseModelCount": -4
@@ -1029,6 +1152,10 @@
                         "name": "Veteran",
                         "chooseOneKey": "a",
                         "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
                     }
                 ],
                 "decreaseModelCount": -4
@@ -1072,11 +1199,69 @@
                     },
                     {
                         "name": "Veteran",
+                        "chooseOneKey": "b",
                         "points": 2
                     },
                     {
+                        "name": "Massive Squads",
+                        "chooseOneKey": "b",
+                        "addsModels": 10,
+                        "points": 4
+                    },
+                    {
                         "name": "Medicae",
+                        "points": 1
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Vanguard Section",
+                "factions": [
+                    {
+                        "name": "Solar Auxilia",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 4,
+                "attack": 8,
+                "move": 7,
+                "shoot": 5,
+                "courage": 6,
+                "armor": 2,
+                "attackvalue": 6,
+                "defencevalue": 5,
+                "shootvalue": 4,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [],
+                "options": [
+                    {
+                        "name": "Heavy Weapon",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "b",
                         "points": 2
+                    },
+                    {
+                        "name": "Massive Squads",
+                        "chooseOneKey": "b",
+                        "addsModels": 10,
+                        "points": 4
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 1
                     }
                 ],
                 "decreaseModelCount": -9
@@ -1103,7 +1288,7 @@
                 "range": 24,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Deep Strike"
+                    "Fast"
                 ],
                 "options": [
                     {
@@ -1118,11 +1303,18 @@
                     },
                     {
                         "name": "Veteran",
+                        "chooseOneKey": "b",
                         "points": 2
                     },
                     {
+                        "name": "Massive Squads",
+                        "chooseOneKey": "b",
+                        "addsModels": 10,
+                        "points": 4
+                    },
+                    {
                         "name": "Medicae",
-                        "points": 2
+                        "points": 1
                     }
                 ],
                 "decreaseModelCount": -9
@@ -1149,16 +1341,23 @@
                 "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Deep Strike"
+                    "Fast"
                 ],
                 "options": [
                     {
                         "name": "Veteran",
+                        "chooseOneKey": "b",
                         "points": 2
                     },
                     {
+                        "name": "Massive Squads",
+                        "chooseOneKey": "b",
+                        "addsModels": 10,
+                        "points": 4
+                    },
+                    {
                         "name": "Medicae",
-                        "points": 2
+                        "points": 1
                     }
                 ],
                 "decreaseModelCount": -9
@@ -1192,6 +1391,11 @@
                         "points": 2
                     },
                     {
+                        "name": "Bike",
+                        "chooseOneKey": "a",
+                        "points": 4
+                    },
+                    {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
                         "points": 2
@@ -1210,11 +1414,13 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "chooseOneKey": "c",
+                        "points": 0
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 3
+                        "chooseOneKey": "c",
+                        "points": 0
                     }
                 ]
             },
@@ -1245,6 +1451,11 @@
                         "name": "Jump Pack",
                         "chooseOneKey": "a",
                         "points": 2
+                    },
+                    {
+                        "name": "Bike",
+                        "chooseOneKey": "a",
+                        "points": 4
                     },
                     {
                         "name": "Terminator Armor",
@@ -1304,7 +1515,9 @@
                 "shootvalue": 4,
                 "range": 12,
                 "maximummovement": 6,
-                "specialRules": [],
+                "specialRules": [
+                    "Fast"
+				],
                 "options": [
                     {
                         "name": "Increased Squad Size",
@@ -1434,7 +1647,7 @@
             },
             {
                 "name": "Jump Pack",
-                "definition": "Fly and +2 Movement Distance. Cannot be combined with Terminator Armor.",
+                "definition": "Fly and +2 Movement Distance. Cannot be combined with Terminator Armor or Bike.",
                 "modifiesStats": [
                     {
                         "stat": "maximummovement",
@@ -1443,8 +1656,18 @@
                 ]
             },
             {
+                "name": "Bike",
+                "definition": "Cumbersome, Fast and +6 Movement Distance. Cannot be combined with Jump Pack or Terminator Armor.",
+                "modifiesStats": [
+                    {
+                        "stat": "maximummovement",
+                        "modifier": 6
+                    }
+                ]
+            },
+            {
                 "name": "Terminator Armor",
-                "definition": "Deep Strike and +2 Armor, but -2 Movement Distance. Cannot be combined with Jump Pack.",
+                "definition": "Deep Strike, Cumbersome and +2 Armor, but -2 Movement Distance. Cannot be combined with Jump Pack or Bike.",
                 "modifiesStats": [
                     {
                         "stat": "maximummovement",
@@ -1483,6 +1706,16 @@
                     {
                         "stat": "strengthpoints",
                         "modifier": 5
+                    }
+                ]
+            },
+            {
+                "name": "Massive Squads",
+                "definition": "+10 to Strength Points. Cannot be mixed with Veteran.",
+                "modifiesStats": [
+                    {
+                        "stat": "strengthpoints",
+                        "modifier": 10
                     }
                 ]
             },
