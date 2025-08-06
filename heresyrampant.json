@@ -1095,15 +1095,15 @@
 					},
 					{
 						"stat": "attackvalue",
-						"modifier": 1
+						"modifier": -1
 					},
 					{
 						"stat": "defencevalue",
-						"modifier": 1
+						"modifier": -1
 					},
 					{
 						"stat": "shootvalue",
-						"modifier": 1
+						"modifier": -1
 					}
 				]
                 
