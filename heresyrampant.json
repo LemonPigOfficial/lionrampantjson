@@ -90,7 +90,13 @@
         "elementPropertyName": "units",
         "usesProperty": "unitType"
     },
-    "additionalPrint": [],
+	"additionalPrint": [
+		{
+			"propertyName": "specialRules",
+			"label": "Special Rules",
+			"dataSource": "keywords"
+		}
+	],
     "additionalDb": [],
     "elements": [
         {
@@ -455,7 +461,7 @@
             {
                 "name": "Legiones Astartes",
                 "additionalRules": [
-                   "Legiones Astartes companies may only have 1 Praetor."
+                   "Legiones Astartes companies may only have 1 Praetor. Additionally their leader may take a free Allegiance upgrade."
                 ],
                 "armyBonuses": [],
                 "specialRules": [
@@ -464,7 +470,7 @@
             {
                 "name": "Solar Auxilia",
                 "additionalRules": [
-                   "No additional rules."
+                   "May upgrade Vehicles to Veteran for 4 pts each."
                 ],
                 "armyBonuses": [],
                 "specialRules": [
@@ -512,17 +518,26 @@
                 "range": 24,
                 "maximummovement": 12,
                 "specialRules": [
-                    "Anti-Tank",
+                    "Fast",
                     "Panic"
                 ],
                 "options": [
                     {
-                        "name": "Fearsome",
-                        "points": 2
+                        "name": "Veteran",
+                        "points": 4,
+						"availableIn": [
+							"Solar Auxilia"
+						]
                     },
                     {
-                        "name": "Bloodthirsty",
-                        "points": 3
+                        "name": "Heavy Weapon",
+						"chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+						"chooseOneKey": "a",
+                        "points": 0
                     }
                 ]
             },
@@ -550,7 +565,6 @@
                 "specialRules": [
                     "Wild Charge",
                     "Panic",
-                    "Anti-Tank",
                     "Panic"
                 ],
                 "options": [
@@ -561,6 +575,16 @@
                     {
                         "name": "Bloodthirsty",
                         "points": 3
+                    },
+                    {
+                        "name": "Heavy Weapon",
+						"chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+						"chooseOneKey": "a",
+                        "points": 0
                     }
                 ]
             },
@@ -685,6 +709,13 @@
                     "Panic"
                 ],
                 "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 4,
+						"availableIn": [
+							"Solar Auxilia"
+						]
+                    },
                     {
                         "name": "Fearsome",
                         "points": 2
@@ -947,10 +978,12 @@
                     },
                     {
                         "name": "Fearsome",
+						"chooseOneKey": "b",
                         "points": 2
                     },
                     {
                         "name": "Bloodthirsty",
+						"chooseOneKey": "b",
                         "points": 3
                     },
                     {
@@ -1173,6 +1206,18 @@
                         "points": 2
                     },
                     {
+                        "name": "Loyalist",
+						"chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Heretic",
+						"chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
                         "name": "Fearsome",
                         "points": 2
                     },
@@ -1221,17 +1266,29 @@
                     },
                     {
                         "name": "Heavy Weapon",
-						"chooseOneKey": "b",
+						"chooseOneKey": "c",
                         "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
-						"chooseOneKey": "b",
+						"chooseOneKey": "c",
                         "points": 2
                     },
                     {
                         "name": "Bloodthirsty",
                         "points": 3
+                    },
+                    {
+                        "name": "Loyalist",
+						"chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Heretic",
+						"chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
                     }
                 ]
             },
@@ -1294,7 +1351,7 @@
                 "move": 8,
                 "shoot": 6,
                 "courage": 6,
-                "armor": 1,
+                "armor": 2,
                 "attackvalue": 5,
                 "defencevalue": 5,
                 "shootvalue": 4,
@@ -1311,7 +1368,21 @@
         "upgrades": [
             {
                 "name": "Fearsome",
-                "definition": " Some people are just that much scarier than others, especially if tripping and mutated! A Fearsome unit creates panic in its opponents through reputation, deed, or other psychological means. Courage tests caused as a result of this unit Attacking or Shooting suffer an additional -1 to the total. Should two Fearsome units encounter one another, the effect of this rule is cancelled between those units"
+                "definition": " Some people are just that much scarier than others, especially if in power armor and mutated! A Fearsome unit creates panic in its opponents through reputation, deed, or other psychological means. Courage tests caused as a result of this unit Attacking or Shooting suffer an additional -1 to the total. Should two Fearsome units encounter one another, the effect of this rule is cancelled between those units"
+            },
+            {
+                "name": "Heretic",
+                "definition": "Enemy units have -1 to all Courage tests. Additionally, your Leader has Panic."
+            },
+            {
+                "name": "Loyalist",
+                "definition": "Friendly units within 9” of an HQ model automatically succeed Order rolls. Additionally, your Leader has +1 to Armor.",
+				"modifiesStats": [
+					{
+						"stat": "armor",
+						"modifier": 1
+					}
+				]
             },
             {
                 "name": "Bloodthirsty",
