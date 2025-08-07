@@ -466,7 +466,7 @@
             {
                 "name": "Legiones Astartes",
                 "additionalRules": [
-                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Allegiance upgrade."
+                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Allegiance upgrade, and all their HQs get either Bloodthirsty or Fearsome for free."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -640,7 +640,7 @@
                 "move": 7,
                 "shoot": 5,
                 "courage": 3,
-                "armor": 4,
+                "armor": 5,
                 "attackvalue": 3,
                 "defencevalue": 2,
                 "shootvalue": 3,
@@ -1187,7 +1187,7 @@
                 "move": 5,
                 "shoot": 6,
                 "courage": 4,
-                "armor": 2,
+                "armor": 3,
                 "attackvalue": 4,
                 "defencevalue": 3,
                 "shootvalue": 3,
@@ -1298,7 +1298,7 @@
                 "move": 5,
                 "shoot": 7,
                 "courage": 4,
-                "armor": 2,
+                "armor": 3,
                 "attackvalue": 4,
                 "defencevalue": 4,
                 "shootvalue": 3,
@@ -1322,6 +1322,11 @@
                     },
                     {
                         "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Snipers",
                         "chooseOneKey": "a",
                         "points": 2
                     },
@@ -1352,7 +1357,7 @@
                 "move": 5,
                 "shoot": 9,
                 "courage": 4,
-                "armor": 2,
+                "armor": 3,
                 "attackvalue": 3,
                 "defencevalue": 3,
                 "shootvalue": 6,
@@ -1404,7 +1409,7 @@
                 "move": 5,
                 "shoot": 9,
                 "courage": 4,
-                "armor": 2,
+                "armor": 3,
                 "attackvalue": 5,
                 "defencevalue": 5,
                 "shootvalue": 6,
@@ -1526,6 +1531,11 @@
                     },
                     {
                         "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Snipers",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -1864,14 +1874,14 @@
                 "unlimited": false,
                 "strengthpoints": 5,
                 "points": 6,
-                "attack": 5,
+                "attack": 4,
                 "move": 3,
-                "shoot": 5,
+                "shoot": 4,
                 "courage": 4,
-                "armor": 3,
-                "attackvalue": 3,
+                "armor": 4,
+                "attackvalue": 2,
                 "defencevalue": 2,
-                "shootvalue": 3,
+                "shootvalue": 2,
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [],
@@ -1930,7 +1940,7 @@
                 "move": 4,
                 "shoot": 5,
                 "courage": 4,
-                "armor": 2,
+                "armor": 3,
                 "attackvalue": 3,
                 "defencevalue": 3,
                 "shootvalue": 3,
@@ -1955,21 +1965,13 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 1
-                    },
-                    {
-                        "name": "Anti-Tank",
                         "chooseOneKey": "c",
-                        "points": 2
-                    },
-                    {
-                        "name": "Anti-Infantry",
-                        "chooseOneKey": "c",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Bloodthirsty",
-                        "points": 1
+                        "chooseOneKey": "c",
+                        "points": 0
                     },
                     {
                         "name": "Loyalist",
@@ -2037,13 +2039,13 @@
                 "unlimited": false,
                 "strengthpoints": 5,
                 "points": 6,
-                "attack": 6,
+                "attack": 5,
                 "move": 3,
                 "shoot": 3,
                 "courage": 4,
-                "armor": 4,
-                "attackvalue": 6,
-                "defencevalue": 5,
+                "armor": 2,
+                "attackvalue": 5,
+                "defencevalue": 4,
                 "shootvalue": 2,
                 "range": 24,
                 "maximummovement": 4,
@@ -2069,13 +2071,11 @@
                     },
                     {
                         "name": "Fearsome",
-                        "chooseOneKey": "c",
-                        "points": 0
+                        "points": 1
                     },
                     {
                         "name": "Bloodthirsty",
-                        "chooseOneKey": "c",
-                        "points": 0
+                        "points": 1
                     }
                 ]
             },
@@ -2216,7 +2216,7 @@
             },
             {
                 "name": "Veteran",
-                "definition": "Veteran units are tougher variations of units. These units get +1 to all order rolls, as well as to their Armor, Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
+                "definition": "Veteran units are tougher variations of units. These units get +1 to all order rolls, as well as to their Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
                 "modifiesStats": [
                     {
                         "stat": "attack",
@@ -2229,10 +2229,6 @@
                     {
                         "stat": "shoot",
                         "modifier": -1
-                    },
-                    {
-                        "stat": "armor",
-                        "modifier": 1
                     },
                     {
                         "stat": "attackvalue",
@@ -2327,6 +2323,16 @@
                     {
                         "stat": "defencevalue",
                         "modifier": -1
+                    }
+                ]
+            },
+            {
+                "name": "Snipers",
+                "definition": "HQ units count as armor 1 against Shooting by this unit (even in cover) and the unit has +2 to its Shooting orders. Cannot be takn alongside Anti-Infantry or Anti-Tank.",
+                "modifiesStats": [
+                    {
+                        "stat": "shoot",
+                        "modifier": -2
                     }
                 ]
             },
