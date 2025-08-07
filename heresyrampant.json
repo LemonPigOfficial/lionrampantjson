@@ -2211,11 +2211,11 @@
             },
             {
                 "name": "Imperial",
-                "definition": "Friendly vehicles within 24” of an HQ model automatically succeed Order rolls.",
+                "definition": "Friendly vehicles within 24” of an HQ model automatically succeed Order rolls."
             },
             {
                 "name": "Loyalist",
-                "definition": "Friendly units within 9” of an HQ model automatically succeed Order rolls..",
+                "definition": "Friendly units within 9” of an HQ model automatically succeed Order rolls."
             },
             {
                 "name": "Bloodthirsty",
