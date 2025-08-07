@@ -1127,7 +1127,7 @@
                 "decreaseModelCount": -4
             },
             {
-                "name": "Custodians",
+                "name": "Custodian Sagitarii",
                 "factions": [
                     {
                         "name": "Talons of the Emperor",
@@ -1142,14 +1142,13 @@
                 "shoot": 4,
                 "courage": 5,
                 "armor": 4,
-                "attackvalue": 3,
+                "attackvalue": 4,
                 "defencevalue": 3,
                 "shootvalue": 3,
-                "range": 12,
+                "range": 24,
                 "maximummovement": 6,
                 "specialRules": [
                     "Cumbersome",
-                    "Great Strength",
                     "Rapid Fire"
                 ],
                 "options": [
@@ -1194,10 +1193,73 @@
                 "decreaseModelCount": -4
             },
             {
+                "name": "Custodians",
+                "factions": [
+                    {
+                        "name": "Talons of the Emperor",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 4,
+                "move": 4,
+                "shoot": 4,
+                "courage": 5,
+                "armor": 4,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Cumbersome",
+                    "Great Strength",
+                    "Rapid Fire"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "a",
+                        "addsModels": 5,
+                        "points": 4
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 4
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 4
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
                 "name": "Sisters of Silence",
                 "factions": [
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Talons of the Emperor",
                         "unitType": "Infantry"
                     }
                 ],
@@ -2169,7 +2231,7 @@
                 "name": "Talons Command",
                 "factions": [
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Talons of the Emperor",
                         "unitType": "HQ"
                     }
                 ],
@@ -2438,6 +2500,14 @@
                         "unitType": "Fortification"
                     },
                     {
+                        "name": "Cult Mechanicum",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Talons of the Emperor",
+                        "unitType": "Fortification"
+                    },
+                    {
                         "name": "Solar Auxilia",
                         "unitType": "Fortification"
                     }
@@ -2468,6 +2538,54 @@
                     },
                     {
                         "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    }
+                ],
+                "decreaseModelCount": -1
+            },
+            {
+                "name": "Drop Pod",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Talons of the Emperor",
+                        "unitType": "Fortification"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 9,
+                "move": 8,
+                "shoot": 6,
+                "courage": 6,
+                "armor": 2,
+                "attackvalue": 5,
+                "defencevalue": 5,
+                "shootvalue": 4,
+                "range": 30,
+                "maximummovement": 0,
+                "specialRules": [
+                    "Deep Strike",
+                    "Rapid Fire"
+                ],
+                "options": [
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Transport",
                         "chooseOneKey": "a",
                         "points": 0
                     }
@@ -2548,7 +2666,7 @@
             },
             {
                 "name": "Transport",
-                "definition": "At the start of the game, nominate one friendly Infantry unit that isn't Cumbersome to be embarked in each transport you have. Do not deploy embarked units normally. At the end of the first round, deploy Embarked units within 6” of their specific Transport."
+                "definition": "At the start of the game, nominate one friendly Infantry unit that isn't Cumbersome to be embarked in each transport you have. Do not deploy embarked units normally. At the end of the first or second round, deploy Embarked units within 6” of their specific Transport. If the Transport is destroyed, its embarked unit deploys within 2” of the Transport's immediate location before it was destroyed."
             },
             {
                 "name": "Javelins Only",
