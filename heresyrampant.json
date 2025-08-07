@@ -2377,7 +2377,7 @@
             },
             {
                 "name": "Increased Squad Size",
-                "definition": "+5 to Strength Points. Cannot be mixed with Veteran.",
+                "definition": "+5 to Strength Points, and counts as a Massive unit when calculating attack dice. Cannot be mixed with Veteran.",
                 "modifiesStats": [
                     {
                         "stat": "strengthpoints",
