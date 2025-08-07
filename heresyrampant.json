@@ -648,8 +648,6 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-                    "Great Strength",
-                    "Rapid Fire",
                     "Panic"
                 ],
                 "options": [
@@ -699,8 +697,6 @@
                 "range": 18,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Great Strength",
-                    "Rapid Fire",
                     "Panic"
                 ],
                 "options": [
@@ -1078,9 +1074,7 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Deep Strike",
-                    "Cumbersome",
-                    "Rapid Fire",
-                    "Great Strength"
+                    "Cumbersome"
                 ],
                 "options": [
                     {
@@ -1130,16 +1124,16 @@
                 "unlimited": true,
                 "strengthpoints": 5,
                 "points": 6,
-                "attack": 4,
-                "move": 4,
+                "attack": 3,
+                "move": 3,
                 "shoot": 0,
                 "courage": 5,
                 "armor": 4,
-                "attackvalue": 2,
-                "defencevalue": 4,
+                "attackvalue": 3,
+                "defencevalue": 3,
                 "shootvalue": 0,
                 "range": 0,
-                "maximummovement": 4,
+                "maximummovement": 5,
                 "specialRules": [
                     "Deep Strike",
                     "Cumbersome",
@@ -1173,7 +1167,7 @@
                 "decreaseModelCount": -4
             },
             {
-                "name": "Bikers",
+                "name": "Outriders",
                 "factions": [
                     {
                         "name": "Legiones Astartes",
@@ -1181,7 +1175,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 5,
+                "strengthpoints": 6,
                 "points": 6,
                 "attack": 8,
                 "move": 4,
@@ -1195,16 +1189,9 @@
                 "maximummovement": 12,
                 "specialRules": [
                     "Fast",
-                    "Cumbersome",
-                    "Rapid Fire"
+                    "Cumbersome"
                 ],
                 "options": [
-                    {
-                        "name": "Increased Squad Size",
-                        "chooseOneKey": "a",
-                        "addsModels": 5,
-                        "points": 4
-                    },
                     {
                         "name": "Fearsome",
                         "points": 1
@@ -1233,7 +1220,7 @@
                         "points": 4
                     }
                 ],
-                "decreaseModelCount": -4
+                "decreaseModelCount": -2
             },
             {
                 "name": "Tactical Squad",
@@ -1257,8 +1244,7 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Skirmish",
-                    "Rapid Fire"
+                    "Skirmish"
                 ],
                 "options": [
                     {
@@ -1316,8 +1302,7 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Brace",
-                    "Hard to target",
-                    "Rapid Fire"
+                    "Hard to target"
                 ],
                 "options": [
                     {
@@ -1371,8 +1356,7 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Skirmish",
-                    "Hard to target",
-                    "Rapid Fire"
+                    "Hard to target"
                 ],
                 "options": [
                     {
@@ -1431,7 +1415,6 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-                    "Counter-charge vs Infantry",
                     "Great Strength"
                 ],
                 "options": [
@@ -1484,8 +1467,7 @@
                 "maximummovement": 8,
                 "specialRules": [
                     "Wild Charge",
-                    "Fly",
-                    "Great Strength"
+                    "Fly"
                 ],
                 "options": [
                     {
@@ -1730,7 +1712,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 5,
+                "strengthpoints": 6,
                 "points": 8,
                 "attack": 3,
                 "move": 3,
@@ -1747,11 +1729,6 @@
                     "Cumbersome"
                 ],
                 "options": [
-                    {
-                        "name": "Increased Squad Size",
-                        "addsModels": 5,
-                        "points": 4
-                    },
                     {
                         "name": "Fearsome",
                         "points": 1
@@ -1771,7 +1748,7 @@
                         "points": 2
                     }
                 ],
-                "decreaseModelCount": -4
+                "decreaseModelCount": -2
             },
             {
                 "name": "Ursarax Cohort",
@@ -1782,7 +1759,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 5,
+                "strengthpoints": 6,
                 "points": 6,
                 "attack": 3,
                 "move": 3,
@@ -1801,11 +1778,6 @@
                 ],
                 "options": [
                     {
-                        "name": "Increased Squad Size",
-                        "addsModels": 5,
-                        "points": 4
-                    },
-                    {
                         "name": "Fearsome",
                         "points": 1
                     },
@@ -1814,7 +1786,7 @@
                         "points": 1
                     }
                 ],
-                "decreaseModelCount": -4
+                "decreaseModelCount": -2
             },
             {
                 "name": "Tech Thralls",
@@ -1920,7 +1892,8 @@
                 "range": 0,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Hard to target"
+                    "Hard to target",
+					"Counter-charge"
                 ],
                 "options": [
                     {
@@ -2278,7 +2251,7 @@
             },
             {
                 "name": "Bloodthirsty",
-                "definition": "A Bloodthirsty unit can inflict a whole load of additional pain on an enemy – if it rolls well. Any Attack dice or Shooting dice (but not Defence dice) that roll a 6 cause 2 hits rather than the usual 1 hit"
+                "definition": "A Bloodthirsty unit can inflict a whole load of additional pain on an enemy – if it rolls well. Any Attack dice or Shooting dice (but not Defence dice) that roll a 6 cause 2 hits rather than the usual 1 hit."
             },
             {
                 "name": "Veteran",
@@ -2482,11 +2455,11 @@
             },
             {
                 "name": "Great Strength",
-                "definition": "Rolls of 6 to hit deal three hits instead of 1 makes in melee."
+                "definition": "Any Attack dice or Defence dice that roll a 6 cause 2 hits rather than the usual 1 hit."
             },
             {
                 "name": "Rapid Fire",
-                "definition": "Rolls of 6 to hit deal three hits instead of 1 in shooting."
+                "definition": "Any Shooting dice that roll a 6 cause 2 hits rather than the usual 1 hit."
             },
             {
                 "name": "Panic",
