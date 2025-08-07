@@ -488,6 +488,14 @@
                 "specialRules": []
             },
             {
+                "name": "Talons of the Emperor",
+                "additionalRules": [
+                    "Talons of the Emperor companies may, once per round, automatically succeed on an Order of their choice - the Emperor's finest warriors have no time for blunders."
+                ],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
                 "name": "Solar Auxilia",
                 "additionalRules": [
                     "All HQ units have the leader's Leader Traits. Additionally, you may upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry."
@@ -520,6 +528,10 @@
                     },
                     {
                         "name": "Cult Mechanicum",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Talons of the Emperor",
                         "unitType": "Vehicle"
                     },
                     {
@@ -628,6 +640,10 @@
             {
                 "name": "Great Dreadnought",
                 "factions": [
+                    {
+                        "name": "Talons of the Emperor",
+                        "unitType": "Vehicle"
+                    },
                     {
                         "name": "Legiones Astartes",
                         "unitType": "Vehicle"
@@ -872,6 +888,10 @@
                         "unitType": "Vehicle"
                     },
                     {
+                        "name": "Talons of the Emperor",
+                        "unitType": "Vehicle"
+                    },
+                    {
                         "name": "Cult Mechanicum",
                         "unitType": "Vehicle"
                     },
@@ -1048,6 +1068,184 @@
                         "points": 0
                     }
                 ]
+            },
+            {
+                "name": "Custodian Terminators",
+                "factions": [
+                    {
+                        "name": "Talons of the Emperor",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 8,
+                "attack": 4,
+                "move": 4,
+                "shoot": 4,
+                "courage": 5,
+                "armor": 5,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 4,
+                "specialRules": [
+                    "Deep Strike",
+                    "Cumbersome",
+                    "Great Strength",
+                    "Rapid Fire"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 4
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 4
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Custodians",
+                "factions": [
+                    {
+                        "name": "Talons of the Emperor",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 4,
+                "move": 4,
+                "shoot": 4,
+                "courage": 5,
+                "armor": 4,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Cumbersome",
+                    "Great Strength",
+                    "Rapid Fire"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "a",
+                        "addsModels": 5,
+                        "points": 4
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Jump Pack",
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 4
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 4
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Sisters of Silence",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 4,
+                "attack": 6,
+                "move": 5,
+                "shoot": 6,
+                "courage": 4,
+                "armor": 2,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Rapid Fire",
+					"Selfsufficent"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "b",
+                        "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
             },
             {
                 "name": "Terminators",
@@ -1966,6 +2164,60 @@
                         "points": 0
                     }
                 ]
+            },
+            {
+                "name": "Talons Command",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "HQ"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 6,
+                "attack": 3,
+                "move": 3,
+                "shoot": 3,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 2,
+                "defencevalue": 2,
+                "shootvalue": 2,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Great Strength",
+                    "Rapid Fire"
+                ],
+                "options": [
+                    {
+                        "name": "Jump Pack",
+                        "chooseOneKey": "a",
+                        "points": 4
+                    },
+                    {
+                        "name": "Bike",
+                        "chooseOneKey": "a",
+                        "points": 4
+                    },
+                    {
+                        "name": "Terminator Armor",
+                        "chooseOneKey": "a",
+                        "points": 4
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "c",
+                        "points": 0
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "c",
+                        "points": 0
+                    }
+                ],
+                "decreaseModelCount": -2
             },
             {
                 "name": "Consul",
