@@ -801,8 +801,6 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-                    "Great Strength",
-                    "Rapid Fire",
                     "Panic"
                 ],
                 "options": [
@@ -817,11 +815,6 @@
                     },
                     {
                         "name": "Anti-Infantry",
-                        "chooseOneKey": "a",
-                        "points": 0
-                    },
-                    {
-                        "name": "Bolt Weapons",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -909,7 +902,6 @@
                 "specialRules": [
                     "Panic",
                     "Selfsufficent",
-                    "Rapid Fire",
                     "Fast"
                 ],
                 "options": [
@@ -974,7 +966,6 @@
                 "maximummovement": 8,
                 "specialRules": [
                     "Panic",
-                    "Great Strength",
                     "Rapid Fire",
                     "Selfsufficent"
                 ],
@@ -1087,7 +1078,9 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Deep Strike",
-                    "Cumbersome"
+                    "Cumbersome",
+                    "Rapid Fire",
+                    "Great Strength"
                 ],
                 "options": [
                     {
@@ -1120,9 +1113,57 @@
                         "points": 2
                     },
                     {
-                        "name": "Bolt Weapons",
-                        "chooseOneKey": "b",
-                        "points": 0
+                        "name": "Medicae",
+                        "points": 4
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Terminator Claws",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 4,
+                "move": 4,
+                "shoot": 0,
+                "courage": 5,
+                "armor": 4,
+                "attackvalue": 2,
+                "defencevalue": 4,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 4,
+                "specialRules": [
+                    "Deep Strike",
+                    "Cumbersome",
+                    "Great Strength"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "a",
+                        "addsModels": 5,
+                        "points": 4
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 4
                     },
                     {
                         "name": "Medicae",
@@ -1154,7 +1195,8 @@
                 "maximummovement": 12,
                 "specialRules": [
                     "Fast",
-                    "Cumbersome"
+                    "Cumbersome",
+                    "Rapid Fire"
                 ],
                 "options": [
                     {
@@ -1187,11 +1229,6 @@
                         "points": 2
                     },
                     {
-                        "name": "Bolt Weapons",
-                        "chooseOneKey": "b",
-                        "points": 0
-                    },
-                    {
                         "name": "Medicae",
                         "points": 4
                     }
@@ -1220,7 +1257,8 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Skirmish"
+                    "Skirmish",
+                    "Rapid Fire"
                 ],
                 "options": [
                     {
@@ -1242,11 +1280,6 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 2
-                    },
-                    {
-                        "name": "Bolt Weapons",
-                        "chooseOneKey": "a",
-                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -1283,7 +1316,8 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Brace",
-                    "Hard to target"
+                    "Hard to target",
+                    "Rapid Fire"
                 ],
                 "options": [
                     {
@@ -1301,11 +1335,6 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 2
-                    },
-                    {
-                        "name": "Bolt Weapons",
-                        "chooseOneKey": "a",
-                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -1342,7 +1371,8 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Skirmish",
-                    "Hard to target"
+                    "Hard to target",
+                    "Rapid Fire"
                 ],
                 "options": [
                     {
@@ -1360,11 +1390,6 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 2
-                    },
-                    {
-                        "name": "Bolt Weapons",
-                        "chooseOneKey": "a",
-                        "points": 0
                     },
                     {
                         "name": "Snipers",
@@ -1406,7 +1431,8 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-                    "Counter-charge vs Infantry"
+                    "Counter-charge vs Infantry",
+                    "Great Strength"
                 ],
                 "options": [
                     {
@@ -1458,7 +1484,8 @@
                 "maximummovement": 8,
                 "specialRules": [
                     "Wild Charge",
-                    "Fly"
+                    "Fly",
+                    "Great Strength"
                 ],
                 "options": [
                     {
@@ -1894,7 +1921,7 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Hard to target"
-					],
+                ],
                 "options": [
                     {
                         "name": "Massive Squads",
@@ -1928,7 +1955,7 @@
                 "specialRules": [
                     "Great Strength",
                     "Rapid Fire"
-				],
+                ],
                 "options": [
                     {
                         "name": "Jump Pack",
@@ -1990,7 +2017,10 @@
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 6,
-                "specialRules": [],
+                "specialRules": [
+                    "Great Strength",
+                    "Rapid Fire"
+                ],
                 "options": [
                     {
                         "name": "Jump Pack",
@@ -2096,7 +2126,7 @@
                 "specialRules": [
                     "Great Strength",
                     "Rapid Fire"
-					],
+                ],
                 "options": [
                     {
                         "name": "Imperial",
@@ -2373,10 +2403,6 @@
                 ]
             },
             {
-                "name": "Bolt Weapons",
-                "definition": "Infantry and HQ units count as armor 2 against Shooting by this unit (but may benefit from cover). If the target is Cumbersome, a Vehicle, or a Fortification, it counts as having -1 to Armor instead. Cannot be takn alongside Anti-Infantry or Anti-Tank."
-            },
-            {
                 "name": "Increased Squad Size",
                 "definition": "+5 to Strength Points. Cannot be mixed with Veteran.",
                 "modifiesStats": [
@@ -2456,11 +2482,11 @@
             },
             {
                 "name": "Great Strength",
-                "definition": "This unit always makes at least 10 attacks in melee, regardless of Strength Points."
+                "definition": "Rolls of 6 to hit deal three hits instead of 1 makes in melee."
             },
             {
                 "name": "Rapid Fire",
-                "definition": "This unit always makes at least 10 attacks in shooting, regardless of Strength Points."
+                "definition": "Rolls of 6 to hit deal three hits instead of 1 in shooting."
             },
             {
                 "name": "Panic",
