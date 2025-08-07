@@ -2374,7 +2374,7 @@
             },
             {
                 "name": "Bolt Weapons",
-                "definition": "Infantry and HQ units count as armor 2 against Shooting by this unit (even in cover). If the target is Cumbersome, it counts as having -1 to Armor instead. Cannot be takn alongside Anti-Infantry or Anti-Tank."
+                "definition": "Infantry and HQ units count as armor 2 against Shooting by this unit (but may benefit from cover). If the target is Cumbersome, a Vehicle, or a Fortification, it counts as having -1 to Armor instead. Cannot be takn alongside Anti-Infantry or Anti-Tank."
             },
             {
                 "name": "Increased Squad Size",
