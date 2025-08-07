@@ -2255,7 +2255,7 @@
             },
             {
                 "name": "Veteran",
-                "definition": "Veteran units are tougher variations of units. These units get +1 to all order rolls, as well as to their Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
+                "definition": "Veteran units are tougher variations of units. These units get +1 to all order rolls, as well as to their Armor, Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
                 "modifiesStats": [
                     {
                         "stat": "attack",
@@ -2268,6 +2268,10 @@
                     {
                         "stat": "shoot",
                         "modifier": -1
+                    },
+                    {
+                        "stat": "armor",
+                        "modifier": 1
                     },
                     {
                         "stat": "attackvalue",
