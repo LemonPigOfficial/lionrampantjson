@@ -648,7 +648,8 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-                    "Panic"
+                    "Panic",
+                    "Bolters"
                 ],
                 "options": [
                     {
@@ -797,7 +798,8 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-                    "Panic"
+                    "Panic",
+                    "Bolters"
                 ],
                 "options": [
                     {
@@ -807,12 +809,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Bloodthirsty",
@@ -1071,7 +1073,8 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Deep Strike",
-                    "Cumbersome"
+                    "Cumbersome",
+                    "Bolters"
                 ],
                 "options": [
                     {
@@ -1091,17 +1094,17 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "b",
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
                         "chooseOneKey": "a",
                         "points": 4
-                    },
-                    {
-                        "name": "Anti-Infantry",
-                        "chooseOneKey": "b",
-                        "points": 2
                     },
                     {
                         "name": "Medicae",
@@ -1127,13 +1130,14 @@
                 "courage": 5,
                 "armor": 3,
                 "attackvalue": 4,
-                "defencevalue": 4,
+                "defencevalue": 5,
                 "shootvalue": 3,
                 "range": 24,
                 "maximummovement": 12,
                 "specialRules": [
                     "Fast",
-                    "Cumbersome"
+                    "Cumbersome",
+                    "Bolters"
                 ],
                 "options": [
                     {
@@ -1153,17 +1157,17 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "b",
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
                         "chooseOneKey": "a",
                         "points": 4
-                    },
-                    {
-                        "name": "Anti-Infantry",
-                        "chooseOneKey": "b",
-                        "points": 2
                     },
                     {
                         "name": "Medicae",
@@ -1194,7 +1198,8 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Skirmish"
+                    "Skirmish",
+                    "Bolters"
                 ],
                 "options": [
                     {
@@ -1210,12 +1215,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -1252,7 +1257,8 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Brace",
-                    "Hard to target"
+                    "Hard to target",
+                    "Bolters"
                 ],
                 "options": [
                     {
@@ -1264,12 +1270,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -1306,7 +1312,8 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Skirmish",
-                    "Hard to target"
+                    "Hard to target",
+                    "Bolters"
                 ],
                 "options": [
                     {
@@ -1318,12 +1325,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Snipers",
@@ -1365,7 +1372,8 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Wild Charge",
-                    "Counter-charge vs Infantry"
+                    "Counter-charge vs Infantry",
+                    "Chainswords"
                 ],
                 "options": [
                     {
@@ -1417,7 +1425,8 @@
                 "maximummovement": 8,
                 "specialRules": [
                     "Wild Charge",
-                    "Fly"
+                    "Fly",
+                    "Chainswords"
                 ],
                 "options": [
                     {
@@ -1676,7 +1685,8 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Brace",
-                    "Cumbersome"
+                    "Cumbersome",
+                    "Bolters"
                 ],
                 "options": [
                     {
@@ -1729,7 +1739,8 @@
                 "specialRules": [
                     "Fly",
                     "Deep Strike",
-                    "Cumbersome"
+                    "Cumbersome",
+                    "Chainswords"
                 ],
                 "options": [
                     {
@@ -1884,7 +1895,11 @@
                 "shootvalue": 2,
                 "range": 18,
                 "maximummovement": 6,
-                "specialRules": [],
+                "specialRules": [
+                    "Chainswords",
+                    "Bolters",
+                    "Fast"
+				],
                 "options": [
                     {
                         "name": "Jump Pack",
@@ -1946,7 +1961,11 @@
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 6,
-                "specialRules": [],
+                "specialRules": [
+                    "Chainswords",
+                    "Bolters",
+                    "Fast"
+				],
                 "options": [
                     {
                         "name": "Jump Pack",
@@ -2192,23 +2211,11 @@
             },
             {
                 "name": "Imperial",
-                "definition": "Friendly vehicles within 24” of an HQ model automatically succeed Order rolls. Additionally, your Leader has +1 to Armor.",
-                "modifiesStats": [
-                    {
-                        "stat": "armor",
-                        "modifier": 1
-                    }
-                ]
+                "definition": "Friendly vehicles within 24” of an HQ model automatically succeed Order rolls.",
             },
             {
                 "name": "Loyalist",
-                "definition": "Friendly units within 9” of an HQ model automatically succeed Order rolls. Additionally, your Leader has +1 to Armor.",
-                "modifiesStats": [
-                    {
-                        "stat": "armor",
-                        "modifier": 1
-                    }
-                ]
+                "definition": "Friendly units within 9” of an HQ model automatically succeed Order rolls..",
             },
             {
                 "name": "Bloodthirsty",
@@ -2294,7 +2301,7 @@
             },
             {
                 "name": "Terminator Armor",
-                "definition": "Deep Strike, Cumbersome and +2 Armor, but -2 Movement Distance. Cannot be combined with Jump Pack or Bike.",
+                "definition": "Deep Strike, Cumbersome and +1 Armor, but -2 Movement Distance. Cannot be combined with Jump Pack or Bike.",
                 "modifiesStats": [
                     {
                         "stat": "maximummovement",
@@ -2302,7 +2309,7 @@
                     },
                     {
                         "stat": "armor",
-                        "modifier": 2
+                        "modifier": 1
                     }
                 ]
             },
@@ -2396,7 +2403,15 @@
             },
             {
                 "name": "Cumbersome",
-                "definition": "Isn't affected by Anti-Infantry, but is affected by Anti-Tank."
+                "definition": "The unit isn't affected by Anti-Infantry, but is affected by Anti-Tank."
+            },
+            {
+                "name": "Bolters",
+                "definition": "When shooting, this unit treats Armor values higher than 3 as being Armor values of 3. Is nullified by the unit having Anti-Infantry or Anti-Tank."
+            },
+            {
+                "name": "Chainswords",
+                "definition": "In melee, this unit treats Armor values higher than 3 as being Armor values of 3."
             },
             {
                 "name": "Brace",
