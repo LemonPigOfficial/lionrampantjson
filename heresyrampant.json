@@ -457,7 +457,7 @@
             },
             {
                 "name": "Delegatus",
-                "definition": "May Lead may add or subtract 1-2 from your total (your choice) when rolling to decide attacker/ defender as described in Chapter 5 (here).",
+                "definition": "May add or subtract 1-2 from your total (your choice) when rolling to decide attacker/ defender as described in Chapter 5 (here).",
                 "factions": [],
                 "decreaseModelCount": 1
             }
@@ -568,7 +568,7 @@
                     },
                     {
                         "name": "Double Time",
-                        "points": 4
+                        "points": 2
                     }
                 ]
             },
@@ -621,7 +621,7 @@
                     },
                     {
                         "name": "Double Time",
-                        "points": 8
+                        "points": 4
                     }
                 ]
             },
@@ -647,7 +647,6 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Wild Charge",
                     "Panic"
                 ],
                 "options": [
@@ -671,7 +670,7 @@
                     },
                     {
                         "name": "Double Time",
-                        "points": 4
+                        "points": 2
                     }
                 ]
             },
@@ -720,7 +719,7 @@
                     },
                     {
                         "name": "Double Time",
-                        "points": 4
+                        "points": 2
                     }
                 ]
             },
@@ -796,7 +795,6 @@
                 "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Wild Charge",
                     "Panic"
                 ],
                 "options": [
@@ -1244,7 +1242,7 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Skirmish"
+                    "Rapid Fire"
                 ],
                 "options": [
                     {
@@ -2203,11 +2201,12 @@
                 "attackvalue": 5,
                 "defencevalue": 5,
                 "shootvalue": 4,
-                "range": 24,
+                "range": 30,
                 "maximummovement": 3,
                 "specialRules": [
                     "Panic",
-                    "Rapid Fire"
+                    "Rapid Fire",
+					"Bombardment"
                 ],
                 "options": [
                     {
@@ -2221,7 +2220,7 @@
                         "points": 0
                     }
                 ],
-                "decreaseModelCount": -2
+                "decreaseModelCount": -1
             }
         ],
         "upgrades": [
@@ -2438,12 +2437,16 @@
                 "definition": "This unit does not halve its movement in rough terrain."
             },
             {
+                "name": "Bombardment",
+                "definition": "At the start of the first round, may Shoot without rolling for orders. This doesn't count as an activtion and as such it may shoot twice on the first round - once from bombardment, the other from actiivation."
+            },
+            {
                 "name": "Cumbersome",
                 "definition": "Cannot embark on Transports or benefit from cover."
             },
             {
                 "name": "Brace",
-                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test to Brace at 7+. If it succeeds, it immediately carries out a Skirmish action targeting the Attacking unit, may not move closer to the Attacking unit, and must avoid other units by 3” as usual. Any casualties inflicted by the Skirmish action cause a Courage test only at the end of the Attack. The charging unit then moves its full charge distance following the Bracing unit. If it makes contact it Attacks with the Bracing unit reducing its armor by 1, and if it cannot contact it must move as close as possible (moving no closer than 3” to the Bracing unit). If the Brace test fails, the unit stands in place and awaits attack without Shooting or Moving. A Bracing unit will always fight when contacted, and a unit may Brace as many times as it wishes in a turn. Brace cannot be used if the unit is Battered"
+                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test to Brace at 6+. If it succeeds, it immediately carries out a Skirmish action targeting the Attacking unit, may not move closer to the Attacking unit, and must avoid other units by 3” as usual. Any casualties inflicted by the Skirmish action cause a Courage test only at the end of the Attack. The charging unit then moves its full charge distance following the Bracing unit. If it makes contact it Attacks with the Bracing unit reducing its armor by 1, and if it cannot contact it must move as close as possible (moving no closer than 3” to the Bracing unit). If the Brace test fails, the unit stands in place and awaits attack without Shooting or Moving. A Bracing unit will always fight when contacted, and a unit may Brace as many times as it wishes in a turn. Brace cannot be used if the unit is Battered"
             },
             {
                 "name": "Skirmish",
