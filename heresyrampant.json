@@ -138,7 +138,7 @@
                                 },
                                 {
                                     "name": "Psyker or Chaplain",
-                                    "points": 3,
+                                    "points": 2,
                                     "unique": true
                                 },
                                 {
@@ -827,13 +827,11 @@
                 "courage": 3,
                 "armor": 3,
                 "attackvalue": 6,
-                "defencevalue": 3,
+                "defencevalue": 5,
                 "shootvalue": 3,
-                "range": 12,
-                "maximummovement": 6,
+                "range": 18,
+                "maximummovement": 8,
                 "specialRules": [
-                    "Rapid Fire",
-                    "Panic",
                     "Fast"
                 ],
                 "options": [
@@ -847,12 +845,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 0
+                        "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 0
+                        "points": 2
                     }
                 ]
             },
@@ -2811,7 +2809,7 @@
             },
             {
                 "name": "Anti-Infantry",
-                "definition": "HQ and Infantry units count as armor 1 against Shooting by this unit (armor 2 if in cover, or against Cumbersome units). Cannot be taken alongside Anti-Tank or Anti-Tank."
+                "definition": "HQ and Infantry units count as armor 1 against Shooting by this unit (armor 2 if in cover). Doesn't affect Cumbersome units. Cannot be taken alongside Anti-Tank or Anti-Tank."
             }
         ],
         "keywords": [
