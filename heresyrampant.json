@@ -451,7 +451,7 @@
             },
             {
                 "name": "Siegebreaker",
-                "definition": "At the start of the game, declare 1 unit. This unit gets Anti-Tank, unless it already has Anti-Tank or Anti-Infantry.",
+                "definition": "At the start of the game, declare 1 enemy Vehicle, Fortification, or Cumbersome unit, which has its Armor reduced by 1.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -2223,7 +2223,7 @@
                 ],
                 "unlimited": false,
                 "strengthpoints": 5,
-                "points": 6,
+                "points": 4,
                 "attack": 4,
                 "move": 3,
                 "shoot": 4,
@@ -2252,7 +2252,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 0
+                        "points": 2
                     },
                     {
                         "name": "Loyalist",
@@ -2279,7 +2279,7 @@
                 ]
             },
             {
-                "name": "Talons Command",
+                "name": "Shield Captain",
                 "factions": [
                     {
                         "name": "Talons of the Emperor",
@@ -2287,13 +2287,13 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 10,
+                "strengthpoints": 5,
                 "points": 6,
                 "attack": 3,
                 "move": 3,
                 "shoot": 3,
                 "courage": 4,
-                "armor": 3,
+                "armor": 4,
                 "attackvalue": 2,
                 "defencevalue": 2,
                 "shootvalue": 2,
@@ -2317,7 +2317,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 4
                     },
                     {
                         "name": "Fearsome",
@@ -2329,11 +2329,10 @@
                         "chooseOneKey": "c",
                         "points": 0
                     }
-                ],
-                "decreaseModelCount": -2
+                ]
             },
             {
-                "name": "Consul",
+                "name": "Astartes Command",
                 "factions": [
                     {
                         "name": "Legiones Astartes",
@@ -2341,15 +2340,15 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 5,
-                "points": 4,
+                "strengthpoints": 10,
+                "points": 6,
                 "attack": 5,
                 "move": 4,
                 "shoot": 5,
                 "courage": 4,
                 "armor": 3,
-                "attackvalue": 3,
-                "defencevalue": 3,
+                "attackvalue": 4,
+                "defencevalue": 4,
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 6,
@@ -2371,17 +2370,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 0
-                    },
-                    {
-                        "name": "Fearsome",
-                        "chooseOneKey": "c",
-                        "points": 0
-                    },
-                    {
-                        "name": "Bloodthirsty",
-                        "chooseOneKey": "c",
-                        "points": 0
+                        "points": 2
                     },
                     {
                         "name": "Loyalist",
@@ -2394,8 +2383,19 @@
                         "chooseOneKey": "b",
                         "requiresLeader": true,
                         "points": 0
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "c",
+                        "points": 0
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "c",
+                        "points": 0
                     }
-                ]
+                ],
+                "decreaseModelCount": -2
             },
             {
                 "name": "Command Section",
