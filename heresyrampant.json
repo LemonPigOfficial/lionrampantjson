@@ -2332,7 +2332,7 @@
                 ]
             },
             {
-                "name": "Astartes Command",
+                "name": "Consul",
                 "factions": [
                     {
                         "name": "Legiones Astartes",
@@ -2340,15 +2340,15 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 10,
+                "strengthpoints": 5,
                 "points": 6,
-                "attack": 5,
+                "attack": 4,
                 "move": 4,
-                "shoot": 5,
+                "shoot": 4,
                 "courage": 4,
                 "armor": 3,
-                "attackvalue": 4,
-                "defencevalue": 4,
+                "attackvalue": 3,
+                "defencevalue": 3,
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 6,
@@ -2364,12 +2364,12 @@
                     {
                         "name": "Bike",
                         "chooseOneKey": "a",
-                        "points": 4
+                        "points": 2
                     },
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Loyalist",
@@ -2393,8 +2393,7 @@
                         "chooseOneKey": "c",
                         "points": 0
                     }
-                ],
-                "decreaseModelCount": -2
+                ]
             },
             {
                 "name": "Command Section",
