@@ -1386,7 +1386,7 @@
                 "move": 7,
                 "shoot": 7,
                 "courage": 5,
-                "armor": 5,
+                "armor": 4,
                 "attackvalue": 3,
                 "defencevalue": 3,
                 "shootvalue": 3,
@@ -1408,17 +1408,16 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
-                        "points": 3
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
-                        "chooseOneKey": "a",
                         "points": 6
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "b",
-                        "points": 3
+                        "points": 0
                     }
                 ],
                 "decreaseModelCount": -2
