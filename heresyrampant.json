@@ -1372,6 +1372,58 @@
                 "decreaseModelCount": -4
             },
             {
+                "name": "Saturnine Terminators",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 6,
+                "points": 6,
+                "attack": 7,
+                "move": 7,
+                "shoot": 7,
+                "courage": 5,
+                "armor": 5,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 18,
+                "maximummovement": 3,
+                "specialRules": [
+                    "Deep Strike",
+                    "Cumbersome"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "b",
+                        "points": 3
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 6
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "b",
+                        "points": 3
+                    }
+                ],
+                "decreaseModelCount": -2
+            },
+            {
                 "name": "Terminator Claws",
                 "factions": [
                     {
@@ -2172,7 +2224,7 @@
                 ],
                 "unlimited": false,
                 "strengthpoints": 5,
-                "points": 4,
+                "points": 6,
                 "attack": 4,
                 "move": 3,
                 "shoot": 4,
@@ -2201,7 +2253,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Loyalist",
@@ -2266,7 +2318,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 4
+                        "points": 2
                     },
                     {
                         "name": "Fearsome",
@@ -2320,7 +2372,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Fearsome",
@@ -2397,7 +2449,7 @@
                 ],
                 "unlimited": false,
                 "strengthpoints": 5,
-                "points": 2,
+                "points": 4,
                 "attack": 5,
                 "move": 3,
                 "shoot": 3,
