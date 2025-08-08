@@ -134,144 +134,120 @@
                                 {
                                     "name": "Aggressive",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Psyker or Chaplain",
                                     "points": 3,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Bloodthirsty",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Champion",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Brutal",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Commanding",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Vexilla",
                                     "points": 2,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Drunkard or Eccentric",
                                     "points": 0,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Fearless",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Fearsome",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Impulsive",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Mortifactor",
                                     "points": 2,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Inspired",
                                     "points": 2,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Unflinching",
                                     "points": 2,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Indomitable",
-                                    "points": 2,
-                                    "requiresLeader": true
+                                    "points": 2
                                 },
                                 {
                                     "name": "Patient",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Rash",
                                     "points": 0,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Gun Master",
                                     "points": 2,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Mighty",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Warmaster",
                                     "points": 3,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Quick",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Armistus",
                                     "points": 2,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Siegebreaker",
                                     "points": 3,
-                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Delegatus",
                                     "points": 1,
-                                    "requiresLeader": true,
                                     "unique": true
                                 }
                             ]
@@ -313,67 +289,67 @@
         "leaderUpgrades": [
             {
                 "name": "Aggressive",
-                "definition": "Each turn, one unit within 12” of your Leader’s unit may automatically pass an Attack or Move activation without needing to roll dice (may be used on the Leader’s own unit).",
+                "definition": "Each turn, one unit within 12” of this unit may automatically pass an Attack or Move activation without needing to roll dice (may be used on this own unit).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Psyker or Chaplain",
-                "definition": "Once per round, you may reroll any one set of dice in its entirety, rolled by any player.",
+                "definition": "For each HQ with this trait, you may reroll any one set of dice in its entirety, rolled by any player.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Bloodthirsty",
-                "definition": "Same as the Bloodthirsty rule. Applies only to the Leader's unit and cannot be purchased if the unit already has this rule.",
+                "definition": "Same as the Bloodthirsty rule. Applies only to this unit and cannot be purchased if the unit already has this rule.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Champion",
-                "definition": "In Challenges, the Leader is only hit on a 6, and treats the opposing Leader's armor as if it was 1.",
+                "definition": "In Challenges, this unit is only hit on a 6, and treats the opposing Leader's armor as if it was 1.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Brutal",
-                "definition": "Any unit within 12\" of your Leader's unit may automatically pass a failed Rally or Courage test by removing 1 Strength Point (the very real threat of enforced sacrifice really does make a warrior much bolder).",
+                "definition": "Any unit within 12\" of this unit may automatically pass a failed Rally or Courage test by removing 1 Strength Point (the very real threat of enforced sacrifice really does make a warrior much bolder).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
-                "name": "Commanding",
-                "definition": "Each turn, you may reroll 1 additional failed Move, Attack, or Shoot activation test (no other tests) within 12\" of your Leader's unit (meaning you have 2 rerolls each turn).",
+                "name": "Sub-Command",
+                "definition": "Each turn, you may reroll 1 additional failed Move, Attack, or Shoot activation test (no other tests) within 12\" of your Leader's unit.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Vexilla",
-                "definition": "The Leader's unit and units within 12\" may reroll each of its Courage tests once.",
+                "definition": "This unit and units within 12\" may reroll each of its Courage tests once.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Drunkard or Eccentric",
-                "definition": "When this Leader is good, they're very good, and when they're bad... After deployment but before the first turn, roll to see how much they've drunk. On a 1-2, the Leader drank too much and cannot be ordered on the first turn. On a 3-6, the Leader adds 3 to their Armor.",
+                "definition": "When this HQ is good, they're very good, and when they're bad... After deployment but before the first turn, roll to see how much they've drunk. On a 1-2, the HQ drank too much and cannot be ordered on the first turn. On a 3-6, the HQ adds 3 to their Armor.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Fearless",
-                "definition": "Leader's unit is not affected by Fearsome or Panic enemy units.",
+                "definition": "This unit is not affected by Fearsome or Panic enemy units.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Fearsome",
-                "definition": "Same as the Fearsome rule. Applies only to the Leader's unit and cannot be purchased if the unit already has this rule.",
+                "definition": "Same as the Fearsome rule. Applies only to this unit and cannot be purchased if the unit already has this rule.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Impulsive",
-                "definition": "Each turn, one unit within 12\" of your Leader's unit may automatically pass a Move or Shoot activation without needing to roll dice (may be used on the Leader's own unit).",
+                "definition": "Each turn, one unit within 12\" of this unit may automatically pass a Move or Shoot activation without needing to roll dice (may be used on this own unit).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -384,56 +360,56 @@
                 "decreaseModelCount": 1
             },
             {
-                "name": "Inspired",
-                "definition": "Each turn, you may reroll 2 additional failed Move, Attack, or Shoot activations tests (no other tests) within 12\" of your Leader's unit (meaning you have 3 rerolls each turn.)",
+                "name": "Great Sub-Command",
+                "definition": "Each turn, you may reroll 2 additional failed Move, Attack, or Shoot activations tests (no other tests) within 12\" of your Leader's unit.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Unflinching",
-                "definition": "When required to Retreat, the Leader's unit retreats only 1\".",
+                "definition": "When required to Retreat, this unit retreats only 1\".",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Indomitable",
-                "definition": "During Attacks, the Leader's unit may reroll up to 3 failed hit dice.",
+                "definition": "During Attacks, this unit may reroll up to 3 failed hit dice.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Patient",
-                "definition": "Each turn, one unit within 12\" of your Leader's unit may choose to ignore a Wild Charge activation (may be used on the Leader's own unit).",
+                "definition": "Each turn, one unit within 12\" of your Leader's unit may choose to ignore a Wild Charge activation (may be used on this own unit).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Rash",
-                "definition": "Leader's unit gains the Wild Charge rule. Cannot be purchased if the Leader's unit already has Wild Charge.",
+                "definition": "This unit gains the Wild Charge rule. Cannot be purchased if the Leader's unit already has Wild Charge.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Gun Master",
-                "definition": "Units within 12\" of your Leader's unit may automatically pass a Shoot activation without needing to roll dice (may be used on the Leader's own unit).",
+                "definition": "Units within 12\" of this unit may automatically pass a Shoot activation without needing to roll dice (may be used on this own unit).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Mighty",
-                "definition": "During Attacks, the Leader's unit may reroll 2 failed hit dice.",
+                "definition": "During Attacks, this unit may reroll 2 failed hit dice.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Warmaster",
-                "definition": "Leader's unit automatically passes all Move, Attack and Shoot activation tests. Wild Charges, Counter-charges, and Brace are tested as normal.",
+                "definition": "Ths unit automatically passes all Move, Attack and Shoot activation tests. Wild Charges, Counter-charges, and Brace are tested as normal.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Quick",
-                "definition": "Increase the Leader's unit's maximum movement distance by 2\".",
+                "definition": "Increase this unit's maximum movement distance by 2\".",
                 "factions": [],
                 "decreaseModelCount": 1,
                 "modifiesStats": [
@@ -451,13 +427,13 @@
             },
             {
                 "name": "Siegebreaker",
-                "definition": "At the start of the game, declare 1 enemy Vehicle, Fortification, or Cumbersome unit, which has its Armor reduced by 1.",
+                "definition": "At the start of the game, declare 1 enemy Vehicle, Fortification, or Cumbersome unit, which has its Armor reduced by 1. Doesn't stack.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Delegatus",
-                "definition": "May add or subtract 1-2 from your total (your choice) when rolling to decide attacker/ defender as described in Chapter 5 (here).",
+                "definition": "May add or subtract 1 from your total (your choice) when rolling to decide attacker/ defender as described in Chapter 5. Doesn't stack.",
                 "factions": [],
                 "decreaseModelCount": 1
             }
@@ -498,7 +474,7 @@
             {
                 "name": "Solar Auxilia",
                 "additionalRules": [
-                    "All HQ units have the leader's Leader Traits. Additionally, you may upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry."
+                    "The leader may select a free Allegiance upgrade. Additionally, you may upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -1278,7 +1254,7 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Rapid Fire",
-					"Selfsufficent"
+                    "Selfsufficent"
                 ],
                 "options": [
                     {
@@ -2202,7 +2178,7 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Hard to target",
-					"Counter-charge"
+                    "Counter-charge"
                 ],
                 "options": [
                     {
@@ -2426,6 +2402,18 @@
                         "points": 2
                     },
                     {
+                        "name": "Loyalist",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Heretic",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
                         "name": "Fearsome",
                         "points": 1
                     },
@@ -2577,7 +2565,7 @@
                 "specialRules": [
                     "Panic",
                     "Rapid Fire",
-					"Bombardment"
+                    "Bombardment"
                 ],
                 "options": [
                     {
