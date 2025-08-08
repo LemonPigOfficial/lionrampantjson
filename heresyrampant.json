@@ -2223,10 +2223,10 @@
                 ],
                 "unlimited": false,
                 "strengthpoints": 5,
-                "points": 4,
-                "attack": 4,
+                "points": 6,
+                "attack": 3,
                 "move": 3,
-                "shoot": 4,
+                "shoot": 3,
                 "courage": 4,
                 "armor": 3,
                 "attackvalue": 2,
@@ -2247,12 +2247,12 @@
                     {
                         "name": "Bike",
                         "chooseOneKey": "a",
-                        "points": 4
+                        "points": 2
                     },
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Loyalist",
@@ -2353,7 +2353,6 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Great Strength",
                     "Rapid Fire"
                 ],
                 "options": [
