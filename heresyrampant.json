@@ -1077,7 +1077,7 @@
                 "attackvalue": 3,
                 "defencevalue": 3,
                 "shootvalue": 3,
-                "range": 18,
+                "range": 12,
                 "maximummovement": 4,
                 "specialRules": [
                     "Deep Strike",
@@ -1097,7 +1097,7 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -1106,7 +1106,12 @@
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
+                    },
+                    {
+                        "name": "Fists and Claws",
+                        "chooseOneKey": "b",
+                        "points": 0
                     },
                     {
                         "name": "Medicae",
@@ -1317,7 +1322,7 @@
                 "attackvalue": 3,
                 "defencevalue": 3,
                 "shootvalue": 3,
-                "range": 18,
+                "range": 12,
                 "maximummovement": 4,
                 "specialRules": [
                     "Deep Strike",
@@ -1341,7 +1346,7 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -1349,9 +1354,14 @@
                         "points": 4
                     },
                     {
+                        "name": "Fists and Claws",
+                        "chooseOneKey": "b",
+                        "points": 0
+                    },
+                    {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Medicae",
@@ -1404,65 +1414,17 @@
                         "points": 6
                     },
                     {
+                        "name": "Fists and Claws",
+                        "chooseOneKey": "b",
+                        "points": 0
+                    },
+                    {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "b",
                         "points": 0
                     }
                 ],
                 "decreaseModelCount": -2
-            },
-            {
-                "name": "Terminator Claws",
-                "factions": [
-                    {
-                        "name": "Legiones Astartes",
-                        "unitType": "Infantry"
-                    }
-                ],
-                "unlimited": true,
-                "strengthpoints": 5,
-                "points": 6,
-                "attack": 3,
-                "move": 3,
-                "shoot": 0,
-                "courage": 5,
-                "armor": 4,
-                "attackvalue": 3,
-                "defencevalue": 3,
-                "shootvalue": 0,
-                "range": 0,
-                "maximummovement": 5,
-                "specialRules": [
-                    "Deep Strike",
-                    "Cumbersome",
-                    "Great Strength"
-                ],
-                "options": [
-                    {
-                        "name": "Increased Squad Size",
-                        "chooseOneKey": "a",
-                        "addsModels": 5,
-                        "points": 4
-                    },
-                    {
-                        "name": "Fearsome",
-                        "points": 1
-                    },
-                    {
-                        "name": "Bloodthirsty",
-                        "points": 1
-                    },
-                    {
-                        "name": "Veteran",
-                        "chooseOneKey": "a",
-                        "points": 4
-                    },
-                    {
-                        "name": "Medicae",
-                        "points": 4
-                    }
-                ],
-                "decreaseModelCount": -4
             },
             {
                 "name": "Outriders",
@@ -2658,7 +2620,7 @@
             },
             {
                 "name": "Fists and Claws",
-                "definition": "All units count as Armor 2 in melee against this unit Range is reduced by 6”.",
+                "definition": "All units count as Armor 2 in melee against this unit. Range is reduced by 6”.",
                 "modifiesStats": [
                     {
                         "stat": "range",
