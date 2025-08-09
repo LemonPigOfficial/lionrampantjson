@@ -304,9 +304,9 @@
                 "definition": "Same as the Bloodthirsty rule. Applies only to this unit and cannot be purchased if the unit already has this rule.",
                 "factions": [],
                 "decreaseModelCount": 1,
-				"specialRules": [
-					"Bloodthirsty"
-				]
+                "specialRules": [
+                    "Bloodthirsty"
+                ]
             },
             {
                 "name": "Champion",
@@ -349,9 +349,9 @@
                 "definition": "Same as the Fearsome rule. Applies only to this unit and cannot be purchased if the unit already has this rule.",
                 "factions": [],
                 "decreaseModelCount": 1,
-				"specialRules": [
-					"Fearsome"
-				]
+                "specialRules": [
+                    "Fearsome"
+                ]
             },
             {
                 "name": "Impulsive",
@@ -448,7 +448,7 @@
             {
                 "name": "Legiones Astartes",
                 "additionalRules": [
-                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Legion upgrade, and all their HQs get either Bloodthirsty or Fearsome for free."
+                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Legion upgrade, which grants access to unique benefits (including units and upgrades), and all their HQs get either Bloodthirsty or Fearsome for free. However, any Legion-specific unit upgrades cannot be combined with Veteran or Increased Unit Size."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -464,7 +464,7 @@
             {
                 "name": "Cult Mechanicum",
                 "additionalRules": [
-                    "Cult Mechanicum armies may have 1 Archmagos Prime, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Devotion upgrade."
+                    "Cult Mechanicum armies may have 1 Archmagos Prime, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Devotion upgrade, which grants access to unique benefits (including upgrades)."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -480,7 +480,7 @@
             {
                 "name": "Solar Auxilia",
                 "additionalRules": [
-                    "The leader may select a free Allegiance upgrade. Additionally, you may upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry."
+                    "The leader may select a free Allegiance upgrade, which grants unique benefits (including units and upgrades). Additionally, you may upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -1337,7 +1337,7 @@
                 "options": [
                     {
                         "name": "Lesser Psyker",
-						"unlockedBy": "Thousand Sons",
+                        "unlockedBy": "Thousand Sons",
                         "points": 0
                     },
                     {
@@ -1520,8 +1520,13 @@
                 "options": [
                     {
                         "name": "Lesser Psyker",
-						"unlockedBy": "Thousand Sons",
+                        "unlockedBy": "Thousand Sons",
                         "points": 0
+                    },
+                    {
+                        "name": "Toxin Bombs",
+                        "unlockedBy": "Death Guard",
+                        "points": 2
                     },
                     {
                         "name": "Increased Squad Size",
@@ -1577,13 +1582,20 @@
                 "range": 24,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Skirmish"
+                    "Skirmish",
+                    "Cumbersome"
                 ],
                 "options": [
                     {
                         "name": "Increased Squad Size",
                         "chooseOneKey": "b",
                         "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Kakophoni",
+                        "unlockedBy": "Emperor's Children",
+                        "chooseOneKey": "b",
                         "points": 2
                     },
                     {
@@ -1641,6 +1653,11 @@
                         "points": 2
                     },
                     {
+                        "name": "Toxin Bombs",
+                        "unlockedBy": "Death Guard",
+                        "points": 2
+                    },
+                    {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 2
@@ -1692,6 +1709,11 @@
                         "name": "Increased Squad Size",
                         "chooseOneKey": "b",
                         "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Toxin Bombs",
+                        "unlockedBy": "Death Guard",
                         "points": 2
                     },
                     {
@@ -1747,6 +1769,30 @@
                 ],
                 "options": [
                     {
+                        "name": "Grey Hunter Pack",
+                        "unlockedBy": "Space Wolves",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Rampagers",
+                        "unlockedBy": "World Eaters",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Templars",
+                        "unlockedBy": "Space Wolves",
+                        "chooseOneKey": "a",
+                        "points": 4
+                    },
+                    {
+                        "name": "Deathwing Companions",
+                        "unlockedBy": "Dark Angels",
+                        "chooseOneKey": "a",
+                        "points": 4
+                    },
+                    {
                         "name": "Increased Squad Size",
                         "chooseOneKey": "a",
                         "addsModels": 5,
@@ -1773,12 +1819,55 @@
                 "decreaseModelCount": -4
             },
             {
-                "name": "Chaos Furies (Word Bearers)",
+                "name": "Fenrisian Wolves",
                 "factions": [
                     {
                         "name": "Legiones Astartes",
                         "unitType": "Infantry",
-						"unlockedBy": "Word Bearers"
+                        "unlockedBy": "Space Wolves"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 2,
+                "attack": 7,
+                "move": 7,
+                "shoot": 0,
+                "courage": 8,
+                "armor": 2,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 6,
+                "range": 0,
+                "maximummovement": 12,
+                "specialRules": [
+                    "Counter-charge",
+                    "Fast"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Chaos Furies (Free)",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry",
+                        "unlockedBy": "Word Bearers"
                     }
                 ],
                 "unlimited": false,
@@ -1788,12 +1877,61 @@
                 "move": 6,
                 "shoot": 0,
                 "courage": 8,
-                "armor": 1,
+                "armor": 2,
                 "attackvalue": 4,
-                "defencevalue": 4,
+                "defencevalue": 6,
                 "shootvalue": 0,
                 "range": 0,
-                "maximummovement": 18,
+                "maximummovement": 12,
+                "specialRules": [
+                    "Wild Charge",
+                    "Fly"
+                ],
+                "options": [
+                    {
+                        "name": "Massive Squads",
+                        "chooseOneKey": "a",
+                        "addsModels": 10,
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Chaos Furies",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry",
+                        "unlockedBy": "Word Bearers"
+                    }
+                ],
+                "unlimited": false,
+                "strengthpoints": 10,
+                "points": 2,
+                "attack": 6,
+                "move": 6,
+                "shoot": 0,
+                "courage": 8,
+                "armor": 2,
+                "attackvalue": 4,
+                "defencevalue": 6,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 12,
                 "specialRules": [
                     "Wild Charge",
                     "Fly"
@@ -1851,6 +1989,18 @@
                         "chooseOneKey": "a",
                         "addsModels": 5,
                         "points": 2
+                    },
+                    {
+                        "name": "Raptors",
+                        "chooseOneKey": "a",
+                        "unlockedBy": "Night Lords",
+                        "points": 2
+                    },
+                    {
+                        "name": "Dawnbreaker Cohort",
+                        "unlockedBy": "Blood Angels",
+                        "chooseOneKey": "a",
+                        "points": 4
                     },
                     {
                         "name": "Fearsome",
@@ -2322,14 +2472,14 @@
                         "points": 0
                     },
                     {
-                        "name": "Relic Bike",
+                        "name": "Shamsir Jetbike",
                         "chooseOneKey": "a",
-						"unlockedBy": "White Scars",
+                        "unlockedBy": "White Scars",
                         "points": 0
                     },
                     {
                         "name": "Lesser Psyker",
-						"unlockedBy": "Thousand Sons",
+                        "unlockedBy": "Thousand Sons",
                         "points": 0
                     },
                     {
@@ -2546,14 +2696,19 @@
                         "points": 0
                     },
                     {
-                        "name": "Relic Bike",
+                        "name": "Shamsir Jetbike",
                         "chooseOneKey": "a",
-						"unlockedBy": "White Scars",
+                        "unlockedBy": "White Scars",
                         "points": 0
                     },
                     {
+                        "name": "Stormseer Consul",
+                        "unlockedBy": "White Scars",
+                        "points": 2
+                    },
+                    {
                         "name": "Lesser Psyker",
-						"unlockedBy": "Thousand Sons",
+                        "unlockedBy": "Thousand Sons",
                         "points": 0
                     },
                     {
@@ -2942,14 +3097,14 @@
             },
             {
                 "name": "Heretic",
-                "definition": "Enemy units have -1 to all Courage tests. Additionally, your Leader has Panic.",
-				"specialRules": [
-					"Panic"
-				]
+                "definition": "Enemy units have -1 to all Courage tests. Additionally, your HQ units have Panic.",
+                "specialRules": [
+                    "Panic"
+                ]
             },
             {
                 "name": "Heretek",
-                "definition": "Enemy Vehicles and Cumbersome units have -1 to their Armor."
+                "definition": "Enemy Vehicles, Fortifications and Cumbersome units have -1 to their Armor."
             },
             {
                 "name": "Fists and Claws",
@@ -2963,7 +3118,7 @@
             },
             {
                 "name": "Independent",
-                "definition": "Friendly units within 12” ignore Anti-Tank and Anti-Infantry."
+                "definition": "Friendly units within 9” ignore Anti-Tank and Anti-Infantry."
             },
             {
                 "name": "Imperial",
@@ -2976,10 +3131,10 @@
             {
                 "name": "Dark Angels",
                 "definition": "Terminators, Saturnine Terminators, Outriders, and HQ units with Terminator Armor or Bikes have Bloodthirsty and Selfsufficent.",
-				"specialRules": [
-					"Bloodthirsty",
-					"Selfsufficent"
-				]
+                "specialRules": [
+                    "Bloodthirsty",
+                    "Selfsufficent"
+                ]
             },
             {
                 "name": "Emperor's Children",
@@ -2991,21 +3146,21 @@
             },
             {
                 "name": "White Scars",
-                "definition": "Friendly HQ units may upgrade with Relic Bikes for free."
+                "definition": "Friendly HQ units may upgrade with Shamsir Jetbikes for free."
             },
             {
                 "name": "Space Wolves",
-                "definition": "Friendly HQ units, Increased Squad Size and Veteran units have Counter-charge vs Infantry and HQ.",
-				"specialRules": [
-					"Counter-charge vs Infantry and HQ"
-				]
+                "definition": "Friendly HQ units, Increased Squad Size and Veteran units have Counter-charge vs Infantry and HQ. Additionally, you may take units of Fenrisian Wolves.",
+                "specialRules": [
+                    "Counter-charge vs Infantry and HQ"
+                ]
             },
             {
                 "name": "Imperial Fists",
                 "definition": "Friendly units without Fists and Claws, Anti-Infantry or Anti-Tank gain Rapid Fire (it is assumed these units have Bolters).",
-				"specialRules": [
-					"Rapid Fire"
-				]
+                "specialRules": [
+                    "Rapid Fire"
+                ]
             },
             {
                 "name": "Night Lords",
@@ -3014,10 +3169,10 @@
             {
                 "name": "Blood Angels",
                 "definition": "Friendly HQ, Despoiler and Assault Squad units have Counter-charge and Bloodthirsty.",
-				"specialRules": [
-					"Counter-charge",
-					"Great Strength"
-				]
+                "specialRules": [
+                    "Counter-charge",
+                    "Bloodthirsty"
+                ]
             },
             {
                 "name": "Iron Hands",
@@ -3026,13 +3181,13 @@
             {
                 "name": "World Eaters",
                 "definition": "All friendly units have Wild Charge.",
-				"specialRules": [
-					"Wild Charge"
-				]
+                "specialRules": [
+                    "Wild Charge"
+                ]
             },
             {
                 "name": "Ultramarines",
-                "definition": "Once per round, you may automatically succeed an actiivation for any unit except a Vehicle."
+                "definition": "Once per round, you may automatically succeed an actiivation for any friendly unit except a Vehicle."
             },
             {
                 "name": "Death Guard",
@@ -3045,13 +3200,13 @@
             {
                 "name": "Sons of Horus",
                 "definition": "Friendly HQ, Increased Squad Size and Veteran units have Panic.",
-				"specialRules": [
-					"Panic"
-				]
+                "specialRules": [
+                    "Panic"
+                ]
             },
             {
                 "name": "Word Bearers",
-                "definition": "May take a unit of Chaos Furies for free."
+                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points."
             },
             {
                 "name": "Salamanders",
@@ -3060,16 +3215,188 @@
             {
                 "name": "Raven Guard",
                 "definition": "Friendly HQ units, Assault Squads and Despoiler Squads have Hard to target.",
-				"specialRules": [
-					"Hard to target"
-				]
+                "specialRules": [
+                    "Hard to target"
+                ]
             },
             {
                 "name": "Alpha Legion",
-                "definition": "Friendly HQ, Increased Squad Size and Veteran units have Selfsufficent.",
-				"specialRules": [
-					"Selfsufficent"
-				]
+                "definition": "Friendly HQ, Recon Squad, Increased Squad Size and Veteran units have Selfsufficent.",
+                "specialRules": [
+                    "Selfsufficent"
+                ]
+            },
+            {
+                "name": "Grey Hunter Pack",
+                "definition": "May be taken by Space Wolves as an upgrade to Despoiler Squads. Grey Hunters are light skirmishing troops, often adorned in cloaks. A Grey Hunter Pack unit gains Selfsufficent, Counter-charge, and Hard to target.",
+                "specialRules": [
+                    "Selfsufficent",
+                    "Counter-charge",
+                    "Hard to target"
+                ]
+            },
+            {
+                "name": "Deathwing Companions",
+                "definition": "May be taken by Dark Angels as an upgrade to Despoiler Squads. Deathwing Companions are marvelous warriors in their own right, who serve the leaders of the legion as protectors. A Deathwing Companions unit gains +1 to Armor, Attack Value and Defense Value, as well as +1 to all orders, Counter-charge vs Infantry and HQ, and Selfsufficent, but gains Cumbersome due to heavy shields and Artificer armor. You may not have more Deathwing Companions than HQ units.",
+                "specialRules": [
+                    "Selfsufficent",
+                    "Counter-charge vs Infantry and HQ",
+                    "Cumbersome"
+                ],
+                "modifiesStats": [
+                    {
+                        "stat": "attack",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "shoot",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "move",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "armor",
+                        "modifier": 1
+                    },
+                    {
+                        "stat": "defencevalue",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "attackvalue",
+                        "modifier": -1
+                    }
+                ]
+            },
+            {
+                "name": "Rampagers",
+                "definition": "May be taken by World Eaters as an upgrade to Despoiler Squads. Rampagers are brutish berserkers, focused only on destruction. A Rampagers unit cannot shoot, but gets Fast and Panic. Additionally, HQ and Infantry units count as Armor 1 against Attacks (but not Defense) from a Rampagers unit.",
+                "specialRules": [
+                    "Fast",
+                    "Panic"
+                ],
+                "modifiesStats": [
+                    {
+                        "stat": "range",
+                        "modifier": -12
+                    }
+                ]
+            },
+            {
+                "name": "Kakophoni",
+                "definition": "May be taken by Emperor's Children as an upgrade to Special Weapons Squads. Kakophoni are armed with horrible Noise Weapons, able to inflict terrible psychological damage. A Kakophoni unit gets Panic, and is treates as Massive when Shooting at Infantry or HQ units.",
+                "specialRules": [
+                    "Panic"
+                ]
+            },
+            {
+                "name": "Toxin Bombs",
+                "definition": "May be taken by Death Guard as an upgrade to Tactical Squads, Recon Squads and Breacher Squads. Toxin Bombs are horrible weapons of chemical warfare, used by units known as Poisoners, though they aren't always consistent. A unit with Toxin Bombs gains Panic when in melee or when shooting from 9” or closer. A unit with Toxin Bombs can be a Veteran or have an Increased Squad Size.",
+                "specialRules": [
+                    "Panic"
+                ]
+            },
+            {
+                "name": "Iron Havocs",
+                "definition": "May be taken by Iron Warriors as an upgrade to Special Weapons Squads. Iron Havocs are units designed to besiege and destroy all that stands in their path. Units of Iron Havocs attack with 20 dice when targeting Vehicles or Fortifications, and must be upgraded with Anti-Tank."
+            },
+            {
+                "name": "Stormseer Consul",
+                "definition": "May be taken by White Scars as an upgrade to a Consul. Stormseers are Psykers in attune with nature, who can harness it to devastating effect. A Stormseer must have the Psyker or Chaplain leader trait, but may use it 2 times per game instead of 1. Additionally, it may use one of those uses when being deployed to immediately remove one piece of terrain that is no bigger than 5cm in any side - chalk it up to lightning. Only one Stormseer in your list may remove terrain."
+            },
+            {
+                "name": "Templars",
+                "definition": "May be taken by Imperial Fists as an upgrade to Despoiler Squads. The Templars are an order of Imperial Fists, secretive in nature and zealous in their hatred against the heretic and xenos. A Deathwing Companions unit gains +1 to Armor, Attack Value and Defense Value, as well as +1 to all orders, Counter-charge, Wild Charge, and Selfsufficent. You may not have more Templars than HQ units.",
+                "specialRules": [
+                    "Selfsufficent",
+                    "Counter-charge",
+                    "Wild Charge"
+                ],
+                "modifiesStats": [
+                    {
+                        "stat": "attack",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "shoot",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "move",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "armor",
+                        "modifier": 1
+                    },
+                    {
+                        "stat": "defencevalue",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "attackvalue",
+                        "modifier": -1
+                    }
+                ]
+            },
+            {
+                "name": "Raptors",
+                "definition": "May be taken by Night Lords as an upgrade to Assault Squads. Raptors are gruesome bodyguards of the high command. A Raptors unit gains +1 to Armor, Attack Value, and Defense value, as well as Panic, Counter-charge, and Deep Strike.",
+                "specialRules": [
+                    "Panic",
+                    "Counter-charge",
+                    "Deep Strike"
+                ],
+                "modifiesStats": [
+                    {
+                        "stat": "armor",
+                        "modifier": 1
+                    },
+                    {
+                        "stat": "defencevalue",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "attackvalue",
+                        "modifier": -1
+                    }
+                ]
+            },
+            {
+                "name": "Dawnbreaker Cohort",
+                "definition": "May be taken by Blood Angels as an upgrade to Assault Squads. Dawnbreaker Cohorts stand apart, even among Blood Angels, for mighty Jump Pack assaults. A Dawnbreaker Cohort unit gains +1 to Armor, Attack Value, and Defense value, as well as +1 to all their Orders, Great Strength, and Deep Strike.",
+                "specialRules": [
+                    "Great Strength",
+                    "Deep Strike"
+                ],
+                "modifiesStats": [
+                    {
+                        "stat": "shoot",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "move",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "attack",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "armor",
+                        "modifier": 1
+                    },
+                    {
+                        "stat": "defencevalue",
+                        "modifier": -1
+                    },
+                    {
+                        "stat": "attackvalue",
+                        "modifier": -1
+                    }
+                ]
             },
             {
                 "name": "Bloodthirsty",
@@ -3150,10 +3477,10 @@
                         "modifier": 2
                     }
                 ],
-				"specialRules": [
-					"Wild Charge",
-					"Counter-charge"
-				]
+                "specialRules": [
+                    "Wild Charge",
+                    "Counter-charge"
+                ]
             },
             {
                 "name": "Jump Pack",
@@ -3164,9 +3491,9 @@
                         "modifier": 2
                     }
                 ],
-				"specialRules": [
-					"Fly"
-				]
+                "specialRules": [
+                    "Fly"
+                ]
             },
             {
                 "name": "Bike",
@@ -3177,13 +3504,13 @@
                         "modifier": 6
                     }
                 ],
-				"specialRules": [
-					"Cumbersome",
-					"Fast"
-				]
+                "specialRules": [
+                    "Cumbersome",
+                    "Fast"
+                ]
             },
             {
-                "name": "Relic Bike",
+                "name": "Shamsir Jetbike",
                 "definition": "Cumbersome, Fast, +1 Armor and +6 Movement Distance. Cannot be combined with Jump Pack, Bike or Terminator Armor.",
                 "modifiesStats": [
                     {
@@ -3195,10 +3522,10 @@
                         "modifier": 1
                     }
                 ],
-				"specialRules": [
-					"Cumbersome",
-					"Fast"
-				]
+                "specialRules": [
+                    "Cumbersome",
+                    "Fast"
+                ]
             },
             {
                 "name": "Terminator Armor",
@@ -3213,10 +3540,10 @@
                         "modifier": 1
                     }
                 ],
-				"specialRules": [
-					"Deep Strike",
-					"Cumbersome"
-				]
+                "specialRules": [
+                    "Deep Strike",
+                    "Cumbersome"
+                ]
             },
             {
                 "name": "Medicae",
@@ -3317,9 +3644,9 @@
             {
                 "name": "Brace",
                 "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test to Brace at 6+. If it succeeds, it immediately carries out a Skirmish action targeting the Attacking unit, may not move closer to the Attacking unit, and must avoid other units by 3” as usual. Any casualties inflicted by the Skirmish action cause a Courage test only at the end of the Attack. The charging unit then moves its full charge distance following the Bracing unit. If it makes contact it Attacks with the Bracing unit reducing its armor by 1, and if it cannot contact it must move as close as possible (moving no closer than 3” to the Bracing unit). If the Brace test fails, the unit stands in place and awaits attack without Shooting or Moving. A Bracing unit will always fight when contacted, and a unit may Brace as many times as it wishes in a turn. Brace cannot be used if the unit is Battered",
-				"specialRules": [
-					"Skirmish"
-				]
+                "specialRules": [
+                    "Skirmish"
+                ]
             },
             {
                 "name": "Skirmish",
@@ -3343,7 +3670,7 @@
             },
             {
                 "name": "Panic",
-                "definition": "When this unit Shoots, the target unit must take a Courage test regardless of the number of hits inflicted."
+                "definition": "When this unit Shoots or Charges, the target unit must take a Courage test regardless of the number of hits inflicted."
             }
         ]
     }
