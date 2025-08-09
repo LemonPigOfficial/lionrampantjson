@@ -303,11 +303,14 @@
                 "name": "Bloodthirsty",
                 "definition": "Same as the Bloodthirsty rule. Applies only to this unit and cannot be purchased if the unit already has this rule.",
                 "factions": [],
-                "decreaseModelCount": 1
+                "decreaseModelCount": 1,
+				"specialRules": [
+					"Bloodthirsty"
+				]
             },
             {
                 "name": "Champion",
-                "definition": "In Challenges, this unit is only hit on a 6, and treats the opposing Leader's armor as if it was 1.",
+                "definition": "In Challenges, this unit is only hit on a 6, and treats the opposing Leader's armor as if it was 1. If this unit isn't the Leader, it can perform Challenges anyway.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -331,7 +334,7 @@
             },
             {
                 "name": "Drunkard or Eccentric",
-                "definition": "When this HQ is good, they're very good, and when they're bad... After deployment but before the first turn, roll to see how much they've drunk. On a 1-2, the HQ drank too much and cannot be ordered on the first turn. On a 3-6, the HQ adds 3 to their Armor.",
+                "definition": "After deployment but before the first turn, roll to see how much this unit has drunk. On a 1-2, the HQ drank too much and cannot be ordered on the first round. On a 3-4, Attack Value is increased by 1. On a 5-6, the HQ counts as Massive.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -345,7 +348,10 @@
                 "name": "Fearsome",
                 "definition": "Same as the Fearsome rule. Applies only to this unit and cannot be purchased if the unit already has this rule.",
                 "factions": [],
-                "decreaseModelCount": 1
+                "decreaseModelCount": 1,
+				"specialRules": [
+					"Fearsome"
+				]
             },
             {
                 "name": "Impulsive",
@@ -442,7 +448,7 @@
             {
                 "name": "Legiones Astartes",
                 "additionalRules": [
-                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Allegiance upgrade, and all their HQs get either Bloodthirsty or Fearsome for free."
+                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Legion upgrade, and all their HQs get either Bloodthirsty or Fearsome for free."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -794,7 +800,7 @@
                 "attackvalue": 4,
                 "defencevalue": 3,
                 "shootvalue": 4,
-                "range": 12,
+                "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
                     "Panic"
@@ -1705,6 +1711,54 @@
                 "decreaseModelCount": -4
             },
             {
+                "name": "Chaos Furies",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": false,
+                "strengthpoints": 10,
+                "points": 0,
+                "attack": 6,
+                "move": 6,
+                "shoot": 0,
+                "courage": 8,
+                "armor": 1,
+                "attackvalue": 4,
+                "defencevalue": 4,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 18,
+                "specialRules": [
+                    "Wild Charge",
+                    "Fly"
+                ],
+                "options": [
+                    {
+                        "name": "Massive Squads",
+                        "chooseOneKey": "a",
+                        "addsModels": 10,
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
                 "name": "Assault Squad",
                 "factions": [
                     {
@@ -2206,13 +2260,115 @@
                         "points": 0
                     },
                     {
-                        "name": "Loyalist",
+                        "name": "Relic Bike",
+                        "chooseOneKey": "a",
+						"unlockedBy": "White Scars",
+                        "points": 0
+                    },
+                    {
+                        "name": "Dark Angels",
                         "chooseOneKey": "b",
                         "requiresLeader": true,
                         "points": 0
                     },
                     {
-                        "name": "Heretic",
+                        "name": "Emperor's Children",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "White Scars",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Night Lords",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "World Eaters",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Death Guard",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Salamanders",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Alpha Legion",
                         "chooseOneKey": "b",
                         "requiresLeader": true,
                         "points": 0
@@ -2323,13 +2479,109 @@
                         "points": 0
                     },
                     {
-                        "name": "Loyalist",
+                        "name": "Dark Angels",
                         "chooseOneKey": "b",
                         "requiresLeader": true,
                         "points": 0
                     },
                     {
-                        "name": "Heretic",
+                        "name": "Emperor's Children",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "White Scars",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Night Lords",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "World Eaters",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Death Guard",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Salamanders",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "chooseOneKey": "b",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Alpha Legion",
                         "chooseOneKey": "b",
                         "requiresLeader": true,
                         "points": 0
@@ -2612,7 +2864,10 @@
             },
             {
                 "name": "Heretic",
-                "definition": "Enemy units have -1 to all Courage tests. Additionally, your Leader has Panic."
+                "definition": "Enemy units have -1 to all Courage tests. Additionally, your Leader has Panic.",
+				"specialRules": [
+					"Panic"
+				]
             },
             {
                 "name": "Heretek",
@@ -2620,7 +2875,7 @@
             },
             {
                 "name": "Fists and Claws",
-                "definition": "All units count as Armor 2 in melee against this unit. Range is reduced by 12”. Cannot be taken alongside Anti-Tank or Anti-Infantry",
+                "definition": "Infantry and HQ units (including Cumbersome) count as Armor 2 in melee against this unit. Range is reduced by 12”. Cannot be taken alongside Anti-Tank or Anti-Infantry",
                 "modifiesStats": [
                     {
                         "stat": "range",
@@ -2641,8 +2896,102 @@
                 "definition": "Friendly units within 9” of any friendly HQ model automatically succeed Order rolls."
             },
             {
+                "name": "Dark Angels",
+                "definition": "Terminators, Saturnine Terminators, Outriders, and HQ models with Terminator Armor or Bikes have Bloodthirsty.",
+				"specialRules": [
+					"Bloodthirsty"
+				]
+            },
+            {
+                "name": "Emperor's Children",
+                "definition": "Friendly units within 9” of any friendly HQ model strike first when Defending."
+            },
+            {
+                "name": "Iron Warriors",
+                "definition": "Enemy Vehicles and Fortifications within 12” of any friendly HQ model have -1 to their Armor."
+            },
+            {
+                "name": "White Scars",
+                "definition": "Friendly HQ models may upgrade with Relic Bikes for free."
+            },
+            {
+                "name": "Space Wolves",
+                "definition": "Friendly units within 12” of any friendly HQ model have Counter-charge.",
+				"specialRules": [
+					"Counter-charge"
+				]
+            },
+            {
+                "name": "Imperial Fists",
+                "definition": "Friendly units without Fists and Claws, Anti-Infantry or Anti-Tank gain Rapid Fire (it is assumed these units have Bolters).",
+				"specialRules": [
+					"Rapid Fire"
+				]
+            },
+            {
+                "name": "Night Lords",
+                "definition": "Enemy units have -1 to all Courage and Rally tests."
+            },
+            {
+                "name": "Blood Angels",
+                "definition": "Friendly HQ, Despoiler and Assault Squad units have Counter-charge and Great Strength.",
+				"specialRules": [
+					"Counter-charge",
+					"Great Strength"
+				]
+            },
+            {
+                "name": "Iron Hands",
+                "definition": "Friendly Vehicles and Fortifications within 9” of any friendly HQ model have +1 to their Armor."
+            },
+            {
+                "name": "World Eaters",
+                "definition": "All friendly units have Wild Charge.",
+				"specialRules": [
+					"Wild Charge"
+				]
+            },
+            {
+                "name": "Ultramarines",
+                "definition": "Once per round, you may automatically succeed an actiivation for any unit except a Vehicle."
+            },
+            {
+                "name": "Death Guard",
+                "definition": "Friendly HQ units are unaffected by Anti-Infantry or Anti-Tank."
+            },
+            {
+                "name": "Thousand Sons",
+                "definition": "Friendly HQ units may upgrade with the Lesser Psyker leader trait for free."
+            },
+            {
+                "name": "Sons of Horus",
+                "definition": "Friendly HQ, Increased Squad Size and Veteran units have Panic.",
+				"specialRules": [
+					"Panic"
+				]
+            },
+            {
+                "name": "Word Bearers",
+                "definition": "May take a unit of Chaos Furies for free."
+            },
+            {
+                "name": "Salamanders",
+                "definition": "Friendly units with Anti-Infantry or Anti-Tank may reroll Shooting dice of 1."
+            },
+            {
+                "name": "Raven Guard",
+                "definition": "Friendly HQ units, Assault Squads and Despoiler Squads have Hard to target.",
+				"specialRules": [
+					"Hard to target"
+				]
+            },
+            {
+                "name": "Alpha Legion",
+                "definition": "You may choose to not reveal your HQ's Leader Traits, but must reveal them when they are used or relevant otherwise."
+            },
+            {
                 "name": "Bloodthirsty",
-                "definition": "A Bloodthirsty unit can inflict a whole load of additional pain on an enemy – if it rolls well. Any Attack dice or Shooting dice (but not Defence dice) that roll a 6 cause 2 hits rather than the usual 1 hit."
+                "definition": "A Bloodthirsty unit can inflict a whole load of additional pain on an enemy – if it rolls well. Any Attack dice or Shooting dice (but not Defence dice) that roll a 6 cause 2 hits rather than the usual 1 hit. This stacks with other rules like Great Strength and Rapid Fire."
             },
             {
                 "name": "Veteran",
@@ -2707,6 +3056,20 @@
                 "definition": "+1 to Attack Value. Remove Defensive Formation"
             },
             {
+                "name": "The Black Rage",
+                "definition": "Wild Charge, Counter-charge, and +1 Armor.",
+                "modifiesStats": [
+                    {
+                        "stat": "armor",
+                        "modifier": 2
+                    }
+                ],
+				"specialRules": [
+					"Wild Charge",
+					"Counter-charge"
+				]
+            },
+            {
                 "name": "Jump Pack",
                 "definition": "Fly and +2 Movement Distance. Cannot be combined with Terminator Armor or Bike.",
                 "modifiesStats": [
@@ -2714,7 +3077,10 @@
                         "stat": "maximummovement",
                         "modifier": 2
                     }
-                ]
+                ],
+				"specialRules": [
+					"Fly"
+				]
             },
             {
                 "name": "Bike",
@@ -2724,7 +3090,29 @@
                         "stat": "maximummovement",
                         "modifier": 6
                     }
-                ]
+                ],
+				"specialRules": [
+					"Cumbersome",
+					"Fast"
+				]
+            },
+            {
+                "name": "Relic Bike",
+                "definition": "Cumbersome, Fast, +1 Armor and +6 Movement Distance. Cannot be combined with Jump Pack, Bike or Terminator Armor.",
+                "modifiesStats": [
+                    {
+                        "stat": "maximummovement",
+                        "modifier": 6
+                    },
+                    {
+                        "stat": "armor",
+                        "modifier": 1
+                    }
+                ],
+				"specialRules": [
+					"Cumbersome",
+					"Fast"
+				]
             },
             {
                 "name": "Terminator Armor",
@@ -2738,7 +3126,11 @@
                         "stat": "armor",
                         "modifier": 1
                     }
-                ]
+                ],
+				"specialRules": [
+					"Deep Strike",
+					"Cumbersome"
+				]
             },
             {
                 "name": "Medicae",
@@ -2796,7 +3188,7 @@
             },
             {
                 "name": "Anti-Infantry",
-                "definition": "HQ and Infantry units count as armor 1 against Shooting by this unit (armor 2 if in cover). Doesn't affect Cumbersome units. Cannot be taken alongside Anti-Tank."
+                "definition": "HQ and Infantry units count as armor 2 against Shooting by this unit (isn't affected by Cover). Cannot be taken alongside Anti-Tank."
             }
         ],
         "keywords": [
@@ -2838,7 +3230,10 @@
             },
             {
                 "name": "Brace",
-                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test to Brace at 6+. If it succeeds, it immediately carries out a Skirmish action targeting the Attacking unit, may not move closer to the Attacking unit, and must avoid other units by 3” as usual. Any casualties inflicted by the Skirmish action cause a Courage test only at the end of the Attack. The charging unit then moves its full charge distance following the Bracing unit. If it makes contact it Attacks with the Bracing unit reducing its armor by 1, and if it cannot contact it must move as close as possible (moving no closer than 3” to the Bracing unit). If the Brace test fails, the unit stands in place and awaits attack without Shooting or Moving. A Bracing unit will always fight when contacted, and a unit may Brace as many times as it wishes in a turn. Brace cannot be used if the unit is Battered"
+                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test to Brace at 6+. If it succeeds, it immediately carries out a Skirmish action targeting the Attacking unit, may not move closer to the Attacking unit, and must avoid other units by 3” as usual. Any casualties inflicted by the Skirmish action cause a Courage test only at the end of the Attack. The charging unit then moves its full charge distance following the Bracing unit. If it makes contact it Attacks with the Bracing unit reducing its armor by 1, and if it cannot contact it must move as close as possible (moving no closer than 3” to the Bracing unit). If the Brace test fails, the unit stands in place and awaits attack without Shooting or Moving. A Bracing unit will always fight when contacted, and a unit may Brace as many times as it wishes in a turn. Brace cannot be used if the unit is Battered",
+				"specialRules": [
+					"Skirmish"
+				]
             },
             {
                 "name": "Skirmish",
