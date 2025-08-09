@@ -448,7 +448,7 @@
             {
                 "name": "Legiones Astartes",
                 "additionalRules": [
-                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Legion upgrade, which grants access to unique benefits (including units and upgrades), and all their HQs get either Bloodthirsty or Fearsome for free. However, any Legion-specific unit upgrades cannot be combined with Veteran or Increased Unit Size."
+                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Legion upgrade, which grants access to unique benefits (including units and upgrades), and all their HQs get either Bloodthirsty or Fearsome for free."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -456,7 +456,7 @@
             {
                 "name": "Questoris Knights",
                 "additionalRules": [
-                    "A Questoris Knights army may nominate a Vehicle as a Leader, but it cannot have Leader Traits. To compensate for this and the low unit count, you may upgrade your units with Double Time for free."
+                    "A Questoris Knights army may nominate a Vehicle as a Leader, but it cannot have Leader Traits. To compensate for this and the low unit count, you may upgrade your units with Double Time for free, and the Leader may take a free Allegiance upgrade."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -464,7 +464,7 @@
             {
                 "name": "Cult Mechanicum",
                 "additionalRules": [
-                    "Cult Mechanicum armies may have 1 Archmagos Prime, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Devotion upgrade, which grants access to unique benefits (including upgrades)."
+                    "Cult Mechanicum armies may have 1 Archmagos Prime, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Devotion upgrade, which grants access to unique benefits (including upgrades). Finally, due to supply lines, they may take an additonal 4 points of upgrades. This must be spent on upgrades (including things like Leader Traits), and CANNOT be spent on units."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -472,7 +472,7 @@
             {
                 "name": "Talons of the Emperor",
                 "additionalRules": [
-                    "Talons of the Emperor companies may, once per round, automatically succeed on an Order of their choice - the Emperor's finest warriors have no time for blunders."
+                    "Talons of the Emperor companies may, once per round, automatically succeed on an Order of their choice - the Emperor's finest warriors have no time for blunders. Additionally, all their units get either Bloodthirsty or Fearsome for free"
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -563,6 +563,22 @@
                     {
                         "name": "Double Time",
                         "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
                     }
                 ]
             },
@@ -674,6 +690,22 @@
                     {
                         "name": "Double Time",
                         "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
                     }
                 ]
             },
@@ -950,6 +982,34 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 0
+                    },
+                    {
+                        "name": "Loyalist",
+                        "chooseOneKey": "kq",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Heretic",
+                        "chooseOneKey": "kq",
+                        "requiresLeader": true,
+                        "points": 0
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
                     }
                 ]
             },
@@ -994,6 +1054,24 @@
                     },
                     {
                         "name": "Double Time",
+                        "points": 0,
+                        "availableIn": [
+                            "Questoris Knights"
+                        ]
+                    },
+                    {
+                        "name": "Loyalist",
+                        "chooseOneKey": "kq",
+                        "requiresLeader": true,
+                        "points": 0,
+                        "availableIn": [
+                            "Questoris Knights"
+                        ]
+                    },
+                    {
+                        "name": "Heretic",
+                        "chooseOneKey": "kq",
+                        "requiresLeader": true,
                         "points": 0,
                         "availableIn": [
                             "Questoris Knights"
@@ -1054,6 +1132,24 @@
                     {
                         "name": "Bloodthirsty",
                         "points": 2
+                    },
+                    {
+                        "name": "Loyalist",
+                        "chooseOneKey": "kq",
+                        "requiresLeader": true,
+                        "points": 0,
+                        "availableIn": [
+                            "Questoris Knights"
+                        ]
+                    },
+                    {
+                        "name": "Heretic",
+                        "chooseOneKey": "kq",
+                        "requiresLeader": true,
+                        "points": 0,
+                        "availableIn": [
+                            "Questoris Knights"
+                        ]
                     },
                     {
                         "name": "Double Time",
@@ -1122,6 +1218,22 @@
                     {
                         "name": "Medicae",
                         "points": 4
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
                     }
                 ],
                 "decreaseModelCount": -4
@@ -1188,6 +1300,22 @@
                     {
                         "name": "Medicae",
                         "points": 4
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
                     }
                 ],
                 "decreaseModelCount": -4
@@ -1198,6 +1326,11 @@
                     {
                         "name": "Talons of the Emperor",
                         "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Cult Mechanicum",
+                        "unitType": "HQ",
+                        "unlockedBy": "Imperial"
                     }
                 ],
                 "unlimited": true,
@@ -1251,6 +1384,22 @@
                     {
                         "name": "Medicae",
                         "points": 4
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
                     }
                 ],
                 "decreaseModelCount": -4
@@ -1305,6 +1454,22 @@
                     {
                         "name": "Medicae",
                         "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
                     }
                 ],
                 "decreaseModelCount": -4
@@ -1494,6 +1659,53 @@
                 "decreaseModelCount": -2
             },
             {
+                "name": "Jetbikers",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 5,
+                "move": 3,
+                "shoot": 9,
+                "courage": 5,
+                "armor": 4,
+                "attackvalue": 4,
+                "defencevalue": 5,
+                "shootvalue": 6,
+                "range": 12,
+                "maximummovement": 12,
+                "specialRules": [
+                    "Fast",
+                    "Cumbersome"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 4
+                    },
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "a",
+                        "addsModels": 1,
+                        "points": 4
+                    }
+                ]
+            },
+            {
                 "name": "Tactical Squad",
                 "factions": [
                     {
@@ -1522,11 +1734,6 @@
                         "name": "Lesser Psyker",
                         "unlockedBy": "Thousand Sons",
                         "points": 0
-                    },
-                    {
-                        "name": "Toxin Bombs",
-                        "unlockedBy": "Death Guard",
-                        "points": 2
                     },
                     {
                         "name": "Increased Squad Size",
@@ -1593,12 +1800,6 @@
                         "points": 2
                     },
                     {
-                        "name": "Kakophoni",
-                        "unlockedBy": "Emperor's Children",
-                        "chooseOneKey": "b",
-                        "points": 2
-                    },
-                    {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 0
@@ -1606,6 +1807,59 @@
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Kakophoni",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry",
+                        "unlockedBy": "Emperor's Children"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 4,
+                "attack": 9,
+                "move": 6,
+                "shoot": 7,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 6,
+                "defencevalue": 5,
+                "shootvalue": 2,
+                "range": 24,
+                "maximummovement": 4,
+                "specialRules": [
+                    "Panic",
+                    "Cumbersome"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "b",
+                        "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
                         "points": 0
                     },
                     {
@@ -1650,11 +1904,6 @@
                         "name": "Increased Squad Size",
                         "chooseOneKey": "b",
                         "addsModels": 5,
-                        "points": 2
-                    },
-                    {
-                        "name": "Toxin Bombs",
-                        "unlockedBy": "Death Guard",
                         "points": 2
                     },
                     {
@@ -1712,11 +1961,6 @@
                         "points": 2
                     },
                     {
-                        "name": "Toxin Bombs",
-                        "unlockedBy": "Death Guard",
-                        "points": 2
-                    },
-                    {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 2
@@ -1769,29 +2013,103 @@
                 ],
                 "options": [
                     {
-                        "name": "Grey Hunter Pack",
-                        "unlockedBy": "Space Wolves",
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "a",
+                        "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Veteran",
                         "chooseOneKey": "a",
                         "points": 2
                     },
                     {
-                        "name": "Rampagers",
-                        "unlockedBy": "World Eaters",
-                        "chooseOneKey": "a",
+                        "name": "Medicae",
                         "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Deathwing Companions",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry",
+                        "unlockedBy": "Dark Angels"
+                    }
+                ],
+                "unlimited": false,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 3,
+                "move": 3,
+                "shoot": 3,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 3,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Great Strength",
+                    "Hard to target",
+                    "Skirmish",
+                    "Brace"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 1
                     },
                     {
-                        "name": "Templars",
-                        "unlockedBy": "Space Wolves",
-                        "chooseOneKey": "a",
-                        "points": 4
+                        "name": "Bloodthirsty",
+                        "points": 1
                     },
                     {
-                        "name": "Deathwing Companions",
-                        "unlockedBy": "Dark Angels",
-                        "chooseOneKey": "a",
-                        "points": 4
-                    },
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Grey Hunter Pack",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry",
+                        "unlockedBy": "Space Wolves"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 4,
+                "attack": 5,
+                "move": 5,
+                "shoot": 9,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 3,
+                "defencevalue": 4,
+                "shootvalue": 4,
+                "range": 12,
+                "maximummovement": 7,
+                "specialRules": [
+                    "Fast",
+                    "Skirmish",
+                    "Hard to target"
+                ],
+                "options": [
                     {
                         "name": "Increased Squad Size",
                         "chooseOneKey": "a",
@@ -1842,6 +2160,7 @@
                 "maximummovement": 12,
                 "specialRules": [
                     "Counter-charge",
+                    "Cumbersome",
                     "Fast"
                 ],
                 "options": [
@@ -1885,6 +2204,7 @@
                 "maximummovement": 12,
                 "specialRules": [
                     "Wild Charge",
+                    "Cumbersome",
                     "Fly"
                 ],
                 "options": [
@@ -1917,6 +2237,16 @@
                         "name": "Legiones Astartes",
                         "unitType": "Infantry",
                         "unlockedBy": "Word Bearers"
+                    },
+                    {
+                        "name": "Solar Auxilia",
+                        "unitType": "Infantry",
+                        "unlockedBy": "Heretic"
+                    },
+                    {
+                        "name": "Knights Questoris",
+                        "unitType": "Infantry",
+                        "unlockedBy": "Heretic"
                     }
                 ],
                 "unlimited": false,
@@ -1975,7 +2305,7 @@
                 "shoot": 9,
                 "courage": 4,
                 "armor": 3,
-                "attackvalue": 5,
+                "attackvalue": 3,
                 "defencevalue": 5,
                 "shootvalue": 6,
                 "range": 12,
@@ -1991,20 +2321,62 @@
                         "points": 2
                     },
                     {
-                        "name": "Raptors",
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Veteran",
                         "chooseOneKey": "a",
-                        "unlockedBy": "Night Lords",
                         "points": 2
                     },
                     {
-                        "name": "Dawnbreaker Cohort",
-                        "unlockedBy": "Blood Angels",
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Raptors",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unlockedBy": "Night Lords",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 4,
+                "attack": 5,
+                "move": 7,
+                "shoot": 0,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 3,
+                "defencevalue": 6,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 8,
+                "specialRules": [
+                    "Fly",
+                    "Wild Charge",
+                    "Panic"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
                         "chooseOneKey": "a",
-                        "points": 4
+                        "addsModels": 5,
+                        "points": 2
                     },
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 0
                     },
                     {
                         "name": "Bloodthirsty",
@@ -2652,6 +3024,22 @@
                         "name": "Bloodthirsty",
                         "chooseOneKey": "c",
                         "points": 0
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
                     }
                 ]
             },
@@ -2700,11 +3088,6 @@
                         "chooseOneKey": "a",
                         "unlockedBy": "White Scars",
                         "points": 0
-                    },
-                    {
-                        "name": "Stormseer Consul",
-                        "unlockedBy": "White Scars",
-                        "points": 2
                     },
                     {
                         "name": "Lesser Psyker",
@@ -3037,6 +3420,22 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 0
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
                     }
                 ],
                 "decreaseModelCount": -1
@@ -3085,6 +3484,22 @@
                         "name": "Transport",
                         "chooseOneKey": "a",
                         "points": 0
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "te",
+                        "points": 0,
+                        "availableIn": [
+                            "Talons of the Emperor"
+                        ]
                     }
                 ],
                 "decreaseModelCount": -1
@@ -3097,10 +3512,7 @@
             },
             {
                 "name": "Heretic",
-                "definition": "Enemy units have -1 to all Courage tests. Additionally, your HQ units have Panic.",
-                "specialRules": [
-                    "Panic"
-                ]
+                "definition": "Enemy units have -1 to all Courage tests. Additionally, you may take Chaos Furies units."
             },
             {
                 "name": "Heretek",
@@ -3122,7 +3534,7 @@
             },
             {
                 "name": "Imperial",
-                "definition": "Friendly vehicles within 24” of any friendly HQ unit automatically succeed Order rolls."
+                "definition": "Friendly vehicles within 24” of any friendly HQ unit automatically succeed Order rolls. Additionally, you may take Custodians units from the Talons of the Emperor list as HQ."
             },
             {
                 "name": "Loyalist",
@@ -3130,7 +3542,7 @@
             },
             {
                 "name": "Dark Angels",
-                "definition": "Terminators, Saturnine Terminators, Outriders, and HQ units with Terminator Armor or Bikes have Bloodthirsty and Selfsufficent.",
+                "definition": "Terminators, Saturnine Terminators, Outriders, and HQ units with Terminator Armor or Bikes have Bloodthirsty and Selfsufficent. Additionally, you may take one Deathwing Companions unit.",
                 "specialRules": [
                     "Bloodthirsty",
                     "Selfsufficent"
@@ -3138,7 +3550,7 @@
             },
             {
                 "name": "Emperor's Children",
-                "definition": "Friendly units within 9” of any friendly HQ unit strike first when Defending."
+                "definition": "Friendly units within 9” of any friendly HQ unit add 3” to their Movement Distance. Additionally, you may take Kakophoni units."
             },
             {
                 "name": "Iron Warriors",
@@ -3146,25 +3558,25 @@
             },
             {
                 "name": "White Scars",
-                "definition": "Friendly HQ units may upgrade with Shamsir Jetbikes for free."
+                "definition": "Friendly HQ units may upgrade with Shamsir Jetbikes for free. Additionally, you may take Jetbikers units."
             },
             {
                 "name": "Space Wolves",
-                "definition": "Friendly HQ units, Increased Squad Size and Veteran units have Counter-charge vs Infantry and HQ. Additionally, you may take units of Fenrisian Wolves.",
+                "definition": "Friendly HQ units, Increased Squad Size and Veteran units have Counter-charge vs Infantry and HQ. Additionally, you may take units of Fenrisian Wolves and Grey Hunter Pack.",
                 "specialRules": [
                     "Counter-charge vs Infantry and HQ"
                 ]
             },
             {
                 "name": "Imperial Fists",
-                "definition": "Friendly units without Fists and Claws, Anti-Infantry or Anti-Tank gain Rapid Fire (it is assumed these units have Bolters).",
+                "definition": "May upgrade any HQ or Infantry unit, Dreadnoughts and Great Dreadnoughts with Bolter Discipline for free. Bolter Discipline is mutually exclusive with Anti-Infantry, Anti-Tank, and Fists and Claws.",
                 "specialRules": [
                     "Rapid Fire"
                 ]
             },
             {
                 "name": "Night Lords",
-                "definition": "Enemy units have -1 to all Courage and Rally tests."
+                "definition": "Enemy units have -1 to all Courage and Rally tests. Additionally, you may take Raptor units."
             },
             {
                 "name": "Blood Angels",
@@ -3206,7 +3618,10 @@
             },
             {
                 "name": "Word Bearers",
-                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points."
+                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points. Additionally, units of Chaos Furies have Deep Strike, but must deploy within 18” of an HQ unit. This ignores the usual distance restrictions of Deep Strike.",
+                "specialRules": [
+                    "Deep Strike"
+                ]
             },
             {
                 "name": "Salamanders",
@@ -3224,178 +3639,6 @@
                 "definition": "Friendly HQ, Recon Squad, Increased Squad Size and Veteran units have Selfsufficent.",
                 "specialRules": [
                     "Selfsufficent"
-                ]
-            },
-            {
-                "name": "Grey Hunter Pack",
-                "definition": "May be taken by Space Wolves as an upgrade to Despoiler Squads. Grey Hunters are light skirmishing troops, often adorned in cloaks. A Grey Hunter Pack unit gains Selfsufficent, Counter-charge, and Hard to target.",
-                "specialRules": [
-                    "Selfsufficent",
-                    "Counter-charge",
-                    "Hard to target"
-                ]
-            },
-            {
-                "name": "Deathwing Companions",
-                "definition": "May be taken by Dark Angels as an upgrade to Despoiler Squads. Deathwing Companions are marvelous warriors in their own right, who serve the leaders of the legion as protectors. A Deathwing Companions unit gains +1 to Armor, Attack Value and Defense Value, as well as +1 to all orders, Counter-charge vs Infantry and HQ, and Selfsufficent, but gains Cumbersome due to heavy shields and Artificer armor. You may not have more Deathwing Companions than HQ units.",
-                "specialRules": [
-                    "Selfsufficent",
-                    "Counter-charge vs Infantry and HQ",
-                    "Cumbersome"
-                ],
-                "modifiesStats": [
-                    {
-                        "stat": "attack",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "shoot",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "move",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "armor",
-                        "modifier": 1
-                    },
-                    {
-                        "stat": "defencevalue",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "attackvalue",
-                        "modifier": -1
-                    }
-                ]
-            },
-            {
-                "name": "Rampagers",
-                "definition": "May be taken by World Eaters as an upgrade to Despoiler Squads. Rampagers are brutish berserkers, focused only on destruction. A Rampagers unit cannot shoot, but gets Fast and Panic. Additionally, HQ and Infantry units count as Armor 1 against Attacks (but not Defense) from a Rampagers unit.",
-                "specialRules": [
-                    "Fast",
-                    "Panic"
-                ],
-                "modifiesStats": [
-                    {
-                        "stat": "range",
-                        "modifier": -12
-                    }
-                ]
-            },
-            {
-                "name": "Kakophoni",
-                "definition": "May be taken by Emperor's Children as an upgrade to Special Weapons Squads. Kakophoni are armed with horrible Noise Weapons, able to inflict terrible psychological damage. A Kakophoni unit gets Panic, and is treates as Massive when Shooting at Infantry or HQ units.",
-                "specialRules": [
-                    "Panic"
-                ]
-            },
-            {
-                "name": "Toxin Bombs",
-                "definition": "May be taken by Death Guard as an upgrade to Tactical Squads, Recon Squads and Breacher Squads. Toxin Bombs are horrible weapons of chemical warfare, used by units known as Poisoners, though they aren't always consistent. A unit with Toxin Bombs gains Panic when in melee or when shooting from 9” or closer. A unit with Toxin Bombs can be a Veteran or have an Increased Squad Size.",
-                "specialRules": [
-                    "Panic"
-                ]
-            },
-            {
-                "name": "Iron Havocs",
-                "definition": "May be taken by Iron Warriors as an upgrade to Special Weapons Squads. Iron Havocs are units designed to besiege and destroy all that stands in their path. Units of Iron Havocs attack with 20 dice when targeting Vehicles or Fortifications, and must be upgraded with Anti-Tank."
-            },
-            {
-                "name": "Stormseer Consul",
-                "definition": "May be taken by White Scars as an upgrade to a Consul. Stormseers are Psykers in attune with nature, who can harness it to devastating effect. A Stormseer must have the Psyker or Chaplain leader trait, but may use it 2 times per game instead of 1. Additionally, it may use one of those uses when being deployed to immediately remove one piece of terrain that is no bigger than 5cm in any side - chalk it up to lightning. Only one Stormseer in your list may remove terrain."
-            },
-            {
-                "name": "Templars",
-                "definition": "May be taken by Imperial Fists as an upgrade to Despoiler Squads. The Templars are an order of Imperial Fists, secretive in nature and zealous in their hatred against the heretic and xenos. A Deathwing Companions unit gains +1 to Armor, Attack Value and Defense Value, as well as +1 to all orders, Counter-charge, Wild Charge, and Selfsufficent. You may not have more Templars than HQ units.",
-                "specialRules": [
-                    "Selfsufficent",
-                    "Counter-charge",
-                    "Wild Charge"
-                ],
-                "modifiesStats": [
-                    {
-                        "stat": "attack",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "shoot",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "move",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "armor",
-                        "modifier": 1
-                    },
-                    {
-                        "stat": "defencevalue",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "attackvalue",
-                        "modifier": -1
-                    }
-                ]
-            },
-            {
-                "name": "Raptors",
-                "definition": "May be taken by Night Lords as an upgrade to Assault Squads. Raptors are gruesome bodyguards of the high command. A Raptors unit gains +1 to Armor, Attack Value, and Defense value, as well as Panic, Counter-charge, and Deep Strike.",
-                "specialRules": [
-                    "Panic",
-                    "Counter-charge",
-                    "Deep Strike"
-                ],
-                "modifiesStats": [
-                    {
-                        "stat": "armor",
-                        "modifier": 1
-                    },
-                    {
-                        "stat": "defencevalue",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "attackvalue",
-                        "modifier": -1
-                    }
-                ]
-            },
-            {
-                "name": "Dawnbreaker Cohort",
-                "definition": "May be taken by Blood Angels as an upgrade to Assault Squads. Dawnbreaker Cohorts stand apart, even among Blood Angels, for mighty Jump Pack assaults. A Dawnbreaker Cohort unit gains +1 to Armor, Attack Value, and Defense value, as well as +1 to all their Orders, Great Strength, and Deep Strike.",
-                "specialRules": [
-                    "Great Strength",
-                    "Deep Strike"
-                ],
-                "modifiesStats": [
-                    {
-                        "stat": "shoot",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "move",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "attack",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "armor",
-                        "modifier": 1
-                    },
-                    {
-                        "stat": "defencevalue",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "attackvalue",
-                        "modifier": -1
-                    }
                 ]
             },
             {
