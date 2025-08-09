@@ -1515,7 +1515,7 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Rapid Fire"
+                    "Skirmish"
                 ],
                 "options": [
                     {
@@ -1542,6 +1542,59 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Special Weapons Squad",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 4,
+                "attack": 9,
+                "move": 6,
+                "shoot": 7,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 6,
+                "defencevalue": 5,
+                "shootvalue": 2,
+                "range": 24,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Skirmish"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "b",
+                        "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Tank",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -2960,7 +3013,7 @@
             },
             {
                 "name": "Blood Angels",
-                "definition": "Friendly HQ, Despoiler and Assault Squad units have Counter-charge and Great Strength.",
+                "definition": "Friendly HQ, Despoiler and Assault Squad units have Counter-charge and Bloodthirsty.",
 				"specialRules": [
 					"Counter-charge",
 					"Great Strength"
