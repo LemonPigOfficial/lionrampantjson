@@ -464,7 +464,7 @@
             {
                 "name": "Cult Mechanicum",
                 "additionalRules": [
-                    "Cult Mechanicum armies may have 1 Archmagos Prime, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Devotion upgrade, which grants access to unique benefits (including upgrades). Finally, due to supply lines, they may take an additonal 4 points of upgrades. This must be spent on upgrades (including things like Leader Traits), and CANNOT be spent on units. Veteran Bonus: The unit is extremely adept at following commands, and automatically succeeds its first order of the battle."
+                    "Cult Mechanicum armies may have 1 Archmagos Prime, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Devotion upgrade, which grants access to unique benefits (including upgrades). Veteran Bonus: The unit is extremely adept at following commands, and automatically succeeds its first and second orders during the battle."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -1520,6 +1520,12 @@
                         "points": 1
                     },
                     {
+                        "name": "Bolter Discipline",
+                        "chooseOneKey": "b",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
+                    },
+                    {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
                         "points": 2
@@ -1575,6 +1581,12 @@
                     {
                         "name": "Fearsome",
                         "points": 2
+                    },
+                    {
+                        "name": "Bolter Discipline",
+                        "chooseOneKey": "b",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
                     },
                     {
                         "name": "Bloodthirsty",
@@ -1640,6 +1652,12 @@
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
                         "points": 2
+                    },
+                    {
+                        "name": "Bolter Discipline",
+                        "chooseOneKey": "b",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -1743,6 +1761,12 @@
                         "points": 2
                     },
                     {
+                        "name": "Bolter Discipline",
+                        "chooseOneKey": "a",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
+                    },
+                    {
                         "name": "Bayonet",
                         "points": 1
                     },
@@ -1799,6 +1823,12 @@
                         "chooseOneKey": "b",
                         "addsModels": 5,
                         "points": 2
+                    },
+                    {
+                        "name": "Bolter Discipline",
+                        "chooseOneKey": "a",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
                     },
                     {
                         "name": "Anti-Tank",
@@ -1908,6 +1938,12 @@
                         "points": 2
                     },
                     {
+                        "name": "Bolter Discipline",
+                        "chooseOneKey": "a",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
+                    },
+                    {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 2
@@ -1960,6 +1996,12 @@
                         "chooseOneKey": "b",
                         "addsModels": 5,
                         "points": 2
+                    },
+                    {
+                        "name": "Bolter Discipline",
+                        "chooseOneKey": "a",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
                     },
                     {
                         "name": "Anti-Tank",
@@ -2018,6 +2060,12 @@
                         "chooseOneKey": "a",
                         "addsModels": 5,
                         "points": 2
+                    },
+                    {
+                        "name": "Bolter Discipline",
+                        "chooseOneKey": "b",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
                     },
                     {
                         "name": "Fearsome",
@@ -2118,6 +2166,11 @@
                         "points": 2
                     },
                     {
+                        "name": "Bolter Discipline",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
+                    },
+                    {
                         "name": "Fearsome",
                         "points": 1
                     },
@@ -2126,7 +2179,7 @@
                         "points": 1
                     },
                     {
-                        "name": "Deathsworn",
+                        "name": "Veteran",
                         "chooseOneKey": "a",
                         "points": 2
                     },
@@ -2320,6 +2373,11 @@
                         "chooseOneKey": "a",
                         "addsModels": 5,
                         "points": 2
+                    },
+                    {
+                        "name": "Bolter Discipline",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
                     },
                     {
                         "name": "Fearsome",
