@@ -661,6 +661,11 @@
                         "points": 0
                     },
                     {
+                        "name": "Fists and Claws",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
                         "name": "Double Time",
                         "points": 2
                     }
@@ -706,6 +711,11 @@
                     },
                     {
                         "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Fists and Claws",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -801,6 +811,11 @@
                     },
                     {
                         "name": "Anti-Infantry",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Fists and Claws",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -921,6 +936,11 @@
                         "points": 0
                     },
                     {
+                        "name": "Fists and Claws",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 0
@@ -979,6 +999,11 @@
                         "points": 0
                     },
                     {
+                        "name": "Fists and Claws",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 0
@@ -1030,16 +1055,6 @@
                         "availableIn": [
                             "Questoris Knights"
                         ]
-                    },
-                    {
-                        "name": "Anti-Tank",
-                        "chooseOneKey": "a",
-                        "points": 0
-                    },
-                    {
-                        "name": "Anti-Infantry",
-                        "chooseOneKey": "a",
-                        "points": 0
                     }
                 ]
             },
@@ -2640,6 +2655,15 @@
             {
                 "name": "Heretek",
                 "definition": "Enemy Vehicles and Cumbersome units have -1 to their Armor."
+            },
+            {
+                "name": "Fists and Claws",
+                "definition": "All units count as Armor 2 in melee against this unit Range is reduced by 6”.",
+                "modifiesStats": [
+                    {
+                        "stat": "range",
+                        "modifier": -6
+                    }
             },
             {
                 "name": "Independent",
