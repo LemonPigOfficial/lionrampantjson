@@ -807,12 +807,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 0
+                        "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 0
+                        "points": 2
                     },
                     {
                         "name": "Fists and Claws",
@@ -1346,7 +1346,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
-                        "points": 0
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "chooseOneKey": "b",
+                        "points": 2
                     },
                     {
                         "name": "Veteran",
@@ -1355,11 +1360,6 @@
                     },
                     {
                         "name": "Fists and Claws",
-                        "chooseOneKey": "b",
-                        "points": 0
-                    },
-                    {
-                        "name": "Anti-Infantry",
                         "chooseOneKey": "b",
                         "points": 0
                     },
@@ -2620,11 +2620,11 @@
             },
             {
                 "name": "Fists and Claws",
-                "definition": "All units count as Armor 2 in melee against this unit. Range is reduced by 6”.",
+                "definition": "All units count as Armor 2 in melee against this unit. Range is reduced by 12”. Cannot be taken alongside Anti-Tank or Anti-Infantry",
                 "modifiesStats": [
                     {
                         "stat": "range",
-                        "modifier": -6
+                        "modifier": -12
                     }
                 ]
             },
@@ -2796,7 +2796,7 @@
             },
             {
                 "name": "Anti-Infantry",
-                "definition": "HQ and Infantry units count as armor 1 against Shooting by this unit (armor 2 if in cover). Doesn't affect Cumbersome units. Cannot be taken alongside Anti-Tank or Anti-Tank."
+                "definition": "HQ and Infantry units count as armor 1 against Shooting by this unit (armor 2 if in cover). Doesn't affect Cumbersome units. Cannot be taken alongside Anti-Tank."
             }
         ],
         "keywords": [
