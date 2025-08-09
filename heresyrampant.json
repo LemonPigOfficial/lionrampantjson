@@ -3116,7 +3116,7 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 5,
-                "points": 6,
+                "points": 4,
                 "attack": 4,
                 "move": 4,
                 "shoot": 4,
@@ -3144,7 +3144,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 0
+                        "points": 2
                     },
                     {
                         "name": "Shamsir Jetbike",
@@ -3344,7 +3344,7 @@
                 ],
                 "unlimited": false,
                 "strengthpoints": 5,
-                "points": 4,
+                "points": 2,
                 "attack": 5,
                 "move": 3,
                 "shoot": 3,
