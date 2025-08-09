@@ -1725,12 +1725,12 @@
                 "factions": [
                     {
                         "name": "Legiones Astartes",
-                        "unitType": "Infantry"
+                        "unitType": "Infantry",
+						"unlockedBy": "Word Bearers"
                     }
                 ],
                 "unlimited": false,
                 "strengthpoints": 10,
-				"unlockedBy": "Word Bearers",
                 "points": 0,
                 "attack": 6,
                 "move": 6,
