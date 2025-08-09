@@ -2916,36 +2916,37 @@
             },
             {
                 "name": "Imperial",
-                "definition": "Friendly vehicles within 24” of any friendly HQ model automatically succeed Order rolls."
+                "definition": "Friendly vehicles within 24” of any friendly HQ unit automatically succeed Order rolls."
             },
             {
                 "name": "Loyalist",
-                "definition": "Friendly units within 9” of any friendly HQ model automatically succeed Order rolls."
+                "definition": "Friendly units within 9” of any friendly HQ unit automatically succeed Order rolls."
             },
             {
                 "name": "Dark Angels",
-                "definition": "Terminators, Saturnine Terminators, Outriders, and HQ models with Terminator Armor or Bikes have Bloodthirsty.",
+                "definition": "Terminators, Saturnine Terminators, Outriders, and HQ units with Terminator Armor or Bikes have Bloodthirsty and Selfsufficent.",
 				"specialRules": [
-					"Bloodthirsty"
+					"Bloodthirsty",
+					"Selfsufficent"
 				]
             },
             {
                 "name": "Emperor's Children",
-                "definition": "Friendly units within 9” of any friendly HQ model strike first when Defending."
+                "definition": "Friendly units within 9” of any friendly HQ unit strike first when Defending."
             },
             {
                 "name": "Iron Warriors",
-                "definition": "Enemy Vehicles and Fortifications within 12” of any friendly HQ model have -1 to their Armor."
+                "definition": "Enemy Vehicles and Fortifications within 12” of any friendly HQ unit have -1 to their Armor."
             },
             {
                 "name": "White Scars",
-                "definition": "Friendly HQ models may upgrade with Relic Bikes for free."
+                "definition": "Friendly HQ units may upgrade with Relic Bikes for free."
             },
             {
                 "name": "Space Wolves",
-                "definition": "Friendly units within 12” of any friendly HQ model have Counter-charge.",
+                "definition": "Friendly HQ units, Increased Squad Size and Veteran units have Counter-charge vs Infantry and HQ.",
 				"specialRules": [
-					"Counter-charge"
+					"Counter-charge vs Infantry and HQ"
 				]
             },
             {
@@ -2969,7 +2970,7 @@
             },
             {
                 "name": "Iron Hands",
-                "definition": "Friendly Vehicles and Fortifications within 9” of any friendly HQ model have +1 to their Armor."
+                "definition": "Friendly Vehicles and Fortifications within 9” of any friendly HQ unit have +1 to their Armor."
             },
             {
                 "name": "World Eaters",
@@ -3014,7 +3015,10 @@
             },
             {
                 "name": "Alpha Legion",
-                "definition": "You may choose to not reveal your HQ's Leader Traits, but must reveal them when they are used or relevant otherwise."
+                "definition": "Friendly HQ, Increased Squad Size and Veteran units have Selfsufficent.",
+				"specialRules": [
+					"Selfsufficent"
+				]
             },
             {
                 "name": "Bloodthirsty",
@@ -3232,7 +3236,7 @@
                 "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test for a Counter-charge. Test for an Attack at 7+. If it succeeds, the two units meet a proportionate movement distance between their start positions, and both count as Attacking. If it fails, it stands in place for the enemy’s charge. Counter-charge may not be used if the unit is Battered."
             },
             {
-                "name": "Counter-charge vs Infantry",
+                "name": "Counter-charge vs Infantry and HQ",
                 "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test for a Counter-charge. Test for an Attack at 7+. If it succeeds, the two units meet a proportionate movement distance between their start positions, and both count as Attacking. If it fails, it stands in place for the enemy’s charge. Counter-charge may not be used if the unit is Battered."
             },
             {
