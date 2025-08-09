@@ -1690,7 +1690,6 @@
                 "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Wild Charge",
                     "Great Strength"
                 ],
                 "options": [
@@ -1791,7 +1790,6 @@
                 "range": 12,
                 "maximummovement": 8,
                 "specialRules": [
-                    "Wild Charge",
                     "Fly"
                 ],
                 "options": [
