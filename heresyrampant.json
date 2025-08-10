@@ -1871,7 +1871,6 @@
                 "options": [
                     {
                         "name": "Increased Squad Size",
-                        "chooseOneKey": "b",
                         "addsModels": 5,
                         "points": 2
                     },
@@ -1882,11 +1881,6 @@
                     {
                         "name": "Anti-Infantry",
                         "points": 0
-                    },
-                    {
-                        "name": "Veteran",
-                        "chooseOneKey": "b",
-                        "points": 2
                     },
                     {
                         "name": "Medicae",
@@ -2021,6 +2015,51 @@
                 "decreaseModelCount": -4
             },
             {
+                "name": "Grey Slayers",
+                "factions": [
+                    {
+                        "name": "Legiones Astartes",
+                        "unitType": "Infantry",
+                        "unlockedBy": "Space Wolves"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 4,
+                "attack": 5,
+                "move": 5,
+                "shoot": 8,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 3,
+                "defencevalue": 4,
+                "shootvalue": 6,
+                "range": 9,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Counter-charge",
+                    "Hard to target"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "b",
+                        "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
                 "name": "Despoiler Squad",
                 "factions": [
                     {
@@ -2054,109 +2093,6 @@
                     {
                         "name": "Bolter Discipline",
                         "chooseOneKey": "b",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
-                    },
-                    {
-                        "name": "Fearsome",
-                        "points": 1
-                    },
-                    {
-                        "name": "Bloodthirsty",
-                        "points": 1
-                    },
-                    {
-                        "name": "Veteran",
-                        "chooseOneKey": "a",
-                        "points": 2
-                    },
-                    {
-                        "name": "Medicae",
-                        "points": 2
-                    }
-                ],
-                "decreaseModelCount": -4
-            },
-            {
-                "name": "Deathwing Companions",
-                "factions": [
-                    {
-                        "name": "Legiones Astartes",
-                        "unitType": "Infantry",
-                        "unlockedBy": "Dark Angels"
-                    }
-                ],
-                "unlimited": false,
-                "strengthpoints": 5,
-                "points": 6,
-                "attack": 3,
-                "move": 3,
-                "shoot": 3,
-                "courage": 4,
-                "armor": 3,
-                "attackvalue": 3,
-                "defencevalue": 3,
-                "shootvalue": 3,
-                "range": 12,
-                "maximummovement": 6,
-                "specialRules": [
-                    "Great Strength",
-                    "Hard to target",
-                    "Skirmish",
-                    "Brace"
-                ],
-                "options": [
-                    {
-                        "name": "Fearsome",
-                        "points": 1
-                    },
-                    {
-                        "name": "Bloodthirsty",
-                        "points": 1
-                    },
-                    {
-                        "name": "Medicae",
-                        "points": 2
-                    }
-                ],
-                "decreaseModelCount": -4
-            },
-            {
-                "name": "Grey Slayer Pack",
-                "factions": [
-                    {
-                        "name": "Legiones Astartes",
-                        "unitType": "Infantry",
-                        "unlockedBy": "Space Wolves"
-                    }
-                ],
-                "unlimited": true,
-                "strengthpoints": 5,
-                "points": 4,
-                "attack": 5,
-                "move": 5,
-                "shoot": 9,
-                "courage": 4,
-                "armor": 3,
-                "attackvalue": 3,
-                "defencevalue": 4,
-                "shootvalue": 4,
-                "range": 12,
-                "maximummovement": 7,
-                "specialRules": [
-                    "Fast",
-                    "Skirmish",
-                    "Hard to target"
-                ],
-                "options": [
-                    {
-                        "name": "Increased Squad Size",
-                        "chooseOneKey": "a",
-                        "addsModels": 5,
-                        "points": 2
-                    },
-                    {
-                        "name": "Bolter Discipline",
                         "unlockedBy": "Imperial Fists",
                         "points": 0
                     },
@@ -2372,60 +2308,6 @@
                     {
                         "name": "Fearsome",
                         "points": 1
-                    },
-                    {
-                        "name": "Bloodthirsty",
-                        "points": 1
-                    },
-                    {
-                        "name": "Veteran",
-                        "chooseOneKey": "a",
-                        "points": 2
-                    },
-                    {
-                        "name": "Medicae",
-                        "points": 2
-                    }
-                ],
-                "decreaseModelCount": -4
-            },
-            {
-                "name": "Raptors",
-                "factions": [
-                    {
-                        "name": "Legiones Astartes",
-                        "unlockedBy": "Night Lords",
-                        "unitType": "Infantry"
-                    }
-                ],
-                "unlimited": true,
-                "strengthpoints": 5,
-                "points": 4,
-                "attack": 5,
-                "move": 7,
-                "shoot": 0,
-                "courage": 4,
-                "armor": 3,
-                "attackvalue": 3,
-                "defencevalue": 6,
-                "shootvalue": 0,
-                "range": 0,
-                "maximummovement": 8,
-                "specialRules": [
-                    "Fly",
-                    "Wild Charge",
-                    "Panic"
-                ],
-                "options": [
-                    {
-                        "name": "Increased Squad Size",
-                        "chooseOneKey": "a",
-                        "addsModels": 5,
-                        "points": 2
-                    },
-                    {
-                        "name": "Fearsome",
-                        "points": 0
                     },
                     {
                         "name": "Bloodthirsty",
@@ -3609,7 +3491,7 @@
             },
             {
                 "name": "Dark Angels",
-                "definition": "Terminators, Saturnine Terminators, Outriders, and HQ units with Terminator Armor or Bikes have Bloodthirsty and Selfsufficent. Additionally, you may take one Deathwing Companions unit.",
+                "definition": "Terminators, Saturnine Terminators, Outriders, Veterans, and HQ units with Terminator Armor or Bikes have Bloodthirsty and Selfsufficent.",
                 "specialRules": [
                     "Bloodthirsty",
                     "Selfsufficent"
@@ -3647,11 +3529,11 @@
             },
             {
                 "name": "Night Lords",
-                "definition": "Enemy units have -1 to all Courage and Rally tests. Additionally, you may take Raptor units."
+                "definition": "Enemy units have -1 to all Courage and Rally tests."
             },
             {
                 "name": "Blood Angels",
-                "definition": "Friendly HQ, Despoiler and Assault Squad units have Counter-charge and Bloodthirsty.",
+                "definition": "Friendly HQ, Veteran, Despoiler and Assault Squad units have Counter-charge and Bloodthirsty.",
                 "specialRules": [
                     "Counter-charge",
                     "Bloodthirsty"
@@ -3689,14 +3571,14 @@
             },
             {
                 "name": "Word Bearers",
-                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points. Additionally, units of Chaos Furies have Deep Strike, but must deploy within 18” of an HQ unit. This ignores the usual distance restrictions of Deep Strike.",
+                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points.",
                 "specialRules": [
                     "Deep Strike"
                 ]
             },
             {
                 "name": "Salamanders",
-                "definition": "Friendly units with Anti-Infantry gain Rapid Fire. If they already had it, they gain Panic instead.",
+                "definition": "Friendly units with Anti-Infantry gain Rapid Fire. If they already had Rapid Fire, they gain Panic instead.",
                 "specialRules": [
                     "Rapid Fire",
 					"Panic"
