@@ -448,7 +448,7 @@
             {
                 "name": "Legiones Astartes",
                 "additionalRules": [
-                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Legion upgrade, which grants access to unique benefits (including units and upgrades), and all their HQs get either Bloodthirsty or Fearsome for free. Veteran Bonus: Depends on the chosen Legion."
+                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Legion upgrade, which grants access to unique benefits (including units and upgrades), and all their HQs get either Bloodthirsty or Fearsome for free."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -456,7 +456,7 @@
             {
                 "name": "Questoris Knights",
                 "additionalRules": [
-                    "A Questoris Knights army may nominate a Vehicle as a Leader, but it cannot have Leader Traits. To compensate for this and the low unit count, you may upgrade your units with Double Time for free, and the Leader may take a free Allegiance upgrade. Veteran Bonus: You can't take veterans..."
+                    "A Questoris Knights army may nominate a Vehicle as a Leader, but it cannot have Leader Traits. To compensate for this and the low unit count, you may upgrade your units with Double Time for free, and the Leader may take a free Allegiance upgrade."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -464,7 +464,7 @@
             {
                 "name": "Cult Mechanicum",
                 "additionalRules": [
-                    "Cult Mechanicum armies may have 1 Archmagos Prime, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Devotion upgrade, which grants access to unique benefits (including upgrades). Veteran Bonus: The unit is extremely adept at following commands, and automatically succeeds its first and second orders during the battle."
+                    "Cult Mechanicum armies may have 1 Archmagos Prime, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Devotion upgrade, which grants access to unique benefits (including upgrades)."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -472,7 +472,7 @@
             {
                 "name": "Talons of the Emperor",
                 "additionalRules": [
-                    "Talons of the Emperor companies may, once per round, automatically succeed on an Order of their choice - the Emperor's finest warriors have no time for blunders. Additionally, all their units get either Bloodthirsty or Fearsome for free. Veteran Bonus: Veterans of the Talons are incredibly adept warriors. They may suffer no penalties to their stats or tests, and they may choose to use the original result when rerolling dice - no matter what caused the reroll."
+                    "Talons of the Emperor companies may, once per round, automatically succeed on an Order of their choice - the Emperor's finest warriors have no time for blunders. Additionally, all their units get either Bloodthirsty or Fearsome for free."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -480,7 +480,7 @@
             {
                 "name": "Solar Auxilia",
                 "additionalRules": [
-                    "The leader may select a free Allegiance upgrade, which grants unique benefits (including units and upgrades). Additionally, you may upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry. Veteran Bonus: The unit is led by an officer of some sort or another - perhaps piloted by one - and performs all orders at 2+."
+                    "The leader may select a free Allegiance upgrade, which grants unique benefits (including units and upgrades). Additionally, you may upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -1507,7 +1507,6 @@
                     },
                     {
                         "name": "Increased Squad Size",
-                        "chooseOneKey": "a",
                         "addsModels": 5,
                         "points": 4
                     },
@@ -1534,11 +1533,6 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "b",
                         "points": 2
-                    },
-                    {
-                        "name": "Veteran",
-                        "chooseOneKey": "a",
-                        "points": 4
                     },
                     {
                         "name": "Fists and Claws",
@@ -1596,10 +1590,6 @@
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
                         "points": 0
-                    },
-                    {
-                        "name": "Veteran",
-                        "points": 6
                     },
                     {
                         "name": "Fists and Claws",
@@ -3069,6 +3059,11 @@
                         "points": 4
                     },
                     {
+                        "name": "Bolter Discipline",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
+                    },
+                    {
                         "name": "Bike",
                         "chooseOneKey": "a",
                         "points": 4
@@ -3150,6 +3145,11 @@
                         "name": "Shamsir Jetbike",
                         "chooseOneKey": "a",
                         "unlockedBy": "White Scars",
+                        "points": 0
+                    },
+                    {
+                        "name": "Bolter Discipline",
+                        "unlockedBy": "Imperial Fists",
                         "points": 0
                     },
                     {
@@ -3344,7 +3344,7 @@
                 ],
                 "unlimited": false,
                 "strengthpoints": 5,
-                "points": 2,
+                "points": 4,
                 "attack": 5,
                 "move": 3,
                 "shoot": 3,
@@ -3609,7 +3609,7 @@
             },
             {
                 "name": "Dark Angels",
-                "definition": "Terminators, Saturnine Terminators, Outriders, and HQ units with Terminator Armor or Bikes have Bloodthirsty and Selfsufficent. Additionally, you may take one Deathwing Companions unit. Veteran Bonus: The unit only moves 1” when retreating.",
+                "definition": "Terminators, Saturnine Terminators, Outriders, and HQ units with Terminator Armor or Bikes have Bloodthirsty and Selfsufficent. Additionally, you may take one Deathwing Companions unit.",
                 "specialRules": [
                     "Bloodthirsty",
                     "Selfsufficent"
@@ -3617,29 +3617,26 @@
             },
             {
                 "name": "Emperor's Children",
-                "definition": "Friendly units within 9” of any friendly HQ unit add 3” to their Movement Distance. Additionally, you may take Kakophoni units. Veteran bonus: When Defending, the unit strikes first."
+                "definition": "Friendly units within 9” of any friendly HQ unit add 3” to their Movement Distance. Additionally, you may take Kakophoni units."
             },
             {
                 "name": "Iron Warriors",
-                "definition": "Enemy Vehicles and Fortifications within 12” of any friendly HQ unit have -1 to their Armor. Veteran Bonus: The unit gains +1 Armor or Panic (pick one for all veterans).",
-                "specialRules": [
-                    "Panic"
-                ]
+                "definition": "Enemy Vehicles and Fortifications within 12” of any friendly HQ unit have -1 to their Armor."
             },
             {
                 "name": "White Scars",
-                "definition": "Friendly HQ units may upgrade with Shamsir Jetbikes for free. Additionally, you may take Jetbikers units. Veteran Bonus: The unit's Movement Distance increases by 3”."
+                "definition": "Friendly HQ units may upgrade with Shamsir Jetbikes for free. Additionally, you may take Jetbikers units."
             },
             {
                 "name": "Space Wolves",
-                "definition": "Friendly units always succeed their Counter-charges. Additionally, you may take units of Fenrisian Wolves and Grey Slayer Pack. Veteran Bonus: The unit gains the Counter-charge rule.",
+                "definition": "Friendly HQ units, Increased Squad Size and Veteran units have Counter-charge vs Infantry and HQ. Additionally, you may take units of Fenrisian Wolves and Grey Slayer Pack.",
                 "specialRules": [
-                    "Counter-charge"
+                    "Counter-charge vs Infantry and HQ"
                 ]
             },
             {
                 "name": "Imperial Fists",
-                "definition": "May upgrade any HQ or Infantry unit, Dreadnoughts and Great Dreadnoughts with Bolter Discipline for free. Bolter Discipline is mutually exclusive with Anti-Infantry, Anti-Tank, and Fists and Claws. Veteran Bonus: The unit counts as Massive when shooting or in melee (pick one for all veterans)."
+                "definition": "May upgrade any HQ or Infantry unit with Bolter Discipline for free. Bolter Discipline is mutually exclusive with Anti-Infantry, Anti-Tank, and Fists and Claws."
             },
             {
                 "name": "Bolter Discipline",
@@ -3650,57 +3647,56 @@
             },
             {
                 "name": "Night Lords",
-                "definition": "Enemy units have -1 to all Courage and Rally tests. Additionally, you may take Raptor units. Veteran Bonus: When within 6” of this unit, enemies automatically fail Rally tests."
+                "definition": "Enemy units have -1 to all Courage and Rally tests. Additionally, you may take Raptor units."
             },
             {
                 "name": "Blood Angels",
-                "definition": "Friendly HQ, Despoiler and Assault Squad units have Counter-charge and Bloodthirsty. Veteran Bonus: The unit gains Fly, or if it already had Fly, it gains Deep Strike. Cumbersome units gain +1 Armor instead.",
+                "definition": "Friendly HQ, Despoiler and Assault Squad units have Counter-charge and Bloodthirsty.",
                 "specialRules": [
                     "Counter-charge",
-					"Fly",
                     "Bloodthirsty"
                 ]
             },
             {
                 "name": "Iron Hands",
-                "definition": "Friendly Vehicles and Fortifications within 9” of any friendly HQ unit have +1 to their Armor. Veteran Rule: Counts as a Vehicle/Fortification for the purposes of the benefits to armor (due to cybernetics)."
+                "definition": "Friendly Vehicles and Fortifications within 9” of any friendly HQ unit have +1 to their Armor."
             },
             {
                 "name": "World Eaters",
-                "definition": "All friendly units have Wild Charge. Veteran Bonus: The unit may choose whether to succeed or fail its Wild Charge.",
+                "definition": "All friendly units have Wild Charge.",
                 "specialRules": [
                     "Wild Charge"
                 ]
             },
             {
                 "name": "Ultramarines",
-                "definition": "Once per round, you may automatically succeed an actiivation for any friendly unit except a Vehicle. Veteran Bonus: The unit may reroll failed Courage and Rally tests."
+                "definition": "Once per round, you may automatically succeed an actiivation for any friendly unit except a Vehicle."
             },
             {
                 "name": "Death Guard",
-                "definition": "Friendly HQ units are unaffected by Anti-Infantry or Anti-Tank, but has its Movement reduced by 2”. Veteran Bonus: Same as the HQ Bonus. For HQ, Armor increases by 1 instead."
+                "definition": "Friendly HQ units are unaffected by Anti-Infantry or Anti-Tank."
             },
             {
                 "name": "Thousand Sons",
-                "definition": "Friendly HQ units, Tactical Squads, and Terminators may upgrade with Lesser Psyker for free. Veteran Bonus: During this unit's turn, you may reroll up to three dice rolled by any player, regardless of sets of dice."
+                "definition": "Friendly HQ units, Tactical Squads, and Terminators may upgrade with Lesser Psyker for free."
             },
             {
                 "name": "Sons of Horus",
-                "definition": "Friendly HQ, Increased Squad Size and Veteran units have Panic. Veteran Bonus: Enemy units within 6” of this unit have -1 to all Orders.",
+                "definition": "Friendly HQ, Increased Squad Size and Veteran units have Panic.",
                 "specialRules": [
                     "Panic"
                 ]
             },
             {
                 "name": "Word Bearers",
-                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points. Additionally, units of Chaos Furies have Deep Strike, but must deploy within 18” of an HQ unit. This ignores the usual distance restrictions of Deep Strike. Veteran Bonus: For Chaos Furies, Increase armor by 1. For other units, friendly Chaos Furies within 18” may automatically succeed their Orders.",
+                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points. Additionally, units of Chaos Furies have Deep Strike, but must deploy within 18” of an HQ unit. This ignores the usual distance restrictions of Deep Strike.",
                 "specialRules": [
                     "Deep Strike"
                 ]
             },
             {
                 "name": "Salamanders",
-                "definition": "Friendly units with Anti-Infantry gain Rapid Fire. If they already had it, they gain Panic instead. Veteran Rule: Gains Anti-Infantry. If it already had it, then it counts as Massive against Infantry when shooting.",
+                "definition": "Friendly units with Anti-Infantry gain Rapid Fire. If they already had it, they gain Panic instead.",
                 "specialRules": [
                     "Rapid Fire",
 					"Panic"
@@ -3708,7 +3704,7 @@
             },
             {
                 "name": "Raven Guard",
-                "definition": "Friendly HQ units, Assault Squads and Despoiler Squads have Hard to target or Brace (pick per unit). Veteran Bonus: The unit gains Hard to target, Brace, or Fly (pick per unit).",
+                "definition": "Friendly HQ units, Veteran units, Assault Squads and Despoiler Squads have Hard to target or Brace (pick per unit).",
                 "specialRules": [
                     "Hard to target",
                     "Brace"
@@ -3716,7 +3712,7 @@
             },
             {
                 "name": "Alpha Legion",
-                "definition": "Friendly HQ, Recon Squad, Increased Squad Size and Veteran units have Selfsufficent. Veteran Unit: You can declare that this unit has no upgrades when deploying. This is a lie. Reveal all upgrades when this unit is Ordered. You may go through extra hoops to ensure the lie is kept, such as a fake list, or simply not sharing it.",
+                "definition": "Friendly HQ, Recon Squad, Increased Squad Size and Veteran units have Selfsufficent.",
                 "specialRules": [
                     "Selfsufficent"
                 ]
@@ -3727,7 +3723,7 @@
             },
             {
                 "name": "Veteran",
-                "definition": "Veteran units are often drawn from specific legions or disciplines. These units get +1 to all order rolls, as well as to their Attack Value, Defense Value and Shooting Value. Additionally, they gain a specific bonus depending on the faction. Cannot be mixed with Increased Squad Size.",
+                "definition": "Veteran units are often drawn from specific legions or disciplines. These units get +1 to all order rolls, as well as to their Armor, Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
                 "modifiesStats": [
                     {
                         "stat": "attack",
@@ -3740,6 +3736,10 @@
                     {
                         "stat": "shoot",
                         "modifier": -1
+                    },
+                    {
+                        "stat": "armor",
+                        "modifier": 1
                     },
                     {
                         "stat": "attackvalue",
