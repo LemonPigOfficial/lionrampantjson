@@ -121,7 +121,15 @@
                             "propertyName": "specialRules",
                             "label": "Special Rules",
                             "type": "static",
-                            "dataSource": "keywords"
+                            "dataSource": "keywords",
+							"children": [
+											{
+											"label": "Special Rules",
+											"propertyName": "specialRules",
+											"type": "static",
+											"dataSource": "keywords"
+											}
+										]
                         },
                         {
                             "singleKey": "leaderUpgrade",
@@ -255,7 +263,15 @@
                         {
                             "propertyName": "options",
                             "type": "checkbox",
-                            "dataSource": "upgrades"
+                            "dataSource": "upgrades",
+							"children": [
+											{
+											"label": "Special Rules",
+											"propertyName": "specialRules",
+											"type": "static",
+											"dataSource": "keywords"
+											}
+										]
                         }
                     ],
                     "tierProperty": "unitType",
