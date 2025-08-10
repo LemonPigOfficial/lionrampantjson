@@ -2139,8 +2139,7 @@
                 "range": 0,
                 "maximummovement": 12,
                 "specialRules": [
-                    "Counter-charge",
-                    "Cumbersome",
+                    "Wild Charge",
                     "Fast"
                 ],
                 "options": [
@@ -3511,7 +3510,7 @@
             },
             {
                 "name": "Space Wolves",
-                "definition": "Friendly HQ units, Increased Squad Size and Veteran units have Counter-charge vs Infantry and HQ. Additionally, you may take units of Fenrisian Wolves and Grey Slayer Pack.",
+                "definition": "Friendly HQ units, Increased Squad Size and Veteran units have Counter-charge vs Infantry and HQ. Additionally, you may take units of Fenrisian Wolves and Grey Slayers.",
                 "specialRules": [
                     "Counter-charge vs Infantry and HQ"
                 ]
