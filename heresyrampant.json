@@ -2121,6 +2121,11 @@
                         "points": 2
                     },
                     {
+                        "name": "Fists and Claws",
+                        "chooseOneKey": "b",
+                        "points": 0
+                    },
+                    {
                         "name": "Medicae",
                         "points": 2
                     }
@@ -2313,6 +2318,7 @@
                     {
                         "name": "Bolter Discipline",
                         "unlockedBy": "Imperial Fists",
+                        "chooseOneKey": "b",
                         "points": 0
                     },
                     {
@@ -2331,6 +2337,11 @@
                     {
                         "name": "Medicae",
                         "points": 2
+                    },
+                    {
+                        "name": "Fists and Claws",
+                        "chooseOneKey": "b",
+                        "points": 0
                     }
                 ],
                 "decreaseModelCount": -4
@@ -2909,6 +2920,11 @@
                         "points": 0
                     },
                     {
+                        "name": "Bolter Discipline",
+                        "unlockedBy": "Imperial Fists",
+                        "points": 0
+                    },
+                    {
                         "name": "Bloodthirsty",
                         "chooseOneKey": "c",
                         "points": 0
@@ -2945,11 +2961,6 @@
                         "name": "Jump Pack",
                         "chooseOneKey": "a",
                         "points": 4
-                    },
-                    {
-                        "name": "Bolter Discipline",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
                     },
                     {
                         "name": "Bike",
@@ -3531,7 +3542,7 @@
             },
             {
                 "name": "Night Lords",
-                "definition": "Enemy units have -1 to all Courage and Rally tests, or -2 if you have more units in play than your opponent."
+                "definition": "Enemy units have -1 to all Courage and Rally tests, or -2 if you have more units in play than your opponent. For the purposes of this rule, Increased Squad Size and Massive units count as two units each."
             },
             {
                 "name": "Blood Angels",
