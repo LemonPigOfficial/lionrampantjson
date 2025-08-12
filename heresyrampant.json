@@ -2758,7 +2758,7 @@
                 ],
                 "unlimited": false,
                 "strengthpoints": 5,
-                "points": 4,
+                "points": 6,
                 "attack": 3,
                 "move": 3,
                 "shoot": 3,
@@ -2787,7 +2787,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Shamsir Jetbike",
@@ -2799,10 +2799,6 @@
                         "name": "Lesser Psyker",
                         "unlockedBy": "Thousand Sons",
                         "points": 0
-                    },
-                    {
-                        "name": "Veteran",
-                        "points": 2
                     },
                     {
                         "name": "Dark Angels",
@@ -3008,7 +3004,7 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 5,
-                "points": 4,
+                "points": 6,
                 "attack": 4,
                 "move": 4,
                 "shoot": 4,
@@ -3036,7 +3032,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Shamsir Jetbike",
@@ -3048,10 +3044,6 @@
                         "name": "Bolter Discipline",
                         "unlockedBy": "Imperial Fists",
                         "points": 0
-                    },
-                    {
-                        "name": "Veteran",
-                        "points": 2
                     },
                     {
                         "name": "Lesser Psyker",
@@ -3514,7 +3506,7 @@
             },
             {
                 "name": "Emperor's Children",
-                "definition": "Friendly units within 9” of any friendly HQ unit add 3” to their Movement Distance. Additionally, you may take Kakophoni units."
+                "definition": "All friendly units add 2” to their Movement Distance. Additionally, you may take Kakophoni units."
             },
             {
                 "name": "Iron Warriors",
@@ -3526,7 +3518,7 @@
             },
             {
                 "name": "Space Wolves",
-                "definition": "Friendly HQ units, Increased Squad Size and Veteran units have Counter-charge vs Infantry and HQ. Additionally, you may take units of Fenrisian Wolves and Grey Slayers.",
+                "definition": "All friendly units have Counter-charge vs Infantry and HQ. Additionally, you may take units of Fenrisian Wolves and Grey Slayers.",
                 "specialRules": [
                     "Counter-charge vs Infantry and HQ"
                 ]
@@ -3544,7 +3536,7 @@
             },
             {
                 "name": "Night Lords",
-                "definition": "Enemy units have -1 to all Courage and Rally tests."
+                "definition": "Enemy units have -1 to all Courage and Rally tests, or -2 if you have more units in play than your opponent."
             },
             {
                 "name": "Blood Angels",
@@ -3556,11 +3548,11 @@
             },
             {
                 "name": "Iron Hands",
-                "definition": "Friendly Vehicles and Fortifications within 9” of any friendly HQ unit have +1 to their Armor."
+                "definition": "Friendly Infantry and HQ units are unaffected by Anti-Infantry."
             },
             {
                 "name": "World Eaters",
-                "definition": "All friendly units have Wild Charge.",
+                "definition": "All friendly Infantry and HQ units have Wild Charge.",
                 "specialRules": [
                     "Wild Charge"
                 ]
@@ -3571,7 +3563,10 @@
             },
             {
                 "name": "Death Guard",
-                "definition": "Friendly HQ units are unaffected by Anti-Infantry or Anti-Tank."
+                "definition": "All friendly Infantry and HQ units have Skirmish.",
+                "specialRules": [
+                    "Skirmish"
+                ]
             },
             {
                 "name": "Thousand Sons",
@@ -3586,10 +3581,7 @@
             },
             {
                 "name": "Word Bearers",
-                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points.",
-                "specialRules": [
-                    "Deep Strike"
-                ]
+                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points."
             },
             {
                 "name": "Salamanders",
@@ -3609,10 +3601,7 @@
             },
             {
                 "name": "Alpha Legion",
-                "definition": "Friendly HQ, Recon Squad, Increased Squad Size and Veteran units have Selfsufficent.",
-                "specialRules": [
-                    "Selfsufficent"
-                ]
+                "definition": "When charging or shooting at friendly units, enemy units count as being 2” further away."
             },
             {
                 "name": "Bloodthirsty",
@@ -3683,20 +3672,6 @@
             {
                 "name": "Mighty Weapons",
                 "definition": "+1 to Attack Value. Remove Defensive Formation"
-            },
-            {
-                "name": "The Black Rage",
-                "definition": "Wild Charge, Counter-charge, and +1 Armor.",
-                "modifiesStats": [
-                    {
-                        "stat": "armor",
-                        "modifier": 2
-                    }
-                ],
-                "specialRules": [
-                    "Wild Charge",
-                    "Counter-charge"
-                ]
             },
             {
                 "name": "Jump Pack",
@@ -3824,6 +3799,10 @@
             {
                 "name": "Wild Charge",
                 "definition": "If an enemy unit is within this unit’s Attack range during the ‘Activate Wild Charges’ phase, you must test to activate an Attack against it. If the test is unsuccessful, the unit remains stationary but may test for an ordered Move activation later in your turn (no other actions are allowed). Wild Charge may not be used if the unit is Battered."
+            },
+            {
+                "name": "Bloodthirsty",
+                "definition": "A Bloodthirsty unit can inflict a whole load of additional pain on an enemy – if it rolls well. Any Attack dice or Shooting dice (but not Defence dice) that roll a 6 cause 2 hits rather than the usual 1 hit. This stacks with other rules like Great Strength and Rapid Fire."
             },
             {
                 "name": "Counter-charge",
