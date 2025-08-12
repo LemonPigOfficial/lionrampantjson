@@ -1774,7 +1774,7 @@
                     },
                     {
                         "name": "Bayonet",
-                        "points": 1
+                        "points": 0
                     },
                     {
                         "name": "Anti-Tank",
@@ -2365,7 +2365,7 @@
                 "options": [
                     {
                         "name": "Bayonet",
-                        "points": 1
+                        "points": 0
                     },
                     {
                         "name": "Anti-Tank",
