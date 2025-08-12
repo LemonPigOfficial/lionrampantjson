@@ -1136,17 +1136,13 @@
                 "range": 0,
                 "maximummovement": 8,
                 "specialRules": [
-                    "Hard to target",
+                    "Bloodthirsty",
                     "Great Strength",
                     "Selfsufficent"
                 ],
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 2
-                    },
-                    {
-                        "name": "Bloodthirsty",
                         "points": 2
                     },
                     {
@@ -1927,8 +1923,7 @@
                 "range": 24,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Brace",
-                    "Hard to target"
+                    "Brace"
                 ],
                 "options": [
                     {
@@ -1977,7 +1972,7 @@
                 "strengthpoints": 5,
                 "points": 4,
                 "attack": 7,
-                "move": 5,
+                "move": 7,
                 "shoot": 7,
                 "courage": 4,
                 "armor": 3,
@@ -2736,7 +2731,7 @@
                 "range": 0,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Hard to target",
+                    "Great Strength",
                     "Counter-charge"
                 ],
                 "options": [
