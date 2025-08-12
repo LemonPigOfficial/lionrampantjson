@@ -1749,7 +1749,7 @@
                 "attackvalue": 4,
                 "defencevalue": 3,
                 "shootvalue": 3,
-                "range": 18,
+                "range": 24,
                 "maximummovement": 6,
                 "specialRules": [
                     "Skirmish"
@@ -1924,7 +1924,7 @@
                 "attackvalue": 4,
                 "defencevalue": 3,
                 "shootvalue": 3,
-                "range": 18,
+                "range": 24,
                 "maximummovement": 4,
                 "specialRules": [
                     "Brace",
@@ -1984,7 +1984,7 @@
                 "attackvalue": 4,
                 "defencevalue": 4,
                 "shootvalue": 3,
-                "range": 18,
+                "range": 24,
                 "maximummovement": 6,
                 "specialRules": [
                     "Skirmish",
@@ -2050,7 +2050,7 @@
                 "attackvalue": 3,
                 "defencevalue": 4,
                 "shootvalue": 6,
-                "range": 9,
+                "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
                     "Great Strength",
@@ -3518,7 +3518,7 @@
             },
             {
                 "name": "Space Wolves",
-                "definition": "All friendly units have Counter-charge vs Infantry and HQ. Additionally, you may take units of Fenrisian Wolves and Grey Slayers.",
+                "definition": "Friendly Infantry and HQ units have Counter-charge vs Infantry and HQ. Additionally, you may take units of Fenrisian Wolves and Grey Slayers.",
                 "specialRules": [
                     "Counter-charge vs Infantry and HQ"
                 ]
@@ -3585,10 +3585,9 @@
             },
             {
                 "name": "Salamanders",
-                "definition": "Friendly units with Anti-Infantry gain Rapid Fire. If they already had Rapid Fire, they gain Panic instead.",
+                "definition": "All friendly units gain Fearless.",
                 "specialRules": [
-                    "Rapid Fire",
-					"Panic"
+                    "Fearless"
                 ]
             },
             {
@@ -3748,11 +3747,15 @@
             },
             {
                 "name": "Bayonet",
-                "definition": "+1 to Defence Value.",
+                "definition": "+1 to Defence Value, but Range is reduced by 6”.",
                 "modifiesStats": [
                     {
                         "stat": "defencevalue",
                         "modifier": -1
+                    },
+                    {
+                        "stat": "range",
+                        "modifier": -6
                     }
                 ]
             },
@@ -3796,6 +3799,10 @@
             }
         ],
         "keywords": [
+            {
+                "name": "Fearless",
+                "definition": "This unit is not affected by Fearsome or Panic enemy units."
+			},
             {
                 "name": "Wild Charge",
                 "definition": "If an enemy unit is within this unit’s Attack range during the ‘Activate Wild Charges’ phase, you must test to activate an Attack against it. If the test is unsuccessful, the unit remains stationary but may test for an ordered Move activation later in your turn (no other actions are allowed). Wild Charge may not be used if the unit is Battered."
