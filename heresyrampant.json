@@ -165,8 +165,8 @@
                                     "unique": true
                                 },
                                 {
-                                    "name": "Commanding",
-                                    "points": 1,
+                                    "name": "Sub-Command",
+                                    "points": 2,
                                     "unique": true
                                 },
                                 {
@@ -200,8 +200,8 @@
                                     "unique": true
                                 },
                                 {
-                                    "name": "Inspired",
-                                    "points": 2,
+                                    "name": "Elite Sub-Command",
+                                    "points": 3,
                                     "unique": true
                                 },
                                 {
