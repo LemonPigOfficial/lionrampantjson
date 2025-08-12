@@ -816,12 +816,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Transport",
@@ -861,12 +861,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Fists and Claws",
@@ -914,12 +914,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     }
                 ]
             },
@@ -1297,7 +1297,7 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -1307,7 +1307,7 @@
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Medicae",
@@ -1381,7 +1381,7 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -1391,7 +1391,7 @@
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Medicae",
@@ -1451,12 +1451,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -1539,12 +1539,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Fists and Claws",
@@ -1653,7 +1653,7 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Bolter Discipline",
@@ -1669,7 +1669,7 @@
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Medicae",
@@ -1775,12 +1775,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -1817,7 +1817,7 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Skirmish",
-                    "Cumbersome"
+                    "Rapid Fire"
                 ],
                 "options": [
                     {
@@ -1941,12 +1941,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -2001,12 +2001,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Snipers",
@@ -2376,12 +2376,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -2414,13 +2414,13 @@
                 "points": 4,
                 "attack": 8,
                 "move": 7,
-                "shoot": 5,
+                "shoot": 4,
                 "courage": 6,
                 "armor": 2,
                 "attackvalue": 6,
                 "defencevalue": 5,
                 "shootvalue": 4,
-                "range": 18,
+                "range": 24,
                 "maximummovement": 6,
                 "specialRules": [],
                 "options": [
@@ -2485,12 +2485,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -2590,12 +2590,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "b",
-                        "points": 2
+                        "points": 0
                     }
                 ],
                 "decreaseModelCount": -2
@@ -2664,12 +2664,12 @@
                     {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Massive Squads",
@@ -3474,7 +3474,7 @@
             },
             {
                 "name": "Heretic",
-                "definition": "Enemy units have -1 to all Courage tests. Additionally, you may take Chaos Furies units."
+                "definition": "Enemy units have -1 to all Courage and Rally tests. Additionally, you may take Chaos Furies units."
             },
             {
                 "name": "Heretek",
@@ -3492,7 +3492,7 @@
             },
             {
                 "name": "Independent",
-                "definition": "Friendly units within 9” ignore Anti-Tank and Anti-Infantry."
+                "definition": "Friendly units within 9” of any friendly HQ unit ignore enemy Anti-Tank or Anti-Infantry (if they're affected negatively by it)."
             },
             {
                 "name": "Imperial",
@@ -3500,7 +3500,7 @@
             },
             {
                 "name": "Loyalist",
-                "definition": "Friendly units within 9” of any friendly HQ unit automatically succeed Order rolls."
+                "definition": "Friendly units within 12” of any friendly HQ unit automatically succeed Order rolls."
             },
             {
                 "name": "Dark Angels",
@@ -3542,23 +3542,22 @@
             },
             {
                 "name": "Night Lords",
-                "definition": "Enemy units have -1 to all Courage and Rally tests, or -2 if you have more units in play than your opponent. For the purposes of this rule, Increased Squad Size and Massive units count as two units each."
-            },
-            {
-                "name": "Blood Angels",
-                "definition": "Friendly HQ, Veteran, Despoiler and Assault Squad units have Counter-charge and Bloodthirsty.",
+                "definition": "Friendly Infantry and HQ units have Panic.",
                 "specialRules": [
-                    "Counter-charge",
-                    "Bloodthirsty"
+                    "Panic"
                 ]
             },
             {
+                "name": "Blood Angels",
+                "definition": "Friendly HQ and Infantry units have +1 to Attack Orders and Attack Value."
+            },
+            {
                 "name": "Iron Hands",
-                "definition": "Friendly Infantry and HQ units are unaffected by Anti-Infantry."
+                "definition": "Friendly Infantry and HQ units have +1 armor after any modifiers (such as Anti-Infantry or Anti-Tank)."
             },
             {
                 "name": "World Eaters",
-                "definition": "All friendly Infantry and HQ units have Wild Charge.",
+                "definition": "All friendly Infantry and HQ units have Wild Charge. Additionally, all friendly units may reroll results of 1 in Attack dice.",
                 "specialRules": [
                     "Wild Charge"
                 ]
@@ -3580,28 +3579,28 @@
             },
             {
                 "name": "Sons of Horus",
-                "definition": "Friendly HQ, Increased Squad Size and Veteran units have Panic.",
+                "definition": "When shooting at targets within 12” or Attcking, friendly units count as having Bloodthirsty.",
                 "specialRules": [
-                    "Panic"
+                    "Bloodthirsty"
                 ]
             },
             {
                 "name": "Word Bearers",
-                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points."
+                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points. Additionally, you may reroll failed Courage tests (but not Rally tests)."
             },
             {
                 "name": "Salamanders",
-                "definition": "All friendly units gain Fearless.",
+                "definition": "All friendly units gain Fearless. Additionally, Anti-Infantry units don't suffer the usual penalties against Fortifications and Vehicles.",
                 "specialRules": [
                     "Fearless"
                 ]
             },
             {
                 "name": "Raven Guard",
-                "definition": "Friendly HQ units, Veteran units, Assault Squads and Despoiler Squads have Hard to target or Brace (pick per unit).",
+                "definition": "Friendly Cumbersome and Fly units gain Wild charge and Brutal Strength (pick per unit).",
                 "specialRules": [
-                    "Hard to target",
-                    "Brace"
+                    "Wild Charge",
+                    "Brutal Strength"
                 ]
             },
             {
@@ -3797,11 +3796,11 @@
             },
             {
                 "name": "Anti-Tank",
-                "definition": "Vehicle and Fortification units count as armor 1 against Shooting by this unit (armor 2 if in cover, or against Cumbersome units). Cannot be taken alongside Anti-Infantry."
+                "definition": "Weapons such as Plasma Weapons, Lascannons and Melta Weapons are Anti-Tank weapons. Vehicle, Cumbersome and Fortification units count as armor 2 against Shooting by this unit (armor 2 if in cover). Shooting Value is 6+ against any other units. Cannot be taken alongside Anti-Infantry."
             },
             {
                 "name": "Anti-Infantry",
-                "definition": "HQ and Infantry units count as armor 2 against Shooting by this unit (isn't affected by Cover). Cannot be taken alongside Anti-Tank."
+                "definition": "Weapons such as Flamers, Volkite Weapons and Grenade weapons are Anti-Infantry weapons. HQ and Infantry units count as armor 2 against Shooting by this unit (isn't affected by Cover).  Shooting Value is 6+ against any other units. Cannot be taken alongside Anti-Tank."
             }
         ],
         "keywords": [
