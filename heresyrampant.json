@@ -165,7 +165,7 @@
                                     "unique": true
                                 },
                                 {
-                                    "name": "Sub-Command",
+                                    "name": "Delegatus",
                                     "points": 2,
                                     "unique": true
                                 },
@@ -200,7 +200,7 @@
                                     "unique": true
                                 },
                                 {
-                                    "name": "Elite Sub-Command",
+                                    "name": "Great Delegatus",
                                     "points": 3,
                                     "unique": true
                                 },
@@ -254,7 +254,7 @@
                                     "unique": true
                                 },
                                 {
-                                    "name": "Delegatus",
+                                    "name": "Centurion",
                                     "points": 1,
                                     "unique": true
                                 }
@@ -337,7 +337,7 @@
                 "decreaseModelCount": 1
             },
             {
-                "name": "Sub-Command",
+                "name": "Delegatus",
                 "definition": "Each turn, you may reroll 1 additional failed Move, Attack, or Shoot activation test (no other tests) within 12\" of your Leader's unit.",
                 "factions": [],
                 "decreaseModelCount": 1
@@ -382,7 +382,7 @@
                 "decreaseModelCount": 1
             },
             {
-                "name": "Great Sub-Command",
+                "name": "Great Delegatus",
                 "definition": "Each turn, you may reroll 2 additional failed Move, Attack, or Shoot activations tests (no other tests) within 12\" of your Leader's unit.",
                 "factions": [],
                 "decreaseModelCount": 1
@@ -454,7 +454,7 @@
                 "decreaseModelCount": 1
             },
             {
-                "name": "Delegatus",
+                "name": "Centurion",
                 "definition": "May add or subtract 1 from your total (your choice) when rolling to decide attacker/ defender as described in Chapter 5. Doesn't stack.",
                 "factions": [],
                 "decreaseModelCount": 1
