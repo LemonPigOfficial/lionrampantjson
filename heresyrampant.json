@@ -2705,18 +2705,10 @@
                 "shootvalue": 4,
                 "range": 24,
                 "maximummovement": 6,
-                "specialRules": [],
+                "specialRules": [
+					"Rapid Fire"
+				],
                 "options": [
-                    {
-                        "name": "Anti-Tank",
-                        "chooseOneKey": "a",
-                        "points": 0
-                    },
-                    {
-                        "name": "Anti-Infantry",
-                        "chooseOneKey": "a",
-                        "points": 0
-                    },
                     {
                         "name": "Massive Squads",
                         "addsModels": 10,
