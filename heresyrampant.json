@@ -2651,7 +2651,7 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 10,
-                "points": 4,
+                "points": 2,
                 "attack": 3,
                 "move": 3,
                 "shoot": 3,
@@ -2660,10 +2660,9 @@
                 "attackvalue": 6,
                 "defencevalue": 6,
                 "shootvalue": 5,
-                "range": 24,
+                "range": 18,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Rapid Fire",
                     "Fearless"
 					],
                 "options": [
@@ -2671,16 +2670,6 @@
                         "name": "Massive Squads",
                         "addsModels": 10,
                         "points": 2
-                    },
-                    {
-                        "name": "Anti-Tank",
-                        "chooseOneKey": "b",
-                        "points": 0
-                    },
-                    {
-                        "name": "Anti-Infantry",
-                        "chooseOneKey": "b",
-                        "points": 0
                     }
                 ],
                 "decreaseModelCount": -9
