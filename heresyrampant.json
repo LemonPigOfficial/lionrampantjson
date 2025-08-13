@@ -747,7 +747,8 @@
                 "range": 18,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Panic"
+                    "Panic",
+                    "Fearless"
                 ],
                 "options": [
                     {
@@ -958,7 +959,7 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Panic",
-                    "Selfsufficent",
+                    "Fearless",
                     "Fast"
                 ],
                 "options": [
@@ -1057,7 +1058,7 @@
                 "specialRules": [
                     "Panic",
                     "Rapid Fire",
-                    "Selfsufficent"
+                    "Fearless"
                 ],
                 "options": [
                     {
@@ -1138,7 +1139,7 @@
                 "specialRules": [
                     "Bloodthirsty",
                     "Great Strength",
-                    "Selfsufficent"
+                    "Fearless"
                 ],
                 "options": [
                     {
@@ -2392,7 +2393,7 @@
                         "name": "Massive Squads",
                         "chooseOneKey": "b",
                         "addsModels": 10,
-                        "points": 4
+                        "points": 2
                     },
                     {
                         "name": "Medicae",
@@ -2448,7 +2449,7 @@
                         "name": "Massive Squads",
                         "chooseOneKey": "b",
                         "addsModels": 10,
-                        "points": 4
+                        "points": 2
                     },
                     {
                         "name": "Medicae",
@@ -2501,7 +2502,7 @@
                         "name": "Massive Squads",
                         "chooseOneKey": "b",
                         "addsModels": 10,
-                        "points": 4
+                        "points": 2
                     },
                     {
                         "name": "Medicae",
@@ -2544,7 +2545,7 @@
                         "name": "Massive Squads",
                         "chooseOneKey": "b",
                         "addsModels": 10,
-                        "points": 4
+                        "points": 2
                     },
                     {
                         "name": "Medicae",
@@ -2576,7 +2577,8 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Brace",
-                    "Cumbersome"
+                    "Cumbersome",
+                    "Fearless"
                 ],
                 "options": [
                     {
@@ -2624,7 +2626,8 @@
                 "specialRules": [
                     "Fly",
                     "Deep Strike",
-                    "Cumbersome"
+                    "Cumbersome",
+                    "Fearless"
                 ],
                 "options": [
                     {
@@ -2659,7 +2662,9 @@
                 "shootvalue": 5,
                 "range": 18,
                 "maximummovement": 4,
-                "specialRules": [],
+                "specialRules": [
+                    "Fearless"
+					],
                 "options": [
                     {
                         "name": "Anti-Tank",
@@ -2689,7 +2694,7 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 10,
-                "points": 6,
+                "points": 4,
                 "attack": 6,
                 "move": 6,
                 "shoot": 6,
@@ -2730,7 +2735,7 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 10,
-                "points": 6,
+                "points": 4,
                 "attack": 5,
                 "move": 6,
                 "shoot": 0,
