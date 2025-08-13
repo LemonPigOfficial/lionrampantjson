@@ -104,12 +104,31 @@
             "label": "Faction",
             "type": "faction",
             "dataSource": "factions",
+            "divisionProperty": "alignment",
+            "divisions": [
+                "Astartes",
+                "Imperium"
+            ],
             "children": [
                 {
                     "propertyName": "additionalRules",
                     "label": "Additional Rules: ",
                     "type": "static",
                     "bullet": true
+                },
+                {
+                    "propertyName": "armyBonuses",
+                    "label": "",
+                    "type": "static",
+                    "dataSource": "armyBonuses",
+                    "children": [
+                        {
+                            "label": "Special Rules",
+                            "propertyName": "specialRules",
+                            "type": "static",
+                            "dataSource": "keywords"
+                        }
+                    ]
                 },
                 {
                     "propertyName": "units",
@@ -122,14 +141,14 @@
                             "label": "Special Rules",
                             "type": "static",
                             "dataSource": "keywords",
-							"children": [
-											{
-											"label": "Special Rules",
-											"propertyName": "specialRules",
-											"type": "static",
-											"dataSource": "keywords"
-											}
-										]
+                            "children": [
+                                {
+                                    "label": "Special Rules",
+                                    "propertyName": "specialRules",
+                                    "type": "static",
+                                    "dataSource": "keywords"
+                                }
+                            ]
                         },
                         {
                             "singleKey": "leaderUpgrade",
@@ -141,37 +160,37 @@
                             "universalOptions": [
                                 {
                                     "name": "Aggressive",
-                                    "points": 1,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
-                                    "name": "Psyker or Chaplain",
-                                    "points": 2,
+                                    "name": "Esoterist",
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Bloodthirsty",
-                                    "points": 1,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Champion",
-                                    "points": 1,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Brutal",
-                                    "points": 1,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
-                                    "name": "Delegatus",
-                                    "points": 2,
+                                    "name": "Chaplain",
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Vexilla",
-                                    "points": 2,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
@@ -181,37 +200,32 @@
                                 },
                                 {
                                     "name": "Fearless",
-                                    "points": 1,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Fearsome",
-                                    "points": 1,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Impulsive",
-                                    "points": 1,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Mortifactor",
-                                    "points": 2,
-                                    "unique": true
-                                },
-                                {
-                                    "name": "Great Delegatus",
-                                    "points": 3,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Unflinching",
-                                    "points": 2,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Indomitable",
-                                    "points": 2
+                                    "points": 0
                                 },
                                 {
                                     "name": "Patient",
@@ -225,37 +239,33 @@
                                 },
                                 {
                                     "name": "Gun Master",
-                                    "points": 2,
-                                    "unique": true
-                                },
-                                {
-                                    "name": "Mighty",
-                                    "points": 1,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Warmaster",
-                                    "points": 3,
+                                    "points": 0,
+                                    "requiresLeader": true,
                                     "unique": true
                                 },
                                 {
                                     "name": "Quick",
-                                    "points": 1,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Armistus",
-                                    "points": 2,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Siegebreaker",
-                                    "points": 3,
+                                    "points": 0,
                                     "unique": true
                                 },
                                 {
                                     "name": "Centurion",
-                                    "points": 1,
+                                    "points": 0,
                                     "unique": true
                                 }
                             ]
@@ -264,14 +274,14 @@
                             "propertyName": "options",
                             "type": "checkbox",
                             "dataSource": "upgrades",
-							"children": [
-											{
-											"label": "Special Rules",
-											"propertyName": "specialRules",
-											"type": "static",
-											"dataSource": "keywords"
-											}
-										]
+                            "children": [
+                                {
+                                    "label": "Special Rules",
+                                    "propertyName": "specialRules",
+                                    "type": "static",
+                                    "dataSource": "keywords"
+                                }
+                            ]
                         }
                     ],
                     "tierProperty": "unitType",
@@ -289,7 +299,7 @@
                             "name": "HQ",
                             "rank": 1,
                             "maximumChildren": {
-                                "leaderUpgrades": 2
+                                "leaderUpgrades": 1
                             }
                         },
                         {
@@ -310,7 +320,7 @@
                 "decreaseModelCount": 1
             },
             {
-                "name": "Psyker or Chaplain",
+                "name": "Esoterist",
                 "definition": "For each HQ with this trait, you may reroll any one set of dice in its entirety, rolled by any player.",
                 "factions": [],
                 "decreaseModelCount": 1
@@ -337,7 +347,7 @@
                 "decreaseModelCount": 1
             },
             {
-                "name": "Delegatus",
+                "name": "Chaplain",
                 "definition": "Each turn, you may reroll 1 additional failed Move, Attack, or Shoot activation test (no other tests) within 12\" of your Leader's unit.",
                 "factions": [],
                 "decreaseModelCount": 1
@@ -350,7 +360,7 @@
             },
             {
                 "name": "Drunkard or Eccentric",
-                "definition": "After deployment but before the first turn, roll to see how much this unit has drunk. On a 1-2, the HQ drank too much and cannot be ordered on the first round. On a 3-4, Attack Value is increased by 1. On a 5-6, the HQ counts as Massive.",
+                "definition": "After deployment but before the first turn, roll to see how much this unit has drunk. On a 1-2, the HQ drank too much and cannot be ordered on the first round. On a 3-6, the HQ counts as Massive.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -382,12 +392,6 @@
                 "decreaseModelCount": 1
             },
             {
-                "name": "Great Delegatus",
-                "definition": "Each turn, you may reroll 2 additional failed Move, Attack, or Shoot activations tests (no other tests) within 12\" of your Leader's unit.",
-                "factions": [],
-                "decreaseModelCount": 1
-            },
-            {
                 "name": "Unflinching",
                 "definition": "When required to Retreat, this unit retreats only 1\".",
                 "factions": [],
@@ -401,7 +405,7 @@
             },
             {
                 "name": "Patient",
-                "definition": "Each turn, one unit within 12\" of your Leader's unit may choose to ignore a Wild Charge activation (may be used on this own unit).",
+                "definition": "Any unit within 12\" of your Leader's unit may choose to ignore a Wild Charge activation (may be used on this own unit).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -418,14 +422,8 @@
                 "decreaseModelCount": 1
             },
             {
-                "name": "Mighty",
-                "definition": "During Attacks, this unit may reroll 2 failed hit dice.",
-                "factions": [],
-                "decreaseModelCount": 1
-            },
-            {
                 "name": "Warmaster",
-                "definition": "Ths unit automatically passes all Move, Attack and Shoot activation tests. Wild Charges, Counter-charges, and Brace are tested as normal.",
+                "definition": "Ths unit automatically passes all Move, Attack and Shoot activation tests. Wild Charges, Counter-charges, and Brace are tested as normal. Leader only.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -443,7 +441,7 @@
             },
             {
                 "name": "Armistus",
-                "definition": "At the start of the game, select one Upgrade from an enemy unit, which doesn't apply for this game.",
+                "definition": "At the start of the game, select one Upgrade from an enemy unit, which doesn't apply for this game. Can't affect Veteran, Increased Squad Size, or Massive Squads.",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -464,41 +462,301 @@
             {
                 "name": "Legiones Astartes",
                 "additionalRules": [
-                    "Legiones Astartes companies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Legion upgrade, which grants access to unique benefits (including units and upgrades), and all their HQs get either Bloodthirsty or Fearsome for free."
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
                 ],
-                "armyBonuses": [],
+                "armyBonuses": [
+                    "Know no Fear",
+                    "Hardened Armor"
+                ],
+                "alignment": "Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Dark Angels",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free. Dark Angels only: Each unit in your army benefits from only one of your army bonuses (Stormwing, Deathwing, or Ravenwing). Choose which one when deploying that unit."
+                ],
+                "armyBonuses": [
+                    "Stormwing",
+                    "Deathwing",
+                    "Ravenwing"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Emperor's Children",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Exemplars of War",
+                    "Enhanced Senses"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Iron Warriors",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Know no Fear",
+                    "Wrack and Ruin"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "White Scars",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Swift Action",
+                    "Enhanced Senses"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Space Wolves",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Bestial Savagery",
+                    "Enhanced Senses",
+                    "Wild"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Imperial Fists",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free. Imperial Fists only: Each Infantry or HQ unit may upgrade with Bolter Discipline for free."
+                ],
+                "armyBonuses": [
+                    "Know No Fear"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Night Lords",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "A Talent for Murder",
+                    "Shrouded",
+                    "Enhanced Senses"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Blood Angels",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Encarmine Fury",
+                    "Know No Fear",
+                    "Wild"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Iron Hands",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Tech Mastery",
+                    "Hardened Armor"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "World Eaters",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Bloodlust",
+                    "Know No Fear"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Ultramarines",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Fire Support!",
+                    "Know No Fear"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Death Guard",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Ceaseless",
+                    "Know No Fear"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Thousand Sons",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Thousand Sons: Additionally all their HQ and Infantry units get Lesser Psyker for free."
+                ],
+                "armyBonuses": [
+                    "Covenant of Sorcerors",
+                    "Shrouded"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": [
+                    "Lesser Psyker"
+                ]
+            },
+            {
+                "name": "Sons of Horus",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Merciless Warriors",
+                    "Know no Fear"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Word Bearers",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Charismatic Leadership",
+                    "Know no Fear"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Salamanders",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Hardened Armor",
+                    "Know no Fear"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Raven Guard",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Enhanced Senses",
+                    "Shrouded",
+                    "Wild"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
+                "specialRules": []
+            },
+            {
+                "name": "Alpha Legion",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free. Alpha Legion only: You may take any Legion-specific unit."
+                ],
+                "armyBonuses": [
+                    "Shrouded",
+                    "Enhanced Senses"
+                ],
+                "alignment": "Astartes",
+                "parentFaction": "Legiones Astartes",
                 "specialRules": []
             },
             {
                 "name": "Questoris Knights",
                 "additionalRules": [
-                    "A Questoris Knights army may nominate a Vehicle as a Leader, but it cannot have Leader Traits. To compensate for this and the low unit count, you may upgrade your units with Double Time for free, and the Leader may take a free Allegiance upgrade."
+                    "A Questoris Knights army may nominate a Vehicle as a Leader, but it cannot have Leader Traits. To compensate for this and the low unit count, you may upgrade your units with Double Time for free."
                 ],
-                "armyBonuses": [],
+                "armyBonuses": [
+                    "Enhanced Senses",
+                    "Behemoths"
+                ],
+                "alignment": "Imperium",
                 "specialRules": []
             },
             {
                 "name": "Cult Mechanicum",
                 "additionalRules": [
-                    "Cult Mechanicum armies may have 1 Archmagos Prime, a particularly strong HQ unit, but they may not have more than 1. Additionally their leader may take a free Devotion upgrade, which grants access to unique benefits (including upgrades)."
+                    "Cult Mechanicum armies may have 1 Archmagos Prime, a particularly strong HQ unit, but they may not have more than 1."
                 ],
-                "armyBonuses": [],
+                "armyBonuses": [
+                    "Tech Mastery",
+                    "Hardened Armor"
+                ],
+                "alignment": "Imperium",
                 "specialRules": []
             },
             {
                 "name": "Talons of the Emperor",
                 "additionalRules": [
-                    "Talons of the Emperor companies may, once per round, automatically succeed on an Order of their choice - the Emperor's finest warriors have no time for blunders. Additionally, all their units get either Bloodthirsty or Fearsome for free."
+                    "Units in a Talons of the Emperor army get their choice of Bloodthirsty or Fearsome for free."
                 ],
-                "armyBonuses": [],
+                "armyBonuses": [
+                    "Know no Fear",
+                    "Self-Reliant"
+                ],
+                "alignment": "Imperium",
                 "specialRules": []
             },
             {
                 "name": "Solar Auxilia",
                 "additionalRules": [
-                    "The leader may select a free Allegiance upgrade, which grants unique benefits (including units and upgrades). Additionally, you may upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry."
+                    "You may upgrade Vehicles to Veteran for 4 points each (8 for Superheavy Tanks), an option usually reserved for Infantry."
                 ],
-                "armyBonuses": [],
+                "armyBonuses": [
+                    "Fire Support!",
+                    "Fix Bayonets!"
+                ],
+                "alignment": "Imperium",
                 "specialRules": []
             }
         ],
@@ -522,6 +780,74 @@
                 "factions": [
                     {
                         "name": "Legiones Astartes",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Dark Angels",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Alpha Legion",
                         "unitType": "Vehicle"
                     },
                     {
@@ -606,6 +932,14 @@
                         "unitType": "Vehicle"
                     },
                     {
+                        "name": "Legiones Astartes",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Vehicle"
+                    },
+                    {
                         "name": "Solar Auxilia",
                         "unitType": "Vehicle"
                     }
@@ -659,6 +993,78 @@
                         "unitType": "Vehicle"
                     },
                     {
+                        "name": "Dark Angels",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Vehicle"
+                    },
+                    {
                         "name": "Legiones Astartes",
                         "unitType": "Vehicle"
                     }
@@ -699,7 +1105,7 @@
                         "points": 0
                     },
                     {
-                        "name": "Fists and Claws",
+                        "name": "Dedicated Melee",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -728,6 +1134,10 @@
             {
                 "name": "Thanatar Siege Automata",
                 "factions": [
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Vehicle"
+                    },
                     {
                         "name": "Cult Mechanicum",
                         "unitType": "Vehicle"
@@ -770,7 +1180,7 @@
                         "points": 0
                     },
                     {
-                        "name": "Fists and Claws",
+                        "name": "Dedicated Melee",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -789,6 +1199,78 @@
                     },
                     {
                         "name": "Legiones Astartes",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Dark Angels",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Alpha Legion",
                         "unitType": "Vehicle"
                     },
                     {
@@ -834,6 +1316,78 @@
                 "name": "Dreadnought",
                 "factions": [
                     {
+                        "name": "Dark Angels",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Vehicle"
+                    },
+                    {
                         "name": "Legiones Astartes",
                         "unitType": "Vehicle"
                     }
@@ -870,7 +1424,7 @@
                         "points": 0
                     },
                     {
-                        "name": "Fists and Claws",
+                        "name": "Dedicated Melee",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -936,6 +1490,10 @@
                         "unitType": "Vehicle"
                     },
                     {
+                        "name": "Iron Hands",
+                        "unitType": "Vehicle"
+                    },
+                    {
                         "name": "Cult Mechanicum",
                         "unitType": "Vehicle"
                     },
@@ -991,25 +1549,13 @@
                         "points": 0
                     },
                     {
-                        "name": "Fists and Claws",
+                        "name": "Dedicated Melee",
                         "chooseOneKey": "a",
                         "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
-                        "points": 0
-                    },
-                    {
-                        "name": "Loyalist",
-                        "chooseOneKey": "kq",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Heretic",
-                        "chooseOneKey": "kq",
-                        "requiresLeader": true,
                         "points": 0
                     },
                     {
@@ -1035,6 +1581,10 @@
                 "factions": [
                     {
                         "name": "Questoris Knights",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Iron Hands",
                         "unitType": "Vehicle"
                     },
                     {
@@ -1077,30 +1627,12 @@
                         ]
                     },
                     {
-                        "name": "Loyalist",
-                        "chooseOneKey": "kq",
-                        "requiresLeader": true,
-                        "points": 0,
-                        "availableIn": [
-                            "Questoris Knights"
-                        ]
-                    },
-                    {
-                        "name": "Heretic",
-                        "chooseOneKey": "kq",
-                        "requiresLeader": true,
-                        "points": 0,
-                        "availableIn": [
-                            "Questoris Knights"
-                        ]
-                    },
-                    {
                         "name": "Anti-Tank",
                         "chooseOneKey": "a",
                         "points": 0
                     },
                     {
-                        "name": "Fists and Claws",
+                        "name": "Dedicated Melee",
                         "chooseOneKey": "a",
                         "points": 0
                     },
@@ -1116,6 +1648,10 @@
                 "factions": [
                     {
                         "name": "Questoris Knights",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Iron Hands",
                         "unitType": "Vehicle"
                     },
                     {
@@ -1145,24 +1681,6 @@
                     {
                         "name": "Fearsome",
                         "points": 2
-                    },
-                    {
-                        "name": "Loyalist",
-                        "chooseOneKey": "kq",
-                        "requiresLeader": true,
-                        "points": 0,
-                        "availableIn": [
-                            "Questoris Knights"
-                        ]
-                    },
-                    {
-                        "name": "Heretic",
-                        "chooseOneKey": "kq",
-                        "requiresLeader": true,
-                        "points": 0,
-                        "availableIn": [
-                            "Questoris Knights"
-                        ]
                     },
                     {
                         "name": "Double Time",
@@ -1224,7 +1742,7 @@
                         "points": 0
                     },
                     {
-                        "name": "Fists and Claws",
+                        "name": "Dedicated Melee",
                         "chooseOneKey": "b",
                         "points": 0
                     },
@@ -1339,11 +1857,6 @@
                     {
                         "name": "Talons of the Emperor",
                         "unitType": "Infantry"
-                    },
-                    {
-                        "name": "Cult Mechanicum",
-                        "unitType": "HQ",
-                        "unlockedBy": "Imperial"
                     }
                 ],
                 "unlimited": true,
@@ -1491,6 +2004,78 @@
                 "name": "Terminators",
                 "factions": [
                     {
+                        "name": "Dark Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
+                    {
                         "name": "Legiones Astartes",
                         "unitType": "Infantry"
                     }
@@ -1514,11 +2099,6 @@
                 ],
                 "options": [
                     {
-                        "name": "Lesser Psyker",
-                        "unlockedBy": "Thousand Sons",
-                        "points": 0
-                    },
-                    {
                         "name": "Increased Squad Size",
                         "addsModels": 5,
                         "points": 4
@@ -1534,8 +2114,10 @@
                     {
                         "name": "Bolter Discipline",
                         "chooseOneKey": "b",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
                     },
                     {
                         "name": "Anti-Tank",
@@ -1548,7 +2130,7 @@
                         "points": 0
                     },
                     {
-                        "name": "Fists and Claws",
+                        "name": "Dedicated Melee",
                         "chooseOneKey": "b",
                         "points": 0
                     },
@@ -1562,6 +2144,78 @@
             {
                 "name": "Saturnine Terminators",
                 "factions": [
+                    {
+                        "name": "Dark Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
                     {
                         "name": "Legiones Astartes",
                         "unitType": "Infantry"
@@ -1592,8 +2246,10 @@
                     {
                         "name": "Bolter Discipline",
                         "chooseOneKey": "b",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -1605,7 +2261,7 @@
                         "points": 0
                     },
                     {
-                        "name": "Fists and Claws",
+                        "name": "Dedicated Melee",
                         "chooseOneKey": "b",
                         "points": 0
                     },
@@ -1620,6 +2276,78 @@
             {
                 "name": "Outriders",
                 "factions": [
+                    {
+                        "name": "Dark Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
                     {
                         "name": "Legiones Astartes",
                         "unitType": "Infantry"
@@ -1659,8 +2387,10 @@
                     {
                         "name": "Bolter Discipline",
                         "chooseOneKey": "b",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
                     },
                     {
                         "name": "Veteran",
@@ -1683,9 +2413,80 @@
                 "name": "Jetbikers",
                 "factions": [
                     {
+                        "name": "Dark Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
+                    {
                         "name": "Legiones Astartes",
-                        "unitType": "Infantry",
-                        "unlockedBy": "White Scars"
+                        "unitType": "Infantry"
                     }
                 ],
                 "unlimited": true,
@@ -1731,6 +2532,74 @@
                 "name": "Tactical Squad",
                 "factions": [
                     {
+                        "name": "Dark Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
+                    {
                         "name": "Legiones Astartes",
                         "unitType": "Infantry"
                     }
@@ -1753,11 +2622,6 @@
                 ],
                 "options": [
                     {
-                        "name": "Lesser Psyker",
-                        "unlockedBy": "Thousand Sons",
-                        "points": 0
-                    },
-                    {
                         "name": "Increased Squad Size",
                         "chooseOneKey": "b",
                         "addsModels": 5,
@@ -1766,8 +2630,10 @@
                     {
                         "name": "Bolter Discipline",
                         "chooseOneKey": "a",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
                     },
                     {
                         "name": "Bayonet",
@@ -1798,6 +2664,78 @@
             {
                 "name": "Special Weapons Squad",
                 "factions": [
+                    {
+                        "name": "Dark Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
                     {
                         "name": "Legiones Astartes",
                         "unitType": "Infantry"
@@ -1830,8 +2768,10 @@
                     {
                         "name": "Bolter Discipline",
                         "chooseOneKey": "a",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
                     },
                     {
                         "name": "Anti-Tank",
@@ -1859,9 +2799,12 @@
                 "name": "Kakophoni",
                 "factions": [
                     {
-                        "name": "Legiones Astartes",
-                        "unitType": "Infantry",
-                        "unlockedBy": "Emperor's Children"
+                        "name": "Emperor's Children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
                     }
                 ],
                 "unlimited": true,
@@ -1906,6 +2849,78 @@
                 "name": "Breacher Squad",
                 "factions": [
                     {
+                        "name": "Dark Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
+                    {
                         "name": "Legiones Astartes",
                         "unitType": "Infantry"
                     }
@@ -1936,8 +2951,10 @@
                     {
                         "name": "Bolter Discipline",
                         "chooseOneKey": "a",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
                     },
                     {
                         "name": "Anti-Tank",
@@ -1964,6 +2981,70 @@
             {
                 "name": "Recon Squad",
                 "factions": [
+                    {
+                        "name": "Dark Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
                     {
                         "name": "Legiones Astartes",
                         "unitType": "Infantry"
@@ -1996,8 +3077,10 @@
                     {
                         "name": "Bolter Discipline",
                         "chooseOneKey": "a",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
                     },
                     {
                         "name": "Anti-Tank",
@@ -2030,26 +3113,28 @@
                 "name": "Grey Slayers",
                 "factions": [
                     {
-                        "name": "Legiones Astartes",
-                        "unitType": "Infantry",
-                        "unlockedBy": "Space Wolves"
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
                     }
                 ],
                 "unlimited": true,
                 "strengthpoints": 5,
                 "points": 4,
-                "attack": 5,
+                "attack": 6,
                 "move": 5,
-                "shoot": 8,
+                "shoot": 6,
                 "courage": 4,
                 "armor": 3,
                 "attackvalue": 3,
                 "defencevalue": 4,
-                "shootvalue": 6,
-                "range": 12,
+                "shootvalue": 4,
+                "range": 24,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Great Strength",
                     "Hard to target"
                 ],
                 "options": [
@@ -2058,6 +3143,10 @@
                         "chooseOneKey": "b",
                         "addsModels": 5,
                         "points": 2
+                    },
+                    {
+                        "name": "Dedicated Melee",
+                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -2072,8 +3161,125 @@
                 "decreaseModelCount": -4
             },
             {
+                "name": "Deathsworn",
+                "factions": [
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 4,
+                "move": 4,
+                "shoot": 4,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 3,
+                "defencevalue": 5,
+                "shootvalue": 4,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Great Strength",
+                    "Dedicated Melee",
+					"Fearless"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "b",
+                        "addsModels": 5,
+                        "points": 4
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "b",
+                        "points": 4
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
                 "name": "Despoiler Squad",
                 "factions": [
+                    {
+                        "name": "Dark Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
                     {
                         "name": "Legiones Astartes",
                         "unitType": "Infantry"
@@ -2105,8 +3311,10 @@
                     {
                         "name": "Bolter Discipline",
                         "chooseOneKey": "b",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
                     },
                     {
                         "name": "Fearsome",
@@ -2122,7 +3330,7 @@
                         "points": 2
                     },
                     {
-                        "name": "Fists and Claws",
+                        "name": "Dedicated Melee",
                         "chooseOneKey": "b",
                         "points": 0
                     },
@@ -2137,9 +3345,12 @@
                 "name": "Fenrisian Wolves",
                 "factions": [
                     {
-                        "name": "Legiones Astartes",
-                        "unitType": "Infantry",
-                        "unlockedBy": "Space Wolves"
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
                     }
                 ],
                 "unlimited": true,
@@ -2156,7 +3367,6 @@
                 "range": 0,
                 "maximummovement": 12,
                 "specialRules": [
-                    "Wild Charge",
                     "Fast"
                 ],
                 "options": [
@@ -2177,75 +3387,18 @@
                 "decreaseModelCount": -4
             },
             {
-                "name": "Chaos Furies (Free)",
-                "factions": [
-                    {
-                        "name": "Legiones Astartes",
-                        "unitType": "Infantry",
-                        "unlockedBy": "Word Bearers"
-                    }
-                ],
-                "unlimited": false,
-                "strengthpoints": 10,
-                "points": 0,
-                "attack": 6,
-                "move": 6,
-                "shoot": 0,
-                "courage": 8,
-                "armor": 2,
-                "attackvalue": 4,
-                "defencevalue": 6,
-                "shootvalue": 0,
-                "range": 0,
-                "maximummovement": 12,
-                "specialRules": [
-                    "Wild Charge",
-                    "Cumbersome",
-                    "Fly"
-                ],
-                "options": [
-                    {
-                        "name": "Massive Squads",
-                        "chooseOneKey": "a",
-                        "addsModels": 10,
-                        "points": 2
-                    },
-                    {
-                        "name": "Fearsome",
-                        "points": 1
-                    },
-                    {
-                        "name": "Bloodthirsty",
-                        "points": 1
-                    },
-                    {
-                        "name": "Veteran",
-                        "chooseOneKey": "a",
-                        "points": 2
-                    }
-                ],
-                "decreaseModelCount": -9
-            },
-            {
                 "name": "Chaos Furies",
                 "factions": [
                     {
-                        "name": "Legiones Astartes",
-                        "unitType": "Infantry",
-                        "unlockedBy": "Word Bearers"
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
                     },
                     {
-                        "name": "Solar Auxilia",
-                        "unitType": "Infantry",
-                        "unlockedBy": "Heretic"
-                    },
-                    {
-                        "name": "Knights Questoris",
-                        "unitType": "Infantry",
-                        "unlockedBy": "Heretic"
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
                     }
                 ],
-                "unlimited": false,
+                "unlimited": true,
                 "strengthpoints": 10,
                 "points": 2,
                 "attack": 6,
@@ -2289,6 +3442,78 @@
                 "name": "Assault Squad",
                 "factions": [
                     {
+                        "name": "Dark Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
+                    {
                         "name": "Legiones Astartes",
                         "unitType": "Infantry"
                     }
@@ -2318,9 +3543,11 @@
                     },
                     {
                         "name": "Bolter Discipline",
-                        "unlockedBy": "Imperial Fists",
                         "chooseOneKey": "b",
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
                     },
                     {
                         "name": "Fearsome",
@@ -2340,9 +3567,57 @@
                         "points": 2
                     },
                     {
-                        "name": "Fists and Claws",
+                        "name": "Dedicated Melee",
                         "chooseOneKey": "b",
                         "points": 0
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Night Raptors",
+                "factions": [
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 4,
+                "attack": 4,
+                "move": 5,
+                "shoot": 0,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 3,
+                "defencevalue": 6,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 8,
+                "specialRules": [
+                    "Fly",
+					"Dedicated Melee"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "a",
+                        "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
                     }
                 ],
                 "decreaseModelCount": -4
@@ -2664,7 +3939,7 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Fearless"
-					],
+                ],
                 "options": [
                     {
                         "name": "Massive Squads",
@@ -2696,8 +3971,8 @@
                 "range": 24,
                 "maximummovement": 6,
                 "specialRules": [
-					"Rapid Fire"
-				],
+                    "Rapid Fire"
+                ],
                 "options": [
                     {
                         "name": "Massive Squads",
@@ -2745,6 +4020,78 @@
                 "name": "Praetor",
                 "factions": [
                     {
+                        "name": "Dark Angels",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "HQ"
+                    },
+                    {
                         "name": "Legiones Astartes",
                         "unitType": "HQ"
                     }
@@ -2785,121 +4132,10 @@
                     {
                         "name": "Shamsir Jetbike",
                         "chooseOneKey": "a",
-                        "unlockedBy": "White Scars",
-                        "points": 0
-                    },
-                    {
-                        "name": "Lesser Psyker",
-                        "unlockedBy": "Thousand Sons",
-                        "points": 0
-                    },
-                    {
-                        "name": "Dark Angels",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Emperor's Children",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Iron Warriors",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "White Scars",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Space Wolves",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Imperial Fists",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Night Lords",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Blood Angels",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Iron Hands",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "World Eaters",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Ultramarines",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Death Guard",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Thousand Sons",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Sons of Horus",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Word Bearers",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Salamanders",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Raven Guard",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Alpha Legion",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "White Scars"
+                        ]
                     },
                     {
                         "name": "Fearsome",
@@ -2908,8 +4144,10 @@
                     },
                     {
                         "name": "Bolter Discipline",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -2991,6 +4229,78 @@
                 "name": "Consul",
                 "factions": [
                     {
+                        "name": "Dark Angels",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "HQ"
+                    },
+                    {
                         "name": "Legiones Astartes",
                         "unitType": "HQ"
                     }
@@ -3030,126 +4340,17 @@
                     {
                         "name": "Shamsir Jetbike",
                         "chooseOneKey": "a",
-                        "unlockedBy": "White Scars",
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "White Scars"
+                        ]
                     },
                     {
                         "name": "Bolter Discipline",
-                        "unlockedBy": "Imperial Fists",
-                        "points": 0
-                    },
-                    {
-                        "name": "Lesser Psyker",
-                        "unlockedBy": "Thousand Sons",
-                        "points": 0
-                    },
-                    {
-                        "name": "Dark Angels",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Emperor's Children",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Iron Warriors",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "White Scars",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Space Wolves",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Imperial Fists",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Night Lords",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Blood Angels",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Iron Hands",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "World Eaters",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Ultramarines",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Death Guard",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Thousand Sons",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Sons of Horus",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Word Bearers",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Salamanders",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Raven Guard",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Alpha Legion",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
                     },
                     {
                         "name": "Fearsome",
@@ -3194,18 +4395,6 @@
                         "points": 2
                     },
                     {
-                        "name": "Loyalist",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Heretic",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
                         "name": "Fearsome",
                         "points": 1
                     },
@@ -3243,24 +4432,6 @@
                 ],
                 "options": [
                     {
-                        "name": "Imperial",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Independent",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Heretek",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
                         "name": "Fearsome",
                         "points": 1
                     },
@@ -3294,24 +4465,6 @@
                 "specialRules": [],
                 "options": [
                     {
-                        "name": "Imperial",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Independent",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
-                        "name": "Heretek",
-                        "chooseOneKey": "b",
-                        "requiresLeader": true,
-                        "points": 0
-                    },
-                    {
                         "name": "Fearsome",
                         "points": 1
                     },
@@ -3324,6 +4477,78 @@
             {
                 "name": "Artillery Piece",
                 "factions": [
+                    {
+                        "name": "Dark Angels",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Fortification"
+                    },
                     {
                         "name": "Legiones Astartes",
                         "unitType": "Fortification"
@@ -3393,6 +4618,78 @@
                 "name": "Drop Pod",
                 "factions": [
                     {
+                        "name": "Dark Angels",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "World Eaters",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Fortification"
+                    },
+                    {
                         "name": "Legiones Astartes",
                         "unitType": "Fortification"
                     },
@@ -3460,15 +4757,7 @@
                 "definition": " Some people are just that much scarier than others, especially if in power armor and mutated! A Fearsome unit creates panic in its opponents through reputation, deed, or other psychological means. Courage tests caused as a result of this unit Attacking or Shooting suffer an additional -1 to the total. Should two Fearsome units encounter one another, the effect of this rule is cancelled between those units"
             },
             {
-                "name": "Heretic",
-                "definition": "Enemy units have -1 to all Courage and Rally tests. Additionally, you may take Chaos Furies units."
-            },
-            {
-                "name": "Heretek",
-                "definition": "Enemy Vehicles, Fortifications and Cumbersome units have -1 to their Armor."
-            },
-            {
-                "name": "Fists and Claws",
+                "name": "Dedicated Melee",
                 "definition": "Infantry and HQ units (including Cumbersome) count as Armor 2 in melee against this unit. Range is reduced by 12”. Cannot be taken alongside Anti-Tank or Anti-Infantry",
                 "modifiesStats": [
                     {
@@ -3478,121 +4767,11 @@
                 ]
             },
             {
-                "name": "Independent",
-                "definition": "Friendly units within 9” of any friendly HQ unit ignore enemy Anti-Tank or Anti-Infantry (if they're affected negatively by it)."
-            },
-            {
-                "name": "Imperial",
-                "definition": "Friendly vehicles within 24” of any friendly HQ unit automatically succeed Order rolls. Additionally, you may take Custodians units from the Talons of the Emperor list as HQ."
-            },
-            {
-                "name": "Loyalist",
-                "definition": "Friendly units within 12” of any friendly HQ unit automatically succeed Order rolls."
-            },
-            {
-                "name": "Dark Angels",
-                "definition": "Terminators, Saturnine Terminators, Outriders, Veterans, and HQ units with Terminator Armor or Bikes have Bloodthirsty and Selfsufficent.",
-                "specialRules": [
-                    "Bloodthirsty",
-                    "Selfsufficent"
-                ]
-            },
-            {
-                "name": "Emperor's Children",
-                "definition": "All friendly units add 2” to their Movement Distance. Additionally, you may take Kakophoni units."
-            },
-            {
-                "name": "Iron Warriors",
-                "definition": "Enemy Vehicles and Fortifications within 12” of any friendly HQ unit have -2 to their Armor (minimum 1)."
-            },
-            {
-                "name": "White Scars",
-                "definition": "Friendly HQ units may upgrade with Shamsir Jetbikes for free. Additionally, you may take Jetbikers units."
-            },
-            {
-                "name": "Space Wolves",
-                "definition": "Friendly Infantry and HQ units have Counter-charge vs Infantry and HQ. Additionally, you may take units of Fenrisian Wolves and Grey Slayers.",
-                "specialRules": [
-                    "Counter-charge vs Infantry and HQ"
-                ]
-            },
-            {
-                "name": "Imperial Fists",
-                "definition": "May upgrade any HQ or Infantry unit with Bolter Discipline for free. Bolter Discipline is mutually exclusive with Anti-Infantry, Anti-Tank, and Fists and Claws."
-            },
-            {
                 "name": "Bolter Discipline",
                 "definition": "The unit gains Rapid Fire. If it already had it, it triggers Rapid Fire on rolls of 5-6 instead of 6.",
                 "specialRules": [
                     "Rapid Fire"
                 ]
-            },
-            {
-                "name": "Night Lords",
-                "definition": "Friendly Infantry and HQ units have Panic.",
-                "specialRules": [
-                    "Panic"
-                ]
-            },
-            {
-                "name": "Blood Angels",
-                "definition": "Friendly HQ and Infantry units have +1 to Attack Orders and Attack Value."
-            },
-            {
-                "name": "Iron Hands",
-                "definition": "Friendly Infantry and HQ units have +1 armor after any modifiers (such as Anti-Infantry or Anti-Tank)."
-            },
-            {
-                "name": "World Eaters",
-                "definition": "All friendly Infantry and HQ units have Wild Charge. Additionally, all friendly units may reroll results of 1 in Attack dice.",
-                "specialRules": [
-                    "Wild Charge"
-                ]
-            },
-            {
-                "name": "Ultramarines",
-                "definition": "Once per round, you may automatically succeed an actiivation for any friendly unit except a Vehicle."
-            },
-            {
-                "name": "Death Guard",
-                "definition": "All friendly Infantry and HQ units have Skirmish.",
-                "specialRules": [
-                    "Skirmish"
-                ]
-            },
-            {
-                "name": "Thousand Sons",
-                "definition": "Friendly HQ units, Tactical Squads, and Terminators may upgrade with Lesser Psyker for free."
-            },
-            {
-                "name": "Sons of Horus",
-                "definition": "When shooting at targets within 12” or Attcking, friendly units count as having Bloodthirsty.",
-                "specialRules": [
-                    "Bloodthirsty"
-                ]
-            },
-            {
-                "name": "Word Bearers",
-                "definition": "May take a unit of Chaos Furies for free. Additional units cost 2 points. Additionally, you may reroll failed Courage tests (but not Rally tests)."
-            },
-            {
-                "name": "Salamanders",
-                "definition": "All friendly units gain Fearless. Additionally, Anti-Infantry units don't suffer the usual penalties against Fortifications and Vehicles.",
-                "specialRules": [
-                    "Fearless"
-                ]
-            },
-            {
-                "name": "Raven Guard",
-                "definition": "Friendly Cumbersome and Fly units gain Wild charge and Brutal Strength (pick per unit).",
-                "specialRules": [
-                    "Wild Charge",
-                    "Brutal Strength"
-                ]
-            },
-            {
-                "name": "Alpha Legion",
-                "definition": "When charging or shooting at friendly units, enemy units count as being 2” further away."
             },
             {
                 "name": "Bloodthirsty",
@@ -3794,10 +4973,10 @@
             {
                 "name": "Fearless",
                 "definition": "This unit is not affected by Fearsome or Panic enemy units."
-			},
+            },
             {
                 "name": "Wild Charge",
-                "definition": "If an enemy unit is within this unit’s Attack range during the ‘Activate Wild Charges’ phase, you must test to activate an Attack against it. If the test is unsuccessful, the unit remains stationary but may test for an ordered Move activation later in your turn (no other actions are allowed). Wild Charge may not be used if the unit is Battered."
+                "definition": "If an enemy unit is within this unit’s Attack range during the ‘Activate Wild Charges’ phase, you must test to activate an Attack against it. If the test is unsuccessful, the unit remains stationary but may test for an ordered activation later in your turn. Wild Charge may not be used if the unit is Battered."
             },
             {
                 "name": "Bloodthirsty",
@@ -3820,8 +4999,12 @@
                 "definition": "This unit ignores all benefits and downsides of all terrain, but may not end in terrain that is impassable."
             },
             {
+                "name": "Dedicated Melee",
+                "definition": "Infantry and HQ units (including Cumbersome) count as Armor 2 in melee against this unit."
+            },
+            {
                 "name": "Go Back to your Farms",
-                "definition": "You may select no more than 3 Levied Infantry units in a 24-point Company (scale up or down proportionately for Companys of different points values)."
+                "definition": "You may select no more than 3 Levied Infantry units in a 24-point army (scale up or down proportionately for armys of different points values)."
             },
             {
                 "name": "Fast",
@@ -3869,6 +5052,132 @@
             {
                 "name": "Panic",
                 "definition": "When this unit Shoots or Charges, the target unit must take a Courage test regardless of the number of hits inflicted."
+            }
+        ],
+        "armyBonuses": [
+            {
+                "name": "Wild",
+                "definition": "All units in this army (except Fortifications, Combat Vehicles, Tanks and Superheavy Tanks) gain Wild Charge. Additionally, they may choose to automatically fail Wild Charge tests.",
+                "specialRules": [
+                    "Wild Charge"
+                ]
+            },
+            {
+                "name": "Know no Fear",
+                "definition": "All units in this army (except Fortifications, Combat Vehicles, Tanks and Superheavy Tanks) gain Fearless.",
+                "specialRules": [
+                    "Fearless"
+                ]
+            },
+            {
+                "name": "Hardened Armor",
+                "definition": "All Infantry and HQ units in this army have +1 to their Armor, after any modifiers (such as Anti-Infantry)."
+            },
+            {
+                "name": "Stormwing",
+                "definition": "A Stormwing unit may reroll Shooting dice of 1."
+            },
+            {
+                "name": "Deathwing",
+                "definition": "A Deathwing unit may reroll Attack dice of 1."
+            },
+            {
+                "name": "Ravenwing",
+                "definition": "A Ravenwing unit increases its Movement Distance by 2”."
+            },
+            {
+                "name": "Exemplars of War",
+                "definition": "All units in this army (except Fortifications) increase their Movement Distance by 3”."
+            },
+            {
+                "name": "Enhanced Senses",
+                "definition": "An Army with this bonus ignores the armor boost granted by Cover, and can ignores the Hard to target rule."
+            },
+            {
+                "name": "Wrack and Ruin",
+                "definition": "Select one enemy unit at the start of the battle, which must be a Vehicle or Fortification if possible. For the entire battle, it has its Armor reduced to 1, and cannot benefit from any modifiers to Armor."
+            },
+            {
+                "name": "Swift Action",
+                "definition": "All units in this army (except Fortifications) succeed Move actions automatically."
+            },
+            {
+                "name": "Bestial Savagery",
+                "definition": "All units in this army (except Fortifications) gain Counter-charge vs Infantry and HQ.",
+                "specialRules": [
+                    "Counter-charge vs Infantry and HQ"
+                ]
+            },
+            {
+                "name": "A Talent for Murder",
+                "definition": "All units in this army gain Panic.",
+                "specialRules": [
+                    "Panic"
+                ]
+            },
+            {
+                "name": "Bestial Savagery",
+                "definition": "All units in this army (except Fortifications) gain Counter-charge vs Infantry and HQ.",
+                "specialRules": [
+                    "Counter-charge vs Infantry and HQ"
+                ]
+            },
+            {
+                "name": "Shrouded",
+                "definition": "All units in this army gain Hard to target, but only during the round in which they deploy.",
+                "specialRules": [
+                    "Hard to target"
+                ]
+            },
+            {
+                "name": "Encarmine Fury",
+                "definition": "All units in this army may reroll Attack and Defence dice of 1."
+            },
+            {
+                "name": "Tech Mastery",
+                "definition": "All Vehicle and Fortification units in this army have +1 to their armor, after any modifiers (such as Anti-Tank)."
+            },
+            {
+                "name": "Bloodlust",
+                "definition": "All units in this army have Wild Charge and may choose whether or not to succeed Wild Charge tests, instead of rolling for Wild Charges normally.",
+                "specialRules": [
+                    "Wild Charge"
+                ]
+            },
+            {
+                "name": "Fire Support!",
+                "definition": "Friendly Infantry units within 12” of a friendly Infantry unit have a Defence and Shooting value of 2+."
+            },
+            {
+                "name": "Ceaseless",
+                "definition": "All units in this army gain Skirmish. If they already had Skirmish, they perform Skirmish orders at 3+.",
+                "specialRules": [
+                    "Skirmish"
+                ]
+            },
+            {
+                "name": "Covenant of Sorcerors",
+                "definition": "After deploying, for every Lesser Psyker or Esoterist unit in your army, roll one die and set it apart for later - these are Fate dice. Make sure they are distinguishable from normal dice. At any point after the start of the first round, you may swap any dice with one of your Fate dice, reducing the amount of Fate dice you have by 1."
+            },
+            {
+                "name": "Merciless Warriors",
+                "definition": "All units in this army may reroll Attack and Shooting dice of 1."
+            },
+            {
+                "name": "Charismatic Leadership",
+                "definition": "As long as your Leader is on the table, all units in this army have +1 to all Orders and Courage tests."
+            },
+            {
+                "name": "Behemoths",
+                "definition": "Vehicles in this army treat their Armor as 3 against Anti-Tank, instead of as 1."
+            },
+            {
+                "name": "Self-Reliant",
+                "definition": "Failing an order doesn't end the turn for this army."
+            },
+            {
+                "name": "Fix Bayonets!",
+                "definition": "Lasrifle Sections in this army may, at the start of a round, swap between having or not having the Bayonet upgrade."
             }
         ]
     }
