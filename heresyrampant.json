@@ -2694,10 +2694,10 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 10,
-                "points": 6,
-                "attack": 4,
-                "move": 4,
-                "shoot": 3,
+                "points": 4,
+                "attack": 6,
+                "move": 6,
+                "shoot": 6,
                 "courage": 6,
                 "armor": 2,
                 "attackvalue": 5,
@@ -2720,7 +2720,7 @@
                     {
                         "name": "Massive Squads",
                         "addsModels": 10,
-                        "points": 4
+                        "points": 2
                     }
                 ],
                 "decreaseModelCount": -9
@@ -2735,9 +2735,9 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 10,
-                "points": 6,
-                "attack": 3,
-                "move": 4,
+                "points": 4,
+                "attack": 5,
+                "move": 6,
                 "shoot": 0,
                 "courage": 6,
                 "armor": 2,
@@ -2754,7 +2754,7 @@
                     {
                         "name": "Massive Squads",
                         "addsModels": 10,
-                        "points": 4
+                        "points": 2
                     }
                 ],
                 "decreaseModelCount": -9
