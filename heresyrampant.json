@@ -2727,10 +2727,9 @@
                 "defencevalue": 2,
                 "shootvalue": 0,
                 "range": 0,
-                "maximummovement": 4,
+                "maximummovement": 6,
                 "specialRules": [
                     "Great Strength",
-                    "Counter-charge",
                     "Shielded"
                 ],
                 "options": [
@@ -3853,7 +3852,7 @@
             },
             {
                 "name": "Shielded",
-                "definition": "This unit counts as having +1 armor versus Melee and ignores rules that reduce armor (like Anti-Infantry).”."
+                "definition": "This unit counts as having +1 armor versus Melee and ignores rules that reduce armor (like Anti-Infantry)."
             },
             {
                 "name": "Selfsufficent",
