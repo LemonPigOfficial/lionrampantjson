@@ -569,7 +569,7 @@
                     },
                     {
                         "name": "Transport",
-                        "points": 0
+                        "points": 2
                     },
                     {
                         "name": "Anti-Infantry",
@@ -3642,7 +3642,7 @@
             },
             {
                 "name": "Transport",
-                "definition": "At the start of the game, nominate one friendly Infantry unit that isn't Cumbersome to be embarked in each transport you have. Do not deploy embarked units normally. At the end of the first or second round, deploy Embarked units within 6” of their specific Transport. If the Transport is destroyed, its embarked unit deploys within 2” of the Transport's immediate location before it was destroyed."
+                "definition": "At the start of the game, nominate a friendly Infantry unit that isn't Cumbersome to be embarked in each transport you have. Do not deploy embarked units normally. At the end of the first or second round, deploy Embarked units within 6” of their specific Transport. If the Transport is destroyed, its embarked unit deploys within 2” of the Transport's immediate location before it was destroyed."
             },
             {
                 "name": "Javelins Only",
