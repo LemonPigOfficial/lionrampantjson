@@ -1137,7 +1137,7 @@
                 "range": 0,
                 "maximummovement": 8,
                 "specialRules": [
-                    "Bloodthirsty",
+                    "Shielded",
                     "Great Strength",
                     "Fearless"
                 ],
@@ -1924,7 +1924,7 @@
                 "range": 24,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Brace"
+                    "Shielded"
                 ],
                 "options": [
                     {
@@ -2730,7 +2730,8 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Great Strength",
-                    "Counter-charge"
+                    "Counter-charge",
+                    "Shielded"
                 ],
                 "options": [
                     {
@@ -3849,6 +3850,10 @@
             {
                 "name": "Hard to target",
                 "definition": "This unit counts as having +1 armor versus Shooting and may only be targeted within 12”."
+            },
+            {
+                "name": "Shielded",
+                "definition": "This unit counts as having +1 armor versus Melee and ignores rules that reduce armor (like Anti-Infantry).”."
             },
             {
                 "name": "Selfsufficent",
