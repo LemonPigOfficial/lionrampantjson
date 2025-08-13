@@ -2651,31 +2651,21 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 10,
-                "points": 4,
+                "points": 2,
                 "attack": 3,
                 "move": 3,
                 "shoot": 3,
                 "courage": 6,
                 "armor": 2,
                 "attackvalue": 6,
-                "defencevalue": 5,
+                "defencevalue": 6,
                 "shootvalue": 5,
                 "range": 18,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Fearless"
+                    "Rapid Fire"
 					],
                 "options": [
-                    {
-                        "name": "Anti-Tank",
-                        "chooseOneKey": "a",
-                        "points": 0
-                    },
-                    {
-                        "name": "Anti-Infantry",
-                        "chooseOneKey": "a",
-                        "points": 0
-                    },
                     {
                         "name": "Massive Squads",
                         "addsModels": 10,
@@ -3513,7 +3503,7 @@
             },
             {
                 "name": "Iron Warriors",
-                "definition": "Enemy Vehicles and Fortifications within 12” of any friendly HQ unit have -1 to their Armor."
+                "definition": "Enemy Vehicles and Fortifications within 12” of any friendly HQ unit have -2 to their Armor (minimum 1)."
             },
             {
                 "name": "White Scars",
