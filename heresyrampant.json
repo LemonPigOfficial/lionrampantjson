@@ -116,13 +116,13 @@
                     "type": "static",
                     "bullet": true
                 },
-				{
-					"propertyName": "specialRules",
-					"type": "static",
-					"label": "Related Special Rules: ",
-					"bullet": true,
-					"dataSource": "keywords"
-				},
+                {
+                    "propertyName": "specialRules",
+                    "type": "static",
+                    "label": "Related Special Rules: ",
+                    "bullet": true,
+                    "dataSource": "keywords"
+                },
                 {
                     "propertyName": "armyBonuses",
                     "label": "",
@@ -168,11 +168,6 @@
                                     "unique": true
                                 },
                                 {
-                                    "name": "Bloodthirsty",
-                                    "points": 0,
-                                    "unique": true
-                                },
-                                {
                                     "name": "Champion",
                                     "points": 0,
                                     "unique": true
@@ -194,16 +189,6 @@
                                 },
                                 {
                                     "name": "Drunkard or Eccentric",
-                                    "points": 0,
-                                    "unique": true
-                                },
-                                {
-                                    "name": "Fearless",
-                                    "points": 0,
-                                    "unique": true
-                                },
-                                {
-                                    "name": "Fearsome",
                                     "points": 0,
                                     "unique": true
                                 },
@@ -325,15 +310,6 @@
                 "decreaseModelCount": 1
             },
             {
-                "name": "Bloodthirsty",
-                "definition": "Same as the Bloodthirsty rule. Applies only to this unit and cannot be purchased if the unit already has this rule.",
-                "factions": [],
-                "decreaseModelCount": 1,
-                "specialRules": [
-                    "Bloodthirsty"
-                ]
-            },
-            {
                 "name": "Champion",
                 "definition": "In Challenges, this unit is only hit on a 6, and treats the opposing Leader's armor as if it was 1. If this unit isn't the Leader, it can perform Challenges anyway.",
                 "factions": [],
@@ -362,21 +338,6 @@
                 "definition": "After deployment but before the first turn, roll to see how much this unit has drunk. On a 1-2, the HQ drank too much and cannot be ordered on the first round. On a 3-6, the HQ counts as Massive.",
                 "factions": [],
                 "decreaseModelCount": 1
-            },
-            {
-                "name": "Fearless",
-                "definition": "This unit is not affected by Fearsome or Panic enemy units.",
-                "factions": [],
-                "decreaseModelCount": 1
-            },
-            {
-                "name": "Fearsome",
-                "definition": "Same as the Fearsome rule. Applies only to this unit and cannot be purchased if the unit already has this rule.",
-                "factions": [],
-                "decreaseModelCount": 1,
-                "specialRules": [
-                    "Fearsome"
-                ]
             },
             {
                 "name": "Impulsive",
@@ -459,6 +420,19 @@
         ],
         "factions": [
             {
+                "name": "The Lost and Damned",
+                "additionalRules": [
+                    "The Lost and Damned armies may take 1 Greater Daemon, one of the strongest units in the game, but may not have more than 1."
+                ],
+                "armyBonuses": [
+                    "Charismatic Leadership",
+                    "Fire Support!",
+                    "Fix Bayonets!"
+                ],
+                "alignment": "Traitor",
+                "specialRules": []
+            },
+            {
                 "name": "Loyalist Astartes",
                 "additionalRules": [
                     "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
@@ -469,8 +443,8 @@
                 ],
                 "alignment": "Imperium",
                 "specialRules": [
-					"Fearless"
-				]
+                    "Fearless"
+                ]
             },
             {
                 "name": "Heretic Astartes",
@@ -483,8 +457,8 @@
                 ],
                 "alignment": "Traitor",
                 "specialRules": [
-					"Fearless"
-				]
+                    "Fearless"
+                ]
             },
             {
                 "name": "Dark Angels",
@@ -525,8 +499,8 @@
                 "alignment": "Traitor",
                 "parentFaction": "Heretic Astartes",
                 "specialRules": [
-					"Fearless"
-				]
+                    "Fearless"
+                ]
             },
             {
                 "name": "White Scars",
@@ -554,9 +528,9 @@
                 "alignment": "Imperium",
                 "parentFaction": "Loyalist Astartes",
                 "specialRules": [
-					"Wild Charge",
-					"Counter-charge vs Infantry and HQ"
-				]
+                    "Wild Charge",
+                    "Counter-charge vs Infantry and HQ"
+                ]
             },
             {
                 "name": "Imperial Fists",
@@ -569,8 +543,8 @@
                 "alignment": "Imperium",
                 "parentFaction": "Loyalist Astartes",
                 "specialRules": [
-					"Fearless"
-				]
+                    "Fearless"
+                ]
             },
             {
                 "name": "Night Lords",
@@ -585,9 +559,9 @@
                 "alignment": "Traitor",
                 "parentFaction": "Heretic Astartes",
                 "specialRules": [
-					"Panic",
-					"Hard to target"
-				]
+                    "Panic",
+                    "Hard to target"
+                ]
             },
             {
                 "name": "Blood Angels",
@@ -602,9 +576,9 @@
                 "alignment": "Imperium",
                 "parentFaction": "Loyalist Astartes",
                 "specialRules": [
-					"Fearless",
-					"Wild Charge"
-				]
+                    "Fearless",
+                    "Wild Charge"
+                ]
             },
             {
                 "name": "Iron Hands",
@@ -631,9 +605,9 @@
                 "alignment": "Traitor",
                 "parentFaction": "Heretic Astartes",
                 "specialRules": [
-					"Fearless",
-					"Wild Charge"
-				]
+                    "Fearless",
+                    "Wild Charge"
+                ]
             },
             {
                 "name": "Ultramarines",
@@ -647,8 +621,8 @@
                 "alignment": "Imperium",
                 "parentFaction": "Loyalist Astartes",
                 "specialRules": [
-					"Fearless"
-				]
+                    "Fearless"
+                ]
             },
             {
                 "name": "Death Guard",
@@ -662,9 +636,9 @@
                 "alignment": "Traitor",
                 "parentFaction": "Heretic Astartes",
                 "specialRules": [
-					"Fearless",
-					"Skirmish"
-				]
+                    "Fearless",
+                    "Skirmish"
+                ]
             },
             {
                 "name": "Thousand Sons",
@@ -679,7 +653,7 @@
                 "parentFaction": "Heretic Astartes",
                 "specialRules": [
                     "Lesser Psyker",
-					"Hard to target"
+                    "Hard to target"
                 ]
             },
             {
@@ -694,8 +668,8 @@
                 "alignment": "Traitor",
                 "parentFaction": "Heretic Astartes",
                 "specialRules": [
-					"Fearless"
-				]
+                    "Fearless"
+                ]
             },
             {
                 "name": "Word Bearers",
@@ -709,8 +683,8 @@
                 "alignment": "Traitor",
                 "parentFaction": "Heretic Astartes",
                 "specialRules": [
-					"Fearless"
-				]
+                    "Fearless"
+                ]
             },
             {
                 "name": "Salamanders",
@@ -724,8 +698,8 @@
                 "alignment": "Imperium",
                 "parentFaction": "Loyalist Astartes",
                 "specialRules": [
-					"Fearless"
-				]
+                    "Fearless"
+                ]
             },
             {
                 "name": "Raven Guard",
@@ -740,9 +714,9 @@
                 "alignment": "Imperium",
                 "parentFaction": "Loyalist Astartes",
                 "specialRules": [
-					"Wild Charge",
-					"Hard to target"
-				]
+                    "Wild Charge",
+                    "Hard to target"
+                ]
             },
             {
                 "name": "Alpha Legion",
@@ -756,8 +730,8 @@
                 "alignment": "Traitor",
                 "parentFaction": "Heretic Astartes",
                 "specialRules": [
-					"Hard to target"
-				]
+                    "Hard to target"
+                ]
             },
             {
                 "name": "Questoris Knights",
@@ -794,8 +768,8 @@
                 ],
                 "alignment": "Imperium",
                 "specialRules": [
-					"Fearless"
-				]
+                    "Fearless"
+                ]
             },
             {
                 "name": "Solar Auxilia",
@@ -828,6 +802,10 @@
             {
                 "name": "Tank",
                 "factions": [
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "Vehicle"
+                    },
                     {
                         "name": "Loyalist Astartes",
                         "unitType": "Vehicle"
@@ -981,6 +959,10 @@
             {
                 "name": "Superheavy Tank",
                 "factions": [
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "Vehicle"
+                    },
                     {
                         "name": "Cult Mechanicum",
                         "unitType": "Vehicle"
@@ -1150,7 +1132,12 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            [
+                                "Night Lords"
+                            ]
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -1198,6 +1185,10 @@
                 "factions": [
                     {
                         "name": "Iron Hands",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "The Lost and Damned",
                         "unitType": "Vehicle"
                     },
                     {
@@ -1481,7 +1472,12 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            [
+                                "Night Lords"
+                            ]
+                        ]
                     },
                     {
                         "name": "Anti-Tank",
@@ -1507,6 +1503,10 @@
             {
                 "name": "Sentinel",
                 "factions": [
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "Vehicle"
+                    },
                     {
                         "name": "Solar Auxilia",
                         "unitType": "Vehicle"
@@ -1593,7 +1593,12 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            [
+                                "Night Lords"
+                            ]
+                        ]
                     },
                     {
                         "name": "Veteran",
@@ -2071,6 +2076,10 @@
                 "name": "Terminators",
                 "factions": [
                     {
+                        "name": "The Lost and Damned",
+                        "unitType": "Infantry"
+                    },
+                    {
                         "name": "Dark Angels",
                         "unitType": "Infantry"
                     },
@@ -2167,7 +2176,7 @@
                 "specialRules": [
                     "Deep Strike",
                     "Cumbersome",
-                    "Dedicated Melee"
+                    "Great Strength"
                 ],
                 "options": [
                     {
@@ -2177,7 +2186,12 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            [
+                                "Night Lords"
+                            ]
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -2198,6 +2212,11 @@
                     },
                     {
                         "name": "Anti-Infantry",
+                        "chooseOneKey": "b",
+                        "points": 0
+                    },
+                    {
+                        "name": "Dedicated Melee",
                         "chooseOneKey": "b",
                         "points": 0
                     },
@@ -2297,13 +2316,13 @@
                 "points": 6,
                 "attack": 7,
                 "move": 7,
-                "shoot": 7,
+                "shoot": 6,
                 "courage": 5,
                 "armor": 4,
                 "attackvalue": 3,
                 "defencevalue": 3,
                 "shootvalue": 3,
-                "range": 18,
+                "range": 24,
                 "maximummovement": 3,
                 "specialRules": [
                     "Deep Strike",
@@ -2312,7 +2331,12 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 2,
+                        "unavailableIn": [
+                            [
+                                "Night Lords"
+                            ]
+                        ]
                     },
                     {
                         "name": "Bolter Discipline",
@@ -2448,7 +2472,12 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            [
+                                "Night Lords"
+                            ]
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -2588,7 +2617,12 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            [
+                                "Night Lords"
+                            ]
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -2610,6 +2644,10 @@
             {
                 "name": "Tactical Squad",
                 "factions": [
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "Infantry"
+                    },
                     {
                         "name": "Dark Angels",
                         "unitType": "Infantry"
@@ -2854,7 +2892,7 @@
                     },
                     {
                         "name": "Bolter Discipline",
-                        "chooseOneKey": "a",
+                        "requireChooseOneKey": "a",
                         "points": 0,
                         "availableIn": [
                             "Imperial Fists"
@@ -2862,12 +2900,12 @@
                     },
                     {
                         "name": "Anti-Tank",
-                        "chooseOneKey": "a",
+                        "requireChooseOneKey": "a",
                         "points": 0
                     },
                     {
                         "name": "Anti-Infantry",
-                        "chooseOneKey": "a",
+                        "requireChooseOneKey": "a",
                         "points": 0
                     },
                     {
@@ -2908,8 +2946,7 @@
                 "range": 24,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Panic",
-                    "Cumbersome"
+                    "Panic"
                 ],
                 "options": [
                     {
@@ -2923,6 +2960,59 @@
                     },
                     {
                         "name": "Anti-Infantry",
+                        "requireChooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
+                "name": "Iron Havocs",
+                "factions": [
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 10,
+                "move": 6,
+                "shoot": 5,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 6,
+                "defencevalue": 6,
+                "shootvalue": 2,
+                "range": 30,
+                "maximummovement": 3,
+                "specialRules": [
+                    "Rapid Fire",
+                    "Bombardment"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "addsModels": 5,
+                        "points": 4
+                    },
+                    {
+                        "name": "Anti-Tank",
+                        "requireChooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "requireChooseOneKey": "a",
                         "points": 0
                     },
                     {
@@ -2959,8 +3049,7 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Panic",
-                    "Rapid Fire",
-                    "Cumbersome"
+                    "Rapid Fire"
                 ],
                 "options": [
                     {
@@ -2970,6 +3059,7 @@
                     },
                     {
                         "name": "Anti-Infantry",
+                        "requireChooseOneKey": "a",
                         "points": 0
                     },
                     {
@@ -3120,6 +3210,10 @@
                 "name": "Recon Squad",
                 "factions": [
                     {
+                        "name": "The Lost and Damned",
+                        "unitType": "Infantry"
+                    },
+                    {
                         "name": "Dark Angels",
                         "unitType": "Infantry"
                     },
@@ -3252,6 +3346,140 @@
                 "decreaseModelCount": -4
             },
             {
+                "name": "Scout Squad",
+                "factions": [
+                    {
+                        "name": "Dark Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Emperor's children",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Warriors",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "White Scars",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Imperial Fists",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Night Lords",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Blood Angels",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Ultramarines",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Death Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Thousand Sons",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Sons of Horus",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Raven Guard",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 2,
+                "attack": 8,
+                "move": 6,
+                "shoot": 8,
+                "courage": 4,
+                "armor": 2,
+                "attackvalue": 4,
+                "defencevalue": 5,
+                "shootvalue": 4,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Skirmish",
+                    "Hard to target"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "chooseOneKey": "b",
+                        "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Bolter Discipline",
+                        "chooseOneKey": "a",
+                        "points": 0,
+                        "availableIn": [
+                            "Imperial Fists"
+                        ]
+                    },
+                    {
+                        "name": "Snipers",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Dedicated Melee",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "b",
+                        "points": 2
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
                 "name": "Grey Slayers",
                 "factions": [
                     {
@@ -3330,7 +3558,7 @@
                 "specialRules": [
                     "Great Strength",
                     "Dedicated Melee",
-					"Fearless"
+                    "Fearless"
                 ],
                 "options": [
                     {
@@ -3354,6 +3582,10 @@
             {
                 "name": "Despoiler Squad",
                 "factions": [
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "Infantry"
+                    },
                     {
                         "name": "Dark Angels",
                         "unitType": "Infantry"
@@ -3445,7 +3677,7 @@
                 "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Great Strength"
+                    "Dedicated melee"
                 ],
                 "options": [
                     {
@@ -3474,11 +3706,6 @@
                         "name": "Veteran",
                         "chooseOneKey": "a",
                         "points": 2
-                    },
-                    {
-                        "name": "Dedicated Melee",
-                        "chooseOneKey": "b",
-                        "points": 0
                     },
                     {
                         "name": "Medicae",
@@ -3531,62 +3758,6 @@
                     }
                 ],
                 "decreaseModelCount": -4
-            },
-            {
-                "name": "Chaos Furies",
-                "factions": [
-                    {
-                        "name": "Word Bearers",
-                        "unitType": "Infantry"
-                    },
-                    {
-                        "name": "Heretic Astartes",
-                        "unitType": "Infantry"
-                    },
-                    {
-                        "name": "Alpha Legion",
-                        "unitType": "Infantry"
-                    }
-                ],
-                "unlimited": true,
-                "strengthpoints": 10,
-                "points": 2,
-                "attack": 6,
-                "move": 6,
-                "shoot": 0,
-                "courage": 8,
-                "armor": 2,
-                "attackvalue": 4,
-                "defencevalue": 6,
-                "shootvalue": 0,
-                "range": 0,
-                "maximummovement": 12,
-                "specialRules": [
-                    "Wild Charge",
-                    "Fly"
-                ],
-                "options": [
-                    {
-                        "name": "Massive Squads",
-                        "chooseOneKey": "a",
-                        "addsModels": 10,
-                        "points": 2
-                    },
-                    {
-                        "name": "Fearsome",
-                        "points": 1
-                    },
-                    {
-                        "name": "Bloodthirsty",
-                        "points": 1
-                    },
-                    {
-                        "name": "Veteran",
-                        "chooseOneKey": "a",
-                        "points": 2
-                    }
-                ],
-                "decreaseModelCount": -9
             },
             {
                 "name": "Assault Squad",
@@ -3676,17 +3847,18 @@
                 "strengthpoints": 5,
                 "points": 4,
                 "attack": 5,
-                "move": 5,
+                "move": 6,
                 "shoot": 9,
                 "courage": 4,
                 "armor": 3,
                 "attackvalue": 3,
-                "defencevalue": 5,
+                "defencevalue": 6,
                 "shootvalue": 6,
                 "range": 12,
                 "maximummovement": 8,
                 "specialRules": [
-                    "Fly"
+                    "Fly",
+                    "Dedicated Melee"
                 ],
                 "options": [
                     {
@@ -3719,11 +3891,6 @@
                     {
                         "name": "Medicae",
                         "points": 2
-                    },
-                    {
-                        "name": "Dedicated Melee",
-                        "chooseOneKey": "b",
-                        "points": 0
                     }
                 ],
                 "decreaseModelCount": -4
@@ -3742,31 +3909,28 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 5,
-                "points": 4,
+                "points": 6,
                 "attack": 4,
-                "move": 5,
+                "move": 4,
                 "shoot": 0,
                 "courage": 4,
                 "armor": 3,
-                "attackvalue": 3,
+                "attackvalue": 2,
                 "defencevalue": 6,
                 "shootvalue": 0,
                 "range": 0,
                 "maximummovement": 8,
                 "specialRules": [
                     "Fly",
-					"Dedicated Melee"
+                    "Deep Strike",
+                    "Panic",
+                    "Dedicated Melee"
                 ],
                 "options": [
                     {
                         "name": "Increased Squad Size",
                         "chooseOneKey": "a",
                         "addsModels": 5,
-                        "points": 2
-                    },
-                    {
-                        "name": "Veteran",
-                        "chooseOneKey": "a",
                         "points": 2
                     },
                     {
@@ -3784,8 +3948,12 @@
                         "unitType": "Infantry"
                     },
                     {
+                        "name": "The Lost and Damned",
+                        "unitType": "Infantry"
+                    },
+                    {
                         "name": "Loyalist Astartes",
-                        "unitType": "Vehicle"
+                        "unitType": "Infantry"
                     }
                 ],
                 "unlimited": true,
@@ -3895,6 +4063,10 @@
                 "name": "Storm Section",
                 "factions": [
                     {
+                        "name": "The Lost and Damned",
+                        "unitType": "Infantry"
+                    },
+                    {
                         "name": "Solar Auxilia",
                         "unitType": "Infantry"
                     }
@@ -3948,6 +4120,10 @@
                 "name": "Assault Storm Section",
                 "factions": [
                     {
+                        "name": "The Lost and Damned",
+                        "unitType": "Infantry"
+                    },
+                    {
                         "name": "Solar Auxilia",
                         "unitType": "Infantry"
                     }
@@ -3990,6 +4166,10 @@
             {
                 "name": "Thallax Cohort",
                 "factions": [
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "Infantry"
+                    },
                     {
                         "name": "Cult Mechanicum",
                         "unitType": "Infantry"
@@ -4060,7 +4240,8 @@
                     "Fly",
                     "Deep Strike",
                     "Cumbersome",
-                    "Fearless"
+                    "Fearless",
+                    "Dedicated Melee"
                 ],
                 "options": [
                     {
@@ -4265,10 +4446,10 @@
                 "move": 3,
                 "shoot": 3,
                 "courage": 4,
-                "armor": 3,
-                "attackvalue": 3,
-                "defencevalue": 3,
-                "shootvalue": 3,
+                "armor": 4,
+                "attackvalue": 2,
+                "defencevalue": 2,
+                "shootvalue": 2,
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
@@ -4294,7 +4475,7 @@
                     {
                         "name": "Shamsir Jetbike",
                         "chooseOneKey": "a",
-                        "points": 0,
+                        "points": 2,
                         "availableIn": [
                             "White Scars"
                         ]
@@ -4391,6 +4572,10 @@
                 "name": "Consul",
                 "factions": [
                     {
+                        "name": "The Lost and Damned",
+                        "unitType": "HQ"
+                    },
+                    {
                         "name": "Dark Angels",
                         "unitType": "HQ"
                     },
@@ -4473,14 +4658,14 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 5,
-                "points": 6,
+                "points": 4,
                 "attack": 4,
                 "move": 4,
                 "shoot": 4,
                 "courage": 4,
                 "armor": 3,
-                "attackvalue": 3,
-                "defencevalue": 3,
+                "attackvalue": 4,
+                "defencevalue": 4,
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 6,
@@ -4492,6 +4677,13 @@
                         "name": "Jump Pack",
                         "chooseOneKey": "a",
                         "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "points": 2,
+                        "unavailableIn": [
+                            "The Lost and Damned"
+                        ]
                     },
                     {
                         "name": "Bike",
@@ -4506,7 +4698,7 @@
                     {
                         "name": "Shamsir Jetbike",
                         "chooseOneKey": "a",
-                        "points": 0,
+                        "points": 2,
                         "availableIn": [
                             "White Scars"
                         ]
@@ -4521,12 +4713,18 @@
                     {
                         "name": "Fearsome",
                         "chooseOneKey": "c",
-                        "points": 0
+                        "points": 0,
+                        "unavailableIn": [
+                            "The Lost and Damned"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
                         "chooseOneKey": "c",
-                        "points": 0
+                        "points": 0,
+                        "unavailableIn": [
+                            "The Lost and Damned"
+                        ]
                     }
                 ]
             },
@@ -4613,9 +4811,17 @@
                     {
                         "name": "Cult Mechanicum",
                         "unitType": "HQ"
+                    },
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Iron Hands",
+                        "unitType": "HQ"
                     }
                 ],
-                "unlimited": false,
+                "unlimited": true,
                 "strengthpoints": 5,
                 "points": 2,
                 "attack": 6,
@@ -4641,8 +4847,217 @@
                 ]
             },
             {
+                "name": "Chaos Furies",
+                "factions": [
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 2,
+                "attack": 6,
+                "move": 6,
+                "shoot": 0,
+                "courage": 10,
+                "armor": 2,
+                "attackvalue": 4,
+                "defencevalue": 6,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 12,
+                "specialRules": [
+                    "Wild Charge",
+                    "Fly",
+                    "Deep Strike"
+                ],
+                "options": [
+                    {
+                        "name": "Massive Squads",
+                        "chooseOneKey": "a",
+                        "addsModels": 10,
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Lesser Daemons",
+                "factions": [
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 4,
+                "attack": 6,
+                "move": 6,
+                "shoot": 0,
+                "courage": 10,
+                "armor": 3,
+                "attackvalue": 3,
+                "defencevalue": 5,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 12,
+                "specialRules": [
+                    "Wild Charge",
+                    "Deep Strike"
+                ],
+                "options": [
+                    {
+                        "name": "Massive Squads",
+                        "chooseOneKey": "a",
+                        "addsModels": 10,
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -9
+            },
+            {
+                "name": "Daemon Brute",
+                "factions": [
+                    {
+                        "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 10,
+                "points": 4,
+                "attack": 4,
+                "move": 4,
+                "shoot": 0,
+                "courage": 10,
+                "armor": 4,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 12,
+                "specialRules": [
+                    "Wild Charge",
+                    "Cumbersome",
+                    "Deep Strike"
+                ],
+                "options": [
+                    {
+                        "name": "Massive Squads",
+                        "chooseOneKey": "a",
+                        "addsModels": 2,
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "a",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -1
+            },
+            {
+                "name": "Greater Daemon",
+                "factions": [
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "HQ"
+                    }
+                ],
+                "unlimited": false,
+                "strengthpoints": 20,
+                "points": 8,
+                "attack": 4,
+                "move": 4,
+                "shoot": 0,
+                "courage": 2,
+                "armor": 4,
+                "attackvalue": 3,
+                "defencevalue": 3,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 12,
+                "specialRules": [
+                    "Wild Charge",
+                    "Cumbersome",
+                    "Dedicated Melee",
+                    "Deep Strike"
+                ],
+                "options": [
+                    {
+                        "name": "Fearsome",
+                        "points": 1
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 1
+                    }
+                ],
+                "decreaseModelCount": -1
+            },
+            {
                 "name": "Artillery Piece",
                 "factions": [
+                    {
+                        "name": "The Lost and Damned",
+                        "unitType": "Fortification"
+                    },
                     {
                         "name": "Dark Angels",
                         "unitType": "Fortification"
@@ -4928,7 +5343,7 @@
         "upgrades": [
             {
                 "name": "Fearsome",
-                "definition": " Some people are just that much scarier than others, especially if in power armor and mutated! A Fearsome unit creates panic in its opponents through reputation, deed, or other psychological means. Courage tests caused as a result of this unit Attacking or Shooting suffer an additional -1 to the total. Should two Fearsome units encounter one another, the effect of this rule is cancelled between those units"
+                "definition": " Some people are just that much scarier than others, especially if in power armor! A Fearsome unit creates panic in its opponents through reputation, deed, or other psychological means. Courage tests caused as a result of this unit Attacking or Shooting suffer an additional -1 to the total. Should two Fearsome units encounter one another, the effect of this rule is cancelled between those units"
             },
             {
                 "name": "Dedicated Melee",
@@ -5145,6 +5560,10 @@
         ],
         "keywords": [
             {
+                "name": "Fearsome",
+                "definition": " Some people are just that much scarier than others, especially if in power armor! A Fearsome unit creates panic in its opponents through reputation, deed, or other psychological means. Courage tests caused as a result of this unit Attacking or Shooting suffer an additional -1 to the total. Should two Fearsome units encounter one another, the effect of this rule is cancelled between those units"
+            },
+            {
                 "name": "Fearless",
                 "definition": "This unit is not affected by Fearsome or Panic enemy units."
             },
@@ -5170,7 +5589,7 @@
             },
             {
                 "name": "Fly",
-                "definition": "This unit ignores all benefits and downsides of all terrain, but may not end in terrain that is impassable."
+                "definition": "This unit ignores all benefits and downsides of all terrain, but may not end in terrain that is impassable. For example, such a unit may move through rough terrain without penalties, but may not benefit from Cover granted by terrain. Additionally, a unit with this rule may not embark in a Transport."
             },
             {
                 "name": "Dedicated Melee",
@@ -5238,7 +5657,7 @@
             },
             {
                 "name": "Know no Fear",
-                "definition": "All units in this army (except Fortifications, Combat Vehicles, Tanks and Superheavy Tanks) gain Fearless.",
+                "definition": "All units in this army (except Fortifications) gain Fearless.",
                 "specialRules": [
                     "Fearless"
                 ]
@@ -5249,7 +5668,7 @@
             },
             {
                 "name": "Stormwing",
-                "definition": "A Stormwing unit may reroll Shooting dice of 1."
+                "definition": "A Stormwing unit may reroll Shooting dice of 1. Fortifications in a Dark Angels army must be Stormwing."
             },
             {
                 "name": "Deathwing",
@@ -5265,7 +5684,7 @@
             },
             {
                 "name": "Enhanced Senses",
-                "definition": "An Army with this bonus ignores the armor boost granted by Cover, and can ignores the Hard to target rule."
+                "definition": "An Army with this bonus ignores the armor boost granted by Cover, and ignores the Hard to target rule."
             },
             {
                 "name": "Wrack and Ruin",
@@ -5284,16 +5703,9 @@
             },
             {
                 "name": "A Talent for Murder",
-                "definition": "All units in this army gain Panic.",
+                "definition": "All units in this army gain Fearsome.",
                 "specialRules": [
-                    "Panic"
-                ]
-            },
-            {
-                "name": "Bestial Savagery",
-                "definition": "All units in this army (except Fortifications) gain Counter-charge vs Infantry and HQ.",
-                "specialRules": [
-                    "Counter-charge vs Infantry and HQ"
+                    "Fearsome"
                 ]
             },
             {
@@ -5320,7 +5732,7 @@
             },
             {
                 "name": "Fire Support!",
-                "definition": "Friendly Infantry units within 12” of a friendly Infantry unit have a Defence and Shooting value of 2+."
+                "definition": "Friendly Infantry units within 12” of another friendly Infantry unit succeed automatically on Shooting orders, and have a +1 modifier to their Shooting dice."
             },
             {
                 "name": "Ceaseless",
@@ -5335,7 +5747,7 @@
             },
             {
                 "name": "Merciless Warriors",
-                "definition": "All units in this army may reroll Attack and Shooting dice of 1."
+                "definition": "All units in this army may reroll Attack and Shooting dice (but not Defence dice) of 1."
             },
             {
                 "name": "Charismatic Leadership",
