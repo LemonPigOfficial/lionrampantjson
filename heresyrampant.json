@@ -1134,9 +1134,7 @@
                         "name": "Fearsome",
                         "points": 1,
                         "unavailableIn": [
-                            [
                                 "Night Lords"
-                            ]
                         ]
                     },
                     {
@@ -1474,9 +1472,7 @@
                         "name": "Fearsome",
                         "points": 1,
                         "unavailableIn": [
-                            [
-                                "Night Lords"
-                            ]
+                            "Night Lords"
                         ]
                     },
                     {
@@ -1595,9 +1591,7 @@
                         "name": "Fearsome",
                         "points": 1,
                         "unavailableIn": [
-                            [
-                                "Night Lords"
-                            ]
+                            "Night Lords"
                         ]
                     },
                     {
@@ -1688,7 +1682,10 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 2,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -1755,7 +1752,10 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 2,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Double Time",
@@ -1797,7 +1797,10 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 2
+                        "points": 2,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -1874,7 +1877,10 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -1958,7 +1964,10 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -2188,9 +2197,7 @@
                         "name": "Fearsome",
                         "points": 1,
                         "unavailableIn": [
-                            [
-                                "Night Lords"
-                            ]
+                            "Night Lords"
                         ]
                     },
                     {
@@ -2333,9 +2340,7 @@
                         "name": "Fearsome",
                         "points": 2,
                         "unavailableIn": [
-                            [
-                                "Night Lords"
-                            ]
+                            "Night Lords"
                         ]
                     },
                     {
@@ -2474,9 +2479,7 @@
                         "name": "Fearsome",
                         "points": 1,
                         "unavailableIn": [
-                            [
-                                "Night Lords"
-                            ]
+                            "Night Lords"
                         ]
                     },
                     {
@@ -2619,9 +2622,7 @@
                         "name": "Fearsome",
                         "points": 1,
                         "unavailableIn": [
-                            [
-                                "Night Lords"
-                            ]
+                            "Night Lords"
                         ]
                     },
                     {
@@ -3696,7 +3697,10 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -3784,10 +3788,6 @@
                     },
                     {
                         "name": "Imperial Fists",
-                        "unitType": "Infantry"
-                    },
-                    {
-                        "name": "Night Lords",
                         "unitType": "Infantry"
                     },
                     {
@@ -4196,7 +4196,10 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -4246,7 +4249,10 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -4483,7 +4489,10 @@
                     {
                         "name": "Fearsome",
                         "chooseOneKey": "c",
-                        "points": 0
+                        "points": 0,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bolter Discipline",
@@ -4543,7 +4552,10 @@
                     {
                         "name": "Fearsome",
                         "chooseOneKey": "c",
-                        "points": 0
+                        "points": 0,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -4715,7 +4727,8 @@
                         "chooseOneKey": "c",
                         "points": 0,
                         "unavailableIn": [
-                            "The Lost and Damned"
+                            "The Lost and Damned",
+							"Night Lords"
                         ]
                     },
                     {
@@ -4760,7 +4773,10 @@
                     },
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -4797,7 +4813,10 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
@@ -4838,7 +4857,10 @@
                 "options": [
                     {
                         "name": "Fearsome",
-                        "points": 1
+                        "points": 1,
+                        "unavailableIn": [
+                            "Night Lords"
+                        ]
                     },
                     {
                         "name": "Bloodthirsty",
