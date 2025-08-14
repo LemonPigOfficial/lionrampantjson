@@ -583,7 +583,7 @@
                     "Enhanced Senses"
                 ],
                 "alignment": "Traitor",
-                "parentFaction": "Loyalist Astartes",
+                "parentFaction": "Heretic Astartes",
                 "specialRules": [
 					"Panic",
 					"Hard to target"
