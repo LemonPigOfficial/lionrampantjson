@@ -104,11 +104,6 @@
             "label": "Faction",
             "type": "faction",
             "dataSource": "factions",
-            "divisionProperty": "alignment",
-            "divisions": [
-                "Astartes",
-                "Imperium"
-            ],
             "children": [
                 {
                     "propertyName": "additionalRules",
@@ -116,19 +111,18 @@
                     "type": "static",
                     "bullet": true
                 },
+				{
+					"propertyName": "specialRules",
+					"type": "static",
+					"label": "Related Special Rules: ",
+					"bullet": true,
+					"dataSource": "keywords"
+				},
                 {
                     "propertyName": "armyBonuses",
                     "label": "",
                     "type": "static",
-                    "dataSource": "armyBonuses",
-                    "children": [
-                        {
-                            "label": "Special Rules",
-                            "propertyName": "specialRules",
-                            "type": "static",
-                            "dataSource": "keywords"
-                        }
-                    ]
+                    "dataSource": "armyBonuses"
                 },
                 {
                     "propertyName": "units",
@@ -468,8 +462,9 @@
                     "Know no Fear",
                     "Hardened Armor"
                 ],
-                "alignment": "Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Fearless"
+				]
             },
             {
                 "name": "Dark Angels",
@@ -481,7 +476,6 @@
                     "Deathwing",
                     "Ravenwing"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
                 "specialRules": []
             },
@@ -494,7 +488,6 @@
                     "Exemplars of War",
                     "Enhanced Senses"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
                 "specialRules": []
             },
@@ -507,9 +500,10 @@
                     "Know no Fear",
                     "Wrack and Ruin"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Fearless"
+				]
             },
             {
                 "name": "White Scars",
@@ -520,7 +514,6 @@
                     "Swift Action",
                     "Enhanced Senses"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
                 "specialRules": []
             },
@@ -534,9 +527,11 @@
                     "Enhanced Senses",
                     "Wild"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Wild Charge",
+					"Counter-charge vs Infantry and HQ"
+				]
             },
             {
                 "name": "Imperial Fists",
@@ -546,9 +541,10 @@
                 "armyBonuses": [
                     "Know No Fear"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Fearless"
+				]
             },
             {
                 "name": "Night Lords",
@@ -560,9 +556,11 @@
                     "Shrouded",
                     "Enhanced Senses"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Panic",
+					"Hard to target"
+				]
             },
             {
                 "name": "Blood Angels",
@@ -574,9 +572,11 @@
                     "Know No Fear",
                     "Wild"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Fearless",
+					"Wild Charge"
+				]
             },
             {
                 "name": "Iron Hands",
@@ -587,7 +587,6 @@
                     "Tech Mastery",
                     "Hardened Armor"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
                 "specialRules": []
             },
@@ -600,9 +599,11 @@
                     "Bloodlust",
                     "Know No Fear"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Fearless",
+					"Wild Charge"
+				]
             },
             {
                 "name": "Ultramarines",
@@ -613,9 +614,10 @@
                     "Fire Support!",
                     "Know No Fear"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Fearless"
+				]
             },
             {
                 "name": "Death Guard",
@@ -626,9 +628,11 @@
                     "Ceaseless",
                     "Know No Fear"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Fearless",
+					"Skirmish"
+				]
             },
             {
                 "name": "Thousand Sons",
@@ -639,10 +643,10 @@
                     "Covenant of Sorcerors",
                     "Shrouded"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
                 "specialRules": [
-                    "Lesser Psyker"
+                    "Lesser Psyker",
+					"Hard to target"
                 ]
             },
             {
@@ -654,9 +658,10 @@
                     "Merciless Warriors",
                     "Know no Fear"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Fearless"
+				]
             },
             {
                 "name": "Word Bearers",
@@ -667,9 +672,10 @@
                     "Charismatic Leadership",
                     "Know no Fear"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Fearless"
+				]
             },
             {
                 "name": "Salamanders",
@@ -680,9 +686,10 @@
                     "Hardened Armor",
                     "Know no Fear"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Fearless"
+				]
             },
             {
                 "name": "Raven Guard",
@@ -694,9 +701,11 @@
                     "Shrouded",
                     "Wild"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Wild Charge",
+					"Hard to target"
+				]
             },
             {
                 "name": "Alpha Legion",
@@ -707,9 +716,10 @@
                     "Shrouded",
                     "Enhanced Senses"
                 ],
-                "alignment": "Astartes",
                 "parentFaction": "Legiones Astartes",
-                "specialRules": []
+                "specialRules": [
+					"Hard to target"
+				]
             },
             {
                 "name": "Questoris Knights",
@@ -720,7 +730,6 @@
                     "Enhanced Senses",
                     "Behemoths"
                 ],
-                "alignment": "Imperium",
                 "specialRules": []
             },
             {
@@ -732,7 +741,6 @@
                     "Tech Mastery",
                     "Hardened Armor"
                 ],
-                "alignment": "Imperium",
                 "specialRules": []
             },
             {
@@ -744,8 +752,9 @@
                     "Know no Fear",
                     "Self-Reliant"
                 ],
-                "alignment": "Imperium",
-                "specialRules": []
+                "specialRules": [
+					"Fearless"
+				]
             },
             {
                 "name": "Solar Auxilia",
@@ -756,7 +765,6 @@
                     "Fire Support!",
                     "Fix Bayonets!"
                 ],
-                "alignment": "Imperium",
                 "specialRules": []
             }
         ],
