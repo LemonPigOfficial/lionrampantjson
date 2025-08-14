@@ -104,6 +104,11 @@
             "label": "Faction",
             "type": "faction",
             "dataSource": "factions",
+            "divisionProperty": "alignment",
+            "divisions": [
+                "Traitor",
+                "Imperium"
+            ],
             "children": [
                 {
                     "propertyName": "additionalRules",
@@ -454,7 +459,7 @@
         ],
         "factions": [
             {
-                "name": "Legiones Astartes",
+                "name": "Loyalist Astartes",
                 "additionalRules": [
                     "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
                 ],
@@ -462,6 +467,21 @@
                     "Know no Fear",
                     "Hardened Armor"
                 ],
+                "alignment": "Imperium",
+                "specialRules": [
+					"Fearless"
+				]
+            },
+            {
+                "name": "Heretic Astartes",
+                "additionalRules": [
+                    "Legiones Astartes armies may have 1 Praetor, a particularly strong HQ unit, but they may not have more than 1. Additionally all their HQs get either Bloodthirsty or Fearsome for free."
+                ],
+                "armyBonuses": [
+                    "Know no Fear",
+                    "Hardened Armor"
+                ],
+                "alignment": "Warmaster",
                 "specialRules": [
 					"Fearless"
 				]
@@ -476,7 +496,8 @@
                     "Deathwing",
                     "Ravenwing"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Imperium",
+                "parentFaction": "Loyalist Astartes",
                 "specialRules": []
             },
             {
@@ -488,7 +509,8 @@
                     "Exemplars of War",
                     "Enhanced Senses"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Traitor",
+                "parentFaction": "Heretic Astartes",
                 "specialRules": []
             },
             {
@@ -500,7 +522,8 @@
                     "Know no Fear",
                     "Wrack and Ruin"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Traitor",
+                "parentFaction": "Heretic Astartes",
                 "specialRules": [
 					"Fearless"
 				]
@@ -514,7 +537,8 @@
                     "Swift Action",
                     "Enhanced Senses"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Imperium",
+                "parentFaction": "Loyalist Astartes",
                 "specialRules": []
             },
             {
@@ -527,7 +551,8 @@
                     "Enhanced Senses",
                     "Wild"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Imperium",
+                "parentFaction": "Loyalist Astartes",
                 "specialRules": [
 					"Wild Charge",
 					"Counter-charge vs Infantry and HQ"
@@ -541,7 +566,8 @@
                 "armyBonuses": [
                     "Know No Fear"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Imperium",
+                "parentFaction": "Loyalist Astartes",
                 "specialRules": [
 					"Fearless"
 				]
@@ -556,7 +582,8 @@
                     "Shrouded",
                     "Enhanced Senses"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Traitor",
+                "parentFaction": "Loyalist Astartes",
                 "specialRules": [
 					"Panic",
 					"Hard to target"
@@ -572,7 +599,8 @@
                     "Know No Fear",
                     "Wild"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Imperium",
+                "parentFaction": "Loyalist Astartes",
                 "specialRules": [
 					"Fearless",
 					"Wild Charge"
@@ -587,7 +615,8 @@
                     "Tech Mastery",
                     "Hardened Armor"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Imperium",
+                "parentFaction": "Loyalist Astartes",
                 "specialRules": []
             },
             {
@@ -599,7 +628,8 @@
                     "Bloodlust",
                     "Know No Fear"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Traitor",
+                "parentFaction": "Heretic Astartes",
                 "specialRules": [
 					"Fearless",
 					"Wild Charge"
@@ -614,7 +644,8 @@
                     "Fire Support!",
                     "Know No Fear"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Imperium",
+                "parentFaction": "Loyalist Astartes",
                 "specialRules": [
 					"Fearless"
 				]
@@ -628,7 +659,8 @@
                     "Ceaseless",
                     "Know No Fear"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Traitor",
+                "parentFaction": "Heretic Astartes",
                 "specialRules": [
 					"Fearless",
 					"Skirmish"
@@ -643,7 +675,8 @@
                     "Covenant of Sorcerors",
                     "Shrouded"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Traitor",
+                "parentFaction": "Heretic Astartes",
                 "specialRules": [
                     "Lesser Psyker",
 					"Hard to target"
@@ -658,7 +691,8 @@
                     "Merciless Warriors",
                     "Know no Fear"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Traitor",
+                "parentFaction": "Heretic Astartes",
                 "specialRules": [
 					"Fearless"
 				]
@@ -672,7 +706,8 @@
                     "Charismatic Leadership",
                     "Know no Fear"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Traitor",
+                "parentFaction": "Heretic Astartes",
                 "specialRules": [
 					"Fearless"
 				]
@@ -686,7 +721,8 @@
                     "Hardened Armor",
                     "Know no Fear"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Imperium",
+                "parentFaction": "Loyalist Astartes",
                 "specialRules": [
 					"Fearless"
 				]
@@ -701,7 +737,8 @@
                     "Shrouded",
                     "Wild"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Imperium",
+                "parentFaction": "Loyalist Astartes",
                 "specialRules": [
 					"Wild Charge",
 					"Hard to target"
@@ -716,7 +753,8 @@
                     "Shrouded",
                     "Enhanced Senses"
                 ],
-                "parentFaction": "Legiones Astartes",
+                "alignment": "Traitor",
+                "parentFaction": "Heretic Astartes",
                 "specialRules": [
 					"Hard to target"
 				]
@@ -730,6 +768,7 @@
                     "Enhanced Senses",
                     "Behemoths"
                 ],
+                "alignment": "Imperium",
                 "specialRules": []
             },
             {
@@ -741,6 +780,7 @@
                     "Tech Mastery",
                     "Hardened Armor"
                 ],
+                "alignment": "Imperium",
                 "specialRules": []
             },
             {
@@ -752,6 +792,7 @@
                     "Know no Fear",
                     "Self-Reliant"
                 ],
+                "alignment": "Imperium",
                 "specialRules": [
 					"Fearless"
 				]
@@ -765,6 +806,7 @@
                     "Fire Support!",
                     "Fix Bayonets!"
                 ],
+                "alignment": "Imperium",
                 "specialRules": []
             }
         ],
@@ -787,7 +829,11 @@
                 "name": "Tank",
                 "factions": [
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Loyalist Astartes",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Heretic Astartes",
                         "unitType": "Vehicle"
                     },
                     {
@@ -940,7 +986,11 @@
                         "unitType": "Vehicle"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Loyalist Astartes",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Heretic Astartes",
                         "unitType": "Vehicle"
                     },
                     {
@@ -1073,7 +1123,11 @@
                         "unitType": "Vehicle"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Vehicle"
                     }
                 ],
@@ -1206,7 +1260,11 @@
                         "unitType": "Vehicle"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Loyalist Astartes",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Heretic Astartes",
                         "unitType": "Vehicle"
                     },
                     {
@@ -1396,7 +1454,11 @@
                         "unitType": "Vehicle"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Vehicle"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Vehicle"
                     }
                 ],
@@ -2081,7 +2143,11 @@
                         "unitType": "Infantry"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -2218,7 +2284,11 @@
                         "unitType": "Infantry"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -2350,7 +2420,11 @@
                         "unitType": "Infantry"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -2486,7 +2560,11 @@
                         "unitType": "Infantry"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -2601,7 +2679,11 @@
                         "unitType": "Infantry"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -2738,7 +2820,11 @@
                         "unitType": "Infantry"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -2847,6 +2933,53 @@
                 "decreaseModelCount": -4
             },
             {
+                "name": "Pyroclasts",
+                "factions": [
+                    {
+                        "name": "Salamanders",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "Infantry"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 4,
+                "attack": 9,
+                "move": 6,
+                "shoot": 7,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 5,
+                "defencevalue": 4,
+                "shootvalue": 2,
+                "range": 12,
+                "maximummovement": 4,
+                "specialRules": [
+                    "Panic",
+                    "Rapid Fire",
+                    "Cumbersome"
+                ],
+                "options": [
+                    {
+                        "name": "Increased Squad Size",
+                        "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Anti-Infantry",
+                        "points": 0
+                    },
+                    {
+                        "name": "Medicae",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -4
+            },
+            {
                 "name": "Breacher Squad",
                 "factions": [
                     {
@@ -2922,7 +3055,11 @@
                         "unitType": "Infantry"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -3047,7 +3184,11 @@
                         "unitType": "Infantry"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -3282,7 +3423,11 @@
                         "unitType": "Infantry"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -3392,6 +3537,10 @@
                 "factions": [
                     {
                         "name": "Word Bearers",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Heretic Astartes",
                         "unitType": "Infantry"
                     },
                     {
@@ -3515,7 +3664,11 @@
                         "unitType": "Infantry"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "Infantry"
                     }
                 ],
@@ -3629,6 +3782,10 @@
                     {
                         "name": "Solar Auxilia",
                         "unitType": "Infantry"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
+                        "unitType": "Vehicle"
                     }
                 ],
                 "unlimited": true,
@@ -4093,7 +4250,11 @@
                         "unitType": "HQ"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "HQ"
                     }
                 ],
@@ -4302,7 +4463,11 @@
                         "unitType": "HQ"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Heretic Astartes",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Loyalist Astartes",
                         "unitType": "HQ"
                     }
                 ],
@@ -4551,7 +4716,11 @@
                         "unitType": "Fortification"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Loyalist Astartes",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Heretic Astartes",
                         "unitType": "Fortification"
                     },
                     {
@@ -4691,7 +4860,11 @@
                         "unitType": "Fortification"
                     },
                     {
-                        "name": "Legiones Astartes",
+                        "name": "Loyalist Astartes",
+                        "unitType": "Fortification"
+                    },
+                    {
+                        "name": "Heretic Astartes",
                         "unitType": "Fortification"
                     },
                     {
