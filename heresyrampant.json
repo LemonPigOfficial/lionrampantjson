@@ -1706,17 +1706,18 @@
                 "move": 4,
                 "shoot": 4,
                 "courage": 5,
-                "armor": 5,
+                "armor": 4,
                 "attackvalue": 3,
                 "defencevalue": 3,
                 "shootvalue": 3,
-                "range": 12,
+                "range": 6,
                 "maximummovement": 4,
                 "specialRules": [
                     "Deep Strike",
                     "Cumbersome",
                     "Great Strength",
-                    "Rapid Fire"
+                    "Rapid Fire",
+                    "Dedicated Melee"
                 ],
                 "options": [
                     {
@@ -1738,11 +1739,6 @@
                     },
                     {
                         "name": "Anti-Infantry",
-                        "chooseOneKey": "b",
-                        "points": 0
-                    },
-                    {
-                        "name": "Dedicated Melee",
                         "chooseOneKey": "b",
                         "points": 0
                     },
@@ -1784,7 +1780,7 @@
                 "move": 4,
                 "shoot": 4,
                 "courage": 5,
-                "armor": 4,
+                "armor": 3,
                 "attackvalue": 4,
                 "defencevalue": 3,
                 "shootvalue": 3,
@@ -1866,7 +1862,7 @@
                 "move": 4,
                 "shoot": 4,
                 "courage": 5,
-                "armor": 4,
+                "armor": 3,
                 "attackvalue": 3,
                 "defencevalue": 3,
                 "shootvalue": 3,
@@ -1875,7 +1871,8 @@
                 "specialRules": [
                     "Cumbersome",
                     "Great Strength",
-                    "Rapid Fire"
+                    "Rapid Fire",
+                    "Dedicated Melee"
                 ],
                 "options": [
                     {
@@ -2095,7 +2092,8 @@
                 "maximummovement": 4,
                 "specialRules": [
                     "Deep Strike",
-                    "Cumbersome"
+                    "Cumbersome",
+                    "Dedicated Melee"
                 ],
                 "options": [
                     {
@@ -2126,11 +2124,6 @@
                     },
                     {
                         "name": "Anti-Infantry",
-                        "chooseOneKey": "b",
-                        "points": 0
-                    },
-                    {
-                        "name": "Dedicated Melee",
                         "chooseOneKey": "b",
                         "points": 0
                     },
