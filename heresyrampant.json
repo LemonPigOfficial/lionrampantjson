@@ -3461,12 +3461,12 @@
                     {
                         "name": "Snipers",
                         "chooseOneKey": "a",
-                        "points": 0
+                        "points": 2
                     },
                     {
                         "name": "Dedicated Melee",
                         "chooseOneKey": "a",
-                        "points": 0
+                        "points": 2
                     },
                     {
                         "name": "Veteran",
