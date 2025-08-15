@@ -3437,8 +3437,8 @@
                 "attackvalue": 4,
                 "defencevalue": 5,
                 "shootvalue": 4,
-                "range": 18,
-                "maximummovement": 6,
+                "range": 24,
+                "maximummovement": 9,
                 "specialRules": [
                     "Skirmish",
                     "Hard to target"
