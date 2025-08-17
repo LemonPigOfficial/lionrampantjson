@@ -1121,9 +1121,9 @@
                 "shoot": 5,
                 "courage": 3,
                 "armor": 4,
-                "attackvalue": 3,
+                "attackvalue": 2,
                 "defencevalue": 2,
-                "shootvalue": 3,
+                "shootvalue": 2,
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
@@ -1459,9 +1459,9 @@
                 "shoot": 5,
                 "courage": 3,
                 "armor": 4,
-                "attackvalue": 4,
-                "defencevalue": 3,
-                "shootvalue": 4,
+                "attackvalue": 3,
+                "defencevalue": 4,
+                "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
@@ -1785,8 +1785,8 @@
                 "attackvalue": 3,
                 "defencevalue": 3,
                 "shootvalue": 3,
-                "range": 6,
-                "maximummovement": 4,
+                "range": 12,
+                "maximummovement": 5,
                 "specialRules": [
                     "Deep Strike",
                     "Cumbersome",
@@ -2180,8 +2180,8 @@
                 "attackvalue": 3,
                 "defencevalue": 3,
                 "shootvalue": 3,
-                "range": 12,
-                "maximummovement": 4,
+                "range": 24,
+                "maximummovement": 5,
                 "specialRules": [
                     "Deep Strike",
                     "Cumbersome",
@@ -2330,7 +2330,7 @@
                 "defencevalue": 3,
                 "shootvalue": 3,
                 "range": 24,
-                "maximummovement": 3,
+                "maximummovement": 4,
                 "specialRules": [
                     "Deep Strike",
                     "Cumbersome"
@@ -2666,6 +2666,10 @@
                         "unitType": "Infantry"
                     },
                     {
+                        "name": "Space Wolves",
+                        "unitType": "Infantry"
+                    },
+                    {
                         "name": "Imperial Fists",
                         "unitType": "Infantry"
                     },
@@ -2740,7 +2744,7 @@
                 "range": 24,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Skirmish"
+                    "Rapid Fire"
                 ],
                 "options": [
                     {
@@ -3495,18 +3499,20 @@
                 "unlimited": true,
                 "strengthpoints": 5,
                 "points": 4,
-                "attack": 6,
+                "attack": 5,
                 "move": 5,
-                "shoot": 6,
+                "shoot": 7,
                 "courage": 4,
                 "armor": 3,
                 "attackvalue": 3,
                 "defencevalue": 4,
-                "shootvalue": 4,
-                "range": 24,
+                "shootvalue": 6,
+                "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Hard to target"
+                    "Hard to target",
+					"Great Strength",
+					"Dedicated Melee"
                 ],
                 "options": [
                     {
@@ -3514,10 +3520,6 @@
                         "chooseOneKey": "b",
                         "addsModels": 5,
                         "points": 2
-                    },
-                    {
-                        "name": "Dedicated Melee",
-                        "points": 0
                     },
                     {
                         "name": "Veteran",
@@ -4452,7 +4454,7 @@
                 "move": 3,
                 "shoot": 3,
                 "courage": 4,
-                "armor": 4,
+                "armor": 3,
                 "attackvalue": 2,
                 "defencevalue": 2,
                 "shootvalue": 2,
@@ -4476,7 +4478,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 0
+                        "points": 2
                     },
                     {
                         "name": "Shamsir Jetbike",
@@ -4705,7 +4707,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 0
+                        "points": 2
                     },
                     {
                         "name": "Shamsir Jetbike",
@@ -5369,7 +5371,7 @@
             },
             {
                 "name": "Dedicated Melee",
-                "definition": "Infantry and HQ units (including Cumbersome) count as Armor 2 in melee against this unit. Range is reduced by 12”. Cannot be taken alongside Anti-Tank or Anti-Infantry",
+                "definition": "All enemy units count as Armor 2 in melee against this unit. Range is reduced by 12”. Cannot be taken alongside Anti-Tank or Anti-Infantry",
                 "modifiesStats": [
                     {
                         "stat": "range",
@@ -5390,7 +5392,7 @@
             },
             {
                 "name": "Veteran",
-                "definition": "Veteran units are often drawn from specific legions or disciplines. These units get +1 to all order rolls, as well as to their Armor, Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
+                "definition": "Veteran units are often drawn from specific legions or disciplines. These units get +1 to all order rolls, as well as to their Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
                 "modifiesStats": [
                     {
                         "stat": "attack",
@@ -5403,10 +5405,6 @@
                     {
                         "stat": "shoot",
                         "modifier": -1
-                    },
-                    {
-                        "stat": "armor",
-                        "modifier": 1
                     },
                     {
                         "stat": "attackvalue",
@@ -5615,7 +5613,7 @@
             },
             {
                 "name": "Dedicated Melee",
-                "definition": "Infantry and HQ units (including Cumbersome) count as Armor 2 in melee against this unit."
+                "definition": "All enemy units count as Armor 2 in melee against this unit."
             },
             {
                 "name": "Go Back to your Farms",
@@ -5718,9 +5716,9 @@
             },
             {
                 "name": "Bestial Savagery",
-                "definition": "All units in this army (except Fortifications) gain Counter-charge vs Infantry and HQ.",
+                "definition": "All units in this army (except Fortifications) gain Counter-charge.",
                 "specialRules": [
-                    "Counter-charge vs Infantry and HQ"
+                    "Counter-charge"
                 ]
             },
             {
