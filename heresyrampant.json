@@ -529,7 +529,7 @@
                 "parentFaction": "Loyalist Astartes",
                 "specialRules": [
                     "Wild Charge",
-                    "Counter-charge vs Infantry and HQ"
+                    "Counter-charge"
                 ]
             },
             {
@@ -559,7 +559,7 @@
                 "alignment": "Traitor",
                 "parentFaction": "Heretic Astartes",
                 "specialRules": [
-                    "Panic",
+                    "Fearsome",
                     "Hard to target"
                 ]
             },
