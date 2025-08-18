@@ -1125,7 +1125,7 @@
                 "defencevalue": 2,
                 "shootvalue": 2,
                 "range": 18,
-                "maximummovement": 6,
+                "maximummovement": 8,
                 "specialRules": [
                     "Panic"
                 ],
@@ -1463,7 +1463,7 @@
                 "defencevalue": 4,
                 "shootvalue": 3,
                 "range": 18,
-                "maximummovement": 6,
+                "maximummovement": 8,
                 "specialRules": [
                     "Panic"
                 ],
@@ -4461,8 +4461,6 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Great Strength",
-                    "Rapid Fire"
                 ],
                 "options": [
                     {
@@ -4684,7 +4682,6 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Rapid Fire"
                 ],
                 "options": [
                     {
@@ -4740,6 +4737,52 @@
                         "unavailableIn": [
                             "The Lost and Damned"
                         ]
+                    }
+                ]
+            },
+            {
+                "name": "Thegn",
+                "factions": [
+                    {
+                        "name": "Space Wolves",
+                        "unitType": "HQ"
+                    },
+                    {
+                        "name": "Alpha Legion",
+                        "unitType": "HQ"
+                    }
+                ],
+                "unlimited": true,
+                "strengthpoints": 5,
+                "points": 6,
+                "attack": 4,
+                "move": 4,
+                "shoot": 4,
+                "courage": 4,
+                "armor": 3,
+                "attackvalue": 3,
+                "defencevalue": 4,
+                "shootvalue": 4,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [
+					"Hard to target",
+					"Dedicated Melee"
+                ],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "chooseOneKey": "c",
+                        "points": 0
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "chooseOneKey": "c",
+                        "points": 0
                     }
                 ]
             },
@@ -5704,7 +5747,7 @@
             },
             {
                 "name": "Enhanced Senses",
-                "definition": "An Army with this bonus ignores the armor boost granted by Cover, and ignores the Hard to target rule."
+                "definition": "An Army with this bonus ignores the armor boost granted by Cover."
             },
             {
                 "name": "Wrack and Ruin",
