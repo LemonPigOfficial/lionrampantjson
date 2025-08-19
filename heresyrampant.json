@@ -1128,14 +1128,14 @@
                 "maximummovement": 8,
                 "specialRules": [
                     "Panic",
-					"Heavily Armored"
+                    "Heavily Armored"
                 ],
                 "options": [
                     {
                         "name": "Fearsome",
                         "points": 1,
                         "unavailableIn": [
-                                "Night Lords"
+                            "Night Lords"
                         ]
                     },
                     {
@@ -1467,7 +1467,7 @@
                 "maximummovement": 8,
                 "specialRules": [
                     "Panic",
-					"Heavily Armored"
+                    "Heavily Armored"
                 ],
                 "options": [
                     {
@@ -2187,7 +2187,7 @@
                 "specialRules": [
                     "Deep Strike",
                     "Cumbersome",
-					"Heavily Armored"
+                    "Heavily Armored"
                 ],
                 "options": [
                     {
@@ -2336,7 +2336,7 @@
                 "specialRules": [
                     "Deep Strike",
                     "Cumbersome",
-					"Heavily Armored"
+                    "Heavily Armored"
                 ],
                 "options": [
                     {
@@ -2618,7 +2618,7 @@
                 "maximummovement": 12,
                 "specialRules": [
                     "Fast",
-					"Heavily Armored"
+                    "Heavily Armored",
                     "Cumbersome"
                 ],
                 "options": [
@@ -3515,8 +3515,8 @@
                 "maximummovement": 8,
                 "specialRules": [
                     "Hard to target",
-					"Great Strength",
-					"Dedicated Melee"
+                    "Great Strength",
+                    "Dedicated Melee"
                 ],
                 "options": [
                     {
@@ -4464,8 +4464,7 @@
                 "shootvalue": 2,
                 "range": 18,
                 "maximummovement": 8,
-                "specialRules": [
-                ],
+                "specialRules": [],
                 "options": [
                     {
                         "name": "Jump Pack",
@@ -4685,8 +4684,7 @@
                 "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 6,
-                "specialRules": [
-                ],
+                "specialRules": [],
                 "options": [
                     {
                         "name": "Jump Pack",
@@ -4731,7 +4729,7 @@
                         "points": 0,
                         "unavailableIn": [
                             "The Lost and Damned",
-							"Night Lords"
+                            "Night Lords"
                         ]
                     },
                     {
@@ -4770,8 +4768,8 @@
                 "range": 18,
                 "maximummovement": 8,
                 "specialRules": [
-					"Hard to target",
-					"Dedicated Melee"
+                    "Hard to target",
+                    "Dedicated Melee"
                 ],
                 "options": [
                     {
@@ -5560,7 +5558,7 @@
                 "specialRules": [
                     "Deep Strike",
                     "Cumbersome",
-					"Heavily Armored"
+                    "Heavily Armored"
                 ]
             },
             {
