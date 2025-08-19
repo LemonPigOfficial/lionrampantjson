@@ -1127,7 +1127,8 @@
                 "range": 18,
                 "maximummovement": 8,
                 "specialRules": [
-                    "Panic"
+                    "Panic",
+					"Heavily Armored"
                 ],
                 "options": [
                     {
@@ -1465,7 +1466,8 @@
                 "range": 18,
                 "maximummovement": 8,
                 "specialRules": [
-                    "Panic"
+                    "Panic",
+					"Heavily Armored"
                 ],
                 "options": [
                     {
@@ -1786,12 +1788,12 @@
                 "defencevalue": 3,
                 "shootvalue": 3,
                 "range": 12,
-                "maximummovement": 5,
+                "maximummovement": 6,
                 "specialRules": [
                     "Deep Strike",
                     "Cumbersome",
                     "Great Strength",
-                    "Rapid Fire",
+                    "Heavily Armored",
                     "Dedicated Melee"
                 ],
                 "options": [
@@ -1863,7 +1865,7 @@
                 "defencevalue": 3,
                 "shootvalue": 3,
                 "range": 24,
-                "maximummovement": 6,
+                "maximummovement": 8,
                 "specialRules": [
                     "Cumbersome",
                     "Rapid Fire"
@@ -1948,7 +1950,7 @@
                 "defencevalue": 3,
                 "shootvalue": 3,
                 "range": 12,
-                "maximummovement": 6,
+                "maximummovement": 8,
                 "specialRules": [
                     "Cumbersome",
                     "Great Strength",
@@ -2177,15 +2179,15 @@
                 "shoot": 6,
                 "courage": 5,
                 "armor": 4,
-                "attackvalue": 3,
-                "defencevalue": 3,
-                "shootvalue": 3,
+                "attackvalue": 4,
+                "defencevalue": 4,
+                "shootvalue": 4,
                 "range": 24,
                 "maximummovement": 5,
                 "specialRules": [
                     "Deep Strike",
                     "Cumbersome",
-                    "Great Strength"
+					"Heavily Armored"
                 ],
                 "options": [
                     {
@@ -2326,14 +2328,15 @@
                 "shoot": 6,
                 "courage": 5,
                 "armor": 4,
-                "attackvalue": 3,
-                "defencevalue": 3,
-                "shootvalue": 3,
+                "attackvalue": 4,
+                "defencevalue": 4,
+                "shootvalue": 4,
                 "range": 24,
                 "maximummovement": 4,
                 "specialRules": [
                     "Deep Strike",
-                    "Cumbersome"
+                    "Cumbersome",
+					"Heavily Armored"
                 ],
                 "options": [
                     {
@@ -2607,7 +2610,7 @@
                 "move": 4,
                 "shoot": 7,
                 "courage": 5,
-                "armor": 4,
+                "armor": 3,
                 "attackvalue": 4,
                 "defencevalue": 5,
                 "shootvalue": 6,
@@ -2615,6 +2618,7 @@
                 "maximummovement": 12,
                 "specialRules": [
                     "Fast",
+					"Heavily Armored"
                     "Cumbersome"
                 ],
                 "options": [
@@ -2739,7 +2743,7 @@
                 "courage": 4,
                 "armor": 3,
                 "attackvalue": 4,
-                "defencevalue": 3,
+                "defencevalue": 4,
                 "shootvalue": 3,
                 "range": 24,
                 "maximummovement": 6,
@@ -2880,7 +2884,7 @@
                 "courage": 4,
                 "armor": 3,
                 "attackvalue": 6,
-                "defencevalue": 5,
+                "defencevalue": 6,
                 "shootvalue": 2,
                 "range": 24,
                 "maximummovement": 6,
@@ -3508,7 +3512,7 @@
                 "defencevalue": 4,
                 "shootvalue": 6,
                 "range": 12,
-                "maximummovement": 6,
+                "maximummovement": 8,
                 "specialRules": [
                     "Hard to target",
 					"Great Strength",
@@ -3678,7 +3682,7 @@
                 "defencevalue": 3,
                 "shootvalue": 6,
                 "range": 12,
-                "maximummovement": 6,
+                "maximummovement": 8,
                 "specialRules": [
                     "Dedicated melee"
                 ],
@@ -3857,7 +3861,7 @@
                 "defencevalue": 6,
                 "shootvalue": 6,
                 "range": 12,
-                "maximummovement": 8,
+                "maximummovement": 10,
                 "specialRules": [
                     "Fly",
                     "Dedicated Melee"
@@ -4459,7 +4463,7 @@
                 "defencevalue": 2,
                 "shootvalue": 2,
                 "range": 18,
-                "maximummovement": 6,
+                "maximummovement": 8,
                 "specialRules": [
                 ],
                 "options": [
@@ -4528,7 +4532,7 @@
                 "defencevalue": 2,
                 "shootvalue": 2,
                 "range": 12,
-                "maximummovement": 6,
+                "maximummovement": 8,
                 "specialRules": [
                     "Great Strength",
                     "Rapid Fire"
@@ -4764,7 +4768,7 @@
                 "defencevalue": 4,
                 "shootvalue": 4,
                 "range": 18,
-                "maximummovement": 6,
+                "maximummovement": 8,
                 "specialRules": [
 					"Hard to target",
 					"Dedicated Melee"
@@ -5410,11 +5414,11 @@
         "upgrades": [
             {
                 "name": "Fearsome",
-                "definition": " Some people are just that much scarier than others, especially if in power armor! A Fearsome unit creates panic in its opponents through reputation, deed, or other psychological means. Courage tests caused as a result of this unit Attacking or Shooting suffer an additional -1 to the total. Should two Fearsome units encounter one another, the effect of this rule is cancelled between those units"
+                "definition": "Some people are just that much scarier than others, especially if in power armor! A Fearsome unit creates panic in its opponents through reputation, deed, or other psychological means. Courage tests caused as a result of this unit Attacking or Shooting suffer an additional -1 to the total. Should two Fearsome units encounter one another, the effect of this rule is cancelled between those units"
             },
             {
                 "name": "Dedicated Melee",
-                "definition": "All enemy units count as Armor 2 in melee against this unit. Range is reduced by 12”. Cannot be taken alongside Anti-Tank or Anti-Infantry",
+                "definition": "Enemy Infantry and HQ units count as Armor 2 in melee against this unit. Range is reduced by 12”. Cannot be taken alongside Anti-Tank or Anti-Infantry",
                 "modifiesStats": [
                     {
                         "stat": "range",
@@ -5542,11 +5546,11 @@
             },
             {
                 "name": "Terminator Armor",
-                "definition": "Deep Strike, Cumbersome and +1 Armor, but -2 Movement Distance. Cannot be combined with Jump Pack or Bike.",
+                "definition": "Deep Strike, Cumbersome and Heavily Armored, but -1 Movement Distance. Cannot be combined with Jump Pack or Bike.",
                 "modifiesStats": [
                     {
                         "stat": "maximummovement",
-                        "modifier": -2
+                        "modifier": -1
                     },
                     {
                         "stat": "armor",
@@ -5555,7 +5559,8 @@
                 ],
                 "specialRules": [
                     "Deep Strike",
-                    "Cumbersome"
+                    "Cumbersome",
+					"Heavily Armored"
                 ]
             },
             {
@@ -5614,7 +5619,7 @@
             },
             {
                 "name": "Anti-Tank",
-                "definition": "Weapons such as Plasma Weapons, Lascannons and Melta Weapons are Anti-Tank weapons. Vehicle, Cumbersome and Fortification units count as armor 2 against Shooting by this unit (armor 2 if in cover). Shooting Value is 6+ against any other units. Cannot be taken alongside Anti-Infantry."
+                "definition": "Weapons such as Plasma Weapons, Lascannons and Melta Weapons are Anti-Tank weapons. Vehicle, Cumbersome and Fortification units count as armor 2 against Shooting by this unit (armor 3 if in cover). Shooting Value is 6+ against any other units. Cannot be taken alongside Anti-Infantry."
             },
             {
                 "name": "Anti-Infantry",
@@ -5656,7 +5661,7 @@
             },
             {
                 "name": "Dedicated Melee",
-                "definition": "All enemy units count as Armor 2 in melee against this unit."
+                "definition": "Enemy Infantry and HQ units count as Armor 2 in melee against this unit."
             },
             {
                 "name": "Go Back to your Farms",
@@ -5694,6 +5699,10 @@
                 "definition": "This unit counts as having +1 armor versus Melee and ignores rules that reduce armor (like Anti-Infantry)."
             },
             {
+                "name": "Heavily Armored",
+                "definition": "This unit has +1 armor after any modifiers (such as Anti-Infantry)."
+            },
+            {
                 "name": "Selfsufficent",
                 "definition": "This unit may receive orders even if you failed an order this turn."
             },
@@ -5707,7 +5716,7 @@
             },
             {
                 "name": "Panic",
-                "definition": "When this unit Shoots or Charges, the target unit must take a Courage test regardless of the number of hits inflicted."
+                "definition": "When this unit Shoots or Attacks, the target unit must take a Courage test regardless of the number of hits inflicted."
             }
         ],
         "armyBonuses": [
