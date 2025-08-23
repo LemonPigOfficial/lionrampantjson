@@ -3907,17 +3907,17 @@
                 ],
                 "unlimited": true,
                 "strengthpoints": 5,
-                "points": 6,
-                "attack": 4,
-                "move": 4,
+                "points": 4,
+                "attack": 5,
+                "move": 5,
                 "shoot": 0,
-                "courage": 4,
+                "courage": 5,
                 "armor": 3,
-                "attackvalue": 2,
+                "attackvalue": 3,
                 "defencevalue": 6,
                 "shootvalue": 0,
                 "range": 0,
-                "maximummovement": 8,
+                "maximummovement": 10,
                 "specialRules": [
                     "Fly",
                     "Deep Strike",
@@ -3929,6 +3929,11 @@
                         "name": "Increased Squad Size",
                         "chooseOneKey": "a",
                         "addsModels": 5,
+                        "points": 2
+                    },
+                    {
+                        "name": "Veteran",
+                        "chooseOneKey": "b",
                         "points": 2
                     },
                     {
@@ -4756,7 +4761,7 @@
                 "armor": 3,
                 "attackvalue": 3,
                 "defencevalue": 4,
-                "shootvalue": 4,
+                "shootvalue": 3,
                 "range": 18,
                 "maximummovement": 8,
                 "specialRules": [
@@ -4764,10 +4769,6 @@
                     "Dedicated Melee"
                 ],
                 "options": [
-                    {
-                        "name": "Veteran",
-                        "points": 2
-                    },
                     {
                         "name": "Fearsome",
                         "chooseOneKey": "c",
@@ -5482,11 +5483,11 @@
             },
             {
                 "name": "Jump Pack",
-                "definition": "Fly and +2 Movement Distance. Cannot be combined with Terminator Armor or Bike.",
+                "definition": "Fly and +4 Movement Distance. Cannot be combined with Terminator Armor or Bike.",
                 "modifiesStats": [
                     {
                         "stat": "maximummovement",
-                        "modifier": 2
+                        "modifier": 4
                     }
                 ],
                 "specialRules": [
