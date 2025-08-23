@@ -5443,10 +5443,10 @@
                     {
                         "stat": "shootvalue",
                         "modifier": -1
-                    },
+                    }
+                ],
                 "specialRules": [
                     "Selfsufficent"
-                ]
                 ]
             },
             {
