@@ -1586,7 +1586,8 @@
                 "specialRules": [
                     "Panic",
                     "Fearless",
-                    "Fast"
+                    "Fast",
+                    "Heavily Armored"
                 ],
                 "options": [
                     {
@@ -1679,7 +1680,8 @@
                 "specialRules": [
                     "Panic",
                     "Rapid Fire",
-                    "Fearless"
+                    "Fearless",
+                    "Heavily Armored"
                 ],
                 "options": [
                     {
@@ -1747,7 +1749,7 @@
                 "range": 0,
                 "maximummovement": 8,
                 "specialRules": [
-                    "Shielded",
+                    "Heavily Armored",
                     "Great Strength",
                     "Fearless"
                 ],
@@ -1784,9 +1786,9 @@
                 "shoot": 4,
                 "courage": 5,
                 "armor": 4,
-                "attackvalue": 3,
+                "attackvalue": 2,
                 "defencevalue": 3,
-                "shootvalue": 3,
+                "shootvalue": 2,
                 "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
@@ -1812,10 +1814,6 @@
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
                         "points": 0
-                    },
-                    {
-                        "name": "Veteran",
-                        "points": 4
                     },
                     {
                         "name": "Anti-Infantry",
@@ -1861,9 +1859,9 @@
                 "shoot": 4,
                 "courage": 5,
                 "armor": 3,
-                "attackvalue": 4,
-                "defencevalue": 3,
-                "shootvalue": 3,
+                "attackvalue": 3,
+                "defencevalue": 2,
+                "shootvalue": 2,
                 "range": 24,
                 "maximummovement": 8,
                 "specialRules": [
@@ -1896,11 +1894,6 @@
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
                         "points": 0
-                    },
-                    {
-                        "name": "Veteran",
-                        "chooseOneKey": "a",
-                        "points": 4
                     },
                     {
                         "name": "Anti-Infantry",
@@ -1946,9 +1939,9 @@
                 "shoot": 4,
                 "courage": 5,
                 "armor": 3,
-                "attackvalue": 3,
-                "defencevalue": 3,
-                "shootvalue": 3,
+                "attackvalue": 2,
+                "defencevalue": 2,
+                "shootvalue": 2,
                 "range": 12,
                 "maximummovement": 8,
                 "specialRules": [
@@ -1979,11 +1972,6 @@
                         "name": "Anti-Tank",
                         "chooseOneKey": "b",
                         "points": 0
-                    },
-                    {
-                        "name": "Veteran",
-                        "chooseOneKey": "a",
-                        "points": 4
                     },
                     {
                         "name": "Anti-Infantry",
@@ -2035,8 +2023,7 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Rapid Fire",
-                    "Selfsufficent"
+                    "Rapid Fire"
                 ],
                 "options": [
                     {
@@ -2054,11 +2041,6 @@
                         "name": "Anti-Infantry",
                         "chooseOneKey": "a",
                         "points": 0
-                    },
-                    {
-                        "name": "Veteran",
-                        "chooseOneKey": "b",
-                        "points": 2
                     },
                     {
                         "name": "Medicae",
@@ -2174,14 +2156,14 @@
                 "unlimited": true,
                 "strengthpoints": 5,
                 "points": 6,
-                "attack": 6,
+                "attack": 5,
                 "move": 4,
-                "shoot": 6,
-                "courage": 5,
-                "armor": 3,
-                "attackvalue": 4,
+                "shoot": 5,
+                "courage": 4,
+                "armor": 4,
+                "attackvalue": 3,
                 "defencevalue": 4,
-                "shootvalue": 4,
+                "shootvalue": 3,
                 "range": 24,
                 "maximummovement": 5,
                 "specialRules": [
@@ -2323,14 +2305,14 @@
                 "unlimited": true,
                 "strengthpoints": 6,
                 "points": 6,
-                "attack": 7,
-                "move": 7,
-                "shoot": 6,
-                "courage": 5,
-                "armor": 4,
+                "attack": 5,
+                "move": 5,
+                "shoot": 4,
+                "courage": 4,
+                "armor": 5,
                 "attackvalue": 4,
                 "defencevalue": 4,
-                "shootvalue": 4,
+                "shootvalue": 3,
                 "range": 24,
                 "maximummovement": 4,
                 "specialRules": [
@@ -3176,7 +3158,7 @@
                 "range": 24,
                 "maximummovement": 4,
                 "specialRules": [
-                    "Shielded"
+                    "Heavily Armored"
                 ],
                 "options": [
                     {
@@ -4366,7 +4348,7 @@
                 "maximummovement": 6,
                 "specialRules": [
                     "Great Strength",
-                    "Shielded"
+                    "Heavily Armored"
                 ],
                 "options": [
                     {
@@ -5447,20 +5429,8 @@
             },
             {
                 "name": "Veteran",
-                "definition": "Veteran units are often drawn from specific legions or disciplines. These units get +1 to all order rolls, as well as to their Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
+                "definition": "Veteran units are often drawn from specific legions or disciplines. These units get Selfsufficent, as well as +1 to their Attack Value, Defense Value and Shooting Value. Cannot be mixed with Increased Squad Size.",
                 "modifiesStats": [
-                    {
-                        "stat": "attack",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "move",
-                        "modifier": -1
-                    },
-                    {
-                        "stat": "shoot",
-                        "modifier": -1
-                    },
                     {
                         "stat": "attackvalue",
                         "modifier": -1
@@ -5472,7 +5442,10 @@
                     {
                         "stat": "shootvalue",
                         "modifier": -1
-                    }
+                    },
+                "specialRules": [
+                    "Selfsufficent"
+                ]
                 ]
             },
             {
@@ -5703,12 +5676,8 @@
                 "definition": "This unit counts as having +1 armor versus Shooting and may only be targeted within 12”."
             },
             {
-                "name": "Shielded",
-                "definition": "This unit counts as having +1 armor versus Melee and ignores rules that reduce armor (like Anti-Infantry)."
-            },
-            {
                 "name": "Heavily Armored",
-                "definition": "This unit has +1 armor after any modifiers (such as Anti-Infantry)."
+                "definition": "This unit counts as having +1 armor versus Melee and ignores rules that reduce armor (like Anti-Infantry)."
             },
             {
                 "name": "Selfsufficent",
