@@ -5572,11 +5572,11 @@
             },
             {
                 "name": "Snipers",
-                "definition": "HQ and Infantry units (that aren't Cumbersome) count as armor 2 against Shooting by this unit (even in cover) and the unit has +1 to its Shooting Value. Cannot be taken alongside Dedicated Melee, Anti-Infantry or Anti-Tank.",
+                "definition": "HQ and Infantry units (that aren't Cumbersome) count as armor 2 against Shooting by this unit (even in cover) and the unit has +6” to its Range. Cannot be taken alongside Dedicated Melee, Anti-Infantry or Anti-Tank.",
                 "modifiesStats": [
                     {
-                        "stat": "shootvalue",
-                        "modifier": -1
+                        "stat": "range",
+                        "modifier": 6
                     }
                 ]
             },
