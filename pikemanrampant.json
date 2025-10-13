@@ -281,13 +281,6 @@
                             "maximumChildren": {
                                 "leaderUpgrades": 2
                             }
-                        },
-                        {
-                            "name": "Missile",
-                            "rank": 1,
-                            "maximumChildren": {
-                                "leaderUpgrades": 2
-                            }
                         }
                     ]
                 }
@@ -509,7 +502,7 @@
                     },
                     {
                         "name": "Armoured",
-                        "points": 2
+                        "points": 4
                     }
                 ],
                 "decreaseModelCount": -5
@@ -553,7 +546,7 @@
                     },
                     {
                         "name": "Armoured",
-                        "points": 2
+                        "points": 4
                     }
                 ],
                 "decreaseModelCount": -5
@@ -634,7 +627,7 @@
                     },
                     {
                         "name": "Armoured",
-                        "points": 2
+                        "points": 4
                     }
                 ],
                 "decreaseModelCount": -5
@@ -674,7 +667,7 @@
                     },
                     {
                         "name": "Armoured",
-                        "points": 2
+                        "points": 4
                     }
                 ],
                 "decreaseModelCount": -11
@@ -1010,7 +1003,7 @@
             },
             {
                 "name": "Go Back to your Farms",
-                "definition": "You may select no more than 3 Levied Infantry units in a 24-point Regiment (scale up or down proportionately for Regiments of different points values)."
+                "definition": "You may select no more than 3 Levied units in a 24-point Regiment (scale up or down proportionately for Regiments of different points values)."
             },
             {
                 "name": "Fast",
