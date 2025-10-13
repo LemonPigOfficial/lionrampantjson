@@ -754,7 +754,6 @@
                 "points": 4,
                 "models": 6,
                 "attack": 7,
-                "models": 6,
                 "move": 5,
                 "shoot": 7,
                 "courage": 5,
@@ -804,7 +803,7 @@
                 "shootvalue": 6,
                 "range": 18,
                 "maximummovement": 6,
-                "specialRules": [,
+                "specialRules": [
                     "Go Back to Your Farms"
 					],
                 "options": [
@@ -979,7 +978,7 @@
             },
             {
                 "name": "Armoured",
-                "definition": "This upgrade means that the unit is better armoured than most units, and its Stamina increases by 1."
+                "definition": "This upgrade means that the unit is better armoured than most units, and its Stamina increases by 1.",
 				"modifiesStats": [
                     {
                         "stat": "Stamina",
