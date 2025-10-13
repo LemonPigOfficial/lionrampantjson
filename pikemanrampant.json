@@ -1,0 +1,1046 @@
+{
+    "config": {
+        "trackHighestDivision": true
+    },
+    "appVersion": 2,
+    "disallowMultipleFactions": true,
+    "colors": {
+        "light": {
+            "primary": "#841912",
+            "background": "#a58650",
+            "pageBackground": "#fffffe",
+            "buttonBackground": "#e2ded3",
+            "primaryBorder": "#841912",
+            "primaryBackgroundColor": "#fffffe"
+        },
+        "dark": {
+            "primary": "#fffffe",
+            "background": "#814143",
+            "pageBackground": "#3b1d1e",
+            "buttonBackground": "#a58650",
+            "primaryBorder": "#841912",
+            "primaryBackgroundColor": "#841912"
+        }
+    },
+    "credit": [],
+    "game": "Pikeman Rampant",
+    "stats": [
+        {
+            "name": "Models",
+            "abbreviation": "Minis"
+        },
+        {
+            "name": "Attack",
+            "abbreviation": "A",
+            "trail": "+"
+        },
+        {
+            "name": "Move",
+            "abbreviation": "M",
+            "trail": "+"
+        },
+        {
+            "name": "Shoot",
+            "abbreviation": "S",
+            "trail": "+"
+        },
+        {
+            "name": "Courage",
+            "abbreviation": "CO",
+            "trail": "+"
+        },
+        {
+            "name": "Stamina",
+            "abbreviation": "AR"
+        },
+        {
+            "name": "AttackValue",
+            "abbreviation": "AV",
+            "trail": "+"
+        },
+        {
+            "name": "DefenceValue",
+            "abbreviation": "DV",
+            "trail": "+"
+        },
+        {
+            "name": "ShootValue",
+            "abbreviation": "SV",
+            "trail": "+"
+        },
+        {
+            "name": "maximummovement",
+            "abbreviation": "M",
+            "trail": "\""
+        },
+        {
+            "name": "Range",
+            "abbreviation": "Range",
+            "trail": "\""
+        }
+    ],
+    "dataTableKeys": [
+        "units"
+    ],
+    "limits": [],
+    "counts": [],
+    "calculations": [],
+    "validations": [],
+    "leaderConfig": {
+        "elementPropertyName": "units",
+        "usesProperty": "unitType"
+    },
+    "additionalPrint": [],
+    "additionalDb": [],
+    "elements": [
+        {
+            "propertyName": "factions",
+            "label": "Faction",
+            "type": "faction",
+            "dataSource": "factions",
+            "children": [
+                {
+                    "propertyName": "units",
+                    "dataSource": "units",
+                    "label": "Unit",
+                    "type": "main",
+                    "children": [
+                        {
+                            "propertyName": "specialRules",
+                            "label": "Special Rules",
+                            "type": "static",
+                            "dataSource": "keywords"
+                        },
+                        {
+                            "singleKey": "leaderUpgrade",
+                            "dataSource": "leaderUpgrades",
+                            "propertyName": "leaderUpgrades",
+                            "label": "Leader Upgrade",
+                            "type": "list",
+                            "universalOnly": true,
+                            "universalOptions": [
+                                {
+                                    "name": "Aggressive",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Blessed",
+                                    "points": 2,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Bloodthirsty",
+                                    "points": 3,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Braveheart",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Brutal",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Commanding",
+                                    "points": 2,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Courageous",
+                                    "points": 2,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Drunkard or Eccentric",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Fearless",
+                                    "points": 2,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Fearsome",
+                                    "points": 2,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Impulsive",
+                                    "points": 1,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Insipid",
+                                    "points": -2,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Inspired",
+                                    "points": 3,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Knock-kneed",
+                                    "points": -1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Lionheart",
+                                    "points": 2,
+                                    "requiresLeader": true
+                                },
+                                {
+                                    "name": "Patient",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Rash",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Strongbow",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Strongsword",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "The Great",
+                                    "points": 3,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Old Wound",
+                                    "points": -1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Vulnerable",
+                                    "points": -1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Weakling",
+                                    "points": -2,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                },
+                                {
+                                    "name": "Wise",
+                                    "points": 1,
+                                    "requiresLeader": true,
+                                    "unique": true
+                                }
+                            ]
+                        },
+                        {
+                            "propertyName": "options",
+                            "type": "checkbox",
+                            "dataSource": "upgrades"
+                        }
+                    ],
+                    "tierProperty": "unitType",
+                    "tierData": "unitTypes",
+                    "tiers": [
+                        {
+                            "name": "Mounted",
+                            "rank": 1,
+                            "maximumChildren": {
+                                "leaderUpgrades": 2
+                            }
+                        },
+                        {
+                            "name": "Foot",
+                            "rank": 1,
+                            "maximumChildren": {
+                                "leaderUpgrades": 2
+                            }
+                        },
+                        {
+                            "name": "Missile",
+                            "rank": 1,
+                            "maximumChildren": {
+                                "leaderUpgrades": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "data": {
+        "leaderUpgrades": [
+            {
+                "name": "Aggressive",
+                "definition": "Each turn, one unit within 12” of your Leader’s model may automatically pass an Attack activation without needing to roll dice (may be used on the Leader’s own unit).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Blessed",
+                "definition": "You may reroll any one set of dice in the game in its entirety, rolled by any player.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Bloodthirsty",
+                "definition": "Same as the Bloodthirsty rule listed under Elite Cavalry. Applies only to the Leader's unit and cannot be purchased if the unit already has this rule.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Braveheart",
+                "definition": "In Challenges, the Leader is only hit on a 6.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Brutal",
+                "definition": "Any unit within 12\" of your Leader's model may automatically pass a failed Rally test by removing 1 model (the very real threat of enforced sacrifice really does make a warrior much bolder).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Commanding",
+                "definition": "Each turn, you may reroll 1 additional failed Move, Attack, or Shoot activation test (no other tests) within 12\" of your Leader's model (meaning you have 2 rerolls each turn).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Courageous",
+                "definition": "The Leader's unit may reroll each of its Courage tests once.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Drunkard or Eccentric",
+                "definition": "When this Leader is good, they're very good, and when they're bad... After deployment but before the first turn, roll to find out how much they've drunk: 1: Insipid; 2: Vulnerable; 3: Old Wound; 4: Braveheart; 5: Strongsword or Strongbow; 6: Lionheart.",
+                "factions": [],
+                "decreaseModelCount": 0
+            },
+            {
+                "name": "Fearless",
+                "definition": "Leader's unit is not affected by Fearsome or Panic enemy units.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Fearsome",
+                "definition": "Same as the Fearsome rule listed under Elite Cavalry. Applies only to the Leader's unit and cannot be purchased if the unit already has this rule.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Impulsive",
+                "definition": "Each turn, one unit within 12\" of your Leader's model may automatically pass a Move activation without needing to roll dice (may be used on the Leader's own unit).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Insipid",
+                "definition": "The Leader does not grant units within 12\" the usual +1 Courage bonus (including the Leader's own unit).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Inspired",
+                "definition": "Each turn, you may reroll 2 additional failed Move, Attack, or Shoot activations tests (no other tests) within 12\" of your Leader's model (meaning you have 3 rerolls each turn.)",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Knock-kneed",
+                "definition": "When required to Retreat, the Leader's unit must retreat the full distance rather than a half move.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Lionheart",
+                "definition": "During Attacks, the Leader's unit may reroll up to 2 failed hit dice.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Patient",
+                "definition": "Each turn, one unit within 12\" of your Leader's model may choose to ignore a Wild Charge activation (may be used on the Leader's own unit).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Rash",
+                "definition": "Leader's unit gains the Wild Charge rule. Cannot be purchased if the Leader's unit already has Wild Charge.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Strongbow",
+                "definition": "This has nothing to do with cider! Each turn, one unit within 12\" of your Leader's model may automatically pass a Shoot activation without needing to roll dice (may be used on the Leader's own unit).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Strongsword",
+                "definition": "During Attacks, the Leader's unit may reroll one failed hit dice.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "The Great",
+                "definition": "Leader's unit automatically passes all Move, Attack and Shoot activation tests. Wild Charges, Counter-charges, and Evade are tested as normal.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Old Wound",
+                "definition": "Reduce the Leader's unit's maximum movement distance by 2\".",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Vulnerable",
+                "definition": "Killed by Lucky Blows on a result of 2 or 3.",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Weakling",
+                "definition": "Leader's unit rolls 1 less dice when Attacking or Shooting (therefore rolling either 11 or 5 dice).",
+                "factions": [],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Wise",
+                "definition": "Removed for strategic use. May Lead may add or subtract 1 from your total (your choice) when rolling to decide attacker/ defender as described in Chapter 5 (here).",
+                "factions": [],
+                "decreaseModelCount": 1
+            }
+        ],
+        "factions": [
+            {
+                "name": "Build Your Regiment",
+                "additionalRules": [],
+                "armyBonuses": [],
+                "specialRules": []
+            }
+        ],
+        "unitTypes": [
+            {
+                "name": "Mounted"
+            },
+            {
+                "name": "Foot"
+            },
+            {
+                "name": "Missile"
+            }
+        ],
+        "units": [
+            {
+                "name": "Elite Cavalry",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Mounted"
+                    }
+                ],
+                "unlimited": true,
+                "points": 6,
+                "models": 6,
+                "attack": 5,
+                "move": 7,
+                "shoot": 0,
+                "courage": 3,
+                "Stamina": 4,
+                "attackvalue": 3,
+                "defencevalue": 5,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 10,
+                "specialRules": [
+                    "Wild Charge",
+                    "Counter-charge"
+                ],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 3
+                    },
+                    {
+                        "name": "Drilled",
+                        "points": 1
+                    },
+                    {
+                        "name": "Motivated",
+                        "points": 1
+                    },
+                    {
+                        "name": "Armoured",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -5
+            },
+            {
+                "name": "Heavy Cavalry",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Mounted"
+                    }
+                ],
+                "unlimited": true,
+                "points": 4,
+                "models": 6,
+                "attack": 5,
+                "move": 5,
+                "shoot": 0,
+                "courage": 4,
+                "Stamina": 3,
+                "attackvalue": 4,
+                "defencevalue": 5,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 10,
+                "specialRules": [
+                    "Counter-charge"
+                ],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 3
+                    },
+                    {
+                        "name": "Armoured",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -5
+            },
+            {
+                "name": "Gunner Cavalry",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Mounted"
+                    }
+                ],
+                "unlimited": true,
+                "points": 6,
+                "models": 6,
+                "attack": 7,
+                "move": 5,
+                "shoot": 6,
+                "courage": 5,
+                "Stamina": 3,
+                "attackvalue": 5,
+                "defencevalue": 6,
+                "shootvalue": 5,
+                "range": 12,
+                "maximummovement": 12,
+                "specialRules": [
+                    "Skirmish",
+                    "Panic"
+                ],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Armoured",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -5
+            },
+            {
+                "name": "Elite Infantry",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Foot"
+                    }
+                ],
+                "unlimited": true,
+                "models": 6,
+                "points": 6,
+                "attack": 5,
+                "move": 5,
+                "shoot": 0,
+                "courage": 3,
+                "Stamina": 4,
+                "attackvalue": 3,
+                "defencevalue": 4,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Flexible"
+                ],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Fearsome",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 3
+                    },
+                    {
+                        "name": "Armoured",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -5
+            },
+            {
+                "name": "Pike Infantry",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Foot"
+                    }
+                ],
+                "unlimited": true,
+                "points": 6,
+                "models": 12,
+                "attack": 7,
+                "move": 5,
+                "shoot": 0,
+                "courage": 4,
+                "Stamina": 3,
+                "attackvalue": 6,
+                "defencevalue": 3,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Pike Formation"
+                ],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bloodthirsty",
+                        "points": 3
+                    },
+                    {
+                        "name": "Armoured",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -11
+            },
+            {
+                "name": "Light Infantry",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Foot"
+                    }
+                ],
+                "unlimited": true,
+                "points": 3,
+                "attack": 6,
+                "models": 12,
+                "move": 5,
+                "shoot": 0,
+                "courage": 4,
+                "Stamina": 2,
+                "attackvalue": 5,
+                "defencevalue": 4,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 8,
+                "specialRules": [
+                    "Pike Formation"
+                ],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Armoured",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -11
+            },
+            {
+                "name": "Levied Infantry",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Foot"
+                    }
+                ],
+                "unlimited": true,
+                "points": 1,
+                "attack": 7,
+                "models": 12,
+                "move": 6,
+                "shoot": 0,
+                "courage": 5,
+                "Stamina": 1,
+                "attackvalue": 6,
+                "defencevalue": 6,
+                "shootvalue": 0,
+                "range": 0,
+                "maximummovement": 8,
+                "specialRules": [
+                    "Go Back to Your Farms"
+                ],
+                "options": [],
+                "decreaseModelCount": -11
+            },
+            {
+                "name": "Handgonner Skirmishers",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Missile"
+                    }
+                ],
+                "unlimited": true,
+                "points": 4,
+                "models": 6,
+                "attack": 7,
+                "models": 6,
+                "move": 5,
+                "shoot": 7,
+                "courage": 5,
+                "Stamina": 1,
+                "attackvalue": 6,
+                "defencevalue": 6,
+                "shootvalue": 5,
+                "range": 12,
+                "maximummovement": 8,
+                "specialRules": [
+                    "Hard to target",
+                    "Fast",
+                    "Skirmish",
+                    "Panic",
+                    "Evade"
+                ],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Armoured",
+                        "points": 2
+                    }
+					],
+                "decreaseModelCount": -5
+            },
+            {
+                "name": "Levied Archers",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Missile"
+                    }
+                ],
+                "unlimited": true,
+                "points": 2,
+                "models": 12,
+                "attack": 9,
+                "move": 8,
+                "shoot": 8,
+                "courage": 4,
+                "Stamina": 2,
+                "attackvalue": 6,
+                "defencevalue": 5,
+                "shootvalue": 6,
+                "range": 18,
+                "maximummovement": 6,
+                "specialRules": [,
+                    "Go Back to Your Farms"
+					],
+                "options": [
+                ],
+                "decreaseModelCount": -11
+            },
+            {
+                "name": "Handgonners",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Missile"
+                    }
+                ],
+                "unlimited": true,
+                "points": 6,
+                "models": 12,
+                "attack": 9,
+                "move": 6,
+                "shoot": 7,
+                "courage": 4,
+                "Stamina": 2,
+                "attackvalue": 6,
+                "defencevalue": 5,
+                "shootvalue": 5,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+                    "Panic"
+                ],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Bayonets",
+                        "points": 1
+                    },
+                    {
+                        "name": "Armoured",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -11
+            },
+            {
+                "name": "Crossbowmen",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Missile"
+                    }
+                ],
+                "unlimited": true,
+                "points": 4,
+                "models": 12,
+                "attack": 9,
+                "move": 6,
+                "shoot": 7,
+                "courage": 4,
+                "Stamina": 2,
+                "attackvalue": 6,
+                "defencevalue": 5,
+                "shootvalue": 6,
+                "range": 12,
+                "maximummovement": 6,
+                "specialRules": [
+                ],
+                "options": [
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    }
+                ],
+                "decreaseModelCount": -11
+            },
+            {
+                "name": "Artillery Piece",
+                "factions": [
+                    {
+                        "name": "Build Your Regiment",
+                        "unitType": "Missile"
+                    }
+                ],
+                "unlimited": true,
+                "points": 6,
+                "models": 6,
+                "attack": 9,
+                "move": 8,
+                "shoot": 7,
+                "courage": 6,
+                "Stamina": 1,
+                "attackvalue": 6,
+                "defencevalue": 6,
+                "shootvalue": 4,
+                "range": 30,
+                "maximummovement": 3,
+                "specialRules": [
+                    "Bang",
+                    "Panic"
+                ],
+                "options": [
+				
+                    {
+                        "name": "Veteran",
+                        "points": 2
+                    }
+				],
+                "decreaseModelCount": -5
+            }
+        ],
+        "upgrades": [
+            {
+                "name": "Fearsome",
+                "definition": "A Fearsome unit creates panic in its opponents through reputation, deed, or other psychological means. Courage tests caused as a result of this unit Attacking (but not Shooting) suffer an additional -1 to the total. Should two Fearsome units encounter one another, the effect of this rule is cancelled between those units"
+            },
+            {
+                "name": "Bayonets",
+                "definition": "A unit with bayonets may form a Pike Formation - despite not exactly having Pikes.",
+                "specialRules": [
+                    "Pike Formation"
+                ]
+            },
+            {
+                "name": "Bloodthirsty",
+                "definition": " Whether it be due to superior training, better equipment, carrying a second weapon, religious fervour, or just a large helping of plain ol’ nastiness, a Bloodthirsty unit can inflict a whole load of additional pain on an enemy – if it rolls well. Any Attack dice (but not Defence or Shooting dice) that roll a 6 cause 2 hits rather than the usual 1 hit"
+            },
+            {
+                "name": "Mounted Bows",
+                "definition": "For Elite Cavalry: Wild Charge and Counter-charge are removed and replaced with Shoot 6+/Range 12” with a Shoot Value of 5+. For Heavy Cavalry: Add Shoot 6+/Range 12” with a Shoot Value of 5+."
+            },
+            {
+                "name": "Mounted Crossbows",
+                "definition": "Counter-charge is removed and replaced with Shoot 7+/Range 12” with a Shoot Value of 5+. Attack Value is reduced to 5+."
+            },
+            {
+                "name": "Drilled",
+                "definition": "This unit is better controlled than most hot-headed Elite Cavalry and removes Wild Charge"
+            },
+            {
+                "name": "Motivated",
+                "definition": "This unit has less of a snooty attitude to the grunt-work of small-scale battles, and its Move becomes 6+"
+            },
+            {
+                "name": "Veteran",
+                "definition": "Once per game, may automatically pass a Move, Attack or Shoot activation."
+            },
+            {
+                "name": "Javelins",
+                "definition": "Shoot 6+/Range 6” hitting on 5+"
+            },
+            {
+                "name": "Javelins Only",
+                "definition": "Most units are armed with bows, but these are instead armed with javelins, with range reduced to 6”."
+            },
+            {
+                "name": "Mixed Weapons",
+                "definition": "Add Shoot 6+, Range 12” hitting on 5+. Remove Pike Formation and cannot be combined with javelins"
+            },
+            {
+                "name": "Stakes",
+                "definition": "Defense 3+/Movement 3”"
+            },
+            {
+                "name": "Mighty Weapons",
+                "definition": "+1 to Attack Value. Remove Pike Formation"
+            },
+            {
+                "name": "Pavises",
+                "definition": " If armed with pavises, the Crossbowmen increase their Stamina by 2 against Shooting (to 4) and by 1 against Attacks (to 3). If the unit is in rough terrain or cover, this bonus does not apply as the terrain is already doing an adequate job."
+            },
+            {
+                "name": "Armoured",
+                "definition": "This upgrade means that the unit is better armoured than most units, and its Stamina increases by 1."
+				"modifiesStats": [
+                    {
+                        "stat": "Stamina",
+                        "modifier": 1
+                    }
+                ]
+            }
+        ],
+        "keywords": [
+            {
+                "name": "Wild Charge",
+                "definition": "If an enemy unit is within this unit’s Attack range during the ‘Activate Wild Charges’ phase, you must test to activate an Attack against it. If the test is unsuccessful, the unit remains stationary but may test for an ordered Move activation later in your turn (no other actions are allowed). Wild Charge may not be used if the unit is Battered."
+            },
+            {
+                "name": "Counter-charge",
+                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test for a Counter-charge. Test for an Attack at 7+. If it succeeds, the two units meet a proportionate movement distance between their start positions, and both count as Attacking. If it fails, it stands in place for the enemy’s charge. Counter-charge may not be used if the unit is Battered."
+            },
+            {
+                "name": "Counter-charge vs Foot and Missiles",
+                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test for a Counter-charge. Test for an Attack at 7+. If it succeeds, the two units meet a proportionate movement distance between their start positions, and both count as Attacking. If it fails, it stands in place for the enemy’s charge. Counter-charge may not be used if the unit is Battered."
+            },
+            {
+                "name": "Pike Formation",
+                "definition": "There need to be at least 6 models in the unit to form a Pike Formation. On a Move order, form the unit into a two-rank formation based around a central model. A Pike Formation cannot form in rough terrain or in cover, and it cannot move in this formation. Pike Formations increase the unit’s Stamina by 1 point against Attacks but not Shooting (to 3 for Light Infantry). If an Attack ends with both units still in contact and the Pike Formation is neither Battered or reduced to fewer than 6 models, the enemy must always Retreat (an enemy unit will ‘bounce off’ the Pike Formation). If the unit becomes Battered, must Retreat, or is reduced to fewer than 6 models while in a Pike Formation, the formation is broken. A unit in a Pike formation may not shoot."
+            },
+            {
+                "name": "Flexible",
+                "definition": "This unit uses its normal Attack/Defence/Stamina profile when fighting in rough terrain."
+            },
+            {
+                "name": "Go Back to your Farms",
+                "definition": "You may select no more than 3 Levied Infantry units in a 24-point Regiment (scale up or down proportionately for Regiments of different points values)."
+            },
+            {
+                "name": "Fast",
+                "definition": "This unit does not halve its movement in rough terrain."
+            },
+            {
+                "name": "Smelly",
+                "definition": "All units (friendly and enemy) that end their move within 3” of this unit must make a Courage test. The only exception is other Smelly units."
+            },
+            {
+                "name": "Evade",
+                "definition": "When an enemy has successfully rolled to Attack this unit, but before it moves, this unit may test to Evade at 7+. If it succeeds, it immediately carries out a Skirmish action targeting the Attacking unit, may not move closer to the Attacking unit, and must avoid other units by 3” as usual. Any casualties inflicted by the Skirmish action cause a Courage test or Lucky Blow only at the end of the Attack. The charging unit then moves its full charge distance following the Evading unit. If it makes contact it Attacks with the Evading unit reducing its Stamina to 1, and if it cannot contact it must move as close as possible (moving no closer than 3” to the Evading unit). If the Evade test fails, the unit stands in place and awaits attack without Shooting or Moving and its Stamina becomes 1 during the Attack. An Evading unit will always fight when contacted, and a unit may Evade as many times as it wishes in a turn. Evade cannot be used if the unit is Battered"
+            },
+            {
+                "name": "Skirmish",
+                "definition": "As an ordered activation, successful on a 7+, the unit may make a half Move and Shoot (in either order). All models in the unit Shoot with -1 to their dice scores."
+            },
+            {
+                "name": "Hard to target",
+                "definition": "Skirmishers count as Stamina 2 versus Shooting and may only be targeted within 12”."
+            },
+            {
+                "name": "Bang",
+                "definition": "All units count as Stamina 1 against Shooting by this unit (Stamina 2 if in cover)."
+            },
+            {
+                "name": "Panic",
+                "definition": "When this unit Shoots, the target unit must take a Courage test regardless of the number of hits inflicted."
+            }
+        ]
+    }
+}
