@@ -183,7 +183,8 @@
                 "hands": 1,
                 "range": 0,
                 "points": 0,
-                "definition": "No special effects."
+                "definition": "No special effects.",
+                "decreaseModelCount": 1
             },
             {
                 "name": "Thrown Weapon",
@@ -191,7 +192,8 @@
                 "range": 0,
                 "points": 0,
                 "strength": 0,
-                "definition": "Strength is same as user's."
+                "definition": "Strength is same as user's.",
+                "decreaseModelCount": 1
             },
             {
                 "name": "Great Weapon",
@@ -204,14 +206,16 @@
                         "stat": "Strength",
                         "modifier": 3
                     }
-                ]
+                ],
+                "decreaseModelCount": 1
             },
             {
                 "name": "Polearm",
                 "hands": 2,
                 "range": 0,
                 "points": 0,
-                "definition": "Can be used to Counterattack as if it was a Ranged Weapon. +1 Strength during a Counterattack."
+                "definition": "Can be used to Counterattack as if it was a Ranged Weapon. +1 Strength during a Counterattack.",
+                "decreaseModelCount": 1
             },
             {
                 "name": "Bow",
@@ -219,28 +223,32 @@
                 "range": 24,
                 "strength": 3,
                 "points": 0,
-                "definition": "May shoot over friendly Gits."
+                "definition": "May shoot over friendly Gits.",
+                "decreaseModelCount": 1
             },
             {
                 "name": "Crossbow",
                 "hands": 2,
                 "range": 30,
                 "points": 0,
-                "strength": 4
+                "strength": 4,
+                "decreaseModelCount": 1
             },
             {
                 "name": "Handgun",
                 "hands": 2,
                 "range": 18,
                 "points": 0,
-                "strength": 6
+                "strength": 6,
+                "decreaseModelCount": 1
             },
             {
                 "name": "Pistol",
                 "hands": 1,
                 "range": 12,
                 "points": 5,
-                "strength": 6
+                "strength": 6,
+                "decreaseModelCount": 1
             },
             {
                 "name": "Blunderbuss",
@@ -248,7 +256,8 @@
                 "range": 12,
                 "strength": 6,
                 "points": 10,
-                "definition": "Makes 1d3 attacks when shooting."
+                "definition": "Makes 1d3 attacks when shooting.",
+                "decreaseModelCount": 1
             },
             {
                 "name": "Rifle",
@@ -256,7 +265,8 @@
                 "range": 24,
                 "strength": 7,
                 "points": 10,
-                "definition": "Comes with a free Hand weapon. (Hand Weapon: 1-Handed, Melee. No special effects.)"
+                "definition": "Comes with a free Hand weapon. (Hand Weapon: 1-Handed, Melee. No special effects.)",
+                "decreaseModelCount": 1
             }
         ],
         "armor": [
@@ -268,7 +278,8 @@
                         "stat": "toughness",
                         "modifier": 1
                     }
-                ]
+                ],
+                "decreaseModelCount": 1
             },
             {
                 "name": "Plate",
@@ -279,7 +290,8 @@
                         "modifier": 2
                     }
                 ],
-                "definition": "-1\" movement."
+                "definition": "-1\" movement.",
+                "decreaseModelCount": 1
             },
             {
                 "name": "Fullplate",
@@ -290,7 +302,8 @@
                         "modifier": 3
                     }
                 ],
-                "definition": "-1\" movement."
+                "definition": "-1\" movement.",
+                "decreaseModelCount": 1
             },
             {
                 "name": "Shield",
@@ -302,7 +315,8 @@
                         "modifier": 1
                     }
                 ],
-                "definition": "Grants a Bonus Attack."
+                "definition": "Grants a Bonus Attack.",
+                "decreaseModelCount": 1
             }
         ]
     }
