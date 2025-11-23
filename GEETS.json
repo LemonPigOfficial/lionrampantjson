@@ -1,0 +1,309 @@
+{
+    "config": {
+        "trackHighestDivision": false
+    },
+    "appVersion": 2,
+    "credit": [],
+    "game": "GEETS!",
+    "usePrimarySecondaryAllianceLevels": false,
+    "stats": [
+        {
+            "name": "Wounds",
+            "abbreviation": "Wounds"
+        },
+        {
+            "name": "Strength",
+            "abbreviation": "Strength"
+        },
+        {
+            "name": "Toughness",
+            "abbreviation": "Toughness"
+        },
+        {
+            "name": "Range",
+            "abbreviation": "Range",
+            "trail": "\""
+        },
+        {
+            "name": "Attacks",
+            "abbreviation": "Attacks"
+        }
+    ],
+    "limits": [],
+    "counts": [],
+    "calculations": [],
+    "additionalPrint": [],
+    "elements": [
+        {
+            "propertyName": "factions",
+            "label": "Force",
+            "type": "faction",
+            "dataSource": "factions",
+            "children": [
+                {
+                    "propertyName": "gits",
+                    "dataSource": "gits",
+                    "label": "Git",
+                    "type": "main",
+                    "children": [
+                        {
+                            "propertyName": "weapons",
+                            "label": "Weapon",
+                            "type": "list",
+                            "dataSource": "weapons"
+                        },
+                        {
+                            "propertyName": "armor",
+                            "label": "Armor",
+                            "type": "list",
+                            "dataSource": "armor"
+                        },
+                        {
+                            "propertyName": "specialRules",
+                            "label": "Special Rules",
+                            "type": "static",
+                            "dataSource": "keywords",
+                            "children": [
+                                {
+                                    "label": "Special Rules",
+                                    "propertyName": "specialRules",
+                                    "type": "static",
+                                    "dataSource": "keywords"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "data": {
+        "factions": [
+            {
+                "name": "Build your Gitband"
+            }
+        ],
+        "equipment": [],
+        "gits": [
+            {
+                "name": "Peasant",
+                "unlimited": true,
+                "factions": [
+                    {
+                        "name": "Build your Gitband"
+                    }
+                ],
+                "wounds": 5,
+                "points": 5,
+                "strength": 2,
+                "toughness": 2,
+                "attacks": 2,
+                "specialRules": [
+                    "Strength in Numbers"
+                ]
+            },
+            {
+                "name": "Man-at-Arms",
+                "unlimited": true,
+                "factions": [
+                    {
+                        "name": "Build your Gitband"
+                    }
+                ],
+                "wounds": 6,
+                "points": 10,
+                "strength": 3,
+                "toughness": 2,
+                "attacks": 3,
+                "specialRules": [
+                    "Death before Embarassment"
+                ]
+            },
+            {
+                "name": "Squire",
+                "unlimited": true,
+                "factions": [
+                    {
+                        "name": "Build your Gitband"
+                    }
+                ],
+                "wounds": 6,
+                "points": 15,
+                "strength": 3,
+                "toughness": 2,
+                "attacks": 4,
+                "specialRules": [
+                    "Squire's Honor"
+                ]
+            },
+            {
+                "name": "Knight",
+                "unlimited": true,
+                "factions": [
+                    {
+                        "name": "Build your Gitband"
+                    }
+                ],
+                "wounds": 7,
+                "points": 25,
+                "strength": 4,
+                "toughness": 3,
+                "attacks": 4,
+                "specialRules": [
+                    "Unstoppable Force",
+                    "Duel of Fate"
+                ]
+            }
+        ],
+        "keywords": [
+            {
+                "name": "Strength in Numbers",
+                "definition": "A Peasant increases their Strength and Toughness by 1 if there is another friendly Peasant within 3\"."
+            },
+            {
+                "name": "Death before Embarassment",
+                "definition": "If a friendly Knight within 6” of a friendly Man-at-Arms would be OOP, the Man-at-Arms is OOP instead."
+            },
+            {
+                "name": "Unstoppable Force",
+                "definition": "When in melee, this Git ignores Toughness modifiers granted by Armor."
+            },
+            {
+                "name": "Squire's Honor",
+                "definition": "This Git may always target Squires or Knights when charging and shooting, even if they are not the closest git."
+            },
+            {
+                "name": "Duel of Fate",
+                "definition": "When in melee against enemy Knights, Knights have +3 to their Strength."
+            }
+        ],
+        "weapons": [
+            {
+                "name": "Hand Weapon",
+                "hands": 1,
+                "range": 0,
+                "points": 0,
+                "definition": "No special effects."
+            },
+            {
+                "name": "Thrown Weapon",
+                "hands": 1,
+                "range": 0,
+                "points": 0,
+                "strength": 0,
+                "definition": "Strength is same as user's."
+            },
+            {
+                "name": "Great Weapon",
+                "hands": 2,
+                "range": 0,
+                "points": 0,
+                "definition": "+3 to Strength when using this weapon.",
+                "modifiesStats": [
+                    {
+                        "stat": "Strength",
+                        "modifier": 3
+                    }
+                ]
+            },
+            {
+                "name": "Polearm",
+                "hands": 2,
+                "range": 0,
+                "points": 0,
+                "definition": "Can be used to Counterattack as if it was a Ranged Weapon. +1 Strength during a Counterattack."
+            },
+            {
+                "name": "Bow",
+                "hands": 2,
+                "range": 24,
+                "strength": 3,
+                "points": 0,
+                "definition": "May shoot over friendly Gits."
+            },
+            {
+                "name": "Crossbow",
+                "hands": 2,
+                "range": 30,
+                "points": 0,
+                "strength": 4
+            },
+            {
+                "name": "Handgun",
+                "hands": 2,
+                "range": 18,
+                "points": 0,
+                "strength": 6
+            },
+            {
+                "name": "Pistol",
+                "hands": 1,
+                "range": 12,
+                "points": 5,
+                "strength": 6
+            },
+            {
+                "name": "Blunderbuss",
+                "hands": 2,
+                "range": 12,
+                "strength": 6,
+                "points": 10,
+                "definition": "Makes 1d3 attacks when shooting."
+            },
+            {
+                "name": "Rifle",
+                "hands": 2,
+                "range": 24,
+                "strength": 7,
+                "points": 10,
+                "definition": "Comes with a free Hand weapon. (Hand Weapon: 1-Handed, Melee. No special effects.)"
+            }
+        ],
+        "armor": [
+            {
+                "name": "Roothide",
+                "points": 5,
+                "modifiesStats": [
+                    {
+                        "stat": "toughness",
+                        "modifier": 1
+                    }
+                ]
+            },
+            {
+                "name": "Plate",
+                "points": 5,
+                "modifiesStats": [
+                    {
+                        "stat": "toughness",
+                        "modifier": 2
+                    }
+                ],
+                "definition": "-1\" movement."
+            },
+            {
+                "name": "Fullplate",
+                "points": 10,
+                "modifiesStats": [
+                    {
+                        "stat": "toughness",
+                        "modifier": 3
+                    }
+                ],
+                "definition": "-1\" movement."
+            },
+            {
+                "name": "Shield",
+                "hands": 1,
+                "points": 0,
+                "modifiesStats": [
+                    {
+                        "stat": "toughness",
+                        "modifier": 1
+                    }
+                ],
+                "definition": "Grants a Bonus Attack."
+            }
+        ]
+    }
+}
