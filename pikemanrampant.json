@@ -693,17 +693,16 @@
                 "points": 3,
                 "attack": 6,
                 "models": 12,
-                "move": 5,
+                "move": 6,
                 "shoot": 0,
                 "courage": 4,
                 "stamina": 2,
-                "attackvalue": 5,
+                "attackvalue": 4,
                 "defencevalue": 4,
                 "shootvalue": 0,
                 "range": 0,
                 "maximummovement": 8,
                 "specialRules": [
-                    "Pike Formation"
                 ],
                 "options": [
                     {
@@ -1007,7 +1006,7 @@
             },
             {
                 "name": "Pike Formation",
-                "definition": "There need to be at least 6 models in the unit to form a Pike Formation. On a Move order, form the unit into a two-rank formation based around a central model. A Pike Formation cannot form in rough terrain or in cover, and it cannot move in this formation. Pike Formations increase the unit’s Stamina by 1 point against Attacks but not Shooting (to 3 for Light Infantry). If an Attack ends with both units still in contact and the Pike Formation is neither Battered or reduced to fewer than 6 models, the enemy must always Retreat (an enemy unit will ‘bounce off’ the Pike Formation). If the unit becomes Battered, must Retreat, or is reduced to fewer than 6 models while in a Pike Formation, the formation is broken."
+                "definition": "There need to be at least 6 models in the unit to form a Pike Formation. On a Move order, form the unit into a two-rank formation based around a central model. A Pike Formation cannot form in rough terrain or in cover, and it cannot move in this formation. Pike Formations increase the unit’s Stamina by 1 point against Attacks but not Shooting (to 4 for Pike Infantry). If an Attack ends with both units still in contact and the Pike Formation is neither Battered or reduced to fewer than 6 models, the enemy must always Retreat (an enemy unit will ‘bounce off’ the Pike Formation). If the unit becomes Battered, must Retreat, or is reduced to fewer than 6 models while in a Pike Formation, the formation is broken."
             },
             {
                 "name": "Flexible",
