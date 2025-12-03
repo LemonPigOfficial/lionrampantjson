@@ -109,7 +109,15 @@
                             "propertyName": "specialRules",
                             "label": "Special Rules",
                             "type": "static",
-                            "dataSource": "keywords"
+                            "dataSource": "keywords",
+                            "children": [
+                                {
+                                    "label": "Special Rules",
+                                    "propertyName": "specialRules",
+                                    "type": "static",
+                                    "dataSource": "keywords"
+                                }
+                            ]
                         },
                         {
                             "singleKey": "leaderUpgrade",
