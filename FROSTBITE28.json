@@ -1,0 +1,295 @@
+{
+    "config": {
+        "trackHighestDivision": false
+    },
+    "appVersion": 2,
+    "credit": [],
+    "game": "GEETS!",
+    "usePrimarySecondaryAllianceLevels": false,
+    "stats": [
+        {
+            "name": "Wounds",
+            "abbreviation": "Wounds"
+        },
+        {
+            "name": "Strength",
+            "abbreviation": "Strength"
+        },
+        {
+            "name": "Toughness",
+            "abbreviation": "Toughness"
+        },
+        {
+            "name": "Warmth",
+            "abbreviation": "Warmth"
+        },
+        {
+            "name": "Range",
+            "abbreviation": "Range",
+            "trail": "\""
+        },
+        {
+            "name": "Attacks",
+            "abbreviation": "Attacks"
+        }
+    ],
+    "limits": [],
+    "counts": [],
+    "calculations": [],
+    "additionalPrint": [],
+    "elements": [
+        {
+            "propertyName": "factions",
+            "label": "Force",
+            "type": "faction",
+            "dataSource": "factions",
+            "children": [
+                {
+                    "propertyName": "soldiers",
+                    "dataSource": "soldiers",
+                    "label": "soldier",
+                    "type": "main",
+                    "children": [
+                        {
+                            "propertyName": "weapons",
+                            "label": "Weapon",
+                            "type": "list",
+                            "dataSource": "weapons"
+                        },
+                        {
+                            "propertyName": "armor",
+                            "label": "Armor",
+                            "type": "list",
+                            "dataSource": "armor"
+                        },
+                        {
+                            "propertyName": "specialRules",
+                            "label": "Special Rules",
+                            "type": "static",
+                            "dataSource": "keywords",
+                            "children": [
+                                {
+                                    "label": "Special Rules",
+                                    "propertyName": "specialRules",
+                                    "type": "static",
+                                    "dataSource": "keywords"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "data": {
+        "factions": [
+            {
+                "name": "Build your Warband"
+            }
+        ],
+        "equipment": [],
+        "soldiers": [
+            {
+                "name": "Peasant",
+                "unlimited": true,
+                "factions": [
+                    {
+                        "name": "Build your Warband"
+                    }
+                ],
+                "wounds": 6,
+                "points": 5,
+                "warmth": 1,
+                "strength": 2,
+                "toughness": 2,
+                "attacks": 2,
+                "specialRules": [
+                    "Strength in Numbers"
+                ]
+            },
+            {
+                "name": "Man-at-Arms",
+                "unlimited": true,
+                "factions": [
+                    {
+                        "name": "Build your Warband"
+                    }
+                ],
+                "wounds": 7,
+                "points": 10,
+                "warmth": 1,
+                "strength": 3,
+                "toughness": 2,
+                "attacks": 3,
+                "specialRules": [
+                    "Death before Embarassment"
+                ]
+            },
+            {
+                "name": "Squire",
+                "unlimited": true,
+                "factions": [
+                    {
+                        "name": "Build your Warband"
+                    }
+                ],
+                "wounds": 8,
+                "points": 15,
+                "warmth": 1,
+                "strength": 3,
+                "toughness": 3,
+                "attacks": 4,
+                "specialRules": [
+                    "Squire's Honor"
+                ]
+            },
+            {
+                "name": "Kindler",
+                "unlimited": true,
+                "factions": [
+                    {
+                        "name": "Build your Warband"
+                    }
+                ],
+                "wounds": 8,
+                "points": 20,
+                "warmth": 1,
+                "strength": 3,
+                "toughness": 3,
+                "attacks": 4,
+                "specialRules": [
+                    "Torch Carrier"
+                ]
+            }
+        ],
+        "keywords": [
+            {
+                "name": "Strength in Numbers",
+                "definition": "At the end of their turn, a Peasant increases their Warmth by 1 if there is another Peasant within 3\"."
+            },
+            {
+                "name": "On the Double",
+                "definition": "Grenadiers may Run 3d3+6\" instead of the usual 1d6+6\". If they do so, they gain no Warmth for running."
+            },
+            {
+                "name": "Torch Carrier",
+                "definition": "A Kindler may lose 1 warmth to ignite a torch. When doing so, they may do one of the two following unique actions. • Hearth: Grant 1 Warmth to all friendly Soldiers within 3\", except other Kindlers. • Blaze: Destroy the weapons of an enemy Soldier within 3\" (leaving them with only Fists until the end of the battle). These actions cannot be performed alongside another action on the same turn.."
+            },
+            {
+                "name": "Squire's Honor",
+                "definition": "This soldier may target whoever they please, as long as they are in range and LoS."
+            }
+        ],
+        "weapons": [
+            {
+                "name": "Hand Weapon",
+                "range": 0,
+                "points": 0,
+                "definition": "No special effects.",
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Thrown Weapon",
+                "range": 0,
+                "points": 0,
+                "strength": 0,
+                "definition": "Strength is same as user's.",
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Great Weapon",
+                "range": 0,
+                "points": 0,
+                "definition": "+2 to Strength when using this weapon.",
+                "modifiesStats": [
+                    {
+                        "stat": "Strength",
+                        "modifier": 2
+                    }
+                ],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Bow",
+                "range": 24,
+                "strength": 4,
+                "points": 0,
+                "definition": "May shoot over friendly soldiers.",
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Crossbow",
+                "range": 36,
+                "points": 0,
+                "strength": 4,
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Handgun",
+                "range": 18,
+                "points": 0,
+                "strength": 6,
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Musket",
+                "range": 36,
+                "strength": 7,
+                "definition": "After firing, perform an additional Warmth check.",
+                "decreaseModelCount": 1
+            }
+        ],
+        "armor": [
+            {
+                "name": "Hide",
+                "points": 5,
+                "modifiesStats": [
+                    {
+                        "stat": "warmth",
+                        "modifier": 1
+                    }
+                ],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Plate",
+                "points": 5,
+                "modifiesStats": [
+                    {
+                        "stat": "toughness",
+                        "modifier": 2
+                    }
+                ],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Fullplate",
+                "points": 10,
+                "modifiesStats": [
+                    {
+                        "stat": "toughness",
+                        "modifier": 2
+                    },
+                    {
+                        "stat": "warmth",
+                        "modifier": 1
+                    }
+                ],
+                "decreaseModelCount": 1
+            },
+            {
+                "name": "Shield",
+                "hands": 1,
+                "points": 0,
+                "modifiesStats": [
+                    {
+                        "stat": "toughness",
+                        "modifier": 1
+                    }
+                ],
+                "definition": "Grants a Bonus Attack. May only be paired with a Hand Weapon.",
+                "decreaseModelCount": 1
+            }
+        ]
+    }
+}
