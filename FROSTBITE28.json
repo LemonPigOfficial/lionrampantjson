@@ -184,14 +184,12 @@
             {
                 "name": "Hand Weapon",
                 "range": 0,
-                "points": 0,
                 "definition": "No special effects.",
                 "decreaseModelCount": 1
             },
             {
                 "name": "Thrown Weapon",
                 "range": 0,
-                "points": 0,
                 "strength": 0,
                 "definition": "Strength is same as user's.",
                 "decreaseModelCount": 1
@@ -199,7 +197,6 @@
             {
                 "name": "Great Weapon",
                 "range": 0,
-                "points": 0,
                 "definition": "+2 to Strength when using this weapon.",
                 "modifiesStats": [
                     {
@@ -213,21 +210,18 @@
                 "name": "Bow",
                 "range": 24,
                 "strength": 4,
-                "points": 0,
                 "definition": "May shoot over friendly soldiers.",
                 "decreaseModelCount": 1
             },
             {
                 "name": "Crossbow",
                 "range": 36,
-                "points": 0,
                 "strength": 4,
                 "decreaseModelCount": 1
             },
             {
                 "name": "Handgun",
                 "range": 18,
-                "points": 0,
                 "strength": 6,
                 "decreaseModelCount": 1
             },
