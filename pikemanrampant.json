@@ -574,7 +574,8 @@
                 "maximummovement": 12,
                 "specialRules": [
                     "Skirmish",
-                    "Panic"
+                    "Panic",
+					"Volley"
                 ],
                 "options": [
                     {
@@ -797,7 +798,8 @@
                 "range": 18,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Go Back to Your Farms"
+                    "Go Back to Your Farms",
+					"Volley"
 					],
                 "options": [
                 ],
@@ -825,7 +827,8 @@
                 "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
-                    "Panic"
+                    "Panic",
+					"Volley"
                 ],
                 "options": [
                     {
@@ -865,6 +868,7 @@
                 "range": 12,
                 "maximummovement": 6,
                 "specialRules": [
+					"Volley"
                 ],
                 "options": [
                     {
@@ -995,7 +999,7 @@
             },
             {
                 "name": "Pike Formation",
-                "definition": "There need to be at least 6 models in the unit to form a Pike Formation. On a Move order, form the unit into a two-rank formation based around a central model. A Pike Formation cannot form in rough terrain or in cover, and it cannot move in this formation. Pike Formations increase the unit’s Stamina by 1 point against Attacks but not Shooting (to 3 for Light Infantry). If an Attack ends with both units still in contact and the Pike Formation is neither Battered or reduced to fewer than 6 models, the enemy must always Retreat (an enemy unit will ‘bounce off’ the Pike Formation). If the unit becomes Battered, must Retreat, or is reduced to fewer than 6 models while in a Pike Formation, the formation is broken. A unit in a Pike formation may not shoot."
+                "definition": "There need to be at least 6 models in the unit to form a Pike Formation. On a Move order, form the unit into a two-rank formation based around a central model. A Pike Formation cannot form in rough terrain or in cover, and it cannot move in this formation. Pike Formations increase the unit’s Stamina by 1 point against Attacks but not Shooting (to 3 for Light Infantry). If an Attack ends with both units still in contact and the Pike Formation is neither Battered or reduced to fewer than 6 models, the enemy must always Retreat (an enemy unit will ‘bounce off’ the Pike Formation). If the unit becomes Battered, must Retreat, or is reduced to fewer than 6 models while in a Pike Formation, the formation is broken."
             },
             {
                 "name": "Flexible",
@@ -1032,6 +1036,10 @@
             {
                 "name": "Panic",
                 "definition": "When this unit Shoots, the target unit must take a Courage test regardless of the number of hits inflicted."
+            },
+            {
+                "name": "Volley",
+                "definition": "May shoot through friendly units."
             }
         ]
     }
