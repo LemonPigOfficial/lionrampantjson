@@ -4459,7 +4459,7 @@
                 ],
                 "unlimited": false,
                 "strengthpoints": 5,
-                "points": 4,
+                "points": 6,
                 "attack": 3,
                 "move": 3,
                 "shoot": 3,
@@ -4490,7 +4490,7 @@
                     {
                         "name": "Saturnine Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Shamsir Jetbike",
@@ -5558,11 +5558,11 @@
             },
             {
                 "name": "Saturnine Terminator Armor",
-                "definition": "Deep Strike, Cumbersome, Heavily Armored and +1 armor, but -1 Movement Distance. Cannot be combined with Jump Pack or Bike.",
+                "definition": "Deep Strike, Cumbersome, Heavily Armored and +1 armor, but -3 Movement Distance. Cannot be combined with Jump Pack or Bike.",
                 "modifiesStats": [
                     {
                         "stat": "maximummovement",
-                        "modifier": -1
+                        "modifier": -3
                     },
                     {
                         "stat": "armor",
