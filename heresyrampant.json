@@ -273,11 +273,17 @@
                     "tiers": [
                         {
                             "name": "Vehicle",
-                            "rank": 1
+                            "rank": 1,
+                            "maximumChildren": {
+                                "leaderUpgrades": 0
+                            }
                         },
                         {
                             "name": "Infantry",
-                            "rank": 1
+                            "rank": 1,
+                            "maximumChildren": {
+                                "leaderUpgrades": 0
+                            }
                         },
                         {
                             "name": "HQ",
@@ -288,7 +294,10 @@
                         },
                         {
                             "name": "Fortification",
-                            "rank": 1
+                            "rank": 1,
+                            "maximumChildren": {
+                                "leaderUpgrades": 0
+                            }
                         }
                     ]
                 }
@@ -2303,7 +2312,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 6,
+                "strengthpoints": 5,
                 "points": 6,
                 "attack": 5,
                 "move": 5,
@@ -2443,7 +2452,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 6,
+                "strengthpoints": 5,
                 "points": 6,
                 "attack": 8,
                 "move": 4,
@@ -4179,7 +4188,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 6,
+                "strengthpoints": 5,
                 "points": 6,
                 "attack": 3,
                 "move": 3,
@@ -4230,7 +4239,7 @@
                     }
                 ],
                 "unlimited": true,
-                "strengthpoints": 6,
+                "strengthpoints": 5,
                 "points": 6,
                 "attack": 3,
                 "move": 3,
@@ -4450,7 +4459,7 @@
                 ],
                 "unlimited": false,
                 "strengthpoints": 5,
-                "points": 6,
+                "points": 4,
                 "attack": 3,
                 "move": 3,
                 "shoot": 3,
@@ -4475,6 +4484,11 @@
                     },
                     {
                         "name": "Terminator Armor",
+                        "chooseOneKey": "a",
+                        "points": 0
+                    },
+                    {
+                        "name": "Saturnine Terminator Armor",
                         "chooseOneKey": "a",
                         "points": 2
                     },
@@ -4547,7 +4561,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 4
+                        "points": 2
                     },
                     {
                         "name": "Fearsome",
@@ -4703,7 +4717,7 @@
                     {
                         "name": "Terminator Armor",
                         "chooseOneKey": "a",
-                        "points": 2
+                        "points": 0
                     },
                     {
                         "name": "Shamsir Jetbike",
@@ -5530,6 +5544,21 @@
             {
                 "name": "Terminator Armor",
                 "definition": "Deep Strike, Cumbersome and Heavily Armored, but -1 Movement Distance. Cannot be combined with Jump Pack or Bike.",
+                "modifiesStats": [
+                    {
+                        "stat": "maximummovement",
+                        "modifier": -1
+                    }
+                ],
+                "specialRules": [
+                    "Deep Strike",
+                    "Cumbersome",
+                    "Heavily Armored"
+                ]
+            },
+            {
+                "name": "Saturnine Terminator Armor",
+                "definition": "Deep Strike, Cumbersome, Heavily Armored and +1 armor, but -1 Movement Distance. Cannot be combined with Jump Pack or Bike.",
                 "modifiesStats": [
                     {
                         "stat": "maximummovement",
