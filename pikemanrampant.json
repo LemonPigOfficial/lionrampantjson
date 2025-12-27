@@ -26,8 +26,8 @@
     "game": "Pikeman Rampant",
     "stats": [
         {
-            "name": "Models",
-            "abbreviation": "Minis"
+            "name": "Strength Points",
+            "abbreviation": "SP"
         },
         {
             "name": "Attack",
@@ -299,7 +299,7 @@
         "leaderUpgrades": [
             {
                 "name": "Aggressive",
-                "definition": "Each turn, one unit within 12” of your Leader’s model may automatically pass an Attack activation without needing to roll dice (may be used on the Leader’s own unit).",
+                "definition": "Each turn, one unit within 12” of your Leader’s unit may automatically pass an Attack activation without needing to roll dice (may be used on the Leader’s own unit).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -323,13 +323,13 @@
             },
             {
                 "name": "Brutal",
-                "definition": "Any unit within 12\" of your Leader's model may automatically pass a failed Rally test by removing 1 model (the very real threat of enforced sacrifice really does make a warrior much bolder).",
+                "definition": "Any unit within 12\" of your Leader's unit may automatically pass a failed Rally test by removing 1 SP (the very real threat of enforced sacrifice really does make a warrior much bolder).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
             {
                 "name": "Commanding",
-                "definition": "Each turn, you may reroll 1 additional failed Move, Attack, or Shoot activation test (no other tests) within 12\" of your Leader's model (meaning you have 2 rerolls each turn).",
+                "definition": "Each turn, you may reroll 1 additional failed Move, Attack, or Shoot activation test (no other tests) within 12\" of your Leader's unit (meaning you have 2 rerolls each turn).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -359,7 +359,7 @@
             },
             {
                 "name": "Impulsive",
-                "definition": "Each turn, one unit within 12\" of your Leader's model may automatically pass a Move activation without needing to roll dice (may be used on the Leader's own unit).",
+                "definition": "Each turn, one unit within 12\" of your Leader's uniy may automatically pass a Move activation without needing to roll dice (may be used on the Leader's own unit).",
                 "factions": [],
                 "decreaseModelCount": 1
             },
@@ -703,6 +703,7 @@
                 "range": 0,
                 "maximummovement": 8,
                 "specialRules": [
+                    "Flexible"
                 ],
                 "options": [
                     {
@@ -775,10 +776,6 @@
                     {
                         "name": "Veteran",
                         "points": 2
-                    },
-                    {
-                        "name": "Armoured",
-                        "points": 2
                     }
 					],
                 "decreaseModelCount": -5
@@ -841,14 +838,6 @@
                     {
                         "name": "Veteran",
                         "points": 2
-                    },
-                    {
-                        "name": "Bayonets",
-                        "points": 1
-                    },
-                    {
-                        "name": "Armoured",
-                        "points": 2
                     }
                 ],
                 "decreaseModelCount": -11
@@ -880,6 +869,10 @@
                 "options": [
                     {
                         "name": "Veteran",
+                        "points": 2
+                    },
+                    {
+                        "name": "Armoured",
                         "points": 2
                     }
                 ],
