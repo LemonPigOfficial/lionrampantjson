@@ -60,6 +60,12 @@
             "dataSource": "factions",
             "children": [
                 {
+                    "propertyName": "additionalRules",
+                    "label": "Additional Rules: ",
+                    "type": "static",
+                    "bullet": true
+                },
+                {
                     "propertyName": "units",
                     "dataSource": "units",
                     "label": "Players",
@@ -235,6 +241,19 @@
                 "skill": 0,
                 "unlimited": true,
                 "points": 400
+            },
+            {
+                "name": "Troll",
+                "factions": [
+                    {
+                        "name": "Orc Way-Clans Team"
+                    }
+                ],
+                "control": 4,
+                "brawl": 5,
+                "skill": 0,
+                "unlimited": true,
+                "points": 500
             },
             {
                 "name": "Dwarf Lineman",
