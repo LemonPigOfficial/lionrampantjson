@@ -63,25 +63,6 @@
                     "label": "Player",
                     "type": "main",
                     "children": [
-                        {
-                            "propertyName": "specialRules",
-                            "label": "Special Rules",
-                            "type": "static",
-                            "dataSource": "keywords",
-                            "children": [
-                                {
-                                    "label": "Special Rules",
-                                    "propertyName": "specialRules",
-                                    "type": "static",
-                                    "dataSource": "keywords"
-                                }
-                            ]
-                        },
-                        {
-                            "propertyName": "options",
-                            "type": "checkbox",
-                            "dataSource": "upgrades"
-                        }
                     ]
                 }
             ]
@@ -613,8 +594,6 @@
                 "unlimited": true,
                 "points": 75
             }
-        ],
-        "upgrades": [],
-        "keywords": []
+        ]
     }
 }
