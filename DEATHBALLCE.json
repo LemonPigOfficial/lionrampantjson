@@ -46,10 +46,6 @@
     "counts": [],
     "calculations": [],
     "validations": [],
-    "leaderConfig": {
-        "elementPropertyName": "units",
-        "usesProperty": "unitType"
-    },
     "additionalPrint": [],
     "additionalDb": [],
     "elements": [
@@ -68,7 +64,7 @@
                 {
                     "propertyName": "units",
                     "dataSource": "units",
-                    "label": "Players",
+                    "label": "Player",
                     "type": "main",
                     "children": [
                         {
