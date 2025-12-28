@@ -1,0 +1,618 @@
+{
+    "config": {
+        "trackHighestDivision": true
+    },
+    "appVersion": 2,
+    "disallowMultipleFactions": true,
+    "colors": {
+        "light": {
+            "primary": "#841912",
+            "background": "#a58650",
+            "pageBackground": "#fffffe",
+            "buttonBackground": "#e2ded3",
+            "primaryBorder": "#841912",
+            "primaryBackgroundColor": "#fffffe"
+        },
+        "dark": {
+            "primary": "#fffffe",
+            "background": "#814143",
+            "pageBackground": "#3b1d1e",
+            "buttonBackground": "#a58650",
+            "primaryBorder": "#841912",
+            "primaryBackgroundColor": "#841912"
+        }
+    },
+    "credit": [],
+    "game": "Deathball: Community Edition",
+    "stats": [
+        {
+            "name": "brawl",
+            "abbreviation": "Brawl"
+        },
+        {
+            "name": "skill",
+            "abbreviation": "Skill"
+        },
+        {
+            "name": "control",
+            "abbreviation": "Control",
+            "trail": "\""
+        }
+    ],
+    "dataTableKeys": [
+        "units"
+    ],
+    "limits": [],
+    "counts": [],
+    "calculations": [],
+    "validations": [],
+    "leaderConfig": {
+        "elementPropertyName": "units",
+        "usesProperty": "unitType"
+    },
+    "additionalPrint": [],
+    "additionalDb": [],
+    "elements": [
+        {
+            "propertyName": "factions",
+            "label": "Faction",
+            "type": "faction",
+            "dataSource": "factions",
+            "children": [
+                {
+                    "propertyName": "units",
+                    "dataSource": "units",
+                    "label": "Players",
+                    "type": "main",
+                    "children": [
+                        {
+                            "propertyName": "specialRules",
+                            "label": "Special Rules",
+                            "type": "static",
+                            "dataSource": "keywords",
+                            "children": [
+                                {
+                                    "label": "Special Rules",
+                                    "propertyName": "specialRules",
+                                    "type": "static",
+                                    "dataSource": "keywords"
+                                }
+                            ]
+                        },
+                        {
+                            "propertyName": "options",
+                            "type": "checkbox",
+                            "dataSource": "upgrades"
+                        }
+                    ],
+                    "tierProperty": "unitType",
+                    "tierData": "unitTypes",
+                    "tiers": [
+                        {
+                            "name": "Player",
+                            "rank": 1
+                        }
+                }
+            ]
+        }
+    ],
+    "data": {
+        "factions": [
+            {
+                "name": "Great Empire Team",
+                "additionalRules": [],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Dwarves Team",
+                "additionalRules": [
+				"All players in a Dwarven team may only take one move action per turn. Dwarf sprinters are surprisingly fast and may move normally."
+				],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Elves Team",
+                "additionalRules": [],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Goblins Team",
+                "additionalRules": [],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Chivalrous Kingdom Team",
+                "additionalRules": [
+				"Though squires are affordable for their skills, they cannot score, not by purpose or accident – the king simply wouldn’t allow a mere peasant to score big!"
+				],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Orc Way-Clans Team",
+                "additionalRules": [
+				"A Troll is a horrendous regenerating beast and cannot by any means be injured."
+				],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Green-Skinned Alliance Team",
+                "additionalRules": [],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Undead Team",
+                "additionalRules": [
+				"Undead cannot be Injured – no mortal wound can put them down for good."
+				],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Ogre Team",
+                "additionalRules": [
+				"Ogre Scorers can use friendly Goblins and Small Goblins as if they were the ball when scoring – if doing so, add Brawl instead of Skill to the roll, though the Goblin/Small Goblin used as the ball becomes injured regardless of whether the score is a success."
+				],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Halfling Team",
+                "additionalRules": [
+				"Halflings are exceptionally lucky and as such the coach of a Halfling team may re-roll up to three dice per round."
+				],
+                "armyBonuses": [],
+                "specialRules": []
+            }
+        ]
+        "units": [
+            {
+                "name": "Empire Lineman",
+                "factions": [
+                    {
+                        "name": "Great Empire Team"
+                    }
+                ],
+				"control": 2,
+				"brawl": 2,
+				"skill": 2,
+                "unlimited": true,
+                "points": 100,
+            },
+            {
+                "name": "Empire Defender",
+                "factions": [
+                    {
+                        "name": "Great Empire Team"
+                    }
+                ],
+				"control": 3,
+				"brawl": 2,
+				"skill": 1,
+                "unlimited": true,
+                "points": 100,
+            },
+            {
+                "name": "Empire Shooter",
+                "factions": [
+                    {
+                        "name": "Great Empire Team"
+                    }
+                ],
+				"control": 1,
+				"brawl": 2,
+				"skill": 3,
+                "unlimited": true,
+                "points": 100,
+            },
+            {
+                "name": "Empire Fanatic",
+                "factions": [
+                    {
+                        "name": "Great Empire Team"
+                    }
+                ],
+				"control": 3,
+				"brawl": 3,
+				"skill": 0,
+                "unlimited": true,
+                "points": 150,
+            },
+            {
+                "name": "Ogre",
+                "factions": [
+                    {
+                        "name": "Great Empire Team"
+                    },
+                    {
+                        "name": "Goblins Team"
+                    },
+                    {
+                        "name": "Orc Way-Clans Team"
+                    }
+                ],
+				"control": 4,
+				"brawl": 4,
+				"skill": 0,
+                "unlimited": true,
+                "points": 400,
+            },
+            {
+                "name": "Dwarf Lineman",
+                "factions": [
+                    {
+                        "name": "Dwarves Team"
+                    }
+                ],
+				"control": 2,
+				"brawl": 3,
+				"skill": 2,
+                "unlimited": true,
+                "points": 125,
+            },
+            {
+                "name": "Dwarf Defender",
+                "factions": [
+                    {
+                        "name": "Dwarves Team"
+                    }
+                ],
+				"control": 3,
+				"brawl": 2,
+				"skill": 2,
+                "unlimited": true,
+                "points": 125,
+            },
+            {
+                "name": "Dwarf Shooter",
+                "factions": [
+                    {
+                        "name": "Dwarves Team"
+                    }
+                ],
+				"control": 2,
+				"brawl": 2,
+				"skill": 3,
+                "unlimited": true,
+                "points": 125,
+            },
+            {
+                "name": "Dwarf Sprinter",
+                "factions": [
+                    {
+                        "name": "Dwarves Team"
+                    }
+                ],
+				"control": 2,
+				"brawl": 2,
+				"skill": 2,
+                "unlimited": true,
+                "points": 125,
+            },
+            {
+                "name": "Magma Dwarf",
+                "factions": [
+                    {
+                        "name": "Dwarves Team"
+                    }
+                ],
+				"control": 3,
+				"brawl": 3,
+				"skill": 1,
+                "unlimited": true,
+                "points": 150,
+            },
+            {
+                "name": "High Elf",
+                "factions": [
+                    {
+                        "name": "Elves Team"
+                    }
+                ],
+				"control": 3,
+				"brawl": 2,
+				"skill": 3,
+                "unlimited": true,
+                "points": 200,
+            },
+            {
+                "name": "Wood Elf",
+                "factions": [
+                    {
+                        "name": "Elves Team"
+                    }
+                ],
+				"control": 3,
+				"brawl": 1,
+				"skill": 4,
+                "unlimited": true,
+                "points": 200,
+            },
+            {
+                "name": "Dark Elf",
+                "factions": [
+                    {
+                        "name": "Elves Team"
+                    }
+                ],
+				"control": 3,
+				"brawl": 3,
+				"skill": 2,
+                "unlimited": true,
+                "points": 200,
+            },
+            {
+                "name": "Goblin",
+                "factions": [
+                    {
+                        "name": "Goblins Team"
+                    },
+                    {
+                        "name": "Green-Skinned Alliance Team"
+                    },
+                    {
+                        "name": "Ogre Team"
+                    }
+                ],
+				"control": 1,
+				"brawl": 2,
+				"skill": 2,
+                "unlimited": true,
+                "points": 75,
+            },
+            {
+                "name": "Small Goblin",
+                "factions": [
+                    {
+                        "name": "Goblins Team"
+                    },
+                    {
+                        "name": "Green-Skinned Alliance Team"
+                    },
+                    {
+                        "name": "Ogre Team"
+                    }
+                ],
+				"control": 1,
+				"brawl": 1,
+				"skill": 1,
+                "unlimited": true,
+                "points": 50,
+            },
+            {
+                "name": "Squire Lineman",
+                "factions": [
+                    {
+                        "name": "Chivalrous Kingdom Team"
+                    }
+                ],
+				"control": 2,
+				"brawl": 2,
+				"skill": 2,
+                "unlimited": true,
+                "points": 75,
+            },
+            {
+                "name": "Squire Defender",
+                "factions": [
+                    {
+                        "name": "Chivalrous Kingdom Team"
+                    }
+                ],
+				"control": 3,
+				"brawl": 2,
+				"skill": 1,
+                "unlimited": true,
+                "points": 75,
+            },
+            {
+                "name": "Squire Shooter",
+                "factions": [
+                    {
+                        "name": "Chivalrous Kingdom Team"
+                    }
+                ],
+				"control": 1,
+				"brawl": 2,
+				"skill": 3,
+                "unlimited": true,
+                "points": 75,
+            },
+            {
+                "name": "Knight Lineman",
+                "factions": [
+                    {
+                        "name": "Chivalrous Kingdom Team"
+                    }
+                ],
+				"control": 2,
+				"brawl": 3,
+				"skill": 2,
+                "unlimited": true,
+                "points": 150,
+            },
+            {
+                "name": "Knight Defender",
+                "factions": [
+                    {
+                        "name": "Chivalrous Kingdom Team"
+                    }
+                ],
+				"control": 4,
+				"brawl": 2,
+				"skill": 1,
+                "unlimited": true,
+                "points": 150,
+            },
+            {
+                "name": "Knight Shooter",
+                "factions": [
+                    {
+                        "name": "Chivalrous Kingdom Team"
+                    }
+                ],
+				"control": 1,
+				"brawl": 2,
+				"skill": 4,
+                "unlimited": true,
+                "points": 150,
+            },
+            {
+                "name": "Orc Yeller",
+                "factions": [
+                    {
+                        "name": "Orc Way-Clans Team"
+                    }
+                ],
+				"control": 3,
+				"brawl": 3,
+				"skill": 1,
+                "unlimited": true,
+                "points": 150,
+            },
+            {
+                "name": "Orc Puncher",
+                "factions": [
+                    {
+                        "name": "Orc Way-Clans Team"
+                    }
+                ],
+				"control": 2,
+				"brawl": 3,
+				"skill": 2,
+                "unlimited": true,
+                "points": 150,
+            },
+            {
+                "name": "Black Orc",
+                "factions": [
+                    {
+                        "name": "Orc Way-Clans Team"
+                    },
+                    {
+                        "name": "Green-Skinned Alliance Team"
+                    }
+                ],
+				"control": 2,
+				"brawl": 3,
+				"skill": 3,
+                "unlimited": true,
+                "points": 200,
+            },
+            {
+                "name": "Undead Lineman",
+                "factions": [
+                    {
+                        "name": "Undead Team"
+                    }
+                ],
+				"control": 2,
+				"brawl": 2,
+				"skill": 2,
+                "unlimited": true,
+                "points": 150,
+            },
+            {
+                "name": "Undead Defender",
+                "factions": [
+                    {
+                        "name": "Undead Team"
+                    }
+                ],
+				"control": 3,
+				"brawl": 2,
+				"skill": 1,
+                "unlimited": true,
+                "points": 150,
+            },
+            {
+                "name": "Undead Shooter",
+                "factions": [
+                    {
+                        "name": "Undead Team"
+                    }
+                ],
+				"control": 1,
+				"brawl": 2,
+				"skill": 3,
+                "unlimited": true,
+                "points": 150,
+            },
+            {
+                "name": "Ghoul",
+                "factions": [
+                    {
+                        "name": "Undead Team"
+                    }
+                ],
+				"control": 3,
+				"brawl": 3,
+				"skill": 0,
+                "unlimited": true,
+                "points": 250,
+            },
+            {
+                "name": "Greater Undead",
+                "factions": [
+                    {
+                        "name": "Undead Team"
+                    }
+                ],
+				"control": 4,
+				"brawl": 4,
+				"skill": 0,
+                "unlimited": true,
+                "points": 500,
+            },
+            {
+                "name": "Ogre Scorer",
+                "factions": [
+                    {
+                        "name": "Ogre Team"
+                    }
+                ],
+				"control": 4,
+				"brawl": 4,
+				"skill": 1,
+                "unlimited": true,
+                "points": 400,
+            },
+            {
+                "name": "Treeman",
+                "factions": [
+                    {
+                        "name": "Halfling Team"
+                    }
+                ],
+				"control": 4,
+				"brawl": 3,
+				"skill": 0,
+                "unlimited": true,
+                "points": 400,
+            },
+            {
+                "name": "Halfling",
+                "factions": [
+                    {
+                        "name": "Halfling Team"
+                    }
+                ],
+				"control": 1,
+				"brawl": 1,
+				"skill": 1,
+                "unlimited": true,
+                "points": 75,
+            }
+        ],
+        "upgrades": [
+        ],
+        "keywords": [
+        ]
+    }
+}
