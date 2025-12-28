@@ -27,17 +27,17 @@
     "game": "Deathball: Community Edition",
     "stats": [
         {
+            "name": "control",
+            "abbreviation": "Control",
+            "trail": "\""
+        },
+        {
             "name": "brawl",
             "abbreviation": "Brawl"
         },
         {
             "name": "skill",
             "abbreviation": "Skill"
-        },
-        {
-            "name": "control",
-            "abbreviation": "Control",
-            "trail": "\""
         }
     ],
     "limits": [],
