@@ -84,14 +84,7 @@
                             "type": "checkbox",
                             "dataSource": "upgrades"
                         }
-                    ],
-                    "tierProperty": "unitType",
-                    "tierData": "unitTypes",
-                    "tiers": [
-                        {
-                            "name": "Player",
-                            "rank": 1
-                        }
+                    ]
                 }
             ]
         }
@@ -107,8 +100,8 @@
             {
                 "name": "Dwarves Team",
                 "additionalRules": [
-				"All players in a Dwarven team may only take one move action per turn. Dwarf sprinters are surprisingly fast and may move normally."
-				],
+                    "All players in a Dwarven team may only take one move action per turn. Dwarf sprinters are surprisingly fast and may move normally."
+                ],
                 "armyBonuses": [],
                 "specialRules": []
             },
@@ -127,16 +120,16 @@
             {
                 "name": "Chivalrous Kingdom Team",
                 "additionalRules": [
-				"Though squires are affordable for their skills, they cannot score, not by purpose or accident – the king simply wouldn’t allow a mere peasant to score big!"
-				],
+                    "Though squires are affordable for their skills, they cannot score, not by purpose or accident – the king simply wouldn’t allow a mere peasant to score big!"
+                ],
                 "armyBonuses": [],
                 "specialRules": []
             },
             {
                 "name": "Orc Way-Clans Team",
                 "additionalRules": [
-				"A Troll is a horrendous regenerating beast and cannot by any means be injured."
-				],
+                    "A Troll is a horrendous regenerating beast and cannot by any means be injured."
+                ],
                 "armyBonuses": [],
                 "specialRules": []
             },
@@ -149,28 +142,28 @@
             {
                 "name": "Undead Team",
                 "additionalRules": [
-				"Undead cannot be Injured – no mortal wound can put them down for good."
-				],
+                    "Undead cannot be Injured – no mortal wound can put them down for good."
+                ],
                 "armyBonuses": [],
                 "specialRules": []
             },
             {
                 "name": "Ogre Team",
                 "additionalRules": [
-				"Ogre Scorers can use friendly Goblins and Small Goblins as if they were the ball when scoring – if doing so, add Brawl instead of Skill to the roll, though the Goblin/Small Goblin used as the ball becomes injured regardless of whether the score is a success."
-				],
+                    "Ogre Scorers can use friendly Goblins and Small Goblins as if they were the ball when scoring – if doing so, add Brawl instead of Skill to the roll, though the Goblin/Small Goblin used as the ball becomes injured regardless of whether the score is a success."
+                ],
                 "armyBonuses": [],
                 "specialRules": []
             },
             {
                 "name": "Halfling Team",
                 "additionalRules": [
-				"Halflings are exceptionally lucky and as such the coach of a Halfling team may re-roll up to three dice per round."
-				],
+                    "Halflings are exceptionally lucky and as such the coach of a Halfling team may re-roll up to three dice per round."
+                ],
                 "armyBonuses": [],
                 "specialRules": []
             }
-        ]
+        ],
         "units": [
             {
                 "name": "Empire Lineman",
@@ -179,11 +172,11 @@
                         "name": "Great Empire Team"
                     }
                 ],
-				"control": 2,
-				"brawl": 2,
-				"skill": 2,
+                "control": 2,
+                "brawl": 2,
+                "skill": 2,
                 "unlimited": true,
-                "points": 100,
+                "points": 100
             },
             {
                 "name": "Empire Defender",
@@ -192,11 +185,11 @@
                         "name": "Great Empire Team"
                     }
                 ],
-				"control": 3,
-				"brawl": 2,
-				"skill": 1,
+                "control": 3,
+                "brawl": 2,
+                "skill": 1,
                 "unlimited": true,
-                "points": 100,
+                "points": 100
             },
             {
                 "name": "Empire Shooter",
@@ -205,11 +198,11 @@
                         "name": "Great Empire Team"
                     }
                 ],
-				"control": 1,
-				"brawl": 2,
-				"skill": 3,
+                "control": 1,
+                "brawl": 2,
+                "skill": 3,
                 "unlimited": true,
-                "points": 100,
+                "points": 100
             },
             {
                 "name": "Empire Fanatic",
@@ -218,11 +211,11 @@
                         "name": "Great Empire Team"
                     }
                 ],
-				"control": 3,
-				"brawl": 3,
-				"skill": 0,
+                "control": 3,
+                "brawl": 3,
+                "skill": 0,
                 "unlimited": true,
-                "points": 150,
+                "points": 150
             },
             {
                 "name": "Ogre",
@@ -237,11 +230,11 @@
                         "name": "Orc Way-Clans Team"
                     }
                 ],
-				"control": 4,
-				"brawl": 4,
-				"skill": 0,
+                "control": 4,
+                "brawl": 4,
+                "skill": 0,
                 "unlimited": true,
-                "points": 400,
+                "points": 400
             },
             {
                 "name": "Dwarf Lineman",
@@ -250,11 +243,11 @@
                         "name": "Dwarves Team"
                     }
                 ],
-				"control": 2,
-				"brawl": 3,
-				"skill": 2,
+                "control": 2,
+                "brawl": 3,
+                "skill": 2,
                 "unlimited": true,
-                "points": 125,
+                "points": 125
             },
             {
                 "name": "Dwarf Defender",
@@ -263,11 +256,11 @@
                         "name": "Dwarves Team"
                     }
                 ],
-				"control": 3,
-				"brawl": 2,
-				"skill": 2,
+                "control": 3,
+                "brawl": 2,
+                "skill": 2,
                 "unlimited": true,
-                "points": 125,
+                "points": 125
             },
             {
                 "name": "Dwarf Shooter",
@@ -276,11 +269,11 @@
                         "name": "Dwarves Team"
                     }
                 ],
-				"control": 2,
-				"brawl": 2,
-				"skill": 3,
+                "control": 2,
+                "brawl": 2,
+                "skill": 3,
                 "unlimited": true,
-                "points": 125,
+                "points": 125
             },
             {
                 "name": "Dwarf Sprinter",
@@ -289,11 +282,11 @@
                         "name": "Dwarves Team"
                     }
                 ],
-				"control": 2,
-				"brawl": 2,
-				"skill": 2,
+                "control": 2,
+                "brawl": 2,
+                "skill": 2,
                 "unlimited": true,
-                "points": 125,
+                "points": 125
             },
             {
                 "name": "Magma Dwarf",
@@ -302,11 +295,11 @@
                         "name": "Dwarves Team"
                     }
                 ],
-				"control": 3,
-				"brawl": 3,
-				"skill": 1,
+                "control": 3,
+                "brawl": 3,
+                "skill": 1,
                 "unlimited": true,
-                "points": 150,
+                "points": 150
             },
             {
                 "name": "High Elf",
@@ -315,11 +308,11 @@
                         "name": "Elves Team"
                     }
                 ],
-				"control": 3,
-				"brawl": 2,
-				"skill": 3,
+                "control": 3,
+                "brawl": 2,
+                "skill": 3,
                 "unlimited": true,
-                "points": 200,
+                "points": 200
             },
             {
                 "name": "Wood Elf",
@@ -328,11 +321,11 @@
                         "name": "Elves Team"
                     }
                 ],
-				"control": 3,
-				"brawl": 1,
-				"skill": 4,
+                "control": 3,
+                "brawl": 1,
+                "skill": 4,
                 "unlimited": true,
-                "points": 200,
+                "points": 200
             },
             {
                 "name": "Dark Elf",
@@ -341,11 +334,11 @@
                         "name": "Elves Team"
                     }
                 ],
-				"control": 3,
-				"brawl": 3,
-				"skill": 2,
+                "control": 3,
+                "brawl": 3,
+                "skill": 2,
                 "unlimited": true,
-                "points": 200,
+                "points": 200
             },
             {
                 "name": "Goblin",
@@ -360,11 +353,11 @@
                         "name": "Ogre Team"
                     }
                 ],
-				"control": 1,
-				"brawl": 2,
-				"skill": 2,
+                "control": 1,
+                "brawl": 2,
+                "skill": 2,
                 "unlimited": true,
-                "points": 75,
+                "points": 75
             },
             {
                 "name": "Small Goblin",
@@ -379,11 +372,11 @@
                         "name": "Ogre Team"
                     }
                 ],
-				"control": 1,
-				"brawl": 1,
-				"skill": 1,
+                "control": 1,
+                "brawl": 1,
+                "skill": 1,
                 "unlimited": true,
-                "points": 50,
+                "points": 50
             },
             {
                 "name": "Squire Lineman",
@@ -392,11 +385,11 @@
                         "name": "Chivalrous Kingdom Team"
                     }
                 ],
-				"control": 2,
-				"brawl": 2,
-				"skill": 2,
+                "control": 2,
+                "brawl": 2,
+                "skill": 2,
                 "unlimited": true,
-                "points": 75,
+                "points": 75
             },
             {
                 "name": "Squire Defender",
@@ -405,11 +398,11 @@
                         "name": "Chivalrous Kingdom Team"
                     }
                 ],
-				"control": 3,
-				"brawl": 2,
-				"skill": 1,
+                "control": 3,
+                "brawl": 2,
+                "skill": 1,
                 "unlimited": true,
-                "points": 75,
+                "points": 75
             },
             {
                 "name": "Squire Shooter",
@@ -418,11 +411,11 @@
                         "name": "Chivalrous Kingdom Team"
                     }
                 ],
-				"control": 1,
-				"brawl": 2,
-				"skill": 3,
+                "control": 1,
+                "brawl": 2,
+                "skill": 3,
                 "unlimited": true,
-                "points": 75,
+                "points": 75
             },
             {
                 "name": "Knight Lineman",
@@ -431,11 +424,11 @@
                         "name": "Chivalrous Kingdom Team"
                     }
                 ],
-				"control": 2,
-				"brawl": 3,
-				"skill": 2,
+                "control": 2,
+                "brawl": 3,
+                "skill": 2,
                 "unlimited": true,
-                "points": 150,
+                "points": 150
             },
             {
                 "name": "Knight Defender",
@@ -444,11 +437,11 @@
                         "name": "Chivalrous Kingdom Team"
                     }
                 ],
-				"control": 4,
-				"brawl": 2,
-				"skill": 1,
+                "control": 4,
+                "brawl": 2,
+                "skill": 1,
                 "unlimited": true,
-                "points": 150,
+                "points": 150
             },
             {
                 "name": "Knight Shooter",
@@ -457,11 +450,11 @@
                         "name": "Chivalrous Kingdom Team"
                     }
                 ],
-				"control": 1,
-				"brawl": 2,
-				"skill": 4,
+                "control": 1,
+                "brawl": 2,
+                "skill": 4,
                 "unlimited": true,
-                "points": 150,
+                "points": 150
             },
             {
                 "name": "Orc Yeller",
@@ -470,11 +463,11 @@
                         "name": "Orc Way-Clans Team"
                     }
                 ],
-				"control": 3,
-				"brawl": 3,
-				"skill": 1,
+                "control": 3,
+                "brawl": 3,
+                "skill": 1,
                 "unlimited": true,
-                "points": 150,
+                "points": 150
             },
             {
                 "name": "Orc Puncher",
@@ -483,11 +476,11 @@
                         "name": "Orc Way-Clans Team"
                     }
                 ],
-				"control": 2,
-				"brawl": 3,
-				"skill": 2,
+                "control": 2,
+                "brawl": 3,
+                "skill": 2,
                 "unlimited": true,
-                "points": 150,
+                "points": 150
             },
             {
                 "name": "Black Orc",
@@ -499,11 +492,11 @@
                         "name": "Green-Skinned Alliance Team"
                     }
                 ],
-				"control": 2,
-				"brawl": 3,
-				"skill": 3,
+                "control": 2,
+                "brawl": 3,
+                "skill": 3,
                 "unlimited": true,
-                "points": 200,
+                "points": 200
             },
             {
                 "name": "Undead Lineman",
@@ -512,11 +505,11 @@
                         "name": "Undead Team"
                     }
                 ],
-				"control": 2,
-				"brawl": 2,
-				"skill": 2,
+                "control": 2,
+                "brawl": 2,
+                "skill": 2,
                 "unlimited": true,
-                "points": 150,
+                "points": 150
             },
             {
                 "name": "Undead Defender",
@@ -525,11 +518,11 @@
                         "name": "Undead Team"
                     }
                 ],
-				"control": 3,
-				"brawl": 2,
-				"skill": 1,
+                "control": 3,
+                "brawl": 2,
+                "skill": 1,
                 "unlimited": true,
-                "points": 150,
+                "points": 150
             },
             {
                 "name": "Undead Shooter",
@@ -538,11 +531,11 @@
                         "name": "Undead Team"
                     }
                 ],
-				"control": 1,
-				"brawl": 2,
-				"skill": 3,
+                "control": 1,
+                "brawl": 2,
+                "skill": 3,
                 "unlimited": true,
-                "points": 150,
+                "points": 150
             },
             {
                 "name": "Ghoul",
@@ -551,11 +544,11 @@
                         "name": "Undead Team"
                     }
                 ],
-				"control": 3,
-				"brawl": 3,
-				"skill": 0,
+                "control": 3,
+                "brawl": 3,
+                "skill": 0,
                 "unlimited": true,
-                "points": 250,
+                "points": 250
             },
             {
                 "name": "Greater Undead",
@@ -564,11 +557,11 @@
                         "name": "Undead Team"
                     }
                 ],
-				"control": 4,
-				"brawl": 4,
-				"skill": 0,
+                "control": 4,
+                "brawl": 4,
+                "skill": 0,
                 "unlimited": true,
-                "points": 500,
+                "points": 500
             },
             {
                 "name": "Ogre Scorer",
@@ -577,11 +570,11 @@
                         "name": "Ogre Team"
                     }
                 ],
-				"control": 4,
-				"brawl": 4,
-				"skill": 1,
+                "control": 4,
+                "brawl": 4,
+                "skill": 1,
                 "unlimited": true,
-                "points": 400,
+                "points": 400
             },
             {
                 "name": "Treeman",
@@ -590,11 +583,11 @@
                         "name": "Halfling Team"
                     }
                 ],
-				"control": 4,
-				"brawl": 3,
-				"skill": 0,
+                "control": 4,
+                "brawl": 3,
+                "skill": 0,
                 "unlimited": true,
-                "points": 400,
+                "points": 400
             },
             {
                 "name": "Halfling",
@@ -603,16 +596,14 @@
                         "name": "Halfling Team"
                     }
                 ],
-				"control": 1,
-				"brawl": 1,
-				"skill": 1,
+                "control": 1,
+                "brawl": 1,
+                "skill": 1,
                 "unlimited": true,
-                "points": 75,
+                "points": 75
             }
         ],
-        "upgrades": [
-        ],
-        "keywords": [
-        ]
+        "upgrades": [],
+        "keywords": []
     }
 }
