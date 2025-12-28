@@ -456,10 +456,10 @@
                     }
                 ],
                 "control": 3,
-                "brawl": 3,
+                "brawl": 2,
                 "skill": 1,
                 "unlimited": true,
-                "points": 150
+                "points": 100
             },
             {
                 "name": "Orc Puncher",
@@ -470,9 +470,22 @@
                 ],
                 "control": 2,
                 "brawl": 3,
+                "skill": 1,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Orc Scoreboss",
+                "factions": [
+                    {
+                        "name": "Orc Way-Clans Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 3,
                 "skill": 2,
                 "unlimited": true,
-                "points": 150
+                "points": 100
             },
             {
                 "name": "Black Orc",
