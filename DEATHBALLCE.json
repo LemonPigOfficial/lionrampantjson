@@ -1,8 +1,9 @@
 {
     "config": {
-        "trackHighestDivision": true
+        "trackHighestDivision": false
     },
     "appVersion": 2,
+    "usePrimarySecondaryAllianceLevels": false,
     "disallowMultipleFactions": true,
     "colors": {
         "light": {
@@ -39,15 +40,10 @@
             "trail": "\""
         }
     ],
-    "dataTableKeys": [
-        "units"
-    ],
     "limits": [],
     "counts": [],
     "calculations": [],
-    "validations": [],
     "additionalPrint": [],
-    "additionalDb": [],
     "elements": [
         {
             "propertyName": "factions",
