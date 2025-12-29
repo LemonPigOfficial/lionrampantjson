@@ -851,7 +851,7 @@
                 "name": "Norn Brawler",
                 "factions": [
                     {
-                        "name": "Great Empire Team"
+                        "name": "Norn Team"
                     }
                 ],
                 "control": 2,
@@ -864,7 +864,7 @@
                 "name": "Norn Defender",
                 "factions": [
                     {
-                        "name": "Great Empire Team"
+                        "name": "Norn Team"
                     }
                 ],
                 "control": 3,
@@ -877,7 +877,7 @@
                 "name": "Norn Shooter",
                 "factions": [
                     {
-                        "name": "Great Empire Team"
+                        "name": "Norn Team"
                     }
                 ],
                 "control": 1,
@@ -890,7 +890,7 @@
                 "name": "Norn Chief-Captain",
                 "factions": [
                     {
-                        "name": "Great Empire Team"
+                        "name": "Norn Team"
                     }
                 ],
                 "control": 3,
