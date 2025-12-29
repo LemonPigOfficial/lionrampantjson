@@ -233,8 +233,8 @@
                     }
                 ],
                 "control": 2,
-                "brawl": 4,
-                "skill": 0,
+                "brawl": 5,
+                "skill": 1,
                 "unlimited": true,
                 "points": 250
             },
@@ -608,8 +608,8 @@
                     }
                 ],
                 "control": 2,
-                "brawl": 4,
-                "skill": 2,
+                "brawl": 5,
+                "skill": 3,
                 "unlimited": true,
                 "points": 300
             },
@@ -705,15 +705,15 @@
                 "points": 75
             },
             {
-                "name": "Ratman Assassin",
+                "name": "Ratman Veteran",
                 "factions": [
                     {
                         "name": "Ratmen Team"
                     }
                 ],
                 "control": 2,
-                "brawl": 4,
-                "skill": 2,
+                "brawl": 3,
+                "skill": 3,
                 "unlimited": true,
                 "points": 200
             },
