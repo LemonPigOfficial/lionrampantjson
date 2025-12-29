@@ -62,8 +62,7 @@
                     "dataSource": "units",
                     "label": "Player",
                     "type": "main",
-                    "children": [
-                    ]
+                    "children": []
                 }
             ]
         }
@@ -79,7 +78,7 @@
             {
                 "name": "Dwarves Team",
                 "additionalRules": [
-                    "All players in a Dwarven team may only take one move action per turn. Dwarf sprinters are surprisingly fast and may move normally."
+                    "All players in a Dwarven team may only take one move action per turn."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -139,6 +138,54 @@
                 "additionalRules": [
                     "Halflings are exceptionally lucky and as such the coach of a Halfling team may re-roll up to three dice per round."
                 ],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Jade Empire Team",
+                "additionalRules": [],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Ratmen Team",
+                "additionalRules": [],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Havoc Team",
+                "additionalRules": [],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Havoc Dwarves Team",
+                "additionalRules": [
+                    "If a Hobgoblin Slave manages to score, they are beat by the Dwarfs and injured. Injured Hobgoblin Slaves cannot score. Additionally, a Havoc Dwarves team cannot contain more than 10 Hobgoblin Slaves."
+                ],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Vampire Team",
+                "additionalRules": [
+                    "Undead cannot be Injured – no mortal wound can put them down for good."
+                ],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Norn Team",
+                "additionalRules": [
+                    "A Norn team must have exactly one Tribe Captain – no more, no less. Otherwise they get jealous!"
+                ],
+                "armyBonuses": [],
+                "specialRules": []
+            },
+            {
+                "name": "Saurian Team",
+                "additionalRules": [],
                 "armyBonuses": [],
                 "specialRules": []
             }
@@ -206,6 +253,9 @@
                         "name": "Goblins Team"
                     },
                     {
+                        "name": "Ratmen Team"
+                    },
+                    {
                         "name": "Orc Way-Clans Team"
                     }
                 ],
@@ -233,6 +283,9 @@
                 "factions": [
                     {
                         "name": "Dwarves Team"
+                    },
+                    {
+                        "name": "Havoc Dwarves Team"
                     }
                 ],
                 "control": 2,
@@ -246,6 +299,9 @@
                 "factions": [
                     {
                         "name": "Dwarves Team"
+                    },
+                    {
+                        "name": "Havoc Dwarves Team"
                     }
                 ],
                 "control": 3,
@@ -259,6 +315,9 @@
                 "factions": [
                     {
                         "name": "Dwarves Team"
+                    },
+                    {
+                        "name": "Havoc Dwarves Team"
                     }
                 ],
                 "control": 2,
@@ -268,15 +327,15 @@
                 "points": 125
             },
             {
-                "name": "Dwarf Sprinter",
+                "name": "Dwarf Drunkard",
                 "factions": [
                     {
                         "name": "Dwarves Team"
                     }
                 ],
-                "control": 2,
-                "brawl": 2,
-                "skill": 2,
+                "control": 1,
+                "brawl": 3,
+                "skill": 3,
                 "unlimited": true,
                 "points": 125
             },
@@ -291,7 +350,7 @@
                 "brawl": 3,
                 "skill": 1,
                 "unlimited": true,
-                "points": 150
+                "points": 125
             },
             {
                 "name": "High Elf",
@@ -606,6 +665,317 @@
                 "skill": 1,
                 "unlimited": true,
                 "points": 75
+            },
+            {
+                "name": "Empire Jade Lineman",
+                "factions": [
+                    {
+                        "name": "Jade Empire Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 2,
+                "skill": 3,
+                "unlimited": true,
+                "points": 150
+            },
+            {
+                "name": "Empire Jade Defender",
+                "factions": [
+                    {
+                        "name": "Jade Empire Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 2,
+                "skill": 2,
+                "unlimited": true,
+                "points": 150
+            },
+            {
+                "name": "Empire Jade Shooter",
+                "factions": [
+                    {
+                        "name": "Jade Empire Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 2,
+                "skill": 4,
+                "unlimited": true,
+                "points": 150
+            },
+            {
+                "name": "Empire Peasant",
+                "factions": [
+                    {
+                        "name": "Jade Empire Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 0,
+                "skill": 1,
+                "unlimited": true,
+                "points": 50
+            },
+            {
+                "name": "Ratman",
+                "factions": [
+                    {
+                        "name": "Ratmen Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 1,
+                "skill": 2,
+                "unlimited": true,
+                "points": 75
+            },
+            {
+                "name": "Ratman Assassin",
+                "factions": [
+                    {
+                        "name": "Ratmen Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 4,
+                "skill": 2,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Havoc Lineman",
+                "factions": [
+                    {
+                        "name": "Havoc Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 4,
+                "skill": 2,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Havoc Defender",
+                "factions": [
+                    {
+                        "name": "Havoc Team"
+                    }
+                ],
+                "control": 4,
+                "brawl": 2,
+                "skill": 2,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Havoc Shooter",
+                "factions": [
+                    {
+                        "name": "Havoc Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 2,
+                "skill": 4,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Havoc Barbarian Brawler",
+                "factions": [
+                    {
+                        "name": "Havoc Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 3,
+                "skill": 2,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Havoc Barbarian Shooter",
+                "factions": [
+                    {
+                        "name": "Havoc Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 2,
+                "skill": 3,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Bull Centaur",
+                "factions": [
+                    {
+                        "name": "Havoc Dwarves Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 4,
+                "skill": 2,
+                "unlimited": true,
+                "points": 400
+            },
+            {
+                "name": "Hobgoblin Slave",
+                "factions": [
+                    {
+                        "name": "Havoc Dwarves Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 2,
+                "skill": 2,
+                "unlimited": true,
+                "points": 50
+            },
+            {
+                "name": "Vampire Lineman",
+                "factions": [
+                    {
+                        "name": "Vampire Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 3,
+                "skill": 2,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Vampire Defender",
+                "factions": [
+                    {
+                        "name": "Vampire Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 2,
+                "skill": 2,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Vampire Shooter",
+                "factions": [
+                    {
+                        "name": "Vampire Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 2,
+                "skill": 3,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Norn Brawler",
+                "factions": [
+                    {
+                        "name": "Great Empire Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 3,
+                "skill": 1,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Norn Defender",
+                "factions": [
+                    {
+                        "name": "Great Empire Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 2,
+                "skill": 1,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Norn Shooter",
+                "factions": [
+                    {
+                        "name": "Great Empire Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 2,
+                "skill": 3,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Norn Chief-Captain",
+                "factions": [
+                    {
+                        "name": "Great Empire Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 3,
+                "skill": 3,
+                "points": 200
+            },
+            {
+                "name": "Gecko",
+                "factions": [
+                    {
+                        "name": "Saurian Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 1,
+                "skill": 2,
+                "unlimited": true,
+                "points": 75
+            },
+            {
+                "name": "Chameleon",
+                "factions": [
+                    {
+                        "name": "Saurian Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 1,
+                "skill": 2,
+                "unlimited": true,
+                "points": 75
+            },
+            {
+                "name": "Saurian",
+                "factions": [
+                    {
+                        "name": "Saurian Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 3,
+                "skill": 3,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Gator",
+                "factions": [
+                    {
+                        "name": "Saurian Team"
+                    }
+                ],
+                "control": 4,
+                "brawl": 4,
+                "skill": 1,
+                "unlimited": true,
+                "points": 400
             }
         ]
     }
