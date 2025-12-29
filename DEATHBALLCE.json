@@ -62,6 +62,9 @@
             ]
         }
     ],
+    "dataTableKeys": [
+        "units"
+    ],
     "data": {
         "factions": [
             {
