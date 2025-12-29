@@ -128,7 +128,7 @@
             {
                 "name": "Ogre Team",
                 "additionalRules": [
-                    "Ogre Scorers can use friendly Goblins and Small Goblins as if they were the ball when scoring – if doing so, add Brawl instead of Skill to the roll, though the Goblin/Small Goblin used as the ball becomes injured regardless of whether the score is a success."
+                    "Ogre Scorers can use friendly Goblins and Small Goblins within 1” as if they were the ball when shooting to score – if doing so, add Brawl instead of Skill to the roll, though the Goblin/Small Goblin used as the ball becomes injured regardless of whether the score is a success."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
@@ -262,11 +262,11 @@
                         "name": "Orc Way-Clans Team"
                     }
                 ],
-                "control": 4,
+                "control": 2,
                 "brawl": 4,
                 "skill": 0,
                 "unlimited": true,
-                "points": 400
+                "points": 250
             },
             {
                 "name": "Troll",
@@ -637,11 +637,11 @@
                         "name": "Ogre Team"
                     }
                 ],
-                "control": 4,
+                "control": 2,
                 "brawl": 4,
-                "skill": 1,
+                "skill": 2,
                 "unlimited": true,
-                "points": 400
+                "points": 300
             },
             {
                 "name": "Treeman",
