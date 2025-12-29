@@ -755,8 +755,8 @@
                     }
                 ],
                 "control": 2,
-                "brawl": 4,
-                "skill": 2,
+                "brawl": 3,
+                "skill": 3,
                 "unlimited": true,
                 "points": 200
             },
