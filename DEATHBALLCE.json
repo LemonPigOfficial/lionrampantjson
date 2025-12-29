@@ -23,7 +23,6 @@
             "primaryBackgroundColor": "#841912"
         }
     },
-    "credit": [],
     "game": "Deathball: Community Edition",
     "stats": [
         {
@@ -40,10 +39,6 @@
             "abbreviation": "Skill"
         }
     ],
-    "limits": [],
-    "counts": [],
-    "calculations": [],
-    "additionalPrint": [],
     "elements": [
         {
             "propertyName": "factions",
