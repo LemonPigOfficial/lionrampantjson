@@ -65,6 +65,10 @@
     "dataTableKeys": [
         "units"
     ],
+    "limits": [],
+    "counts": [],
+    "calculations": [],
+    "validations": [],
     "data": {
         "factions": [
             {
