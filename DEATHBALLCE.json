@@ -69,6 +69,8 @@
     "counts": [],
     "calculations": [],
     "validations": [],
+    "additionalDb": [],
+    "additionalPrint": [],
     "data": {
         "factions": [
             {
