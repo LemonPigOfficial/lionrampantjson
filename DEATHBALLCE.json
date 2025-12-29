@@ -162,7 +162,7 @@
             {
                 "name": "Havoc Dwarves Team",
                 "additionalRules": [
-                    "If a Hobgoblin Slave manages to score, they are beat by the Dwarfs and injured. Injured Hobgoblin Slaves cannot score. Additionally, a Havoc Dwarves team cannot contain more than 10 Hobgoblin Slaves."
+                    "All players in a Dwarven team may only take one move action per turn. If a Hobgoblin Slave manages to score, they are beat by the Dwarfs and injured. Injured Hobgoblin Slaves cannot score. Additionally, a Havoc Dwarves team cannot contain more than 10 Hobgoblin Slaves."
                 ],
                 "armyBonuses": [],
                 "specialRules": []
