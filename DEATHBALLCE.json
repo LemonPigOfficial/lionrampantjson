@@ -326,7 +326,7 @@
                 "points": 100
             },
             {
-                "name": "High Elf",
+                "name": "Elf Lineman",
                 "factions": [
                     {
                         "name": "Elves Team"
@@ -339,7 +339,7 @@
                 "points": 200
             },
             {
-                "name": "Wood Elf",
+                "name": "Elf Scorer",
                 "factions": [
                     {
                         "name": "Elves Team"
@@ -352,7 +352,20 @@
                 "points": 200
             },
             {
-                "name": "Dark Elf",
+                "name": "Elf Runner",
+                "factions": [
+                    {
+                        "name": "Elves Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 3,
+                "skill": 4,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Elf Brawler",
                 "factions": [
                     {
                         "name": "Elves Team"
