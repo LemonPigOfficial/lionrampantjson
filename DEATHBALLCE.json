@@ -295,7 +295,7 @@
                 "brawl": 3,
                 "skill": 2,
                 "unlimited": true,
-                "points": 125
+                "points": 100
             },
             {
                 "name": "Dwarf Defender",
@@ -311,7 +311,7 @@
                 "brawl": 2,
                 "skill": 2,
                 "unlimited": true,
-                "points": 125
+                "points": 100
             },
             {
                 "name": "Dwarf Shooter",
@@ -327,7 +327,7 @@
                 "brawl": 2,
                 "skill": 3,
                 "unlimited": true,
-                "points": 125
+                "points": 100
             },
             {
                 "name": "Dwarf Drunkard",
@@ -340,7 +340,7 @@
                 "brawl": 3,
                 "skill": 3,
                 "unlimited": true,
-                "points": 125
+                "points": 100
             },
             {
                 "name": "Magma Dwarf",
@@ -353,7 +353,7 @@
                 "brawl": 3,
                 "skill": 1,
                 "unlimited": true,
-                "points": 125
+                "points": 100
             },
             {
                 "name": "High Elf",
@@ -680,7 +680,7 @@
                 "brawl": 2,
                 "skill": 3,
                 "unlimited": true,
-                "points": 150
+                "points": 125
             },
             {
                 "name": "Empire Jade Defender",
@@ -693,7 +693,7 @@
                 "brawl": 2,
                 "skill": 2,
                 "unlimited": true,
-                "points": 150
+                "points": 125
             },
             {
                 "name": "Empire Jade Shooter",
@@ -706,7 +706,7 @@
                 "brawl": 2,
                 "skill": 4,
                 "unlimited": true,
-                "points": 150
+                "points": 125
             },
             {
                 "name": "Empire Peasant",
