@@ -42,7 +42,7 @@
     "elements": [
         {
             "propertyName": "factions",
-            "label": "Faction",
+            "label": "Team",
             "type": "faction",
             "dataSource": "factions",
             "children": [
@@ -66,123 +66,89 @@
         "factions": [
             {
                 "name": "Great Empire Team",
-                "additionalRules": [],
-                "armyBonuses": [],
-                "specialRules": []
+                "additionalRules": []
             },
             {
                 "name": "Dwarves Team",
                 "additionalRules": [
                     "All players in a Dwarven team may only take one move action per turn."
-                ],
-                "armyBonuses": [],
-                "specialRules": []
+                ]
             },
             {
                 "name": "Elves Team",
-                "additionalRules": [],
-                "armyBonuses": [],
-                "specialRules": []
+                "additionalRules": []
             },
             {
                 "name": "Goblins Team",
-                "additionalRules": [],
-                "armyBonuses": [],
-                "specialRules": []
+                "additionalRules": []
             },
             {
                 "name": "Chivalrous Kingdom Team",
                 "additionalRules": [
                     "Though squires are affordable for their skills, they cannot score, not by purpose or accident – the king simply wouldn’t allow a mere peasant to score big!"
-                ],
-                "armyBonuses": [],
-                "specialRules": []
+                ]
             },
             {
                 "name": "Orc Way-Clans Team",
                 "additionalRules": [
                     "A Troll is a horrendous regenerating beast and cannot by any means be injured."
-                ],
-                "armyBonuses": [],
-                "specialRules": []
+                ]
             },
             {
                 "name": "Green-Skinned Alliance Team",
-                "additionalRules": [],
-                "armyBonuses": [],
-                "specialRules": []
+                "additionalRules": []
             },
             {
                 "name": "Undead Team",
                 "additionalRules": [
                     "Undead cannot be Injured – no mortal wound can put them down for good."
-                ],
-                "armyBonuses": [],
-                "specialRules": []
+                ]
             },
             {
                 "name": "Ogre Team",
                 "additionalRules": [
                     "Ogre Scorers can use friendly Goblins and Small Goblins within 1” as if they were the ball when shooting to score – if doing so, add Brawl instead of Skill to the roll, though the Goblin/Small Goblin used as the ball becomes injured regardless of whether the score is a success."
-                ],
-                "armyBonuses": [],
-                "specialRules": []
+                ]
             },
             {
                 "name": "Halfling Team",
                 "additionalRules": [
                     "Halflings are exceptionally lucky and as such the coach of a Halfling team may re-roll up to three dice per round."
-                ],
-                "armyBonuses": [],
-                "specialRules": []
+                ]
             },
             {
                 "name": "Jade Empire Team",
-                "additionalRules": [],
-                "armyBonuses": [],
-                "specialRules": []
+                "additionalRules": []
             },
             {
                 "name": "Ratmen Team",
-                "additionalRules": [],
-                "armyBonuses": [],
-                "specialRules": []
+                "additionalRules": []
             },
             {
                 "name": "Havoc Team",
-                "additionalRules": [],
-                "armyBonuses": [],
-                "specialRules": []
+                "additionalRules": []
             },
             {
                 "name": "Havoc Dwarves Team",
                 "additionalRules": [
                     "All players in a Dwarven team may only take one move action per turn. If a Hobgoblin Slave manages to score, they are beat by the Dwarfs and injured. Injured Hobgoblin Slaves cannot score. Additionally, a Havoc Dwarves team cannot contain more than 10 Hobgoblin Slaves."
-                ],
-                "armyBonuses": [],
-                "specialRules": []
+                ]
             },
             {
                 "name": "Vampire Team",
                 "additionalRules": [
                     "Undead cannot be Injured – no mortal wound can put them down for good."
-                ],
-                "armyBonuses": [],
-                "specialRules": []
+                ]
             },
             {
                 "name": "Norn Team",
                 "additionalRules": [
                     "A Norn team must have exactly one Tribe Captain – no more, no less. Otherwise they get jealous!"
-                ],
-                "armyBonuses": [],
-                "specialRules": []
+                ]
             },
             {
                 "name": "Saurian Team",
-                "additionalRules": [],
-                "armyBonuses": [],
-                "specialRules": []
+                "additionalRules": []
             }
         ],
         "units": [
