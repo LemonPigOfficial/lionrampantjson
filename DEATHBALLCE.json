@@ -31,6 +31,11 @@
             "trail": "\""
         },
         {
+            "name": "move",
+            "abbreviation": "Movement",
+            "trail": "\""
+        },
+        {
             "name": "brawl",
             "abbreviation": "Brawl"
         },
@@ -80,7 +85,6 @@
             {
                 "name": "Dwarves Team",
                 "additionalRules": [
-                    "All players in a Dwarven team may only take one move action per turn."
                 ]
             },
             {
@@ -140,7 +144,7 @@
             {
                 "name": "Havoc Dwarves Team",
                 "additionalRules": [
-                    "All players in a Dwarven team may only take one move action per turn. If a Hobgoblin Slave manages to score, they are beat by the Dwarfs and injured. Injured Hobgoblin Slaves cannot score. Additionally, a Havoc Dwarves team cannot contain more than 10 Hobgoblin Slaves."
+                    "A Havoc Dwarves team cannot contain more than 6 Hobgoblin Slaves."
                 ]
             },
             {
@@ -158,6 +162,18 @@
             {
                 "name": "Saurian Team",
                 "additionalRules": []
+            },
+            {
+                "name": "Havoc Chosen Team",
+                "additionalRules": []
+            },
+            {
+                "name": "War Disciples Team",
+                "additionalRules": []
+            },
+            {
+                "name": "Plague Disciples Team",
+                "additionalRules": []
             }
         ],
         "units": [
@@ -171,6 +187,7 @@
                 "control": 2,
                 "brawl": 2,
                 "skill": 2,
+				"move": 5,
                 "unlimited": true,
                 "points": 100
             },
@@ -184,6 +201,7 @@
                 "control": 3,
                 "brawl": 2,
                 "skill": 1,
+				"move": 5,
                 "unlimited": true,
                 "points": 100
             },
@@ -197,6 +215,7 @@
                 "control": 1,
                 "brawl": 2,
                 "skill": 3,
+				"move": 5,
                 "unlimited": true,
                 "points": 100
             },
@@ -210,6 +229,7 @@
                 "control": 3,
                 "brawl": 3,
                 "skill": 0,
+				"move": 8,
                 "unlimited": true,
                 "points": 150
             },
@@ -235,6 +255,7 @@
                 "control": 2,
                 "brawl": 5,
                 "skill": 1,
+				"move": 4,
                 "unlimited": true,
                 "points": 250
             },
@@ -245,11 +266,12 @@
                         "name": "Orc Way-Clans Team"
                     }
                 ],
-                "control": 4,
+                "control": 3,
                 "brawl": 5,
                 "skill": 0,
+				"move": 6,
                 "unlimited": true,
-                "points": 500
+                "points": 350
             },
             {
                 "name": "Dwarf Lineman",
@@ -264,6 +286,7 @@
                 "control": 2,
                 "brawl": 3,
                 "skill": 2,
+				"move": 3,
                 "unlimited": true,
                 "points": 100
             },
@@ -280,6 +303,7 @@
                 "control": 3,
                 "brawl": 2,
                 "skill": 2,
+				"move": 3,
                 "unlimited": true,
                 "points": 100
             },
@@ -296,6 +320,7 @@
                 "control": 2,
                 "brawl": 2,
                 "skill": 3,
+				"move": 3,
                 "unlimited": true,
                 "points": 100
             },
@@ -309,6 +334,7 @@
                 "control": 1,
                 "brawl": 3,
                 "skill": 3,
+				"move": 3,
                 "unlimited": true,
                 "points": 100
             },
@@ -322,6 +348,7 @@
                 "control": 3,
                 "brawl": 3,
                 "skill": 1,
+				"move": 7,
                 "unlimited": true,
                 "points": 100
             },
@@ -335,6 +362,7 @@
                 "control": 3,
                 "brawl": 2,
                 "skill": 3,
+				"move": 6,
                 "unlimited": true,
                 "points": 200
             },
@@ -348,6 +376,7 @@
                 "control": 3,
                 "brawl": 1,
                 "skill": 4,
+				"move": 6,
                 "unlimited": true,
                 "points": 200
             },
@@ -360,7 +389,8 @@
                 ],
                 "control": 1,
                 "brawl": 3,
-                "skill": 4,
+                "skill": 2,
+				"move": 8,
                 "unlimited": true,
                 "points": 200
             },
@@ -374,6 +404,7 @@
                 "control": 3,
                 "brawl": 3,
                 "skill": 2,
+				"move": 6,
                 "unlimited": true,
                 "points": 200
             },
@@ -393,6 +424,7 @@
                 "control": 1,
                 "brawl": 2,
                 "skill": 2,
+				"move": 6,
                 "unlimited": true,
                 "points": 75
             },
@@ -412,6 +444,7 @@
                 "control": 1,
                 "brawl": 1,
                 "skill": 1,
+				"move": 4,
                 "unlimited": true,
                 "points": 50
             },
@@ -425,6 +458,7 @@
                 "control": 2,
                 "brawl": 2,
                 "skill": 2,
+				"move": 5,
                 "unlimited": true,
                 "points": 75
             },
@@ -438,6 +472,7 @@
                 "control": 3,
                 "brawl": 2,
                 "skill": 1,
+				"move": 5,
                 "unlimited": true,
                 "points": 75
             },
@@ -451,6 +486,7 @@
                 "control": 1,
                 "brawl": 2,
                 "skill": 3,
+				"move": 5,
                 "unlimited": true,
                 "points": 75
             },
@@ -464,6 +500,7 @@
                 "control": 2,
                 "brawl": 3,
                 "skill": 2,
+				"move": 4,
                 "unlimited": true,
                 "points": 150
             },
@@ -477,6 +514,7 @@
                 "control": 4,
                 "brawl": 2,
                 "skill": 1,
+				"move": 4,
                 "unlimited": true,
                 "points": 150
             },
@@ -490,6 +528,7 @@
                 "control": 1,
                 "brawl": 2,
                 "skill": 4,
+				"move": 4,
                 "unlimited": true,
                 "points": 150
             },
@@ -503,6 +542,7 @@
                 "control": 3,
                 "brawl": 2,
                 "skill": 1,
+				"move": 6,
                 "unlimited": true,
                 "points": 100
             },
@@ -516,6 +556,7 @@
                 "control": 2,
                 "brawl": 3,
                 "skill": 1,
+				"move": 6,
                 "unlimited": true,
                 "points": 100
             },
@@ -529,6 +570,7 @@
                 "control": 1,
                 "brawl": 3,
                 "skill": 2,
+				"move": 6,
                 "unlimited": true,
                 "points": 100
             },
@@ -545,6 +587,7 @@
                 "control": 2,
                 "brawl": 3,
                 "skill": 3,
+				"move": 5,
                 "unlimited": true,
                 "points": 200
             },
@@ -558,6 +601,7 @@
                 "control": 2,
                 "brawl": 2,
                 "skill": 2,
+				"move": 5,
                 "unlimited": true,
                 "points": 150
             },
@@ -571,6 +615,7 @@
                 "control": 3,
                 "brawl": 2,
                 "skill": 1,
+				"move": 5,
                 "unlimited": true,
                 "points": 150
             },
@@ -584,6 +629,7 @@
                 "control": 1,
                 "brawl": 2,
                 "skill": 3,
+				"move": 5,
                 "unlimited": true,
                 "points": 150
             },
@@ -597,6 +643,7 @@
                 "control": 3,
                 "brawl": 3,
                 "skill": 0,
+				"move": 6,
                 "unlimited": true,
                 "points": 250
             },
@@ -610,8 +657,9 @@
                 "control": 4,
                 "brawl": 4,
                 "skill": 0,
+				"move": 6,
                 "unlimited": true,
-                "points": 500
+                "points": 350
             },
             {
                 "name": "Ogre Scorer",
@@ -623,6 +671,7 @@
                 "control": 2,
                 "brawl": 5,
                 "skill": 3,
+				"move": 4,
                 "unlimited": true,
                 "points": 300
             },
@@ -636,6 +685,7 @@
                 "control": 4,
                 "brawl": 3,
                 "skill": 0,
+				"move": 4,
                 "unlimited": true,
                 "points": 400
             },
@@ -649,6 +699,7 @@
                 "control": 1,
                 "brawl": 1,
                 "skill": 1,
+				"move": 7,
                 "unlimited": true,
                 "points": 75
             },
@@ -662,6 +713,7 @@
                 "control": 2,
                 "brawl": 2,
                 "skill": 3,
+				"move": 5,
                 "unlimited": true,
                 "points": 125
             },
@@ -675,6 +727,7 @@
                 "control": 3,
                 "brawl": 2,
                 "skill": 2,
+				"move": 5,
                 "unlimited": true,
                 "points": 125
             },
@@ -688,6 +741,7 @@
                 "control": 1,
                 "brawl": 2,
                 "skill": 4,
+				"move": 5,
                 "unlimited": true,
                 "points": 125
             },
@@ -701,6 +755,7 @@
                 "control": 1,
                 "brawl": 0,
                 "skill": 1,
+				"move": 3,
                 "unlimited": true,
                 "points": 50
             },
@@ -714,6 +769,7 @@
                 "control": 2,
                 "brawl": 1,
                 "skill": 2,
+				"move": 7,
                 "unlimited": true,
                 "points": 75
             },
@@ -727,6 +783,7 @@
                 "control": 2,
                 "brawl": 3,
                 "skill": 3,
+				"move": 7,
                 "unlimited": true,
                 "points": 200
             },
@@ -740,6 +797,7 @@
                 "control": 2,
                 "brawl": 3,
                 "skill": 3,
+				"move": 4,
                 "unlimited": true,
                 "points": 200
             },
@@ -753,6 +811,7 @@
                 "control": 4,
                 "brawl": 2,
                 "skill": 2,
+				"move": 4,
                 "unlimited": true,
                 "points": 200
             },
@@ -766,11 +825,12 @@
                 "control": 2,
                 "brawl": 2,
                 "skill": 4,
+				"move": 4,
                 "unlimited": true,
                 "points": 200
             },
             {
-                "name": "Havoc Barbarian Brawler",
+                "name": "Barbarian Brawler",
                 "factions": [
                     {
                         "name": "Havoc Team"
@@ -779,11 +839,12 @@
                 "control": 1,
                 "brawl": 3,
                 "skill": 2,
+				"move": 6,
                 "unlimited": true,
                 "points": 100
             },
             {
-                "name": "Havoc Barbarian Shooter",
+                "name": "Barbarian Shooter",
                 "factions": [
                     {
                         "name": "Havoc Team"
@@ -792,6 +853,7 @@
                 "control": 1,
                 "brawl": 2,
                 "skill": 3,
+				"move": 4,
                 "unlimited": true,
                 "points": 100
             },
@@ -805,6 +867,7 @@
                 "control": 3,
                 "brawl": 4,
                 "skill": 2,
+				"move": 6,
                 "unlimited": true,
                 "points": 400
             },
@@ -818,6 +881,7 @@
                 "control": 1,
                 "brawl": 2,
                 "skill": 2,
+				"move": 6,
                 "unlimited": true,
                 "points": 50
             },
@@ -831,6 +895,7 @@
                 "control": 2,
                 "brawl": 3,
                 "skill": 2,
+				"move": 6,
                 "unlimited": true,
                 "points": 200
             },
@@ -844,6 +909,7 @@
                 "control": 3,
                 "brawl": 2,
                 "skill": 2,
+				"move": 6,
                 "unlimited": true,
                 "points": 200
             },
@@ -857,6 +923,21 @@
                 "control": 2,
                 "brawl": 2,
                 "skill": 3,
+				"move": 6,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Vampire Blitzer",
+                "factions": [
+                    {
+                        "name": "Vampire Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 2,
+                "skill": 2,
+				"move": 8,
                 "unlimited": true,
                 "points": 200
             },
@@ -870,6 +951,7 @@
                 "control": 2,
                 "brawl": 3,
                 "skill": 1,
+				"move": 5,
                 "unlimited": true,
                 "points": 100
             },
@@ -883,6 +965,7 @@
                 "control": 3,
                 "brawl": 2,
                 "skill": 1,
+				"move": 5,
                 "unlimited": true,
                 "points": 100
             },
@@ -896,6 +979,7 @@
                 "control": 1,
                 "brawl": 2,
                 "skill": 3,
+				"move": 5,
                 "unlimited": true,
                 "points": 100
             },
@@ -909,6 +993,7 @@
                 "control": 3,
                 "brawl": 3,
                 "skill": 3,
+				"move": 5,
                 "points": 200
             },
             {
@@ -921,8 +1006,9 @@
                 "control": 2,
                 "brawl": 1,
                 "skill": 2,
+				"move": 8,
                 "unlimited": true,
-                "points": 75
+                "points": 100
             },
             {
                 "name": "Chameleon",
@@ -934,8 +1020,9 @@
                 "control": 2,
                 "brawl": 1,
                 "skill": 2,
+				"move": 10,
                 "unlimited": true,
-                "points": 75
+                "points": 150
             },
             {
                 "name": "Saurian",
@@ -947,6 +1034,21 @@
                 "control": 2,
                 "brawl": 3,
                 "skill": 3,
+				"move": 5,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Frog-Mage",
+                "factions": [
+                    {
+                        "name": "Saurian Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 2,
+                "skill": 3,
+				"move": 4,
                 "unlimited": true,
                 "points": 200
             },
@@ -960,8 +1062,205 @@
                 "control": 4,
                 "brawl": 4,
                 "skill": 1,
+				"move": 4,
                 "unlimited": true,
-                "points": 400
+                "points": 350
+            },
+            {
+                "name": "Chosen Brawler",
+                "factions": [
+                    {
+                        "name": "Havoc Chosen Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 5,
+                "skill": 2,
+				"move": 4,
+                "unlimited": true,
+                "points": 250
+            },
+            {
+                "name": "Chosen Defender",
+                "factions": [
+                    {
+                        "name": "Havoc Chosen Team"
+                    }
+                ],
+                "control": 5,
+                "brawl": 2,
+                "skill": 2,
+				"move": 4,
+                "unlimited": true,
+                "points": 250
+            },
+            {
+                "name": "Chosen Shooter",
+                "factions": [
+                    {
+                        "name": "Havoc Chosen Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 2,
+                "skill": 5,
+				"move": 4,
+                "unlimited": true,
+                "points": 250
+            },
+            {
+                "name": "Chosen Blitzer",
+                "factions": [
+                    {
+                        "name": "Havoc Chosen Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 3,
+                "skill": 2,
+				"move": 6,
+                "unlimited": true,
+                "points": 250
+            },
+            {
+                "name": "War Blitzer",
+                "factions": [
+                    {
+                        "name": "War Disciples Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 3,
+                "skill": 2,
+				"move": 6,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "War Defender",
+                "factions": [
+                    {
+                        "name": "War Disciples Team"
+                    }
+                ],
+                "control": 4,
+                "brawl": 2,
+                "skill": 2,
+				"move": 4,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "War Brawler",
+                "factions": [
+                    {
+                        "name": "War Disciples Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 4,
+                "skill": 2,
+				"move": 4,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Bloodied Brawler",
+                "factions": [
+                    {
+                        "name": "War Disciples Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 3,
+                "skill": 2,
+				"move": 6,
+                "unlimited": true,
+                "points": 150
+            },
+            {
+                "name": "Bloodied Shooter",
+                "factions": [
+                    {
+                        "name": "War Disciples Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 2,
+                "skill": 3,
+				"move": 6,
+                "unlimited": true,
+                "points": 150
+            },
+            {
+                "name": "Plague Blitzer",
+                "factions": [
+                    {
+                        "name": "Plague Disciples Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 3,
+                "skill": 2,
+				"move": 4,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Plague Defender",
+                "factions": [
+                    {
+                        "name": "Plague Disciples Team"
+                    }
+                ],
+                "control": 4,
+                "brawl": 3,
+                "skill": 2,
+				"move": 2,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Plague Shooter",
+                "factions": [
+                    {
+                        "name": "Plague Disciples Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 2,
+                "skill": 4,
+				"move": 2,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Plague Beastman",
+                "factions": [
+                    {
+                        "name": "Plague Disciples Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 2,
+                "skill": 2,
+				"move": 4,
+                "unlimited": true,
+                "points": 150
+            },
+            {
+                "name": "Plague Shambler",
+                "factions": [
+                    {
+                        "name": "Plague Disciples Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 1,
+                "skill": 1,
+				"move": 2,
+                "unlimited": true,
+                "points": 50
             }
         ]
     }
