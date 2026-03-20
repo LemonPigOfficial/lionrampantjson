@@ -93,7 +93,9 @@
             },
             {
                 "name": "Goblins Team",
-                "additionalRules": []
+                "additionalRules": [
+                    "A Troll is a horrendous regenerating beast and cannot by any means be injured."
+                ]
             },
             {
                 "name": "Chivalrous Kingdom Team",
@@ -243,9 +245,6 @@
                         "name": "Jade Empire Team"
                     },
                     {
-                        "name": "Goblins Team"
-                    },
-                    {
                         "name": "Ratmen Team"
                     },
                     {
@@ -262,6 +261,9 @@
             {
                 "name": "Troll",
                 "factions": [
+                    {
+                        "name": "Goblins Team"
+                    },
                     {
                         "name": "Orc Way-Clans Team"
                     }
@@ -334,7 +336,7 @@
                 "control": 1,
                 "brawl": 3,
                 "skill": 3,
-				"move": 3,
+				"move": 5,
                 "unlimited": true,
                 "points": 100
             },
@@ -348,9 +350,23 @@
                 "control": 3,
                 "brawl": 3,
                 "skill": 1,
-				"move": 7,
+				"move": 5,
                 "unlimited": true,
                 "points": 100
+            },
+            {
+                "name": "Bearded Veteran",
+                "factions": [
+                    {
+                        "name": "Dwarves Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 3,
+                "skill": 3,
+				"move": 3,
+                "unlimited": true,
+                "points": 200
             },
             {
                 "name": "Elf Lineman",
@@ -569,10 +585,10 @@
                 ],
                 "control": 1,
                 "brawl": 3,
-                "skill": 2,
+                "skill": 4,
 				"move": 6,
                 "unlimited": true,
-                "points": 100
+                "points": 200
             },
             {
                 "name": "Black Orc",
