@@ -144,6 +144,10 @@
                 "additionalRules": []
             },
             {
+                "name": "Beastmen Team",
+                "additionalRules": []
+            },
+            {
                 "name": "Havoc Dwarves Team",
                 "additionalRules": [
                     "A Havoc Dwarves team cannot contain more than 6 Hobgoblin Slaves."
