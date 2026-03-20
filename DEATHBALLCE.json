@@ -440,9 +440,9 @@
                 "control": 1,
                 "brawl": 2,
                 "skill": 2,
-				"move": 6,
+				"move": 8,
                 "unlimited": true,
-                "points": 75
+                "points": 100
             },
             {
                 "name": "Small Goblin",
@@ -870,6 +870,76 @@
                 "brawl": 2,
                 "skill": 3,
 				"move": 4,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Ndoli Brawler",
+                "factions": [
+                    {
+                        "name": "Beastmen Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 3,
+                "skill": 2,
+				"move": 6,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Ndoli Defender",
+                "factions": [
+                    {
+                        "name": "Beastmen Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 2,
+                "skill": 2,
+				"move": 6,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Ndoli Shooter",
+                "factions": [
+                    {
+                        "name": "Beastmen Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 2,
+                "skill": 3,
+				"move": 6,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Waheni Brawler",
+                "factions": [
+                    {
+                        "name": "Beastmen Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 3,
+                "skill": 1,
+				"move": 6,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Waheni Blitzer",
+                "factions": [
+                    {
+                        "name": "Beastmen Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 2,
+                "skill": 1,
+				"move": 8,
                 "unlimited": true,
                 "points": 100
             },
