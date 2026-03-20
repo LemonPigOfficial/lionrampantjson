@@ -268,12 +268,12 @@
                         "name": "Orc Way-Clans Team"
                     }
                 ],
-                "control": 3,
-                "brawl": 5,
+                "control": 2,
+                "brawl": 6,
                 "skill": 0,
-				"move": 6,
+				"move": 4,
                 "unlimited": true,
-                "points": 350
+                "points": 300
             },
             {
                 "name": "Dwarf Lineman",
