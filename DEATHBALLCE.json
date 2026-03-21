@@ -88,8 +88,20 @@
                 ]
             },
             {
+                "name": "Sky-City Dwarves Team",
+                "additionalRules": [
+					"Players in a Sky-City Dwarves team can move across other players by flying across them. Additionally, enemy players may only attack or tackle a Sky-City Dwarves player if they’re within 1”."
+                ]
+            },
+            {
                 "name": "Elves Team",
                 "additionalRules": []
+            },
+            {
+                "name": "Duchies of Vinci Team",
+                "additionalRules": [
+					"Assist-Drones cannot kick the ball or score touchdowns. Additionally, the Death Ball Committee disallows the use of more than 5 Assist-Drones per team (otherwise it would be cheating!)"
+				]
             },
             {
                 "name": "Goblins Team",
@@ -128,7 +140,13 @@
             {
                 "name": "Halfling Team",
                 "additionalRules": [
-                    "Halflings are exceptionally lucky and as such the coach of a Halfling team may re-roll up to three dice per round."
+                    "Halflings are exceptionally lucky and as such the coach of a Halfling team may re-roll up to ten dice per round."
+                ]
+            },
+            {
+                "name": "Gnome Team",
+                "additionalRules": [
+                    "A Gnome Beastmaster is accompanied by a free Beast - you cannot purchase beasts on their own. Additionally, Beasts cannot Kick the ball, but they CAN score a touchdown."
                 ]
             },
             {
@@ -280,6 +298,62 @@
                 "points": 300
             },
             {
+                "name": "Ballooner Lineman",
+                "factions": [
+                    {
+                        "name": "Sky-City Dwarves Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 3,
+                "skill": 2,
+				"move": 5,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Ballooner Defender",
+                "factions": [
+                    {
+                        "name": "Sky-City Dwarves Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 2,
+                "skill": 2,
+				"move": 5,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Ballooner Shooter",
+                "factions": [
+                    {
+                        "name": "Sky-City Dwarves Team"
+					}
+                ],
+                "control": 2,
+                "brawl": 2,
+                "skill": 3,
+				"move": 5,
+                "unlimited": true,
+                "points": 200
+            },
+            {
+                "name": "Ballooner Blitzer",
+                "factions": [
+                    {
+                        "name": "Sky-City Dwarves Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 3,
+                "skill": 3,
+				"move": 7,
+                "unlimited": true,
+                "points": 200
+            },
+            {
                 "name": "Dwarf Lineman",
                 "factions": [
                     {
@@ -427,6 +501,76 @@
 				"move": 6,
                 "unlimited": true,
                 "points": 200
+            },
+            {
+                "name": "Vinci Defender",
+                "factions": [
+                    {
+                        "name": "Duchies of Vinci Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 2,
+                "skill": 1,
+				"move": 6,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Vinci Scorer",
+                "factions": [
+                    {
+                        "name": "Duchies of Vinci Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 1,
+                "skill": 3,
+				"move": 6,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Vinci Runner",
+                "factions": [
+                    {
+                        "name": "Duchies of Vinci Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 2,
+                "skill": 2,
+				"move": 8,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Vinci Brawler",
+                "factions": [
+                    {
+                        "name": "Duchies of Vinci Team"
+                    }
+                ],
+                "control": 2,
+                "brawl": 3,
+                "skill": 1,
+				"move": 6,
+                "unlimited": true,
+                "points": 100
+            },
+            {
+                "name": "Assist-Drone",
+                "factions": [
+                    {
+                        "name": "Duchies of Vinci Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 4,
+                "skill": 0,
+				"move": 8,
+                "unlimited": true,
+                "points": 100
             },
             {
                 "name": "Goblin",
@@ -722,6 +866,48 @@
 				"move": 7,
                 "unlimited": true,
                 "points": 75
+            },
+            {
+                "name": "Gnome",
+                "factions": [
+                    {
+                        "name": "Gnome Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 1,
+                "skill": 1,
+				"move": 7,
+                "unlimited": true,
+                "points": 50
+            },
+            {
+                "name": "Gnome Beastmaster",
+                "factions": [
+                    {
+                        "name": "Gnome Team"
+                    }
+                ],
+                "control": 1,
+                "brawl": 2,
+                "skill": 1,
+				"move": 7,
+                "unlimited": true,
+                "points": 150
+            },
+            {
+                "name": "Beast",
+                "factions": [
+                    {
+                        "name": "Gnome Team"
+                    }
+                ],
+                "control": 3,
+                "brawl": 3,
+                "skill": 0,
+				"move": 6,
+                "unlimited": true,
+                "points": 0
             },
             {
                 "name": "Empire Jade Lineman",
