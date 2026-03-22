@@ -128,7 +128,7 @@
             {
                 "name": "Undead Team",
                 "additionalRules": [
-                    "Undead cannot be Injured – no mortal wound can put them down for good."
+                    "Undead cannot be Stunned."
                 ]
             },
             {
@@ -174,7 +174,7 @@
             {
                 "name": "Vampire Team",
                 "additionalRules": [
-                    "Undead cannot be Injured – no mortal wound can put them down for good."
+                    "Undead cannot be Stunned."
                 ]
             },
             {
@@ -274,7 +274,7 @@
                     }
                 ],
                 "control": 2,
-                "brawl": 5,
+                "brawl": 6,
                 "skill": 1,
 				"move": 4,
                 "unlimited": true,
@@ -749,9 +749,9 @@
                     }
                 ],
                 "control": 2,
-                "brawl": 3,
-                "skill": 3,
-				"move": 5,
+                "brawl": 4,
+                "skill": 2,
+				"move": 4,
                 "unlimited": true,
                 "points": 200
             },
@@ -833,7 +833,7 @@
                     }
                 ],
                 "control": 2,
-                "brawl": 5,
+                "brawl": 6,
                 "skill": 3,
 				"move": 4,
                 "unlimited": true,
@@ -1173,7 +1173,7 @@
                 "skill": 2,
 				"move": 6,
                 "unlimited": true,
-                "points": 200
+                "points": 250
             },
             {
                 "name": "Vampire Defender",
@@ -1187,7 +1187,7 @@
                 "skill": 2,
 				"move": 6,
                 "unlimited": true,
-                "points": 200
+                "points": 250
             },
             {
                 "name": "Vampire Shooter",
@@ -1201,7 +1201,7 @@
                 "skill": 3,
 				"move": 6,
                 "unlimited": true,
-                "points": 200
+                "points": 250
             },
             {
                 "name": "Vampire Blitzer",
@@ -1215,7 +1215,7 @@
                 "skill": 2,
 				"move": 8,
                 "unlimited": true,
-                "points": 200
+                "points": 250
             },
             {
                 "name": "Norn Brawler",
